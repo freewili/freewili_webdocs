@@ -179,6 +179,17 @@ const config = {
 
       
     }),
-};
+
+    plugins: [
+      [
+        require.resolve('docusaurus-lunr-search'),
+        {
+          // languages: ['en'], // Specify the languages, e.g., ['en', 'de']
+          indexBaseUrl: true, // Whether to index base URLs
+          // excludeRoutes: ['!docs/my-excluded-doc'], // Routes to exclude from indexing
+        },
+      ],
+    ],
+  };
 
 export default config;
