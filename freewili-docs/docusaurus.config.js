@@ -45,7 +45,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           routeBasePath: '/',
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/freewili/FreeWili_WebDocs/blob/main/freewili-docs/',
         },
         // blog: {
         //   showReadingTime: true,
