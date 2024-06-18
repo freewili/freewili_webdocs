@@ -1,0 +1,54 @@
+# ##############################################################################
+# Free Wil-i PCF
+# ##############################################################################
+
+###IOSet List 22
+
+set_io SPI_MISO_Rp 14
+set_io SPI_MISO_Out 25
+set_io SPI_MOSI_Rp 17
+set_io SPI_MOSI_Out 23
+set_io SPI_Clk_Rp 15
+set_io SPI_Clk_Out 27
+set_io SPI_CS_Rp 16
+set_io SPI_CS_Out 26
+
+set_io UART_Tx_Rp 6
+set_io UART_Tx_Out 28
+set_io UART_Rx_Rp 9
+set_io UART_Rx_Out 31
+set_io UART_CTS_Rp 10
+set_io UART_CTS_Out 32
+set_io UART_RTS_Rp 11
+set_io UART_RTS_Out 34
+
+set_io GPIO_26_Rp 19
+set_io GPIO_26_Out 36
+set_io GPIO_27_Rp 18
+set_io GPIO_27_Out 41
+
+set_io CLK 37
+
+set_io I2C_SDA 43
+set_io I2C_SCL 38
+
+set_io GPIO_26_Dir 35
+set_io GPIO_27_Dir 40
+
+set_io IO_CONFIG_ENABLE 39
+
+set_io SRAM_CLK 42
+set_io SRAM_CS 3
+set_io SRAM_IO0 12
+set_io SRAM_IO1 21
+set_io SRAM_IO2 13
+set_io SRAM_IO3 20
+
+set_io FTDI_IO0 46
+set_io FTDI_IO1 47
+set_io FTDI_IO2 44
+set_io FTDI_IO3 48
+set_io FTDI_SCLK 45
+set_io FTDI_SS 2
+set_io FTDI_MISO 4
+
