@@ -45,7 +45,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           routeBasePath: '/',
           editUrl:
-            'https://github.com/freewili/FreeWili_WebDocs/blob/main/freewili-docs/',
+               'https://github.com/freewili/FreeWili_WebDocs/blob/main/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -77,10 +77,6 @@ const config = {
           // style: {border: 'solid red'},
         },
         items: [
-          {
-            type: 'search',
-            position: 'right',
-          },
           // {
           //   type: 'docSidebar',
           //   sidebarId: 'tutorialSidebar',
@@ -93,6 +89,7 @@ const config = {
           //   label: 'GitHub',
           //   position: 'right',
           // },
+          
           {
               href: 'https://freewili.com/',
               label: 'Home',
@@ -111,8 +108,15 @@ const config = {
               position: 'left',
               className: 'nav-link',
             },
-  
-            
+          {
+            href: 'https://github.com/freewili/FreeWili_WebDocs/tree/main',
+            label: 'GitHub',
+            position: 'right',
+          },
+            {
+              type: 'search',
+              position: 'right',
+            },
         ],
       },
       footer: {
@@ -165,18 +169,26 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
 
-      // docs: {
-      //   sidebar: {
-      //     hideable: true,
-      //   },
-      // },
-
       docs: {
         sidebar: {
           autoCollapseCategories: true,
+          hideable: true,
         },
       },
+      // colorMode: {
+      //   defaultMode: 'light',
+      //   disableSwitch: false,
+      //   respectPrefersColorScheme: false,
+      // },
 
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: false,
+      // },
       
     }),
 

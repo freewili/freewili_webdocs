@@ -16,7 +16,7 @@ Free Wil-i includes a GPIO pin header for interacting with digital protocols. Th
 <figure>
 
 ![Free Wili Pinout](./assets/gpio-pinout.jpg "Pinout")
-<figcaption>Free Wili Pinout.</figcaption>
+<figcaption>Free Wil-i Pinout.</figcaption>
 </figure>
 </div>
 
@@ -27,7 +27,7 @@ Free Wil-i includes a GPIO pin header for interacting with digital protocols. Th
 <figure>
 
 ![Freewili GPIO Header](./assets/gpio-header.png "Freewili GPIO Header")
-<figcaption>Freewili GPIO Header</figcaption>
+<figcaption>Free Wil-i GPIO Header</figcaption>
 </figure>
 </div>
 
