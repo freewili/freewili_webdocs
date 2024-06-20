@@ -42,3 +42,30 @@
 .freewili-link {
   color: #ef393e;
 }
+
+
+/* for footer social icons */
+
+/* src/css/custom.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+.footer-links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links i {
+  font-size: 1.2em;
+}
+
+.x-twitter{
+  height: 16px;
+  width: auto;
+}

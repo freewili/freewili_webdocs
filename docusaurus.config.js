@@ -131,37 +131,100 @@ const config = {
           //     },
           //   ],
           // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
+           {
+            title: 'Follow Us',
+            items: [
+              {
+                html: `
+                  <a href="https://www.facebook.com/ICSFREEWILI/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i> Facebook
+                  </a>
+                `,
+              },
+              {
+                html: `
+                  <a href="https://www.instagram.com/free_wili_/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram
+                  </a>
+                `,
+              },
+              {
+                html: `
+                  <a href="https://www.linkedin.com/company/freewili/about/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+                `,
+              },
+              {
+                html: `
+                  <a href="https://twitter.com/FREEWiL_i" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/x-twitter.svg" alt="Twitter Icon" class="x-twitter"> Twitter
+                  </a>
+                `,
+              },
+              {
+                html: `
+                  <a href="https://www.youtube.com/channel/UCSx1CmqjhiaWd3I42zJyuDw" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i> YouTube
+                  </a>
+                `,
+              },
+
+            ],
+          },
+          {
+            title: 'Company',
+            items: [
+
+              // {
+              //   html: `
+              //       <a href="https://freewili.com/" target="_blank" rel="noreferrer noopener" aria-label="freewili">
+              //         <img src="/img/freewili-social-card.jpg" alt="freewili" width="114" height="auto" />
+              //       </a>
+              //     `,
+              // },
+
+              {
+                label: 'About FreeWili',
+                href: '#',
+              },
+              {
+                label: 'Helpful Links',
+                to: '/helpful-links',
+              },
+              {
+                label: 'FreeWili Discord',
+                href: 'https://discord.com/invite/XJRBUCX62z',
+              },
+              {
+                label: 'Contact Us',
+                href: 'https://freewili.com/contact/',
+              },
+            ],
+          },
           // {
           //   title: 'More',
           //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
+          //     // {
+          //     //   html: `
+          //     //       <a href="https://freewili.com/" target="_blank" rel="noreferrer noopener" aria-label="freewili">
+          //     //         <img src="/img/freewili-social-card.jpg" alt="freewili" width="114" height="auto" />
+          //     //       </a>
+          //     //     `,
+          //     // },
           //   ],
           // },
+
         ],
+
+        logo: {
+          alt: 'Free Wil-i',
+          src: '/img/FreeWIli_trans.png',
+          href: 'https://freewili.com/',
+          width: 160,
+          // height: 150,
+        },
+
         copyright: `Copyright © ${new Date().getFullYear()} <a href="https://freewili.com/" class="freewili-link"> FreeWili, Inc.</a>`,
       },
       prism: {
@@ -181,14 +244,19 @@ const config = {
       //   respectPrefersColorScheme: false,
       // },
 
-      // announcementBar: {
-      //   id: 'support_us',
-      //   content:
-      //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-      //   backgroundColor: '#fafbfc',
-      //   textColor: '#091E42',
-      //   isCloseable: false,
-      // },
+      announcementBar: {
+        id: 'freewili',
+        content:
+          'Welcome to the  <a target="_blank" rel="noopener noreferrer" href="#">Freewili Documentation</a>, website! Discover guides and resources to help you get the most out of Freewili. ',
+        backgroundColor: '#ef393e',
+        textColor: '#fff',
+        isCloseable: true,
+      },
+
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 2,
+      },
       
     }),
 
