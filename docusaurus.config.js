@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'FreeWili',
+  title: 'FREE-WiLi',
   tagline: 'Documentation',
   favicon: 'img/favicon.ico',
 
@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'freewili', // Usually your GitHub org/user name.
-  projectName: 'FreeWili Documentation', // Usually your repo name.
+  projectName: 'FREE-WiLi Documentation', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -68,9 +68,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/freewili-social-card.jpg',
       navbar: {
-        title: 'FreeWili',
+        title: 'FREE-WiLi',
         logo: {
-          alt: 'FreeWili Logo',
+          alt: 'FREE-WiLi_Logo',
           src: 'img/logo.svg',
           // href: '#',
           target: '_self',
@@ -113,6 +113,13 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+
+          // {
+          //   type: 'html',
+          //   value: '<a href="https://github.com/freewili/FreeWili_WebDocs/tree/main" target="_blank"><img src="/img/Github-24.png" alt="freewili" width="24" height="24" /></a>',
+          //   position: 'right',
+          // },
+
             {
               type: 'search',
               position: 'right',
@@ -185,7 +192,7 @@ const config = {
               // },
 
               {
-                label: 'About FreeWili',
+                label: 'About FREE-WiLi',
                 href: '#',
               },
               {
@@ -193,7 +200,7 @@ const config = {
                 to: '/helpful-links',
               },
               {
-                label: 'FreeWili Discord',
+                label: 'FREE-WiLi Discord',
                 href: 'https://discord.com/invite/XJRBUCX62z',
               },
               {
@@ -218,14 +225,14 @@ const config = {
         ],
 
         logo: {
-          alt: 'Free Wil-i',
+          alt: 'FREE-WiLi',
           src: '/img/FreeWIli_trans.png',
           href: 'https://freewili.com/',
           width: 160,
           // height: 150,
         },
 
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://freewili.com/" class="freewili-link"> FreeWili, Inc.</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://freewili.com/" class="freewili-link"> FREE-WiLi, Inc.</a>`,
       },
       prism: {
         theme: prismThemes.github,
@@ -247,7 +254,7 @@ const config = {
       announcementBar: {
         id: 'freewili',
         content:
-          'Welcome to the  <a target="_blank" rel="noopener noreferrer" href="#">Freewili Documentation</a>, website! Discover guides and resources to help you get the most out of Freewili. ',
+          'Welcome to the  <a target="_blank" rel="noopener noreferrer" href="#">FREE-WiLi Documentation</a>, website! Discover guides and resources to help you get the most out of FREE-WiLi. ',
         backgroundColor: '#ef393e',
         textColor: '#fff',
         isCloseable: true,

@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # GUI : Screen, Buttons, and Lights
 
-The Free Wil-i has a user interface that makes interacting with the device use-able without a host PC. The user interface is controlled by a separate CPU and interfaces with the main CPU via a 8 Megabit hardware handshaking UART.
+The FREE-WiLi has a user interface that makes interacting with the device use-able without a host PC. The user interface is controlled by a separate CPU and interfaces with the main CPU via a 8 Megabit hardware handshaking UART.
 
 The core parts of the user interface are listed below:
 

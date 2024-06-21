@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Maestro Debug Orca
 
-The Maestro Orca is a trouble shooting and development tool for Free Wil-i. The board consists of a USB debugger for the RP2040 main controller and IO test points.
+The Maestro Orca is a trouble shooting and development tool for FREE-WiLi. The board consists of a USB debugger for the RP2040 main controller and IO test points.
 
 <div class="text--center">
 
@@ -32,7 +32,7 @@ import Card from '@site/src/components/Card';
 <Card 
   title="OrcaModule_Monstro.pdf"
   description="pdf"
-  link="./img/OrcaModule_Monstro.pdf" 
+  link="/img/OrcaModule_Monstro.pdf" 
   imageUrl="/img/png-download.png"
 />
 

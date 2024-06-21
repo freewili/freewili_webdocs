@@ -21,6 +21,6 @@ import Card from '@site/src/components/Card';
 <Card 
   title="fw.pcf"
   description=""
-  link="./img/fw.pcf" 
+  link="/img/fw.pcf" 
   imageUrl="/img/download-file.png"
 />

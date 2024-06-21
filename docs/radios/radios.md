@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # Radios
 
-Except for Free Wil-i blue, Free Wil-i has two radios integrate to help develop, validate and test radio systems.
+Except for FREE-WiLi blue, FREE-WiLi has two radios integrate to help develop, validate and test radio systems.
 
-The different Free Wil-i devices have different radios to support different applications. 
+The different FREE-WiLi devices have different radios to support different applications. 
 
 | **Device** 	|                     **Description**                     	            |    **Notes**   	|
 |:----------:	|:------------------------------------------------------------------:	|:--------------:	|

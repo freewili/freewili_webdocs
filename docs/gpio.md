@@ -7,16 +7,16 @@ sidebar_position: 3
 
 ## Overview
 
-Free Wil-i includes a GPIO pin header for interacting with digital protocols. This GPIO header is flexible, allowing varying voltage levels and IO direction. The pin-out and connector are shown below.
+FREE-WiLi includes a GPIO pin header for interacting with digital protocols. This GPIO header is flexible, allowing varying voltage levels and IO direction. The pin-out and connector are shown below.
 
-<span style={{color:'red'}}>**NOTE PRODUCTION FREE WIL-I  (REV5) WILL MAKE GPIO 27 DEFAULT OUTPUT and GPIO26 DEFAULT INPUT. THIS DOCUMENT IS UPDATED FOR REV5 PRODUCTION HARDWARE.**</span>
+<span style={{color:'red'}}>**NOTE PRODUCTION FREE-WiLi (REV5) WILL MAKE GPIO 27 DEFAULT OUTPUT and GPIO26 DEFAULT INPUT. THIS DOCUMENT IS UPDATED FOR REV5 PRODUCTION HARDWARE.**</span>
 
 <div class="text--center">
 
 <figure>
 
-![Free Wili Pinout](./assets/gpio-pinout.jpg "Pinout")
-<figcaption>Free Wil-i Pinout.</figcaption>
+![FREE-WiLi Pinout](./assets/gpio-pinout.jpg "Pinout")
+<figcaption>FREE-WiLi Pinout.</figcaption>
 </figure>
 </div>
 
@@ -26,8 +26,8 @@ Free Wil-i includes a GPIO pin header for interacting with digital protocols. Th
 
 <figure>
 
-![Freewili GPIO Header](./assets/gpio-header.png "Freewili GPIO Header")
-<figcaption>Free Wil-i GPIO Header</figcaption>
+![FREE-WiLi GPIO Header](./assets/gpio-header.png "FREE-WiLi GPIO Header")
+<figcaption>FREE-WiLi GPIO Header</figcaption>
 </figure>
 </div>
 

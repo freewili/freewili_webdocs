@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # ice40 FPGA Overview
 
-The FreeWil-i contains an FPGA between the RP2040 main processor and the IO drivers. The FPGA allows sophisticated high speed IO and state machines that can process IO and communicate to the RP2040 or communicate to the host directly using high speed USB.
+The FREE-WiLi contains an FPGA between the RP2040 main processor and the IO drivers. The FPGA allows sophisticated high speed IO and state machines that can process IO and communicate to the RP2040 or communicate to the host directly using high speed USB.
 
 The FPGA contains a default application so changing FPGA configuration is entirely optional. But changing the configuration is allowed and can be done at anytime and an unlimited number of times. See [FPGA Programming](/ice40-fpga/fpga-programming) for details.
 

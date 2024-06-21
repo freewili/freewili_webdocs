@@ -11,8 +11,8 @@ The File System Menu allows you to interact with the file menu (shown below).
 | Change Directory         	| Changes the current directory                  	|           	|
 | Create Directory         	| Creates a directory in the current directory   	|           	|
 | Remove File or Directory 	|                                                	|           	|
-| Download File            	| Send a file from the host to Free Wil-i device 	|           	|
-| Upload File              	| Copy a file from Free Wil-i to host device     	|           	|
+| Download File            	| Send a file from the host to FREE-WiLi device 	|           	|
+| Upload File              	| Copy a file from FREE-WiLi to host device     	|           	|
 | Print File               	| Display file to the serial terminal            	|           	|
 | Create Blank File        	| Creates an empty file                          	|           	|
 | Rename File or Directory 	|                                                	|           	|
