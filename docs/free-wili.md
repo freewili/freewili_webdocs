@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-# FreeWilli Overview
+# FreeWili Overview
 
 <!-- <div class="text--center"> 
   <img src="/img/freewili-overview.jpg" alt="freewili-overview" /> 
@@ -20,7 +20,7 @@ slug: /
 
 ## Overview
 
-Free Wili is a embedded development tool for helping test, debug, and develop electronic systems.
+FreeWili is a embedded development tool for helping test, debug, and develop electronic systems.
 
 ## Use Cases
 
@@ -67,25 +67,16 @@ Free Wili is a embedded development tool for helping test, debug, and develop el
 
 ## Radio Versions
 
-<!-- <div class="text--center">
-
-<figure>
-
-![Figure 1 - Add Existing Item From the Add menu C#.NET Menu.](/img/image.jpg)
-<figcaption>Free Wili contains two radios.</figcaption>
-</figure>
-</div> -->
-
 <div class="text--center">
 
 <figure>
 
 ![Radio Versions](./assets/radio-versions.jpg "Radio Versions")
-<figcaption>Free Wili contains two radios.</figcaption>
+<figcaption>FreeWili contains two radios.</figcaption>
 </figure>
 </div>
 
-Free Wili has 4 different radio options:
+FreeWili has 4 different radio options:
 
 <span style={{color:'black'}}>**Black**</span>  contains two CC1101 Sub Ghz Radios with programmable filter ranges for 300-348, 387-464, 779-928 bands.
 
