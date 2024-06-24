@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'freewili', // Usually your GitHub org/user name.
-  projectName: 'FREE-WiLi Documentation', // Usually your repo name.
+  projectName: 'FreeWili_WebDocs', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
