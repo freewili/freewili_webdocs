@@ -268,7 +268,24 @@ const config = {
       metadata: [
         {name: 'description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.'},
         {name: 'keywords', content: 'freewili, FREE-WiLi, GPIO, GUI, Orcas, UART'},
+
+        // Open Graph metadata
+        {property: 'og:title', content: 'FREE-WiLi Documentation'},
+        {property: 'og:description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.'},
+        {property: 'og:image', content: 'https://docs.freewili.com/img/freewili-social-card.jpg'},
+        {property: 'og:url', content: 'https://docs.freewili.com/'},
+        {property: 'og:type', content: 'website'},
+
+        // Twitter metadata
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:title', content: 'FREE-WiLi Documentation'},
+        {name: 'twitter:description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.'},
+        {name: 'twitter:image', content: 'https://docs.freewili.com/img/freewili-social-card.jpg'},
+        {name: 'twitter:site', content: '@FREEWiL_i'},
+
       ], 
+
+      // metadata: [{name: 'twitter:card', content: 'summary'}],
     }),
     plugins: [
       [

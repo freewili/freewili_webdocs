@@ -1,6 +1,21 @@
 ---
 sidebar_position: 1
 slug: /
+
+# og:
+#   title: FREE-WiLi Documentation
+#   description: FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.
+#   image: /img/freewili-social-card.jpg
+#   type: website
+#   url: https://docs.freewili.com/freewili
+
+# twitter:
+#   card: summary_large_image
+#   title: FREE-WiLi Documentation
+#   description: FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.
+#   image: /img/freewili-social-card.jpg
+#   site: '@FREEWiL_i'
+
 ---
 
 # FREE-WiLi Overview
