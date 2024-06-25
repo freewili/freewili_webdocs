@@ -96,18 +96,18 @@ const config = {
               position: 'left',
               className: 'nav-link',
             },
-            {
-              href: '#',
-              label: 'Test',
-              position: 'left',
-              className: 'nav-link',
-            },
-            {
-              href: '#',
-              label: 'Test 2',
-              position: 'left',
-              className: 'nav-link',
-            },
+//            {
+//              href: '#',
+//              label: 'Test',
+//              position: 'left',
+//              className: 'nav-link',
+//            },
+//            {
+//              href: '#',
+//              label: 'Test 2',
+//              position: 'left',
+//              className: 'nav-link',
+//            },
           {
             href: 'https://github.com/freewili/FreeWili_WebDocs/tree/main',
             label: 'GitHub',
