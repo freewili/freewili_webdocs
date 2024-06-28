@@ -6,7 +6,7 @@ sidebar_position: 9
 
 Pressing the RED button when  USB is powered activates the RP2040 ROM boot-loader.  This will enable the default way to program the rp2040 via USB.
 
-1) Receive or create a Free Wil-i UF2 file. 
+1) Receive or create a FREE-WiLi UF2 file. 
 
 2) Hold the red button and plug in USB.
 

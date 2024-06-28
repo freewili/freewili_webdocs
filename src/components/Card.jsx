@@ -3,6 +3,9 @@ import React from 'react';
 import styles from './Card.module.css'; // Assuming you have a CSS module for styling
 
 const Card = ({ title, description, link, imageUrl }) => (
+  
+  // <a href={link} target="_blank" rel="noopener noreferrer" download className={styles.card}>
+
   <a href={link} target="_blank" rel="noopener noreferrer" className={styles.card}>
     <div className={styles.cardContent}>
       <div className={styles.cardHeader}>

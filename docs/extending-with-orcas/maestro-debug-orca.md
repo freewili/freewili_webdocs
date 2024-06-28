@@ -29,12 +29,12 @@ The Maestro Orca is a trouble shooting and development tool for FREE-WiLi. The b
 
 import Card from '@site/src/components/Card';
 
-<Card 
+<!-- <Card 
   title="OrcaModule_Monstro.pdf"
   description="pdf"
   link="/img/OrcaModule_Monstro.pdf" 
   imageUrl="/img/png-download.png"
-/>
+/> -->
 
 ## Useful tools
 
