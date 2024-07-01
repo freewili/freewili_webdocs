@@ -100,5 +100,3 @@ FREE-WiLi has 4 different radio options:
 <span style={{color:'#a855f7'}}>**Purple**</span> contains two CC2662 MCUs for supporting and testing TI Wireless BMS Applications
 
 <span style={{color:'#3b82f6'}}>**Blue**</span> contains no radio for lower cost applications or applications where radios are not permitted.
-
-Test2
