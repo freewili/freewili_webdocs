@@ -331,7 +331,103 @@ const config = {
       // ],
 
       // metadata: [{name: 'twitter:card', content: 'summary'}],
-    }),
+
+      // ==================================above=one=is=old====================================================================
+
+      // ==================================below=one=is=new=but=commented==================================================================
+      
+    //   metadata: [
+    //     { name: 'description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.' },
+    //     { name: 'keywords', content: 'freewili, FREE-WiLi, GPIO, GUI, Orcas, UART' },
+    //     { property: 'og:title', content: 'FREE-WiLi Documentation' },
+    //     { property: 'og:description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.' },
+    //     { property: 'og:image', content: 'https://docs.freewili.com/img/freewili-social-card.jpg' },
+    //     { property: 'og:url', content: 'https://docs.freewili.com/' },
+    //     { property: 'og:type', content: 'website' },
+    //   ],
+    // }),
+    // headTags: [
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       name: 'description',
+    //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       property: 'og:title',
+    //       content: 'FREE-WiLi Documentation',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       property: 'og:description',
+    //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       property: 'og:image',
+    //       content: 'https://docs.freewili.com/img/freewili-social-card.jpg',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       property: 'og:url',
+    //       content: 'https://docs.freewili.com/',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       property: 'og:type',
+    //       content: 'website',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       name: 'twitter:card',
+    //       content: 'summary_large_image',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       name: 'twitter:title',
+    //       content: 'FREE-WiLi Documentation',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       name: 'twitter:description',
+    //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       name: 'twitter:image',
+    //       content: 'https://docs.freewili.com/img/freewili-social-card.jpg',
+    //     },
+    //   },
+    //   {
+    //     tagName: 'meta',
+    //     attributes: {
+    //       name: 'twitter:site',
+    //       content: '@FREEWiL_i',
+    //     },
+    //   },
+    // ],
+    
+  }),
+    
     plugins: [
       [
         require.resolve('docusaurus-lunr-search'),
