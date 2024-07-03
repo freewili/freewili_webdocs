@@ -1,0 +1,27 @@
+{
+  "id": "io-app/settings-menu/uart-settings",
+  "title": "UART Settings",
+  "description": "The UART Settings are listed below. The default is 115200 baud 8 data bits, no parity bit, and one stop bit ( 8N1 ):",
+  "source": "@site/docs/io-app/settings-menu/uart-settings.md",
+  "sourceDirName": "io-app/settings-menu",
+  "slug": "/io-app/settings-menu/uart-settings",
+  "permalink": "/io-app/settings-menu/uart-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/io-app/settings-menu/uart-settings.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "I2C settings",
+    "permalink": "/io-app/settings-menu/i2c-settings"
+  },
+  "next": {
+    "title": "FPGA Settings",
+    "permalink": "/io-app/settings-menu/fpga-settings"
+  }
+}

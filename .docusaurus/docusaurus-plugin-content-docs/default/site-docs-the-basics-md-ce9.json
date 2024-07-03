@@ -1,0 +1,27 @@
+{
+  "id": "the-basics",
+  "title": "The Basics",
+  "description": "Turning FREE-WiLi On or Off",
+  "source": "@site/docs/the-basics.md",
+  "sourceDirName": ".",
+  "slug": "/the-basics",
+  "permalink": "/the-basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/the-basics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "FREE-WiLi Overview",
+    "permalink": "/"
+  },
+  "next": {
+    "title": "GPIO",
+    "permalink": "/gpio"
+  }
+}

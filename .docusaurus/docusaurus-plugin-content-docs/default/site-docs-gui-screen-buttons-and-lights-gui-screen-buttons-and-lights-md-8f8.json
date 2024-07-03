@@ -1,0 +1,27 @@
+{
+  "id": "gui-screen-buttons-and-lights/gui-screen-buttons-and-lights",
+  "title": "GUI : Screen, Buttons, and Lights",
+  "description": "The FREE-WiLi has a user interface that makes interacting with the device use-able without a host PC. The user interface is controlled by a separate CPU and interfaces with the main CPU via a 8 Megabit hardware handshaking UART.",
+  "source": "@site/docs/gui-screen-buttons-and-lights/gui-screen-buttons-and-lights.md",
+  "sourceDirName": "gui-screen-buttons-and-lights",
+  "slug": "/gui-screen-buttons-and-lights/",
+  "permalink": "/gui-screen-buttons-and-lights/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/gui-screen-buttons-and-lights/gui-screen-buttons-and-lights.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CC1101 Radio Settings",
+    "permalink": "/radios/black-radio-cc1101/cc1101-radio-settings"
+  },
+  "next": {
+    "title": "Color Display Widgets",
+    "permalink": "/gui-screen-buttons-and-lights/color-display-widgets"
+  }
+}

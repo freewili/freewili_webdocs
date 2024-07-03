@@ -20,10 +20,6 @@ slug: /
 
 # FREE-WiLi Overview
 
-<!-- <div class="text--center"> 
-  <img src="/img/freewili-overview.jpg" alt="freewili-overview" /> 
-</div> -->
-
 <div class="text--center">
 
 <figure>

@@ -1,0 +1,24 @@
+{
+  "id": "freewili",
+  "title": "FREE-WiLi Overview",
+  "description": "FREE-WiLi Overview",
+  "source": "@site/docs/freewili.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/freewili.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "The Basics",
+    "permalink": "/the-basics"
+  }
+}

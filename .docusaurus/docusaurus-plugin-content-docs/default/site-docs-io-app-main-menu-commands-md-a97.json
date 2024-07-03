@@ -1,0 +1,27 @@
+{
+  "id": "io-app/main-menu-commands",
+  "title": "Main Menu Commands",
+  "description": "Commands are a single letter. After you enter the letter additonal information is entered. The following command are available from the main menu:",
+  "source": "@site/docs/io-app/main-menu-commands.md",
+  "sourceDirName": "io-app",
+  "slug": "/io-app/main-menu-commands",
+  "permalink": "/io-app/main-menu-commands",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/io-app/main-menu-commands.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Main Menu Header",
+    "permalink": "/io-app/main-menu-header"
+  },
+  "next": {
+    "title": "Host USB Serial API",
+    "permalink": "/io-app/host-usb-serial-api"
+  }
+}

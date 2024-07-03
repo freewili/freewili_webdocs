@@ -1,0 +1,27 @@
+{
+  "id": "extending-with-orcas/maestro-debug-orca",
+  "title": "Maestro Debug Orca",
+  "description": "The Maestro Orca is a trouble shooting and development tool for FREE-WiLi. The board consists of a USB debugger for the RP2040 main controller and IO test points.",
+  "source": "@site/docs/extending-with-orcas/maestro-debug-orca.md",
+  "sourceDirName": "extending-with-orcas",
+  "slug": "/extending-with-orcas/maestro-debug-orca",
+  "permalink": "/extending-with-orcas/maestro-debug-orca",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/extending-with-orcas/maestro-debug-orca.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Extending with Orcas",
+    "permalink": "/extending-with-orcas/"
+  },
+  "next": {
+    "title": "Custom Orca",
+    "permalink": "/extending-with-orcas/custom-orca"
+  }
+}

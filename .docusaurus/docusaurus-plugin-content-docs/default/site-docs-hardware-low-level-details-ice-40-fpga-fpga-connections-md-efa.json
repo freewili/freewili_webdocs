@@ -1,0 +1,27 @@
+{
+  "id": "hardware-low-level-details/ice40-fpga/fpga-connections",
+  "title": "FPGA Connections",
+  "description": "The FPGA connects to the Serial SRAM,  IO Drivers, and the RP2040.",
+  "source": "@site/docs/hardware-low-level-details/ice40-fpga/fpga-connections.md",
+  "sourceDirName": "hardware-low-level-details/ice40-fpga",
+  "slug": "/hardware-low-level-details/ice40-fpga/fpga-connections",
+  "permalink": "/hardware-low-level-details/ice40-fpga/fpga-connections",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/hardware-low-level-details/ice40-fpga/fpga-connections.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "FPGA Clock",
+    "permalink": "/hardware-low-level-details/ice40-fpga/fpga-clock"
+  },
+  "next": {
+    "title": "FREE-WiLi Firmware Update",
+    "permalink": "/freewili-firmware-update"
+  }
+}

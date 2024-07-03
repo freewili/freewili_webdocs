@@ -1,0 +1,27 @@
+{
+  "id": "radios/radios",
+  "title": "Radios",
+  "description": "Except for FREE-WiLi blue, FREE-WiLi has two radios integrate to help develop, validate and test radio systems.",
+  "source": "@site/docs/radios/radios.md",
+  "sourceDirName": "radios",
+  "slug": "/radios/",
+  "permalink": "/radios/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/radios/radios.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "GPIO",
+    "permalink": "/gpio"
+  },
+  "next": {
+    "title": "Black Radio (CC1101)",
+    "permalink": "/radios/black-radio-cc1101/"
+  }
+}
