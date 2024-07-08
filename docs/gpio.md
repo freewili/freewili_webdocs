@@ -73,7 +73,7 @@ import Card from '@site/src/components/Card';
 <Card 
   title="PCA9517-3139014.pdf"
   description="pdf"
-  link="./img/PCA9517-3139014.pdf" 
+  link="/downloads/PCA9517-3139014.pdf" 
   imageUrl="/img/png-download.png"
 />
 
@@ -84,6 +84,6 @@ All the GPIO that is not I2C uses the sn74lxc1t45 for buffering.
 <Card 
   title="sn74lxc1t45.pdf"
   description="pdf"
-  link="./img/sn74lxc1t45.pdf" 
+  link="/downloads/sn74lxc1t45.pdf" 
   imageUrl="/img/png-download.png"
 />

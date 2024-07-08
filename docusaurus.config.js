@@ -109,6 +109,7 @@ const config = {
 //              position: 'left',
 //              className: 'nav-link',
 //            },
+
           {
             href: 'https://github.com/freewili/FreeWili_WebDocs/tree/main',
             label: 'GitHub',
@@ -117,14 +118,16 @@ const config = {
 
           // {
           //   type: 'html',
-          //   value: '<a href="https://github.com/freewili/FreeWili_WebDocs/tree/main" target="_blank"><img src="/img/Github-24.png" alt="freewili" width="24" height="24" /></a>',
+          //   value: '<a href="https://github.com/freewili/FreeWili_WebDocs/tree/main" target="_blank"><img src="/img/github-light.svg" alt="freewili" width="27" height="27" /></a>',
           //   position: 'right',
           // },
 
-            {
-              type: 'search',
-              position: 'right',
-            },
+          
+
+            // {
+            //   type: 'search',
+            //   position: 'right',
+            // },
         ],
       },
       footer: {

@@ -32,7 +32,7 @@ import Card from '@site/src/components/Card';
 <!-- <Card 
   title="OrcaModule_Monstro.pdf"
   description="pdf"
-  link="/img/OrcaModule_Monstro.pdf" 
+  link="/downloads/OrcaModule_Monstro.pdf" 
   imageUrl="/img/png-download.png"
 /> -->
 
