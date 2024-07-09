@@ -161,37 +161,27 @@ const config = {
             items: [
               {
                 html: `
-                  <a href="https://www.facebook.com/ICSFREEWILI/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i> Facebook
-                  </a>
+                    <a href="https://www.facebook.com/ICSFREEWILI/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> <a href="https://www.facebook.com/ICSFREEWILI/" target="_blank" rel="noopener noreferrer">Facebook</a>
                 `,
               },
               {
                 html: `
-                  <a href="https://www.instagram.com/free_wili_/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i> Instagram
-                  </a>
+                    <a href="https://www.instagram.com/free_wili_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a> <a href="https://www.instagram.com/free_wili_/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 `,
               },
               {
                 html: `
-                  <a href="https://www.linkedin.com/company/freewili/about/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                  </a>
+                    <a href="https://www.linkedin.com/company/freewili/about/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> <a href="https://www.linkedin.com/company/freewili/about/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 `,
               },
               {
                 html: `
-                  <a href="https://twitter.com/FREEWiL_i" target="_blank" rel="noopener noreferrer">
-                    <img src="/img/x-twitter.svg" alt="Twitter Icon" class="x-twitter"> Twitter
-                  </a>
+                    <a href="https://twitter.com/FREEWiL_i" target="_blank" rel="noopener noreferrer"><img src="/img/x-twitter.svg" alt="Twitter Icon" class="x-twitter"></a> <a href="https://twitter.com/FREEWiL_i" target="_blank" rel="noopener noreferrer">Twitter</a>
                 `,
               },
               {
                 html: `
-                  <a href="https://www.youtube.com/channel/UCSx1CmqjhiaWd3I42zJyuDw" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-youtube"></i> YouTube
-                  </a>
+                    <a href="https://www.youtube.com/channel/UCSx1CmqjhiaWd3I42zJyuDw" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> <a href="https://www.youtube.com/channel/UCSx1CmqjhiaWd3I42zJyuDw" target="_blank" rel="noopener noreferrer">YouTube</a>
                 `,
               },
 
