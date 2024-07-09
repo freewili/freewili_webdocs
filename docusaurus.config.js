@@ -34,6 +34,8 @@ const config = {
     locales: ['en'],
   },
 
+  // trailingSlash: false, // Set global trailingSlash configuration 
+
   presets: [
     [
       'classic',
@@ -57,6 +59,18 @@ const config = {
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/test/**', '/markdown-page/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
         },
       }),
     ],
@@ -249,11 +263,11 @@ const config = {
           hideable: true,
         },
       },
-      // colorMode: {
-      //   defaultMode: 'light',
-      //   disableSwitch: false,
-      //   respectPrefersColorScheme: false,
-      // },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
 
       announcementBar: {
         id: 'freewili',
