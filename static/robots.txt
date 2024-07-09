@@ -1,5 +1,7 @@
 User-Agent: *
-Disallow: 
+Disallow: /markdown-page
+Disallow: /test
+
 Allow: /
 
 Sitemap: https://docs.freewili.com/sitemap.xml
