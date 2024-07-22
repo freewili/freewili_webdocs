@@ -61,20 +61,21 @@ FREE-WiLi is a embedded development tool for helping test, debug, and develop el
 - SPI, I2C, PIO, and UART available on [GPIO](/gpio)
 - 3 USB interfaces (Integrated HUB with 2 FS, 1 HS) for communication and power
 - 11 GPIO programmable voltage level for 1.1 to 5.5V with 24ma@3V or 32ma @5v (sn74lxc1t45)
-- 2 GPIO for I2C voltage level between 0.9V to 5.5V with software enabled pulls (PCA9517)
+- 2 GPIO for I2C voltage level between 0.9V to 5.5V with software enabled 10K pulls (PCA9517)
 - GPIO front end includes ICE40UP5k [FPGA](/hardware-low-level-details/ice40-fpga/ice40-fpga-overview) with 8MByte SRAM and High Speed USB (FT232H)
 - Two SMA connectors for antenna for longer range
 - 320 x 240 Color Display
 - 5 User configurable buttons
 - 7 Full color LEDs
 - IR transmitter and receiver
-- Digital Speaker and Microphone
+- Digital [Speaker](/gui-screen-buttons-and-lights/making-sounds) and [Microphone](/gui-screen-buttons-and-lights/capturing-audio-from-microphone)
 - Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code
 - [Orca](/extending-with-orcas) modules plug into GPIO header allow expandability for specific use case
 - [IO App](/io-app) firmware allows exercising all IO, USB Host API and Standalone scripting
 - 16 Mbyte x 2 on board storage
 - 1000 ma Lithium ION battery with integrated charger
 - Real Time Clock (RTC)
+- [Accelerometer](/gui-screen-buttons-and-lights/accelerometer)
 
 ## Radio Versions
 
