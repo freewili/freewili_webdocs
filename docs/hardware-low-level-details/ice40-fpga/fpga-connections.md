@@ -12,9 +12,9 @@ The PCF file is a text file you can view in a text editor.
 
 In the file you will see the names that end with Rp or Out. The Rp names connect to the RP2040 and the Out connects to the IO driver.
 
-set_io SPI_MISO_Rp 14 
+`set_io SPI_MISO_Rp 14`
 
-set_io SPI_MISO_Out 25
+`set_io SPI_MISO_Out 25`
 
 import Card from '@site/src/components/Card';
 
