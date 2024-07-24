@@ -450,6 +450,12 @@ const config = {
         },
       ],
     ],
+    scripts: [
+      {
+        src: '/js/zoom.js',
+        async: true,
+      },
+    ],
   };
 
 export default config;
