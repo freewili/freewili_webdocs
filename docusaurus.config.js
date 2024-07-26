@@ -82,11 +82,12 @@ const config = {
       // Replace with your project's social card
       image: 'img/freewili-social-card.jpg',
       navbar: {
-        title: 'FREE-WiLi',
+        // title: 'FREE-WiLi',
         logo: {
           alt: 'FREE-WiLi_Logo',
+          // src: 'img/logo.svg',
           src: 'img/logo.svg',
-          srcDark: 'img/logo-white.svg', 
+          srcDark: 'img/logo-dark.svg', 
           // href: '#',
           target: '_self',
           // style: {border: 'solid red'},

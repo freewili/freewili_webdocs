@@ -20,12 +20,31 @@ slug: /
 
 # FREE-WiLi Overview
 
-<div class="text--center">
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ThemedImage from '@theme/ThemedImage';
+
+<!-- <div class="text--center">
 
 <figure>
 
 ![FREE-WiLi Overview](./assets/freewili-overview.jpg "FREE-WiLi Overview")
 <figcaption>Make Embedded Systems Fun Again.</figcaption>
+</figure>
+</div> -->
+
+
+
+<div class="text--center">
+
+<figure>
+  <ThemedImage
+    alt="FREE-WiLi Overview"
+    sources={{
+      light: useBaseUrl('./img/freewili-overview-light.jpg'),
+      dark: useBaseUrl('./img/freewili-overview.jpg'),
+    }}
+  />
+  <figcaption>Make Embedded Systems Fun Again.</figcaption>
 </figure>
 </div>
 
