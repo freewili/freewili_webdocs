@@ -177,7 +177,7 @@ const config = {
               },
               {
                 html: `
-                    <a href="https://twitter.com/FREEWiL_i" target="_blank" rel="noopener noreferrer"><img src="/img/x-twitter.svg" alt="Twitter Icon" class="x-twitter"></a> <a href="https://twitter.com/FREEWiL_i" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer"><img src="/img/x-twitter.svg" alt="Twitter Icon" class="x-twitter"></a> <a href="https://twitter.com/FREEWiL_i" target="_blank" rel="noopener noreferrer">Twitter</a>
                 `,
               },
               {
