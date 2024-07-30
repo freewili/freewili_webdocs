@@ -437,18 +437,7 @@ const config = {
     metadata: [
         {name: 'description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.'},
         {name: 'keywords', content: 'freewili, FREE-WiLi, GPIO, GUI, Orcas, UART'},
-    ],
-
-    headTags: [
-      {
-        tagName: 'meta',
-        attributes: {
-          name: 'google-site-verification',
-          content: 'ycE0p5qiaOWADUShFSD2nePajgzbXGxiWHCgzbIaDnI',
-        },
-      },
-    ],
-    
+    ]
   }),
     
     plugins: [
