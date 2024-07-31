@@ -3,22 +3,22 @@ sidebar_position: 1
 slug: /
 
 # og:
-#   title: FREE-WiLi Documentation
-#   description: FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.
+#   title: FREE-WILi Documentation
+#   description: FREE-WILi is an embedded development tool for helping test, debug, and develop electronic systems.
 #   image: /img/freewili-social-card.jpg
 #   type: website
 #   url: https://docs.freewili.com/freewili
 
 # twitter:
 #   card: summary_large_image
-#   title: FREE-WiLi Documentation
-#   description: FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.
+#   title: FREE-WILi Documentation
+#   description: FREE-WILi is an embedded development tool for helping test, debug, and develop electronic systems.
 #   image: /img/freewili-social-card.jpg
 #   site: '@FREEWiL_i'
 
 ---
 
-# FREE-WiLi Overview
+# FREE-WILi Overview
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
@@ -27,7 +27,7 @@ import ThemedImage from '@theme/ThemedImage';
 
 <figure>
 
-![FREE-WiLi Overview](./assets/freewili-overview.jpg "FREE-WiLi Overview")
+![FREE-WILi Overview](./assets/freewili-overview.jpg "FREE-WILi Overview")
 <figcaption>Make Embedded Systems Fun Again.</figcaption>
 </figure>
 </div> -->
@@ -38,7 +38,7 @@ import ThemedImage from '@theme/ThemedImage';
 
 <figure>
   <ThemedImage
-    alt="FREE-WiLi Overview"
+    alt="FREE-WILi Overview"
     sources={{
       light: useBaseUrl('./img/freewili-overview-light.jpg'),
       dark: useBaseUrl('./img/freewili-overview.jpg'),
@@ -50,7 +50,16 @@ import ThemedImage from '@theme/ThemedImage';
 
 ## Overview
 
-FREE-WiLi is a embedded development tool for helping test, debug, and develop electronic systems.
+<div class="text--center">
+
+<figure>
+
+![FREE-WILi Overview](./assets/Free_WiLi_Overview.png "FREE-WILi Overview")
+<figcaption>FREE-WILi Overview</figcaption>
+</figure>
+</div>
+
+FREE-WILi is a embedded development tool for helping test, debug, and develop electronic systems.
 
 ## Use Cases
 
@@ -105,12 +114,12 @@ FREE-WiLi is a embedded development tool for helping test, debug, and develop el
 
 <figure>
 
-![Radio Versions](./assets/radio-versions.jpg "Radio Versions")
-<figcaption>FREE-WiLi contains two radios.</figcaption>
+![Radio Versions](./assets/radio-versions.png "Radio Versions")
+<figcaption>FREE-WILi contains two radios.</figcaption>
 </figure>
 </div>
 
-Free Wili currently has one radio option:
+FREE-WILi currently has one radio option:
 
 <span class="span-black">**Black**</span> contains two CC1101 Sub Ghz Radios with programmable filter ranges for 300-348, 387-464, 779-928 bands.
 

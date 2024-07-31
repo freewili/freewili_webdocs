@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Accelerometer
 
-FREE-WiLi includes an accelerometer part number LIS3DH from ST microelectronics. The Accel sensor data is viewable from the serial menu and is usable from the API. The mounting is such that the Z direction points up from the screen and the X axis points towards the IO Connector.
+FREE-WILi includes an accelerometer part number LIS3DH from ST microelectronics. The Accel sensor data is viewable from the serial menu and is usable from the API. The mounting is such that the Z direction points up from the screen and the X axis points towards the IO Connector.
 
 <div class="text--center">
 

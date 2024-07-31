@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Displaying Images
 
-FREE-WiLi allows you to display images on the screen. FREE-WiLi has some built in images but a more interesting user interface can be done with custom images.
+FREE-WILi allows you to display images on the screen. FREE-WILi has some built in images but a more interesting user interface can be done with custom images.
 
-Custom images can be loaded into the FREE-WiLi display processor file system. Then, using the API they can be displayed on command. They images should be stored in the "images" directory.
+Custom images can be loaded into the FREE-WILi display processor file system. Then, using the API they can be displayed on command. They images should be stored in the "images" directory.
 
-Custom images first must be converted to the FREE-WiLi Image format. This is basically a bitmap that is compatible with the 565 color display used. The direct compatibility allows fast display of images without any runtime conversion.
+Custom images first must be converted to the FREE-WILi Image format. This is basically a bitmap that is compatible with the 565 color display used. The direct compatibility allows fast display of images without any runtime conversion.
 
-A python script is written called fw_image.py that can convert a jpg or png to a FWI file. A FWI file is the image file you will download to FREE-WiLi.
+A python script is written called fw_image.py that can convert a jpg or png to a FWI file. A FWI file is the image file you will download to FREE-WILi.
 
 ***Syntax of fw_image.py:***
 
@@ -26,8 +26,8 @@ The GUIAPI has a function for displaying images. Here we display `cookie.fwi` in
 
 <figure>
 
-![Cookie.fwi shown on FREE-WiLi screen.](../assets/cookie-fwi.jpg "Cookie.fwi shown on FREE-WiLi screen.")
-<figcaption>Cookie.fwi shown on FREE-WiLi screen.</figcaption>
+![Cookie.fwi shown on FREE-WILi screen.](../assets/cookie-fwi.jpg "Cookie.fwi shown on FREE-WILi screen.")
+<figcaption>Cookie.fwi shown on FREE-WILi screen.</figcaption>
 </figure>
 </div>
 

@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'FREE-WiLi',
+  title: 'FREE-WILi',
   tagline: 'Documentation',
   favicon: 'img/favicon.ico',
 
@@ -82,9 +82,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/freewili-social-card.jpg',
       navbar: {
-        // title: 'FREE-WiLi',
+        // title: 'FREE-WILi',
         logo: {
-          alt: 'FREE-WiLi_Logo',
+          alt: 'FREE-WILi_Logo',
           // src: 'img/logo.svg',
           src: 'img/logo.svg',
           srcDark: 'img/logo-dark.svg', 
@@ -201,7 +201,7 @@ const config = {
               // },
 
               {
-                label: 'About FREE-WiLi',
+                label: 'About FREE-WILi',
                 href: '#',
               },
               {
@@ -209,7 +209,7 @@ const config = {
                 to: '/helpful-links',
               },
               {
-                label: 'FREE-WiLi Discord',
+                label: 'FREE-WILi Discord',
                 href: 'https://discord.com/invite/XJRBUCX62z',
               },
               {
@@ -234,14 +234,14 @@ const config = {
         ],
 
         logo: {
-          alt: 'FREE-WiLi',
+          alt: 'FREE-WILi',
           src: '/img/FreeWIli_trans.png',
           href: 'https://freewili.com/',
           width: 160,
           // height: 150,
         },
 
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://freewili.com/" class="freewili-link"> FREE-WiLi, Inc.</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://freewili.com/" class="freewili-link"> FREE-WILi, Inc.</a>`,
       },
       prism: {
         theme: prismThemes.github,
@@ -263,7 +263,7 @@ const config = {
       announcementBar: {
         id: 'freewili',
         content:
-          'Welcome to the  <a target="_blank" rel="noopener noreferrer" href="#">FREE-WiLi Documentation</a>, website! Discover guides and resources to help you get the most out of FREE-WiLi. ',
+          'Welcome to the  <a target="_blank" rel="noopener noreferrer" href="#">FREE-WILi Documentation</a>, website! Discover guides and resources to help you get the most out of FREE-WILi. ',
         backgroundColor: '#ef393e',
         textColor: '#fff',
         isCloseable: true,
@@ -435,8 +435,8 @@ const config = {
     //   },
     // ],
     metadata: [
-        {name: 'description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.'},
-        {name: 'keywords', content: 'freewili, FREE-WiLi, GPIO, GUI, Orcas, UART'},
+        {name: 'description', content: 'FREE-WILi is an embedded development tool for helping test, debug, and develop electronic systems.'},
+        {name: 'keywords', content: 'freewili, FREE-WILi, GPIO, GUI, Orcas, UART'},
     ]
   }),
     

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Host USB Serial API
 
-To control FREE-WiLi with a host device such as a Linux/Windows PC or Raspberry Pi you can use the USB serial API.
+To control FREE-WILi with a host device such as a Linux/Windows PC or Raspberry Pi you can use the USB serial API.
 
 By opening a USB serial port code and send menu commands and interpret the responses.  
 

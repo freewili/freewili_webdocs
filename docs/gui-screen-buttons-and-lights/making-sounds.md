@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Making sounds
 
-FREE-WiLi includes a speaker. The speaker allows you to play sounds stored as wav files in the file system.
+FREE-WILi includes a speaker. The speaker allows you to play sounds stored as wav files in the file system.
 
 The sounds directory can include wav files that can be played from the serial menu. The menu option 'g' will let you enter in a wav file to play. 
 

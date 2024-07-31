@@ -6,15 +6,15 @@ sidebar_position: 4
 
 WebAssembly (WASM)  technology allows a program compiler to target a generic CPU. The program the runs the compiled code is called a web assembly run time.  This technology is included in the IO app.  Please note WebAssembly has nothing to do with the Web - its just where the origin of the technology came from.
 
-Users can compile programs, store them in the FREE-WiLi's file system and execute them. Either on demand or at power up.
+Users can compile programs, store them in the FREE-WILi's file system and execute them. Either on demand or at power up.
 
-FREE-WiLi uses the WASM 3 run time. [https://github.com/wasm3/wasm3](https://github.com/wasm3/wasm3)
+FREE-WILi uses the WASM 3 run time. [https://github.com/wasm3/wasm3](https://github.com/wasm3/wasm3)
 
-The FREE-WiLi IO app implement APIs to control FW and provides them to the run time. These APIs are defined in a header file called "fwwasm.h"
+The FREE-WILi IO app implement APIs to control FW and provides them to the run time. These APIs are defined in a header file called "fwwasm.h"
 
-The recommend toolset to compile for FREE-WiLi wasm is the wasi sdk [https://github.com/WebAssembly/wasi-sdk](https://github.com/WebAssembly/wasi-sdk) . For a development IDE visual studio code or CLion is recommended.
+The recommend toolset to compile for FREE-WILi wasm is the wasi sdk [https://github.com/WebAssembly/wasi-sdk](https://github.com/WebAssembly/wasi-sdk) . For a development IDE visual studio code or CLion is recommended.
 
-In the settings menu you can select a WASM file to run on start -up. This will run anytime FREE-WiLi is powered on. Otherwise you can start WASM files from the serial menu.
+In the settings menu you can select a WASM file to run on start -up. This will run anytime FREE-WILi is powered on. Otherwise you can start WASM files from the serial menu.
 
 Because of the current file systems limitations we recommend a 3 letter .wsm extension.
 

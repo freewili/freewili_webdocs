@@ -4,16 +4,16 @@ sidebar_position: 7
 
 # IO App
 
-FREE-WiLi includes an IO app that allows you to read and write all the IO of FREE-WiLi. This app has a Serial Command Line Interface, support for a host API,  on-board scripting, and a file system for stand-alone operations without a host.
+FREE-WILi includes an IO app that allows you to read and write all the IO of FREE-WILi. This app has a Serial Command Line Interface, support for a host API,  on-board scripting, and a file system for stand-alone operations without a host.
 
-The serial command line interface provides a menu tree of commands to control FREE-WiLi's IO interfaces. This is shown below:
+The serial command line interface provides a menu tree of commands to control FREE-WILi's IO interfaces. This is shown below:
 
 <div class="text--center">
 
 <figure>
 
-![FREE-WiLi's Serial Command Line Interface Main Menu](../assets/cmd.png "FREE-WiLi's Serial Command Line Interface Main Menu")
-<figcaption>FREE-WiLi's Serial Command Line Interface Main Menu</figcaption>
+![FREE-WILi's Serial Command Line Interface Main Menu](../assets/cmd.png "FREE-WILi's Serial Command Line Interface Main Menu")
+<figcaption>FREE-WILi's Serial Command Line Interface Main Menu</figcaption>
 </figure>
 </div>
 
@@ -25,12 +25,12 @@ The serial API is simply sending these menu commands and the data they expect. B
 
 <figure>
 
-![python api for FREE-WiLi](../assets/code.png "python api for FREE-WiLi")
+![python api for FREE-WILi](../assets/code.png "python api for FREE-WILi")
 <figcaption></figcaption>
 </figure>
 </div>
 
-On board scripting uses web assembly technology.  The code uses the WASM 3 engine with custom APIs to control FREE-WiLi's interfaces. With this you can compile C/C++ or Rust source code to run on FREE-WiLi with our without the host.  The recommend Clang based wasi sdk is recommend [https://github.com/WebAssembly/wasi-sdk.](https://github.com/WebAssembly/wasi-sdk)
+On board scripting uses web assembly technology.  The code uses the WASM 3 engine with custom APIs to control FREE-WILi's interfaces. With this you can compile C/C++ or Rust source code to run on FREE-WILi with our without the host.  The recommend Clang based wasi sdk is recommend [https://github.com/WebAssembly/wasi-sdk.](https://github.com/WebAssembly/wasi-sdk)
 
 <div class="text--center">
 
@@ -41,7 +41,7 @@ On board scripting uses web assembly technology.  The code uses the WASM 3 engin
 </figure>
 </div>
 
-Finally, the file system provides a way to load scripts or run them at startup, load custom FPGA bit files, and store settings. This is shown below. Note getting files on the FREE-WiLi uses the "Download File" command.
+Finally, the file system provides a way to load scripts or run them at startup, load custom FPGA bit files, and store settings. This is shown below. Note getting files on the FREE-WILi uses the "Download File" command.
 
 <div class="text--center">
 

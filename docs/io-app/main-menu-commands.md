@@ -11,7 +11,7 @@ Commands are a single letter. After you enter the letter additonal information i
 |      h      	|     set io high     	|                      gpio number                     	|                                                                      	|
 |      l      	|      set io low     	|                      gpio number                     	|                                                                      	|
 |      o      	|     generate pwm    	|        gpio number, frequency, and duty cycle        	|                                                                      	|
-|      g      	|      get all io     	|                                                      	|    Returns the state of all 32 IO of the FREE-WiLi processor in hex   |
+|      g      	|      get all io     	|                                                      	|    Returns the state of all 32 IO of the FREE-WILi processor in hex   |
 |      s      	|    read/write spi   	|                  the spi write bytes                 	|                     Returns the read bytes in hex                    	|
 |      t      	|     write radio     	|           the radio index, and data in hex           	|                                                                      	|
 |      k      	|      read radio     	|           the radio index and count of read          	|                         Returns the data read                        	|
@@ -32,6 +32,6 @@ Commands are a single letter. After you enter the letter additonal information i
 <figure>
 
 ![Main Menu](../assets/main-menu.png "Main Menu")
-<figcaption>The Main Menu access the core FREE-WiLi Features.</figcaption>
+<figcaption>The Main Menu access the core FREE-WILi Features.</figcaption>
 </figure>
 </div>

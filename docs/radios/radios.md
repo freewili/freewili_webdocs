@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # Radios
 
-FREE-WiLi has two radios integrate to help develop, validate and test radio systems.
+FREE-WILi has two radios integrate to help develop, validate and test radio systems.
 
-The different FREE-WiLi devices have different radios to support different applications. 
+The different FREE-WILi devices have different radios to support different applications. 
 
 <!-- | **Device** 	|                     **Description**                     	            |    **Notes**   	|
 |:----------:	|:------------------------------------------------------------------:	|:--------------:	|

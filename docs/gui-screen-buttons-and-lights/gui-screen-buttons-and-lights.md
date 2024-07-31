@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # GUI : Screen, Buttons, and Lights
 
-The FREE-WiLi has a user interface that makes interacting with the device use-able without a host PC. The user interface is controlled by a separate CPU and interfaces with the main CPU via a 8 Megabit hardware handshaking UART.
+The FREE-WILi has a user interface that makes interacting with the device use-able without a host PC. The user interface is controlled by a separate CPU and interfaces with the main CPU via a 8 Megabit hardware handshaking UART.
 
 <div class="text--center">
 
@@ -23,7 +23,7 @@ The core parts of the user interface are listed below:
 | Buttons                     	| 5 Multi color buttons                          	|           	                                                                    |
 | Full Color LEDs             	| 7 full color LEDs                              	|           	                                                                    |
 | Speaker                     	| 16 bit audio                                   	| [more information](/gui-screen-buttons-and-lights/making-sounds)                  |
-| Microphone                  	|                                                	| [more information](gui-screen-buttons-and-lights/capturing-audio-from-microphone) |
+| Microphone                  	|                                                	| [more information](/gui-screen-buttons-and-lights/capturing-audio-from-microphone) |
 | InfraRed Receiver           	| Reception of IR remote data                    	|           	                                                                    |
 | Infrared Transmitter        	| Transmission of IR remote data                 	|           	                                                                    |
 | Real Time Clock             	| Time and date powered from Lith ION battery    	|           	                                                                    |

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Black Radio (CC1101)
 
-The FREE-WiLi contains two CC1101 packet radios from Texas Instruments.
+The FREE-WILi contains two CC1101 packet radios from Texas Instruments.
 
 The CC1101 radio has many settings to configure the radio and integrated packet processor.
 
