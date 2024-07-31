@@ -74,3 +74,9 @@ figcaption {
 font-weight: 600;
 font-style: italic;
 }
+
+.span-black {
+  color: black;
+    background-color: rgb(255, 255, 255);
+    padding-right: 2px;
+}

@@ -57,13 +57,15 @@ FREE-WiLi is a embedded development tool for helping test, debug, and develop el
 - I2C USB interface
 - SPI USB interface
 - UART USB interface
-- USB attached screen and buttons
-- Uart based protocol tool support (cxpi, sent, flexwire)
+- USB attached screen and buttons <!-- - Uart based protocol tool support (cxpi, sent, flexwire) -->
+- Uart based protocol tool support
 - TPMS fuzzer or simulator
 - Keyless Entry simulator/monitor
+- Cybersecurity penetration testing
 - Development platform that 80% done
-- TI Wireless Battery Management
-- Interface for:
+- Learning platform for Embedded Systems
+<!-- - TI Wireless Battery Management -->
+<!-- - Interface for:
   - 6LoWPAN
   - Amazon Sidewalk
   - IEEE 802.15.4
@@ -72,8 +74,8 @@ FREE-WiLi is a embedded development tool for helping test, debug, and develop el
   - Thread
   - Wi-SUN NWP
   - Wireless M-Bus
-  - Zigbee
-- Learning platform for Embedded Systems
+  - Zigbee -->
+<!-- - Learning platform for Embedded Systems -->
 
 ## Features
 
@@ -89,9 +91,10 @@ FREE-WiLi is a embedded development tool for helping test, debug, and develop el
 - IR transmitter and receiver
 - Digital [Speaker](/gui-screen-buttons-and-lights/making-sounds) and [Microphone](/gui-screen-buttons-and-lights/capturing-audio-from-microphone)
 - Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code
-- [Orca](/extending-with-orcas) modules plug into GPIO header allow expandability for specific use case
+- [Orca](/extending-with-orcas) modules plug into GPIO header allows expansion for specific use cases
 - [IO App](/io-app) firmware allows exercising all IO, USB Host API and Standalone scripting
-- 16 Mbyte x 2 on board storage
+- GUI App firmware with Graphical panel and user controls
+- 16 Mbyte x 2 on board storage (22 MByte usable)
 - 1000 ma Lithium ION battery with integrated charger
 - Real Time Clock (RTC)
 - [Accelerometer](/gui-screen-buttons-and-lights/accelerometer)
@@ -107,12 +110,12 @@ FREE-WiLi is a embedded development tool for helping test, debug, and develop el
 </figure>
 </div>
 
-FREE-WiLi has 4 different radio options:
+Free Wili currently has one radio option:
 
-<span style={{color:'black'}}>**Black**</span>  contains two CC1101 Sub Ghz Radios with programmable filter ranges for 300-348, 387-464, 779-928 bands.
+<span class="span-black">**Black**</span> contains two CC1101 Sub Ghz Radios with programmable filter ranges for 300-348, 387-464, 779-928 bands.
 
-<span style={{color:'red'}}>**Red**</span> contains two CC1352P7 MCUs with Sub Ghz Radio and 2.4 Ghz radios with high level support for 6LoWPAN, Amazon Sidewalk, IEEE 802.15.4, MIOTY, Proprietary 2.4 GHz, Thread, Wi-SUN NWP, Wireless M-Bus, Zigbee
+<!-- <span style={{color:'red'}}>**Red**</span> contains two CC1352P7 MCUs with Sub Ghz Radio and 2.4 Ghz radios with high level support for 6LoWPAN, Amazon Sidewalk, IEEE 802.15.4, MIOTY, Proprietary 2.4 GHz, Thread, Wi-SUN NWP, Wireless M-Bus, Zigbee
 
 <span style={{color:'#a855f7'}}>**Purple**</span> contains two CC2662 MCUs for supporting and testing TI Wireless BMS Applications
 
-<span style={{color:'#3b82f6'}}>**Blue**</span> contains no radio for lower cost applications or applications where radios are not permitted.
+<span style={{color:'#3b82f6'}}>**Blue**</span> contains no radio for lower cost applications or applications where radios are not permitted. -->
