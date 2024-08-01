@@ -456,6 +456,49 @@ const config = {
         async: true,
       },
     ],
+
+    headTags: [
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: 'img/favicon-16x16.png',
+          sizes: '16x16',
+        },
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: 'img/favicon-32x32.png',
+          sizes: '32x32',
+        },
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: 'img/favicon-180x180.png',
+          sizes: '180x180',
+        },
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: 'img/favicon-192x192.png',
+          sizes: '192x192',
+        },
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: 'img/favicon-512x512.png',
+          sizes: '512x512',
+        },
+      },
+    ],
   };
 
 export default config;
