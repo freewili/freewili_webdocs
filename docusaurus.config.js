@@ -498,6 +498,13 @@ const config = {
           sizes: '512x512',
         },
       },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'apple-touch-icon',
+          href: 'img/apple-touch-icon.png',
+        },
+      },
     ],
   };
 
