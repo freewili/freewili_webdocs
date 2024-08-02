@@ -118,17 +118,17 @@ const config = {
             items: [
               {
                 label: 'FREE-WILi',
-                href: 'https://freewili.com/elementor-page-13167/freewili/',
+                href: 'https://freewili.com/products/freewili/',
                 target: '_blank',
               },
               {
                 label: 'Orca Modules',
-                href: 'https://freewili.com/elementor-page-13167/orca-modules/',
+                href: 'https://freewili.com/products/orca-modules/',
                 target: '_blank',
               },
               {
                 label: 'Whale Tail',
-                href: 'https://freewili.com/elementor-page-13167/whale-tail/',
+                href: 'https://freewili.com/products/whale-tail/',
                 target: '_blank',
               },
             ],
@@ -209,7 +209,7 @@ const config = {
 
               {
                 label: 'About FREE-WILi',
-                href: 'https://freewili.com/elementor-page-13167/freewili/',
+                href: 'https://freewili.com/products/freewili/',
               },
               {
                 label: 'Helpful Links',
