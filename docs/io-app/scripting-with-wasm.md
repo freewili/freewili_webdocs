@@ -4,21 +4,141 @@ sidebar_position: 4
 
 # Scripting with WASM
 
-WebAssembly (WASM)  technology allows a program compiler to target a generic CPU. The program the runs the compiled code is called a web assembly run time.  This technology is included in the IO app.  Please note WebAssembly has nothing to do with the Web - its just where the origin of the technology came from.
+## Introduction to WebAssembly (WASM)
 
-Users can compile programs, store them in the FREE-WILi's file system and execute them. Either on demand or at power up.
+WebAssembly (WASM) technology allows a program compiler to target a generic CPU architecture. The program that runs the compiled code is called a WebAssembly runtime. This technology is included in the IO app. Please note that WebAssembly has nothing to do with the Web; it is simply named after the origin of the technology.
 
-FREE-WILi uses the WASM 3 run time. [https://github.com/wasm3/wasm3](https://github.com/wasm3/wasm3)
+Users can compile programs, store them in the **FREE-WILi** file system, and execute them either on demand or at power-up.
 
-The FREE-WILi IO app implement APIs to control FW and provides them to the run time. These APIs are defined in a header file called "fwwasm.h"
+**FREE-WILi** uses the WASM3 runtime: [WASM3 on GitHub](https://github.com/wasm3/wasm3).
 
-The recommend toolset to compile for FREE-WILi wasm is the wasi sdk [https://github.com/WebAssembly/wasi-sdk](https://github.com/WebAssembly/wasi-sdk) . For a development IDE visual studio code or CLion is recommended.
+## APIs and Implementation
 
-In the settings menu you can select a WASM file to run on start -up. This will run anytime FREE-WILi is powered on. Otherwise you can start WASM files from the serial menu.
+The **FREE-WILi** IO app implements APIs to control Free Wili and provides them to the runtime. These APIs are defined in a header file called `fwwasm.h`.
 
-Because of the current file systems limitations we recommend a 3 letter .wsm extension.
+## Recommended Toolset
 
-A good tool for trouble shooting WASM files is the web assembly explorer.
+The recommended toolset to compile for **FREE-WILi** WASM is the [WASI SDK](https://github.com/WebAssembly/wasi-sdk). For a development IDE, we recommend using Visual Studio Code or CLion.
+
+## Execution
+
+After compiling your script to WebAssembly (extension `.wasm`), you must upload the file to the FREE-WILi filesystem.  The best way to do this is with the [freewili](https://pypi.org/project/freewili/) Python library, as will be explained under `Getting Started` below.
+
+After your script is uploaded to the FREE-WILi, you can have it run on startup. The script will execute every time **FREE-WILi** is powered on. Alternatively, you can start WASM files on demand from the serial menu, or you can start them using the [freewili](https://pypi.org/project/freewili/) Python library.
+
+
+# Getting Started
+
+There are a lot of different WebAssembly compilers; you can write your code in Rust, Python, C/C++, and several others.  The following example will use the wasi-sdk, which comes with a clang-based C/C++ compiler.
+
+## Installing the SDK
+
+### Ubuntu Linux
+
+In Ubuntu Linux, the quickest way to get up and running is to download the `.deb` prebuilt package from Github under [Releases](https://github.com/WebAssembly/wasi-sdk/releases).  For Ubuntu Linux on an x86-based machine, grab the Debian package (.deb) file for x86.  In this example, the file is [wasi-sdk-24.0-x86_64-linux.deb](https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-24/wasi-sdk-24.0-x86_64-linux.deb).
+
+* Install the package with `sudo dpkg --install wasi-sdk-24.0-x86_64-linux.deb`
+* After installation, the compiler will be located here: `/opt/wasi-sdk/bin/wasm32-wasi-clang++`
+
+### Windows 
+
+TODO
+
+## Writing a Script
+
+Use VS Code or a text editor, and write your script.  For this example we will use C++ and write a simple script to turn each of 
+the board LEDs a different color.
+
+* Make sure you have the `fwwasm.h` header file
+* Copy and paste this example script into your text editor, and save it as `leds.cpp`
+
+```cpp
+#include "fwwasm.h"
+
+#define MAX_LOOPS 20
+#define NUM_LEDS 7
+#define DELAY_MS 50
+#define LED_FADE_DURATION 300
+
+//different color RGB values
+#define RED 0xFF0000
+#define PINK 0xFFC6FF
+#define ORANGE 0xFF7F00
+#define YELLOW 0xFFFF00
+#define GREEN 0x00FF00
+#define LIGHT_GREEN 0xCAFFBF
+#define BLUE 0x0000FF
+#define LIGHT_BLUE 0x9BF6FF
+#define INDIGO 0x4B0082
+#define VIOLET 0x9400D3
+#define MAX_COLORS 10
+
+//some macros to get color RGB components
+#define GET_RED(x) ((x >> 16) & 0xFF)
+#define GET_GREEN(x) ((x >> 8) & 0xFF)
+#define GET_BLUE(x) (x & 0xFF)
+
+int main()
+{
+    int rainbow[MAX_COLORS] = {RED, ORANGE, YELLOW, GREEN, LIGHT_GREEN, BLUE, LIGHT_BLUE, INDIGO, VIOLET, PINK};
+    int color_choice = 0;
+
+    //do the whole thing multiple times
+    for (int loops = 0; loops < MAX_LOOPS; loops++)
+    {
+        //set every LED one at a time
+        for (int led = 0; led < NUM_LEDS; led++)
+        {
+            //pick a color
+            int color = rainbow[color_choice];
+
+            //set the LED 
+            setBoardLED(led, GET_RED(color), GET_GREEN(color), GET_BLUE(color), LED_FADE_DURATION, LEDManagerLEDMode::ledpulsefade);
+
+            //next time, get a new color.  If we used all of the colors, start over
+            color_choice++;
+            if (color_choice >= MAX_COLORS)
+                color_choice = 0;
+
+            //wait before setting the next LED
+            waitms(DELAY_MS);
+        }    
+    }
+
+    return 0;
+}
+```
+
+## Compiling the Script
+
+At the commandline, in Linux:
+
+* `/opt/wasi-sdk/bin/wasm32-wasi-clang++ -O3 -s leds.cpp -o leds.wasm`
+
+Note the `-s` argument is **critical** to force the linker to strip debugging symbols from the output binary.
+
+At the commandline, in Windows:
+
+* TODO
+
+## Uploading the Script
+
+* Install the `freewili` Python library with `pip install freewili`
+* Note: the `freewili` library requires Python 3.11 or newer.
+* Upload your script with `fwi-serial -d leds.wasm /scripts/leds.wasm`
+
+## Executing the Script
+
+Once the script is on the FREE-WILi filesystem, there are multiple ways it can be executed:
+
+* From the FREE-WILi interface, you can select "Scripts" then select your script to execute it.
+* From the commandline, you use the `freewili` Python library to execute the script: `fwi-serial -w leds.wasm`
+* From the serial terminal interface, you can select `w` to run a script, then type `leds.wasm` and hit enter
+
+## Troubleshooting
+
+* A good tool for troubleshooting WASM files is the WebAssembly Explorer.
+* 
 
 import Card from '@site/src/components/Card';
 
