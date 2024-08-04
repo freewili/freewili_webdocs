@@ -43,6 +43,9 @@
   color: #ef393e;
 }
 
+.dropdown__link:hover {
+  color: #ef393e !important;
+}
 
 /* for footer social icons */
 

@@ -104,26 +104,35 @@ const config = {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
           //   position: 'right',
-          // },
-          
+          // },    
           {
               href: 'https://freewili.com/',
-              label: 'Home',
+              label: 'Website',
               position: 'left',
               className: 'nav-link',
             },
-//            {
-//              href: '#',
-//              label: 'Test',
-//              position: 'left',
-//              className: 'nav-link',
-//            },
-//            {
-//              href: '#',
-//              label: 'Test 2',
-//              position: 'left',
-//              className: 'nav-link',
-//            },
+          {
+            type: 'dropdown',
+            label: 'Products',
+            position: 'left',
+            items: [
+              {
+                label: 'FREE-WILi',
+                href: 'https://freewili.com/products/freewili/',
+                target: '_blank',
+              },
+              {
+                label: 'Orca Modules',
+                href: 'https://freewili.com/products/orca-modules/',
+                target: '_blank',
+              },
+              {
+                label: 'Whale Tail',
+                href: 'https://freewili.com/products/whale-tail/',
+                target: '_blank',
+              },
+            ],
+          },
 
           {
             href: 'https://github.com/freewili/FreeWili_WebDocs/tree/main',
@@ -136,8 +145,6 @@ const config = {
           //   value: '<a href="https://github.com/freewili/FreeWili_WebDocs/tree/main" target="_blank"><img src="/img/github-light.svg" alt="freewili" width="27" height="27" /></a>',
           //   position: 'right',
           // },
-
-          
 
             // {
             //   type: 'search',
@@ -202,7 +209,7 @@ const config = {
 
               {
                 label: 'About FREE-WILi',
-                href: '#',
+                href: 'https://freewili.com/products/freewili/',
               },
               {
                 label: 'Helpful Links',
