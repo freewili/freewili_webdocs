@@ -443,7 +443,7 @@ const config = {
     // ],
     metadata: [
         {name: 'description', content: 'FREE-WILi is an embedded development tool for helping test, debug, and develop electronic systems.'},
-        {name: 'keywords', content: 'freewili, FREE-WILi, GPIO, GUI, Orcas, UART'},
+        {name: 'keywords', content: 'freewili, freewili documentation, FREE-WILi, GPIO, GUI, Orcas, UART, documentation'},
     ]
   }),
     
