@@ -512,6 +512,14 @@ const config = {
           href: 'img/apple-touch-icon.png',
         },
       },
+      {
+        tagName: 'meta',
+        attributes: {
+          property: 'og:type',
+          content: 'website',
+          'data-rh': 'true',
+        },
+      },
     ],
   };
 

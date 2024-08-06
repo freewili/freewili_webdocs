@@ -21,14 +21,14 @@ The menu options are shown below.
 
 | **Name**                 	| **Description**                                               	| **Notes** 	                                                    |
 |--------------------------	|---------------------------------------------------------------	|------------------------------------------------------------------ |
-| SPI                      	| Configures SPI Baud rate, Bit Modes, Bit Width                	| [more information](/io-app/settings-menu/spi-settings)           	|
-| I2C                      	| Configures I2C bit rate and pull ups                          	| [more information](/io-app/settings-menu/i2c-settings)          	|
-| UART                     	| Configures UART Bit Rate, hand shaking, stop bits, and parity 	| [more information](/io-app/settings-menu/uart-settings)          	|
-| FPGA Clock               	| Configures the input clock to the FPGA                        	| [more information](/io-app/settings-menu/fpga-settings)          	|
+| SPI                      	| Configures SPI Baud rate, Bit Modes, Bit Width                	| [more information](/io-app/settings-menu/spi-settings/)           |
+| I2C                      	| Configures I2C bit rate and pull ups                          	| [more information](/io-app/settings-menu/i2c-settings/)          	|
+| UART                     	| Configures UART Bit Rate, hand shaking, stop bits, and parity 	| [more information](/io-app/settings-menu/uart-settings/)          |
+| FPGA Clock               	| Configures the input clock to the FPGA                        	| [more information](/io-app/settings-menu/fpga-settings/)          |
 | Radio 1                  	| Configures the CC1101 Radio 1                                 	|           	                                                    |
 | Radio 2                  	| Configures the CC1101 Radio 1                                 	|           	                                                    |
-| GPIO Directions          	| Sets up directions of GPIO                                    	| [more information](/io-app/settings-menu/gpio-settings)          	|
-| RTC                      	| Configures the real-time clock (RTC)                          	| [more information](/io-app/settings-menu/rtc-settings)          	|
+| GPIO Directions          	| Sets up directions of GPIO                                    	| [more information](/io-app/settings-menu/gpio-settings/)          |
+| RTC                      	| Configures the real-time clock (RTC)                          	| [more information](/io-app/settings-menu/rtc-settings/)          	|
 | Default Script           	| Allows a script to run on power up                            	|           	                                                    |
 | Default FPGA             	| Allows a FPGA to configured at startup                        	|           	                                                    |
 | Save settings as Startup 	| Saves current settings to "settings.txt" in root filesystem   	|           	                                                    |

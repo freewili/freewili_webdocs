@@ -10,4 +10,4 @@ The serial menu provides a way to record the microphone to a wav file. A recordi
 
 The recording time and volume level can be configured in the settings serial menu.
 
-The format of the wave file is compatible with the [sound playback](/gui-screen-buttons-and-lights/making-sounds) allowing you to play recorded sounds.
+The format of the wave file is compatible with the [sound playback](/gui-screen-buttons-and-lights/making-sounds/) allowing you to play recorded sounds.

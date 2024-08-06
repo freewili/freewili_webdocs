@@ -16,6 +16,6 @@ The different FREE-WILi devices have different radios to support different appli
 
 | **Device** 	|                     **Description**                     	            |    **Notes**   	|
 |:----------:	|:------------------------------------------------------------------:	|:--------------:	|
-|    black   	|   [CC1101 Sub GHZ](/radios/black-radio-cc1101)                        |                	|
+|    black   	|   [CC1101 Sub GHZ](/radios/black-radio-cc1101/)                       |                	|
 |     red    	|                                                          	            | In development 	|
 |   purple   	|                                                                       | In development 	|

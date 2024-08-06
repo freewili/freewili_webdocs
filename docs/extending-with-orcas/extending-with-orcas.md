@@ -8,7 +8,7 @@ Orca modules are modules that plug into the extension connector that provide add
 
 | **Orca** 	                                            |      **Description**     	    | **Notes** 	|
 |:-----------------------------------------------------:|:----------------------------:	|:------------:	|
-|  [Maestro](/extending-with-orcas/maestro-debug-orca) 	|    Debugger Orca board   	    |           	|
+|  [Maestro](/extending-with-orcas/maestro-debug-orca/) |    Debugger Orca board   	    |           	|
 |   Jambu  	                                            |    Serial LED Control board 	|           	|
 
 ## Custom Orca Modules
