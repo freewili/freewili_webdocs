@@ -34,7 +34,7 @@ const config = {
     locales: ['en'],
   },
 
-  // trailingSlash: false, // Set global trailingSlash configuration 
+  trailingSlash: true, // Set global trailingSlash configuration 
 
   presets: [
     [
