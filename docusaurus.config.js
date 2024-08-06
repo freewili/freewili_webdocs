@@ -221,7 +221,7 @@ const config = {
               },
               {
                 label: 'Contact Us',
-                href: 'https://freewili.com/contact/',
+                href: 'https://freewili.com/contact-us/',
               },
             ],
           },
