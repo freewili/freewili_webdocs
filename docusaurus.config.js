@@ -469,7 +469,7 @@ const config = {
         tagName: 'link',
         attributes: {
           rel: 'icon',
-          href: 'img/favicon-16x16.png',
+          href: '/img/favicon-16x16.png',
           sizes: '16x16',
         },
       },
@@ -477,7 +477,7 @@ const config = {
         tagName: 'link',
         attributes: {
           rel: 'icon',
-          href: 'img/favicon-32x32.png',
+          href: '/img/favicon-32x32.png',
           sizes: '32x32',
         },
       },
@@ -485,7 +485,7 @@ const config = {
         tagName: 'link',
         attributes: {
           rel: 'icon',
-          href: 'img/favicon-180x180.png',
+          href: '/img/favicon-180x180.png',
           sizes: '180x180',
         },
       },
@@ -493,7 +493,7 @@ const config = {
         tagName: 'link',
         attributes: {
           rel: 'icon',
-          href: 'img/favicon-192x192.png',
+          href: '/img/favicon-192x192.png',
           sizes: '192x192',
         },
       },
@@ -501,7 +501,7 @@ const config = {
         tagName: 'link',
         attributes: {
           rel: 'icon',
-          href: 'img/favicon-512x512.png',
+          href: '/img/favicon-512x512.png',
           sizes: '512x512',
         },
       },
@@ -509,7 +509,7 @@ const config = {
         tagName: 'link',
         attributes: {
           rel: 'apple-touch-icon',
-          href: 'img/apple-touch-icon.png',
+          href: '/img/apple-touch-icon.png',
         },
       },
       {
