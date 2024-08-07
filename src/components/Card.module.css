@@ -11,6 +11,7 @@
   
   .card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ef393e !important; 
   }
   
   .cardContent {
@@ -37,9 +38,9 @@
     /* margin: 0 0 8px 0; */
     margin: 6px 0 0px 0px
   }
-  .cardContent h3:hover{
+  /* .cardContent h3:hover{
     color: #ef393e !important;
-  } 
+  }  */
   .cardContent p {
     margin: 0px 0 0 33px;
     transition: none !important;
