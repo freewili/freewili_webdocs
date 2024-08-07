@@ -213,7 +213,7 @@ const config = {
               },
               {
                 label: 'Helpful Links',
-                to: '/helpful-links',
+                to: '/helpful-links/',
               },
               {
                 label: 'FREE-WILi Discord',
@@ -270,7 +270,7 @@ const config = {
       announcementBar: {
         id: 'freewili',
         content:
-          'Welcome to the  <a target="_blank" rel="noopener noreferrer" href="#">FREE-WILi Documentation</a>, website! Discover guides and resources to help you get the most out of FREE-WILi. ',
+          'Welcome to the  <a target="_self" rel="noopener noreferrer" href="/">FREE-WILi Documentation</a>, website! Discover guides and resources to help you get the most out of FREE-WILi. ',
         backgroundColor: '#ef393e',
         textColor: '#fff',
         isCloseable: true,
