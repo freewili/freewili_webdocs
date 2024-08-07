@@ -26,6 +26,7 @@ After compiling your script to WebAssembly (extension `.wasm`), you must upload 
 
 After your script is uploaded to the FREE-WILi, you can have it run on startup. The script will execute every time **FREE-WILi** is powered on. Alternatively, you can start WASM files on demand from the serial menu, or you can start them using the [freewili](https://pypi.org/project/freewili/) Python library.
 
+-----------
 
 # Getting Started
 
@@ -138,7 +139,6 @@ Once the script is on the FREE-WILi filesystem, there are multiple ways it can b
 ## Troubleshooting
 
 * A good tool for troubleshooting WASM files is the WebAssembly Explorer.
-* 
 
 import Card from '@site/src/components/Card';
 
@@ -148,3 +148,45 @@ import Card from '@site/src/components/Card';
   link="https://wasdk.github.io/wasmcodeexplorer/" 
   imageUrl=""
 />
+
+-----------
+
+# Visual Studio Code Configuration
+
+## Ubuntu Linux
+
+Assuming you installed the sdk as described above, you can get Visual Studio code to recognize your wasi-sdk as follows:
+
+* Install the CMake extension for VS Code, as well as the CMake Tools extension
+* Create a file called CMakePresets.json and place it in the root of your project
+* Copy and paste the following into the CMakePresets.json
+
+```json
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 16,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja"
+        },
+        {
+            "name": "wasi",
+            "description": "Configure for WASI using wasi-sdk",
+            "inherits": "default",
+            "toolchainFile": "/opt/wasi-sdk/share/cmake/wasi-sdk.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ]
+}
+```
+
+* Use `CTRL-SHIFT-P` in Visual Studio code and select "CMake: Select Configure Preset".  Select 'wasi` from the dropdown that appears.
+* You can now use the 'build' button in Visual Studio Code to build your code easily.
