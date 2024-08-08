@@ -158,6 +158,16 @@ import Card from '@site/src/components/Card';
 Assuming you installed the sdk as described above, you can get Visual Studio code to recognize your wasi-sdk as follows:
 
 * Install the CMake extension for VS Code, as well as the CMake Tools extension
+* Create a file called CMakeLists.txt and place it in the root of your project
+* Copy and paste the following into the CMakeLists.txt
+```json
+cmake_minimum_required(VERSION 3.0)
+project(wasm_project)
+
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s")
+
+add_executable(leds "leds.cpp")
+```
 * Create a file called CMakePresets.json and place it in the root of your project
 * Copy and paste the following into the CMakePresets.json
 
@@ -188,5 +198,5 @@ Assuming you installed the sdk as described above, you can get Visual Studio cod
 }
 ```
 
-* Use `CTRL-SHIFT-P` in Visual Studio code and select "CMake: Select Configure Preset".  Select 'wasi` from the dropdown that appears.
-* You can now use the 'build' button in Visual Studio Code to build your code easily.
+* Use `CTRL-SHIFT-P` in Visual Studio code and select "CMake: Select Configure Preset".  Select 'wasi` from the dropdown that appears.  (Note: You may need to reload VS Code for this option to appear.)
+* You can now use the 'build' button in Visual Studio Code to build your wasm project with one click.
