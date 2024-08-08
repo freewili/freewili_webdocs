@@ -126,7 +126,7 @@ At the commandline, in Windows:
 
 * Install the `freewili` Python library with `pip install freewili`
 * Note: the `freewili` library requires Python 3.11 or newer.
-* Upload your script with `fwi-serial -d leds.wasm /scripts/leds.wasm`
+* Upload your script with `fwi-serial -s leds.wasm -fn /scripts/leds.wasm`
 
 ## Executing the Script
 
