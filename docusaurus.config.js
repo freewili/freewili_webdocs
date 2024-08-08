@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'FREE-WILi',
   tagline: 'Documentation',
-  favicon: 'img/favicon.ico',
+  favicon: '/img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://docs.freewili.com/',
@@ -80,14 +80,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/freewili-social-card.jpg',
+      image: '/img/freewili-social-card.jpg',
       navbar: {
         // title: 'FREE-WILi',
         logo: {
           alt: 'FREE-WILi_Logo',
           // src: 'img/logo.svg',
-          src: 'img/logo.svg',
-          srcDark: 'img/logo-dark.svg', 
+          src: '/img/logo.svg',
+          srcDark: '/img/logo-dark.svg', 
           // href: '#',
           target: '_self',
           // style: {border: 'solid red'},
