@@ -6,7 +6,10 @@ sidebar_position: 9
 
 FREE-WILi has two RP2040 processors.  One is the **DISPLAY** processor and the other is the **MAIN** processor.
 
-It is important to update each processor with the correct type of firmware file.
+⚠️ It is important to update each processor with the correct type of firmware file.
+
+⚠️ The below instructions assume that the FREE-WILi is [TURNED OFF](../../the-basics/#turning-free-wili-on-or-off).
+
 
 ## Updating the Main Processor
 
