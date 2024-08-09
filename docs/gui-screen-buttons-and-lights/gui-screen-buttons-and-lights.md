@@ -22,7 +22,7 @@ The core parts of the user interface are listed below:
 | Color Display               	| 320 x 240 16 bit color screen with GUI library 	| [more information](/gui-screen-buttons-and-lights/color-display-widgets/)             |
 | Buttons                       | 5 Multi color buttons                             |           	                                                                        |
 | Full Col  or LEDs             | 7 full color LEDs                                 |                  	                                                                    |
-| Spea  ker                     | 16 bit audio                                      | [more information](/gui-screen-buttons-and-lights/making-sounds/)                     |
+| Speaker                       | 16 bit audio                                      | [more information](/gui-screen-buttons-and-lights/making-sounds/)                     |
 | Microphone                  	|                                                	| [more information](/gui-screen-buttons-and-lights/capturing-audio-from-microphone/)   |
 | InfrRed Receiver           	| Reception of IR remote data                    	|           	                                                                        |
 | Infrared Transmitter        	| Transmission of IR remote data                 	|           	                                                                        |

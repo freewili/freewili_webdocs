@@ -92,7 +92,7 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
 - 3 USB interfaces (Integrated HUB with 2 FS, 1 HS) for communication and power
 - 11 GPIO programmable voltage level for 1.1 to 5.5V with 24ma@3V or 32ma @5v (sn74lxc1t45)
 - 2 GPIO for I2C voltage level between 0.9V to 5.5V with software enabled 10K pulls (PCA9517)
-- GPIO front end includes ICE40UP5k [FPGA](/hardware-low-level-details/ice40-fpga/ice40-fpga-overview/) with 8MByte SRAM and High Speed USB (FT232H)
+- GPIO front end includes ICE40UP5k [FPGA](/hardware-low-level-details/ice40-fpga/) with 8MByte SRAM and High Speed USB (FT232H)
 - Two SMA connectors for antenna for longer range
 - 320 x 240 Color Display
 - 5 User configurable buttons
