@@ -19,7 +19,6 @@ The design features an IO buffer that can set the directions of the SPI and UART
 
 For the logic analyzer, the FPGA samples the SPI pins at the clock frequency provided by the main RP2040 - this design expects a frequency of 31.25 MHz. The samples are encoded via Run-Length Encoding and, once the FPGA is initiated by sigrok via FTDI, stored in a 32 kB FIFO built using the iCE40's on-chip SPRAM. Finally, these samples are sent via the FT1248 4-wire communication protocol to USB where sigrok can collect them. The libsigrok fork where the FREE-WILLi hardware driver was developed can be found at [libsigrok-fwili](https://github.com/Ytuf/libsigrok-fwili).
 
-<<<<<<< HEAD
 The translation from the sigrok channel name to the corresponding pin for SPI protocol is detailed below.
 | sigrok channel name  	| SPI     |
 |---------------------	|-------- |
@@ -28,8 +27,6 @@ The translation from the sigrok channel name to the corresponding pin for SPI pr
 | 2                	    | MOSI  	|
 | 1                	    | MISO  	|
 
-=======
->>>>>>> cced3eb98f10a132a69401935684d70874970f3b
 <!-- Two additional versions of this application are available, one sampling the UART lines and the other sampling I2C. The translation from the sigrok channel name to the corresponding pin for each protocol is detailed below.
 
 | sigrok channel name  	| SPI     | UART  | I2C     |
