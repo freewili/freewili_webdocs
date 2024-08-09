@@ -166,7 +166,7 @@ project(wasm_project)
 
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s")
 
-add_executable(leds "leds.cpp")
+add_executable(leds.wasm "leds.cpp")
 ```
 * Create a file called CMakePresets.json and place it in the root of your project
 * Copy and paste the following into the CMakePresets.json
