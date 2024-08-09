@@ -110,7 +110,13 @@ const config = {
               label: 'Website',
               position: 'left',
               className: 'nav-link',
-            },
+          },
+          {
+            href: 'https://docs.intrepidcs.com/whaletail',
+            label: 'Whale-Tail Badge Documentation',
+            position: 'left',
+            className: 'nav-link',
+          },
           {
             type: 'dropdown',
             label: 'Products',
