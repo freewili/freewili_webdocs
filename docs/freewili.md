@@ -66,13 +66,14 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
 - I2C USB interface
 - SPI USB interface
 - UART USB interface
+- Generic Digital Protocol development (script protocol)
 - USB attached screen and buttons <!-- - Uart based protocol tool support (cxpi, sent, flexwire) -->
 - Uart based protocol tool support
 - TPMS fuzzer or simulator
 - Keyless Entry simulator/monitor
 - Cybersecurity penetration testing
 - Development platform that 80% done
-- Learning platform for Embedded Systems
+- Learning platform for Embedded Systems CPU, FPGA or Hybrid
 <!-- - TI Wireless Battery Management -->
 <!-- - Interface for:
   - 6LoWPAN
@@ -86,7 +87,25 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
   - Zigbee -->
 <!-- - Learning platform for Embedded Systems -->
 
-## Features
+## Software Features
+
+- USB Serial console API to control from host PC without installing any software
+- [WASM (webassembly) scripting](/io-app/scripting-with-wasm/) engine with examples for C/C++, Rust, Zig and Tiny Go
+- [Host API Python](https://github.com/freewili/freewili-python/) software
+- FAT File system 
+- Sigrok Pulse view [Logic Analyzer](/io-app/logic-analyzer/) support
+- host binary API for Graphical User Interface
+- WASM API to control all device features
+- [ZoomIO scripting engine](/io-app/scripting-with-zoomio/) controls IO pins with nanosecond precision
+- [GUI Software](/gui-screen-buttons-and-lights/) with custom panels and graphical controls
+- Integrated [sounds](/gui-screen-buttons-and-lights/making-sounds/) and [images](/gui-screen-buttons-and-lights/displaying-images/) in ROM for enhancing user apps
+- [Numbers To Speech](/gui-screen-buttons-and-lights/making-sounds/) feature to speak numbers
+- File formats compatible with existing market devices
+- Standard [USB boot-loader](/freewili-firmware-update/) for firmware updates
+- Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code with C/C++, Micro-python or Circuit Python
+- Open source [github](https://github.com/freewili/) software for updates
+
+## Hardware Features
 
 - SPI, I2C, PIO, and UART available on [GPIO](/gpio/)
 - 3 USB interfaces (Integrated HUB with 2 FS, 1 HS) for communication and power
@@ -99,10 +118,10 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
 - 7 Full color LEDs
 - IR transmitter and receiver
 - Digital [Speaker](/gui-screen-buttons-and-lights/making-sounds/) and [Microphone](/gui-screen-buttons-and-lights/capturing-audio-from-microphone/)
-- Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code
+<!-- - Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code -->
 - [Orca](/extending-with-orcas/) modules plug into GPIO header allows expansion for specific use cases
-- [IO App](/io-app/) firmware allows exercising all IO, USB Host API and Standalone scripting
-- GUI App firmware with Graphical panel and user controls
+<!-- - [IO App](/io-app/) firmware allows exercising all IO, USB Host API and Standalone scripting  -->
+<!-- - GUI App firmware with Graphical panel and user controls -->
 - 16 Mbyte x 2 on board storage (22 MByte usable)
 - 1000 ma Lithium ION battery with integrated charger
 - Real Time Clock (RTC)
