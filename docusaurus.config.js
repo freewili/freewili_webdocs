@@ -43,6 +43,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          showLastUpdateAuthor: false, // Hide the author's name
+          showLastUpdateTime: true, // Show the exact time of the last update
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           routeBasePath: '/',
