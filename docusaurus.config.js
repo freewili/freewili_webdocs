@@ -114,10 +114,11 @@ const config = {
               className: 'nav-link',
           },
           {
-            href: 'https://docs.intrepidcs.com/whaletail',
+            href: 'https://whaletail.freewili.com/',
             label: 'Whale-Tail Badge Documentation',
             position: 'left',
             className: 'nav-link',
+            target: '_self',
           },
           {
             type: 'dropdown',
