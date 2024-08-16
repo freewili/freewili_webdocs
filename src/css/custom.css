@@ -78,8 +78,19 @@ font-weight: 600;
 font-style: italic;
 }
 
-.span-black {
+/* .span-black {
   color: black;
     background-color: rgb(255, 255, 255);
     padding-right: 2px;
+} */
+
+
+/* .docusaurus-theme-light .span-black {
+  background-color: #ffffff;
+  color: #000000;
 }
+
+.docusaurus-theme-dark .span-black {
+  background-color: #000000;
+  color: #ffffff;
+} */
