@@ -1,7 +1,7 @@
 ---
 title: FREE-WILi Overview
 description: FREE-WILi is an embedded development tool for testing, debugging, and developing electronic systems. Explore its software and hardware features, use cases, and more.
-keywords: [freewili, FREE-WILi, free-wili, embedded systems, development tool, electronic systems, debugging, testing, I2C, SPI, UART]
+keywords: [freewili, freewili documentation, FREE-WILi, free-wili, embedded systems, development tool, electronic systems, debugging, testing, I2C, SPI, UART]
 sidebar_position: 1
 slug: /
 sidebar_label: FREE-WILi Overview
