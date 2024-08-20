@@ -1,5 +1,9 @@
 ---
+title: CC1101 Radio Settings - Configuration Guide and Reference FREE-WILi
+description: View the CC1101 radio settings for FREE-WILi, based on the ELECHOUSE Arduino driver. Includes a visual configuration guide and reference link.
+keywords: [CC1101, radio settings, FREE-WILi, ELECHOUSE Arduino driver, radio configuration, CC1101 settings, radio configuration guide, packet radio]
 sidebar_position: 2
+sidebar_label: CC1101 Radio Settings
 ---
 
 # CC1101 Radio Settings

@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi UART Settings - Baud Rate, Handshaking, Data Bits
+description: Configure UART settings in FREE-WILi, including baud rate, RTS/CTS handshaking, data bits, parity, and stop bits. Learn more about UART configurations and options.
+keywords: [FREE-WILi UART Settings, UART Baud Rate, UART Handshaking, Data Bits UART, UART Parity, UART Stop Bits, UART Configuration]
 sidebar_position: 3
+sidebar_label: UART Settings
 ---
 
 # UART Settings

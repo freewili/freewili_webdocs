@@ -1,5 +1,9 @@
 ---
+title: File System Menu for FREE-WILi - Manage and Interact with Files
+description: Learn how to use the File System Menu on FREE-WILi to manage directories and files. Discover commands for changing directories, creating and removing files, uploading, downloading, and more. Access detailed file management functionalities.
+keywords: [FREE-WILi File System Menu, file management commands, create directory, remove file, download file, upload file, print file, rename file, append to file]
 sidebar_position: 6
+sidebar_label: File System Menu
 ---
 
 # File System Menu

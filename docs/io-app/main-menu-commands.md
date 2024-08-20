@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi Main Menu Commands - IO Control, SPI, I2C, UART, FPGA, and Scripting
+description: Discover the FREE-WILi main menu commands for controlling IO, generating PWM, reading/writing SPI and I2C, managing UART, and handling FPGA and script operations. Learn about each command's functionality and arguments
+keywords: [FREE-WILi main menu commands, GPIO control, PWM generation, SPI read/write, I2C communication, UART streaming, FPGA loading, script execution, FREE-WILi commands overview]
 sidebar_position: 2
+sidebar_label: Main Menu Commands
 ---
 
 # Main Menu Commands

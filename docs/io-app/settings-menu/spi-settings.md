@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi SPI Settings - Frequency, Chip Select, Data Bits, CPOL, CPHA
+description: Configure SPI settings in FREE-WILi including clock frequency, chip select pin, data bits, CPOL, and CPHA. Ensure optimal communication with detailed settings for SPI operation.
+keywords: [FREE-WILi SPI Settings, SPI Frequency, Chip Select Pin, Data Bits, CPOL, CPHA, SPI Configuration, RP2040 SPI Settings]
 sidebar_position: 1
+sidebar_label: SPI Settings
 ---
 
 # SPI Settings

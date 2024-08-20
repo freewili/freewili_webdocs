@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi Color Display Widgets - API and Control Properties
+description: Configure FREE-WILi color display widgets using the API. Includes details on LED, images, log lists, plots, buttons, and control properties and data.
+keywords: [FREE-WILi, color display widgets, API, LED, image widget, log list, plot, text control, number control, bargraph, button, control properties, control data]
 sidebar_position: 1
+sidebar_label: Color Display Widgets
 ---
 
 # Color Display Widgets

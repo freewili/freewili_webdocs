@@ -1,5 +1,9 @@
 ---
+title: The Basics
+description: Learn how to turn your FREE-WILi device on or off, utilize the USB interfaces for FPGA, IO App, and GUI App connectivity, and update firmware using the integrated USB boot loader.
+keywords: [FREE-WILi, device operation, USB interfaces, FPGA, IO App, GUI App, firmware update, USB boot loader, hardware guide, FREE-WILi USB ports]
 sidebar_position: 2
+sidebar_label: The Basics
 ---
 
 # The Basics

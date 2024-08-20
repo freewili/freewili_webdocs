@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi GPIO Pinout, Voltage Levels, and Interface Guide
+description: Discover FREE-WILi's GPIO pinout, voltage levels, I2C interface, and IO pins. Includes pin descriptions and downloadable datasheets for detailed specs.
+keywords: [freewili, free-wili, FREE-WILi, GPIO header, pinout, voltage levels, I2C interface, IO pins, PCA9517, sn74lxc1t45, GPIO pin descriptions, digital protocols]
 sidebar_position: 3
+sidebar_label: GPIO
 ---
 
 # GPIO

@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi Main Menu Header - IO State, File System, and Real-Time Clock
+description: Explore the FREE-WILi main menu header showing IO states, UART, SPI, I2C, GPIO configurations, FPGA clock, and file system contents. View real-time clock settings and system status.
+keywords: [FREE-WILi main menu, IO state, UART configuration, SPI settings, I2C setup, GPIO status, FPGA clock, file system display, real-time clock, FREE-WILi configuration]
 sidebar_position: 1
+sidebar_label: Main Menu Header
 ---
 
 # Main Menu Header

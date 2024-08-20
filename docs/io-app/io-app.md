@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi IO App - Serial Command Line, API, Scripting, and File System
+description: Discover the FREE-WILi IO app with a serial command line interface, host API support, on-board scripting with WASM, and a file system for standalone operations. Learn to control and script FREE-WILi's IO.
+keywords: [FREE-WILi IO app, Serial Command Line Interface, Python API, WASM scripting, File System, GPIO control, FREE-WILi scripting, web assembly, Clang wasi sdk, FREE-WILi file management]
 sidebar_position: 7
+sidebar_label: IO App
 ---
 
 # IO App

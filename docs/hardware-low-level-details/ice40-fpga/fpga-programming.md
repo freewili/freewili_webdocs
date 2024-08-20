@@ -1,5 +1,9 @@
 ---
+title: FPGA Programming for iCE40 - Automatic and On-Demand Configuration
+description: Learn how the iCE40 FPGA in FREE-WILi is automatically programmed at power up with a default configuration. Explore how it can be reprogrammed anytime using the SPI Slave Configuration Interface and stored bit files from the RP2040 or USB.
+keywords: [iCE40 FPGA Programming, FPGA SRAM Configuration, RP2040 FPGA Reprogramming, SPI Slave Configuration Interface, Intrepid IO App FPGA Management, FPGA Bit Files Storage]
 sidebar_position: 1
+sidebar_label: FPGA Programming
 ---
 
 # FPGA Programming

@@ -1,5 +1,9 @@
 ---
+title: Scripting with ZoomIO for FREE-WILi - Precision GPIO Control and Integration
+description: Explore ZoomIO scripting for FREE-WILi to achieve sub-nanosecond GPIO control with native ARM assembly. Learn about ZoomIO commands, integration with the IOApp, and how to write and execute scripts for precise digital waveform generation.
+keywords: [FREE-WILi ZoomIO scripting, sub-nanosecond GPIO control, ZoomIO commands, ARM assembly for GPIO, FREE-WILi IOApp integration, ZoomIO examples, precision waveform generation]
 sidebar_position: 5
+sidebar_label: Scripting with ZoomIO
 ---
 
 # Scripting with ZoomIO

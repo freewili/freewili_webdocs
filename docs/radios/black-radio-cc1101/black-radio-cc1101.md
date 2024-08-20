@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi Black Radio (CC1101) - Configuration and Capabilities Guide
+description: Explore the FREE-WILi Black Radio with two CC1101 packet radios, featuring configurable settings and an integrated packet processor. More details in the CC1101 datasheet.
+keywords: [FREE-WILi, Black Radio, CC1101, Texas Instruments, packet radio, radio configuration, integrated packet processor, radio capabilities, CC1101 datasheet]
 sidebar_position: 1
+sidebar_label: Black Radio (CC1101)
 ---
 
 # Black Radio (CC1101)

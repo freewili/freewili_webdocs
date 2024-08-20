@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi Image Display - Custom Images, API Integration, and Formats
+description: Learn to display custom images on FREE-WILi using the API. Convert images to FWI format, use ROM images, and understand the 565 color format. See examples and tools.
+keywords: [FREE-WILi, displaying images, image display, custom images, API integration, FWI format, image conversion, 565 color format, ROM images, image processing]
 sidebar_position: 3
+sidebar_label: Displaying Images
 ---
 
 # Displaying Images

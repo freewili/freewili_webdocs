@@ -1,5 +1,9 @@
 ---
+title: Scripting with WebAssembly (WASM) for FREE-WILi - Setup, Compilation, and Execution
+description: Learn how to script for FREE-WILi using WebAssembly (WASM). Discover the setup and installation of WASM tools, writing and compiling scripts, and executing them on FREE-WILi. Includes guides for Ubuntu Linux and Visual Studio Code configuration.
+keywords: [FREE-WILi WebAssembly scripting, WASM setup, FREE-WILi scripting, compile WASM script, FREE-WILi execution, WASI SDK, Visual Studio Code WASM, WebAssembly for FREE-WILi]
 sidebar_position: 4
+sidebar_label: Scripting with WASM
 ---
 
 # Scripting with WASM

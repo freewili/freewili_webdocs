@@ -1,5 +1,9 @@
 ---
+title: Maestro Debug Orca - Development and Troubleshooting Tool for FREE-WILi
+description: Discover the Maestro Orca, a development tool for FREE-WILi featuring a USB debugger, IO test points, and support for various connectors. Includes LED indicators, GPIO switches, and prototyping connectors.
+keywords: [Maestro Orca, FREE-WILi, USB debugger, RP2040, IO test points, Pico scope, Logic Analyzer, GPIO testing, I2C, SDCARD, prototyping connectors]
 sidebar_position: 1
+sidebar_label: Maestro Debug Orca
 ---
 
 # Maestro Debug Orca

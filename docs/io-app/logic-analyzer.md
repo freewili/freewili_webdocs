@@ -1,5 +1,9 @@
 ---
+title: Logic Analyzer for FREE-WILi - FPGA-Based Digital Protocol Analysis
+description: Discover the FPGA-based Logic Analyzer for FREE-WILi, compatible with Sigrok PulseView. Learn how it operates transparently with FREE-WILi's IO features for testing digital protocols. Access FPGA bit files and adjust settings through the FREE-WILi interface.
+keywords: [FREE-WILi Logic Analyzer, FPGA Logic Analyzer, Sigrok PulseView, digital protocol analysis, FPGA bit files, FREE-WILi settings, FTDI High-speed user interface]
 sidebar_position: 7
+sidebar_label: Logic Analyzer
 ---
 
 # Logic Analyzer

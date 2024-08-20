@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi Radios - CC1101 Overview
+description: Learn about the integrated radios in FREE-WILi devices, including the CC1101 for Sub-GHz and upcoming radios for diverse wireless applications.
+keywords: [FREE-WILi, CC1101, radios, Sub-GHz,radio systems, radio development, radio testing]
 sidebar_position: 4
+sidebar_label: Radios
 ---
 
 # Radios

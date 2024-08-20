@@ -1,5 +1,9 @@
 ---
+title: FPGA Default Application for FREE-WILi - Sigrok-Compatible Logic Analyzer
+description: Explore the default FPGA application for FREE-WILi that turns it into a sigrok-compatible logic analyzer. The design includes SPI, UART, and GPIO configurations, with sampling at 31.25 MHz and encoding via Run-Length Encoding. Detailed channel name translations for SPI are provided.
+keywords: [FPGA Default Application, FREE-WILi Logic Analyzer, Sigrok-Compatible FPGA, SPI Configuration, iCE40 FPGA, FTDI Communication, Run-Length Encoding, libsigrok-fwili]
 sidebar_position: 4
+sidebar_label: FPGA Default Application
 ---
 
 # FPGA Default Application
@@ -24,8 +28,8 @@ The translation from the sigrok channel name to the corresponding pin for SPI pr
 |---------------------	|-------- |
 | 4            	        | CS      |
 | 3                     | SCLK 	  |
-| 2                	    | MOSI  	|
-| 1                	    | MISO  	|
+| 2                	    | MOSI    |
+| 1                	    | MISO    |
 
 <!-- Two additional versions of this application are available, one sampling the UART lines and the other sampling I2C. The translation from the sigrok channel name to the corresponding pin for each protocol is detailed below.
 

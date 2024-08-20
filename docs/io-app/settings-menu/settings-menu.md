@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi Settings Menu - Configure SPI, I2C, UART, FPGA, and More
+description: Access and configure various settings in the FREE-WILi IO App, including SPI, I2C, UART, FPGA clock, and GPIO directions. Learn how to set up default scripts, FPGA configurations, and save settings for startup. Explore detailed options in the settings menu.
+keywords: [FREE-WILi Settings Menu, SPI Configuration, I2C Settings, UART Configuration, FPGA Clock Settings, GPIO Directions, RTC Configuration, Default Script, Default FPGA, Save Startup Settings]
 sidebar_position: 8
+sidebar_label: Settings Menu
 ---
 
 # Settings Menu

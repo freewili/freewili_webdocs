@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi Sound Playback - WAV Files, API Calls, and Tools
+description: Learn how to play WAV files on FREE-WILi, including supported formats, API calls for sound playback, and tools for editing WAV files. Explore ROM sounds and resources.
+keywords: [FREE-WILi, sound playback, WAV files, API calls, playSoundFromFile, playSoundFromNameOrID, playSoundFromNumber, Audacity, ROM sounds, WAV file sources]
 sidebar_position: 2
+sidebar_label: Making sounds
 ---
 
 # Making sounds

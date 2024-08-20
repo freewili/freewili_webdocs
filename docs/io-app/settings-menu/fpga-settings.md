@@ -1,5 +1,9 @@
 ---
+title: FREE-WILi FPGA Settings - Clock Source, Divider Options
+description: Adjust FPGA settings in FREE-WILi including clock source selection and clock divider configuration. Choose between various internal and external clocks to optimize FPGA performanc.
+keywords: [FREE-WILi FPGA Settings, FPGA Clock Source, FPGA Clock Divider, FPGA Configuration, Clock Source Options, FPGA Performance Tuning]
 sidebar_position: 4
+sidebar_label: FPGA Settings
 ---
 
 # FPGA Settings

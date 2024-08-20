@@ -1,5 +1,9 @@
 ---
+title: iCE40 FPGA in FREE-WILi - Overview and Specifications
+description: Discover the iCE40 FPGA in FREE-WILi, featuring high-speed IO and state machines. Learn about its default application, optional configuration changes, and part numbers for FTDI USB, Serial SRAM, and FPGA components.
+keywords: [iCE40 FPGA, FREE-WILi FPGA Overview, FTDI USB FT232HQ, Serial SRAM APS6404L, FPGA Configuration, RP2040 FPGA Integration, High-Speed IO FPGA]
 sidebar_position: 1
+sidebar_label: iCE40 FPGA
 ---
 
 # iCE40 FPGA

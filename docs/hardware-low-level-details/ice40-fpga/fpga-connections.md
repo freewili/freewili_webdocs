@@ -1,5 +1,9 @@
 ---
+title: FPGA Connections and Pin Constraints for iCE40 FPGA
+description: Discover how the iCE40 FPGA connects to the Serial SRAM, IO Drivers, and the RP2040. Access the pin constraints file (PCF) for detailed connections and support for development tools like yosys, nextpnr, icestorm, and icecube2.
+keywords: [FPGA Connections, iCE40 FPGA Pin Constraints, RP2040 FPGA, Serial SRAM FPGA, IO Drivers FPGA, PCF File, FPGA Development Tools, yosys, nextpnr, icestorm, icecube2]
 sidebar_position: 3
+sidebar_label: FPGA Connections
 ---
 
 # FPGA Connections
