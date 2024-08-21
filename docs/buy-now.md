@@ -12,8 +12,6 @@ sidebar_position: 11
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
 
-<div class="text--center">
-
 <figure>
   <ThemedImage
     alt="FREE-WILi Overview"
@@ -24,7 +22,6 @@ import ThemedImage from '@theme/ThemedImage';
   />
   <figcaption></figcaption>
 </figure>
-</div>
 
 <!-- **Your Name**
 
@@ -48,6 +45,15 @@ import Card from '@site/src/components/Card';
   link="https://store.intrepidcs.com/product/FW-BLK" 
   imageUrl="/img/icslogo.gif"
 />
+
+<br/>
+
+<!-- <Card 
+  title="Buy Now From Intrepid Control Systems, Inc."
+  description=""
+  link="https://store.intrepidcs.com/product/FW-BLK" 
+  imageUrl="/img/icslogo.gif"
+/> -->
 
 <!-- - [Buy Now From Intrepid Control Systems, Inc.](https://store.intrepidcs.com/product/FW-BLK) -->
 
