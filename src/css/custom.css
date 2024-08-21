@@ -95,3 +95,55 @@ font-style: italic;
   color: #ffffff;
 } */
 
+/* Apply styles specifically for the Linktree page */
+.buy-now-page {
+  text-align: center;
+}
+
+/* Style the profile image */
+.buy-now-page img {
+  /* border-radius: 50%; */
+  width: 400px;
+  height: auto;
+  /* object-fit: cover; */
+  border: 0.1px solid rgba(128, 128, 128, 0.2); 
+  border-radius: 4%;
+}
+
+.buy-now-page .cardContent_src-components-Card-module {
+  align-items: center;
+}
+
+/* Style the links */
+/* .buy-now-page a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+} */
+
+/* Add hover effect to links */
+/* .buy-now-page a:hover {
+  background-color: #e0e0e0;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ef393e 
+} */
+
+/* Style social media icons */
+/* .buy-now-page .badge {
+  margin: 5px;
+}
+
+.hash-link {
+  display: none !important;
+}
+
+.buy-now-page ul
+{
+  list-style: none;
+} */
