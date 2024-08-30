@@ -14,7 +14,7 @@ FREE-WILi has a integrated microphone. The microphone data is captured at a 8000
 
 <figure>
 
-![Sensors App for the microphone.](../assets/sensors-app-microphone.gif "Sensors App for the microphone.")
+![Sensors App for the microphone.](../assets/sensors-app-microphone.png "Sensors App for the microphone.")
 <figcaption>Sensors App for the microphone.</figcaption>
 </figure>
 </div>
