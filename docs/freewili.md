@@ -119,7 +119,7 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
 - Two SMA connectors for antenna for longer range
 - 320 x 240 Color Display
 - 5 User configurable buttons
-- 7 Full color LEDs
+- 7 [Full color LEDs](/gui-screen-buttons-and-lights/led-light-show/)
 - IR transmitter and receiver
 - Digital [Speaker](/gui-screen-buttons-and-lights/making-sounds/) and [Microphone](/gui-screen-buttons-and-lights/capturing-audio-from-microphone/) <!-- - Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code -->
 - [Orca](/extending-with-orcas/) modules plug into GPIO header allows expansion for specific use cases <!-- - [IO App](/io-app/) firmware allows exercising all IO, USB Host API and Standalone scripting  --> <!-- - GUI App firmware with Graphical panel and user controls -->
