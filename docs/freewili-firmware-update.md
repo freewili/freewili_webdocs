@@ -8,6 +8,10 @@ sidebar_label: FREE-WILi Firmware Update
 
 # FREE-WILi Firmware Update
 
+:::info[Note]
+You can determine what firmware you have from the [About app](/gui-screen-buttons-and-lights/about-app/)
+:::
+
 FREE-WILi has two RP2040 processors.  One is the **DISPLAY** processor and the other is the **MAIN** processor.
 
 ⚠️ It is important to update each processor with the correct type of firmware file.

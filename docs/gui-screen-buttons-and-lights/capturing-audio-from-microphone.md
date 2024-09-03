@@ -2,7 +2,7 @@
 title: FREE-WILi Microphone - Capturing and Recording Audio
 description: Capture audio with FREE-WILi's integrated microphone at 8000 Hz. Record to WAV files via serial menu or GUIAPI. Configure recording time and volume.
 keywords: [FREE-WILi, microphone, audio recording, 8000 Hz, FFT algorithm, GUI API, WAV file, audio capture, recording settings]
-sidebar_position: 6
+sidebar_position: 7
 sidebar_label: Capturing Audio from Microphone
 ---
 

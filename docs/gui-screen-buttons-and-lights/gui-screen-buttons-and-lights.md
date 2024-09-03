@@ -21,15 +21,15 @@ The FREE-WILi has a user interface that makes interacting with the device use-ab
 
 The core parts of the user interface are listed below:
 
-|                             	| **Description**                                	| **Notes** 	                                                                        |
-|-----------------------------	|------------------------------------------------	|-------------------------------------------------------------------------              |
-| Color Display               	| 320 x 240 16 bit color screen with GUI library 	| [more information](/gui-screen-buttons-and-lights/color-display-widgets/)             |
-| Buttons                       | 5 Multi color buttons                             |           	                                                                        |
-| Full Color LEDs               | 7 full color LEDs                                 | [more information](/gui-screen-buttons-and-lights/led-light-show/)                 	|
-| Speaker                       | 16 bit audio                                      | [more information](/gui-screen-buttons-and-lights/making-sounds/)                     |
-| Microphone                  	|                                                	| [more information](/gui-screen-buttons-and-lights/capturing-audio-from-microphone/)   |
-| InfrRed Receiver           	| Reception of IR remote data                    	| [more information](/gui-screen-buttons-and-lights/ir-infrared-devices/)          	    |
-| Infrared Transmitter        	| Transmission of IR remote data                 	| [more information](/gui-screen-buttons-and-lights/ir-infrared-devices/)          	                                                                        |
-| Real Time Clock             	| Time and date powered from Lith ION battery    	|           	                                                                        |
-| Lithium ION Battery Manager 	| Controls the Lith-ION battery                  	|           	                                                                        |
-| Accelerometer                 | Used as sensor for custom applications            | [more information](/gui-screen-buttons-and-lights/accelerometer/)                     |
+|                             	| **Description**                                	| **Notes** 	                                                                            |
+|-----------------------------	|------------------------------------------------	|------------------------------------------------------------------------------------------ |
+| Color Display               	| 320 x 240 16 bit color screen with GUI library 	| [more information](/gui-screen-buttons-and-lights/color-display-widgets/)                 |
+| Buttons                       | 5 Multi color buttons                             | [more information](/gui-screen-buttons-and-lights/buttons/)          	                    |
+| Full Color LEDs               | 7 full color LEDs                                 | [more information](/gui-screen-buttons-and-lights/led-light-show/)                 	    |
+| Speaker                       | 16 bit audio                                      | [more information](/gui-screen-buttons-and-lights/making-sounds/)                         |
+| Microphone                  	|                                                	| [more information](/gui-screen-buttons-and-lights/capturing-audio-from-microphone/)       |
+| InfrRed Receiver           	| Reception of IR remote data                    	| [more information](/gui-screen-buttons-and-lights/ir-infrared-devices/)          	        |
+| Infrared Transmitter        	| Transmission of IR remote data                 	| [more information](/gui-screen-buttons-and-lights/ir-infrared-devices/)          	        |
+| Real Time Clock             	| Time and date powered from Lith ION battery    	| [more information](/gui-screen-buttons-and-lights/rtc-real-time-clock/)          	        |
+| Lithium ION Battery Manager 	| Controls the Lith-ION battery                  	| [more information](/gui-screen-buttons-and-lights/li-ion-battery-and-power-management/)   |
+| Accelerometer                 | Used as sensor for custom applications            | [more information](/gui-screen-buttons-and-lights/accelerometer/)                         |

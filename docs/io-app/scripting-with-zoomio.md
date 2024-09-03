@@ -10,9 +10,9 @@ sidebar_label: Scripting with ZoomIO
 
 ZoomIO is a scripting language that allows sub nanosecond precision control of the GPIO. Its very high level but produces native ARM assembly in the correct way to ensure design time determinism.
 
-To achieve precise determinism, native code runs in the second CPU core of the rp2040 and takes advantage of single cycle IO and the zero latency CPUs dedicated 4K RAM.
+To achieve precise determinism, native code runs in the second CPU core of the rp2040 and takes advantage of single cycle IO and the zero latency CPUs dedicated scratch 4K RAM.
 
-The zoomio is used to implement the logic analyzer view on the GUI screen. 
+<!-- The zoomio is used to implement the logic analyzer view on the GUI screen.  -->
 
 The IOApp integrates the ZoomIO compiler. You can simply write the source file and download to the scripts directory. The FREE-WILi will determine which engine to target based on the file extension. The ZoomIO source files have the extension zio.
 
@@ -30,7 +30,7 @@ setio(27, 0);
 
 The ZoomIO commands are executed in a sequence. The following commands are currently supported.
 
-| **Command** 	|                        **Arguments**                        	    |                                                   **Notes**                                                   	|
+<!-- | **Command** 	|                        **Arguments**                        	    |                                                   **Notes**                                                   	|
 |:-----------:	|:-----------------------------------------------------------:	    |:-------------------------------------------------------------------------------------------------------------:	|
 |    setio    	|                 (arg 1) Io pin (arg2) state                 	    |                                                                                                               	|
 |    delay    	|                      (arg1) delay in ns                     	    |               32 bit value. Delay precision is based of the CPU clock (default is 125Mhz or 8ns)              	|
@@ -42,4 +42,10 @@ The ZoomIO commands are executed in a sequence. The following commands are curre
 |   trigger   	|              (arg1) io pin <br/> (arg2) transition                |                             triggers on a pin to be high, low, rising, or failing                             	|
 |   fifoloop  	|              (arg1) loops to make after trigger             	    |                                     once triggered still collected samples                                    	|
 |   measure   	|                      (arg1) generic tag                     	    |                         copies tag and 24 bit timer to buffer (buffer must be 32 bit)                         	|
-|    chrono   	| (arg1) start=1,stop=2,reset=3, <br/> (arg2)  measurement index    |                          Records timing statistics for up to 16 values with min, max                          	|
+|    chrono   	| (arg1) start=1,stop=2,reset=3, <br/> (arg2)  measurement index    |                          Records timing statistics for up to 16 values with min, max                          	| -->
+
+| **Command** 	|          **Arguments**          	|                                      **Notes**                                     	|
+|:-----------:	|:-------------------------------:	|:----------------------------------------------------------------------------------:	|
+|    setio    	| (arg 1) Io pin <br/> (arg2) state |                                                                                    	|
+|    delay    	|        (arg1) delay in ns       	| 32 bit value. Delay precision is based of the CPU clock (default is 125Mhz or 8ns) 	|
+

@@ -20,6 +20,19 @@ Sounds can be launched from the serial API or host RP2040 API. Also the sound bo
 
 There is an API call (playSoundFromNumber) that can read numbers out loud via a 1980s text-to-speech technique. This is playing sequences of wav files to say a number.
 
+## App
+
+The Sound board app allows you to play select ROM sounds and sounds from the file system.
+
+<div class="text--center">
+
+<figure>
+
+![The sound board app lets you test sounds.](../assets/sound-app.jpg "The sound board app lets you test sounds.")
+<figcaption>The sound board app lets you test sounds.</figcaption>
+</figure>
+</div>
+
 ## API Calls for sounds
 
 ```cpp

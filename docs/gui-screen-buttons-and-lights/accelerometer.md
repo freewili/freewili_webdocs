@@ -2,7 +2,7 @@
 title: FREE-WILi Accelerometer - LIS3DH Sensor Data and API Integration
 description: Explore the FREE-WILi accelerometer (LIS3DH) with data viewable from the serial menu and API. Understand axis orientation and access sensor details.
 keywords: [FREE-WILi, accelerometer, LIS3DH, ST Microelectronics, sensor data, API integration, axis orientation, serial menu, accelerometer data]
-sidebar_position: 4
+sidebar_position: 5
 sidebar_label: "Sensors: Accelerometer & Temperature"
 ---
 

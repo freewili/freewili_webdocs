@@ -2,7 +2,7 @@
 title: "FREE-WILi GUI API: Control Display & Sensors via C/wasm"
 description: Control FREE-WILi display and sensors with the C-based GUI API, featuring wasm support. Manage GUI elements, handle events, and utilize global logs for seamless integration.
 keywords: [FREE-WILi GUI API, C API, wasm wrapper, display control, sensor access, event handling, global logs, GUI development]
-sidebar_position: 8
+sidebar_position: 9
 sidebar_label: GUI API Basics
 ---
 

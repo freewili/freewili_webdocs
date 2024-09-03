@@ -2,7 +2,7 @@
 title: "FREE-WILi LED Light Show: Custom LED Control & Effects"
 description: Control FREE-WILi's 7 full-color LEDs with patterns, sensor effects, and APIs. Customize LED behavior, manage light strips, and switch modes via a Roku IR remote.
 keywords: [FREE-WILI's LED light show, full-color LEDs, sensor effects, API control, light strip, Roku IR remote, LED patterns]
-sidebar_position: 5
+sidebar_position: 6
 sidebar_label: LED Light Show
 ---
 

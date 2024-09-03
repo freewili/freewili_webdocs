@@ -2,7 +2,7 @@
 title: "FREE-WILi IR Control: Custom Remotes & Roku Integration"
 description: Control and customize your IR devices with Free Wili's built-in IR receiver and transmitter. Create custom remotes, view and send IR codes, and enable Roku remote control.
 keywords: [FREE-WILi IR devices, infrared receiver, infrared transmitter, IR control, NEC protocol, custom remote, Roku remote, IR Hacker app, IR API, remote learning]
-sidebar_position: 7
+sidebar_position: 8
 sidebar_label: IR Infrared Devices
 ---
 
