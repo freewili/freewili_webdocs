@@ -26,6 +26,10 @@ import ThemedImage from '@theme/ThemedImage';
   <figcaption></figcaption>
 </figure>
 
+</div>
+
+<div class="buy-now-center">
+
 <!-- **Your Name**
 
 _Your short bio or tagline._ -->
@@ -46,17 +50,17 @@ import Card from '@site/src/components/Card';
   title="Buy Now From Intrepid Control Systems, Inc."
   description=""
   link="https://store.intrepidcs.com/product/FW-BLK" 
-  imageUrl="/img/icslogo.gif"
+  imageUrl="/img/icslogo.png"
 />
 
 <br/>
 
-<!-- <Card 
-  title="Buy Now From Intrepid Control Systems, Inc."
+<Card 
+  title="Buy Now From Amazon (US)"
   description=""
-  link="https://store.intrepidcs.com/product/FW-BLK" 
-  imageUrl="/img/icslogo.gif"
-/> -->
+  link="https://a.co/d/3bpvUjM" 
+  imageUrl="/img/az-logo.png"
+/>
 
 <!-- - [Buy Now From Intrepid Control Systems, Inc.](https://store.intrepidcs.com/product/FW-BLK) -->
 

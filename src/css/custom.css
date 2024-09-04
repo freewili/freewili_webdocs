@@ -96,7 +96,7 @@ font-style: italic;
 } */
 
 /* Apply styles specifically for the Linktree page */
-.buy-now-page {
+.buy-now-page, .buy-now-center{
   text-align: center;
 }
 
@@ -110,10 +110,14 @@ font-style: italic;
   border-radius: 4%;
 }
 
-.buy-now-page div {
+.buy-now-page div, .buy-now-center div{
   align-items: center;
 }
 
+.buy-now-center img {
+  border: 0.1px solid rgba(128, 128, 128, 0.2); 
+  border-radius: 4%;
+}
 /* Style the links */
 /* .buy-now-page a {
   display: block;

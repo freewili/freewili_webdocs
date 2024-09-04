@@ -12,13 +12,26 @@ sidebar_label: Scripting with WASM
 
 WebAssembly (WASM) technology allows a program compiler to target a generic CPU architecture. The program that runs the compiled code is called a WebAssembly runtime. This technology is included in the IO app. Please note that WebAssembly has nothing to do with the Web; it is simply named after the origin of the technology.
 
+Example wasm projects are available from the FREE-WILi Github:
+
+import Card from '@site/src/components/Card'; 
+
+<Card 
+  title="GitHub - freewili/freewili-python: Python applications for FREE-WiLi"
+  description="GitHub"
+  link="https://github.com/freewili/freewili-python" 
+  imageUrl="/img/github.png"
+/>
+
+<br/>
+
 Users can compile programs, store them in the **FREE-WILi** file system, and execute them either on demand or at power-up.
 
 **FREE-WILi** uses the WASM3 runtime: [WASM3 on GitHub](https://github.com/wasm3/wasm3).
 
 ## APIs and Implementation
 
-The **FREE-WILi** IO app implements APIs to control Free Wili and provides them to the runtime. These APIs are defined in a header file called `fwwasm.h`.
+The **FREE-WILi** IO app implements APIs to control FREE-WILi and provides them to the runtime. These APIs are defined in a header file called `fwwasm.h`.
 
 ## Recommended Toolset
 
@@ -140,11 +153,11 @@ Once the script is on the FREE-WILi filesystem, there are multiple ways it can b
 * From the commandline, you use the `freewili` Python library to execute the script: `fwi-serial -w leds.wasm`
 * From the serial terminal interface, you can select `w` to run a script, then type `leds.wasm` and hit enter
 
-## Troubleshooting
+## Common Issues Targeting FREE-WILi (Troubleshooting)
 
-* A good tool for troubleshooting WASM files is the WebAssembly Explorer.
+Many tools compile binaries that use too  many memory pages. FREE-WILi only supports 2 (128Kb). Ensure that the stack size of your binary is limited in this way. Please see the github examples for the necessary command line switches need to do this.
 
-import Card from '@site/src/components/Card';
+A good tool for troubleshooting WASM files is the WebAssembly Explorer.
 
 <Card 
   title="WebAssembly Code Explorer"
@@ -164,6 +177,7 @@ Assuming you installed the sdk as described above, you can get Visual Studio cod
 * Install the CMake extension for VS Code, as well as the CMake Tools extension
 * Create a file called CMakeLists.txt and place it in the root of your project
 * Copy and paste the following into the CMakeLists.txt
+  
 ```json
 cmake_minimum_required(VERSION 3.0)
 project(wasm_project)
