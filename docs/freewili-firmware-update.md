@@ -10,7 +10,7 @@ sidebar_label: FREE-WILi Firmware Update
 
 :::info[]
 <h4>🚀 We have released a new firmware updates for both the main and display components, <br/> <a target="_blank" rel="noopener noreferrer" href="https://github.com/freewili/freewili-firmware" class="highlight">Check it out on GitHub</a> and get the latest version now.</h4>
-<h4>📱You can determine what firmware you have from the <a target="_blank" rel="noopener noreferrer" href="/gui-screen-buttons-and-lights/about-app/" class="highlight-app">About app</a>. </h4>
+<h4>📱You can determine what firmware you have from the <a target="_self" rel="noopener noreferrer" href="/gui-screen-buttons-and-lights/about-app/" class="highlight-app">About app</a>. </h4>
 :::
 
 FREE-WILi has two RP2040 processors.  One is the **DISPLAY** processor and the other is the **MAIN** processor.
