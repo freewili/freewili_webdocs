@@ -151,3 +151,17 @@ font-style: italic;
 {
   list-style: none;
 } */
+
+.highlight {
+  /* background-color: #f2f2f2; */
+  font-weight: bold;
+  /* color: #ef393e; */
+  /* border: 2px solid #f3f200; */
+  /* padding: 2px; */
+  margin-left: 26px;
+}
+
+.highlight-app{
+  font-weight: bold;
+  /* padding: 2px; */
+}

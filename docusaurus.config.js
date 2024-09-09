@@ -279,7 +279,7 @@ const config = {
       announcementBar: {
         id: 'freewili',
         content:
-          'Welcome to the  <a target="_self" rel="noopener noreferrer" href="/">FREE-WILi Documentation</a>, website! Discover guides and resources to help you get the most out of FREE-WILi. ',
+          '<img width="13.60px" height="13.60px" src="https://img.icons8.com/ios-filled/50/FFFFFF/rocket.png" alt="rocket"/> We have released a new firmware update!  <a target="_blank" rel="noopener noreferrer" href="https://github.com/freewili/freewili-firmware">Check it out on GitHub</a> and get the latest version now.',
         backgroundColor: '#ef393e',
         textColor: '#fff',
         isCloseable: true,
