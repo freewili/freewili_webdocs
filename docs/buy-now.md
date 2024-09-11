@@ -2,7 +2,7 @@
 title: Buy Now From Our Distributor Network
 description: Purchase FREE-WILi from our trusted distributor network. Find the best deals and check availability directly from Intrepid Control Systems or other authorized distributors.
 keywords: [FREE-WILi, buy FREE-WILi, FREE-WILi distributor, purchase FREE-WILi]
-sidebar_position: 11
+sidebar_position: 12
 sidebar_label: Buy Now From Our Distributor Network
 ---
 

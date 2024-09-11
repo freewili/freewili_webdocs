@@ -2,7 +2,7 @@
 title: Helpful Links for RP2040, FPGA, and WebAssembly - FREE-WILi
 description: Explore essential resources including C/C++ installers for RP2040, Sub-1 GHz support forums, FPGA tutorials with iCE40, and more information on WebAssembly. Access guides, forums, and tutorials to enhance your projects.
 keywords: [RP2040 Installer, Raspberry Pi Pico Installer, Sub-GHz Help Forums, Texas Instruments, FPGA Tutorials, iCE40 FPGA, Open Source FPGA Tools, WebAssembly Resources]
-sidebar_position: 10
+sidebar_position: 11
 sidebar_label: Helpful Links
 ---
 
