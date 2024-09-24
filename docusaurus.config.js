@@ -251,9 +251,9 @@ const config = {
 
         logo: {
           alt: 'FREE-WILi',
-          src: '/img/FreeWIli_trans.png',
+          src: '/img/FREE-WILi_trans_logo.svg',
           href: 'https://freewili.com/',
-          width: 160,
+          width: 180,
           // height: 150,
         },
 
