@@ -165,3 +165,21 @@ font-style: italic;
   font-weight: bold;
   /* padding: 2px; */
 }
+
+@media only screen and (max-width: 767px) {
+  .highlight{
+    margin-left: 0px;
+  }
+  .br-mobile{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .highlight{
+    margin-left: 0px;
+  }
+  .br-mobile{
+    display: none;
+  }
+}
