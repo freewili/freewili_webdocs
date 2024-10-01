@@ -4,6 +4,9 @@
 # Production
 /build
 
+# ignore blog folder
+/blog
+
 # Generated files
 .docusaurus
 .cache-loader
