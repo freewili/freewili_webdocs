@@ -191,10 +191,13 @@ const config = {
                     <a href="https://www.linkedin.com/company/freewili/about/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> <a href="https://www.linkedin.com/company/freewili/about/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 `,
               },
-              {
-                html: `
-                    <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer"><img src="/img/x-twitter.svg" alt="Twitter Icon" class="x-twitter"></a> <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer">Twitter</a>
-                `,
+              // {
+              //   html: `
+              //       <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer"><img src="/img/x-twitter.svg" alt="Twitter Icon" class="x-twitter"></a> <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer">Twitter</a>
+              //   `,
+              // },
+              {                
+                html: `<a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a> <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer">Twitter</a>`,
               },
               {
                 html: `

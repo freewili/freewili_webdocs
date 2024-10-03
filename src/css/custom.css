@@ -50,7 +50,7 @@
 /* for footer social icons */
 
 /* src/css/custom.css */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
 .footer-links a {
   display: flex;
