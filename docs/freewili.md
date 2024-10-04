@@ -58,7 +58,7 @@ import ThemedImage from '@theme/ThemedImage';
 
 <figure>
 
-![FREE-WILi Overview](./assets/Free_WiLi_Overview.png "FREE-WILi Product Overview")
+![FREE-WILi model overview](./assets/Free_WiLi_Overview.png "FREE-WILi Product Overview")
 <figcaption>FREE-WILi Overview</figcaption>
 </figure>
 </div>
