@@ -14,7 +14,7 @@ The Maestro Orca is a trouble shooting and development tool for FREE-WILi. The b
 
 <figure>
 
-![Maestro Orca Module](../assets/Maestro-Orca-Module.png "Maestro Orca Module")
+![Maestro Orca Module](../assets/Maestro-Orca-Module.webp "Maestro Orca Module")
 <figcaption>Maestro Orca Module</figcaption>
 </figure>
 </div>
