@@ -34,7 +34,7 @@ The About app contains a screen to monitor the Lithium battery charger. The batt
 
 <figure>
 
-![About App indicating battery charging.](../assets/about-app-battery.jpg "About App indicating battery charging.")
+![About App indicating battery charging.](../assets/about-app-battery.webp "About App indicating battery charging.")
 <figcaption>About App indicating battery charging.</figcaption>
 </figure>
 </div>
@@ -43,7 +43,7 @@ The About app contains a screen to monitor the Lithium battery charger. The batt
 
 <figure>
 
-![The about screen showing battery discharging](../assets/about-app-battery-not-charging.jpg "The about screen showing battery discharging")
+![The about screen showing battery discharging](../assets/about-app-battery-not-charging.webp "The about screen showing battery discharging")
 <figcaption>The about screen showing battery discharging</figcaption>
 </figure>
 </div>

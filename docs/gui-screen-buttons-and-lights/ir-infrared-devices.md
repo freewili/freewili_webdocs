@@ -24,7 +24,7 @@ To use the fuzz function hold down the last button for 5 seconds and FREE-WILi w
 
 <figure>
 
-![The IR Hacker App allows you to sniff and send IR data](../assets/IR-hacker.jpg "The IR Hacker App allows you to sniff and send IR data")
+![The IR Hacker App allows you to sniff and send IR data](../assets/IR-hacker.webp "The IR Hacker App allows you to sniff and send IR data")
 <figcaption>The IR Hacker App allows you to sniff and send IR data</figcaption>
 </figure>
 </div>
