@@ -258,6 +258,7 @@ const config = {
           href: 'https://freewili.com/',
           width: 180,
           // height: 150,
+          // className: 'test-img',
         },
 
         copyright: `Copyright © ${new Date().getFullYear()} <a href="https://freewili.com/" class="freewili-link"> FREE-WILi, Inc.</a>`,
