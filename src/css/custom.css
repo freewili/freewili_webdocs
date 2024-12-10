@@ -117,6 +117,8 @@ font-style: italic;
 .buy-now-center img {
   border: 0.1px solid rgba(128, 128, 128, 0.2); 
   border-radius: 4%;
+  max-width: 90px;
+  padding: 10px;
 }
 /* Style the links */
 /* .buy-now-page a {

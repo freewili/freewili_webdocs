@@ -62,6 +62,15 @@ import Card from '@site/src/components/Card';
   imageUrl="/img/az-logo.png"
 />
 
+<br/>
+
+<Card 
+  title="Buy Now From Jameco"
+  description=""
+  link="https://www.jameco.com/z/FW-BLK-FREE-WILi-FREE-WiLi-Black-Def-Con-Edition-Embedded-Development-Tool_2738991.html" 
+  imageUrl="/img/Jameco_Electronics_logo.png"
+/>
+
 <!-- - [Buy Now From Intrepid Control Systems, Inc.](https://store.intrepidcs.com/product/FW-BLK) -->
 
 
