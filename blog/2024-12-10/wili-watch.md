@@ -13,7 +13,7 @@ import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
 
 ## Inspiration
 
-In a world increasingly reliant on technology, the ability to interact with our surroundings effortlessly is essential, especially for individuals with mobility challenges. Enter the WiLi Watch, a wearable wristband powered by Free WiLi and Groq aimed to empower users with independence.
+In a world increasingly reliant on technology, the ability to interact with our surroundings effortlessly is essential, especially for individuals with mobility challenges. Enter the WiLi Watch, a wearable wristband powered by FREE-WILi and Groq aimed to empower users with independence.
 
 <!-- truncate -->
 
@@ -30,7 +30,7 @@ The user wears an embedded wristband device that can be used to control and inte
 
 ## How we built it
 
-This project relies on the wireless IR communication between a Free WiLi device and a smart home "hub" consisting of an Orange Pi 5 and Arduino Nano that control other peripherals such as a camera, door "locking" system, IR receiver module, speaker, microphone, and external monitor. The frameworks we used for development are Groq for easy LLM use (Whisper for speech to text and Llama for natural language reasoning) and Cartesia for speech-text interfacing, all developed on a python virtual environment. The project is also modular to be used with Intel's IDC if private LLM generation is desired (we setup a flask server serving llama.cpp inferencing on a compute instance but ran out of credits)
+This project relies on the wireless IR communication between a FREE-WILi device and a smart home "hub" consisting of an Orange Pi 5 and Arduino Nano that control other peripherals such as a camera, door "locking" system, IR receiver module, speaker, microphone, and external monitor. The frameworks we used for development are Groq for easy LLM use (Whisper for speech to text and Llama for natural language reasoning) and Cartesia for speech-text interfacing, all developed on a python virtual environment. The project is also modular to be used with Intel's IDC if private LLM generation is desired (we setup a flask server serving llama.cpp inferencing on a compute instance but ran out of credits)
 
 ## Challenges we ran into
 

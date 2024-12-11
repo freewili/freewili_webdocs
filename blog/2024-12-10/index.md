@@ -30,11 +30,11 @@ The lights at the end of a game blink red if P1 has won and green if P2 (yellow 
 
 ## How we built it
 
-We used two Python libraries. The freewill API to communicate with the free wili and flash our code, and the pygame library to receive and read controller input. We also have a given header file for C++ definitions of useful functions that allow us to configure the free wili board, such as LED toggles and Display images.
+We used two Python libraries. The FreeWheel API to communicate with the FREE-WILi and flash our code, and the pygame library to receive and read controller input. We also have a given header file for C++ definitions of useful functions that allow us to configure the FREE-WILi board, such as LED toggles and Display images.
 
 ## Challenges we ran into
 
-The free wili had some hardware limitations that prevented us from fully fledging out our implementation as was planned. Primarily, its I/O capabilities are limited, and cannot read controller input through USB-C as a general purpose computer can, so we had to keep the system wired to the computer during play. We also ran into space issues in uploading images to the display, so the UI is not as in depth as we would have liked.
+The FREE-WILi had some hardware limitations that prevented us from fully fledging out our implementation as was planned. Primarily, its I/O capabilities are limited, and cannot read controller input through USB-C as a general purpose computer can, so we had to keep the system wired to the computer during play. We also ran into space issues in uploading images to the display, so the UI is not as in depth as we would have liked.
 
 ## Accomplishments that we're proud of
 
@@ -42,11 +42,11 @@ For having found out about this device only 24 hours before submission, we are v
 
 ## What we learned
 
-We learned a lot about how free wili works, how to write to it, and its functionalities. We also learned how to use pygame to process user inputs from a controller, to parse and control them correctly, and also how to manage multiple controllers.
+We learned a lot about how FREE-WILi works, how to write to it, and its functionalities. We also learned how to use pygame to process user inputs from a controller, to parse and control them correctly, and also how to manage multiple controllers.
 
 ## What's next for Wili-Party
 
-Ideally, we would love to make the controller input work without running it through a computer for processing. We want the games to be able to be fully run on the free wili itself, with just two controllers as support. We would also like to make the communication wireless, so we are not cluttered with USB-C cables while playing.
+Ideally, we would love to make the controller input work without running it through a computer for processing. We want the games to be able to be fully run on the FREE-WILi itself, with just two controllers as support. We would also like to make the communication wireless, so we are not cluttered with USB-C cables while playing.
 
 ### Built With
 
