@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.freewili.com/blog/</id>
+    <title>FREE-WILi Blog</title>
+    <updated>2024-12-10T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.freewili.com/blog/"/>
+    <subtitle>FREE-WILi Blog</subtitle>
+    <icon>https://docs.freewili.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[WiLi-Party LED Minigames]]></title>
+        <id>https://docs.freewili.com/blog/wiLi-party/</id>
+        <link href="https://docs.freewili.com/blog/wiLi-party/"/>
+        <updated>2024-12-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<!-- Docusaurus blogging features are powered by the blog plugin.]]></summary>
+        <content type="html"><![CDATA[<iframe width="100%" height="515" src="https://www.youtube.com/embed/7VzAm0KVVoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="inspiration">Inspiration<a href="https://docs.freewili.com/blog/wiLi-party/#inspiration" class="hash-link" aria-label="Direct link to Inspiration" title="Direct link to Inspiration">​</a></h2>
+<p>We love competitive games like Mario Party and the cuteness of small devices like Tamagotchi. We wanted a project that combines the two, which is why the free wili seemed like a great system to use.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-it-does">What it does<a href="https://docs.freewili.com/blog/wiLi-party/#what-it-does" class="hash-link" aria-label="Direct link to What it does" title="Direct link to What it does">​</a></h2>
+<p>Gives users the ability to play four 1v1 games</p>
+<ol>
+<li>Mashing game - Who can rack up the highest number of button presses before time runs out?</li>
+<li>Memory game - A pattern sequence, up to 3 levels of increasing difficulty. Test your memory!</li>
+<li>Counting game - Keep track of your color light and how many times it flashes. Don't blink.</li>
+<li>Reaction game - Who can react faster? Click the color that shows up as quick as you can.</li>
+</ol>
+<p>The lights at the end of a game blink red if P1 has won and green if P2 (yellow if tie).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-we-built-it">How we built it<a href="https://docs.freewili.com/blog/wiLi-party/#how-we-built-it" class="hash-link" aria-label="Direct link to How we built it" title="Direct link to How we built it">​</a></h2>
+<p>We used two Python libraries. The freewill API to communicate with the free wili and flash our code, and the pygame library to receive and read controller input. We also have a given header file for C++ definitions of useful functions that allow us to configure the free wili board, such as LED toggles and Display images.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="challenges-we-ran-into">Challenges we ran into<a href="https://docs.freewili.com/blog/wiLi-party/#challenges-we-ran-into" class="hash-link" aria-label="Direct link to Challenges we ran into" title="Direct link to Challenges we ran into">​</a></h2>
+<p>The free wili had some hardware limitations that prevented us from fully fledging out our implementation as was planned. Primarily, its I/O capabilities are limited, and cannot read controller input through USB-C as a general purpose computer can, so we had to keep the system wired to the computer during play. We also ran into space issues in uploading images to the display, so the UI is not as in depth as we would have liked.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="accomplishments-that-were-proud-of">Accomplishments that we're proud of<a href="https://docs.freewili.com/blog/wiLi-party/#accomplishments-that-were-proud-of" class="hash-link" aria-label="Direct link to Accomplishments that we're proud of" title="Direct link to Accomplishments that we're proud of">​</a></h2>
+<p>For having found out about this device only 24 hours before submission, we are very proud of the fact that we were able to flash the device with our software, turn on LEDs, upload images, and have it function properly with our controller input, despite the limitations we encountered.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-we-learned">What we learned<a href="https://docs.freewili.com/blog/wiLi-party/#what-we-learned" class="hash-link" aria-label="Direct link to What we learned" title="Direct link to What we learned">​</a></h2>
+<p>We learned a lot about how free wili works, how to write to it, and its functionalities. We also learned how to use pygame to process user inputs from a controller, to parse and control them correctly, and also how to manage multiple controllers.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next-for-wili-party">What's next for Wili-Party<a href="https://docs.freewili.com/blog/wiLi-party/#whats-next-for-wili-party" class="hash-link" aria-label="Direct link to What's next for Wili-Party" title="Direct link to What's next for Wili-Party">​</a></h2>
+<p>Ideally, we would love to make the controller input work without running it through a computer for processing. We want the games to be able to be fully run on the free wili itself, with just two controllers as support. We would also like to make the communication wireless, so we are not cluttered with USB-C cables while playing.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="built-with">Built With<a href="https://docs.freewili.com/blog/wiLi-party/#built-with" class="hash-link" aria-label="Direct link to Built With" title="Direct link to Built With">​</a></h3>
+<p><code>c++</code> <code>freewili</code> <code>pygame</code> <code>python</code> <code>time</code></p>]]></content>
+        <author>
+            <name>Andi Shaska</name>
+            <uri>https://www.linkedin.com/in/andi-shaska</uri>
+        </author>
+        <author>
+            <name>Harshad Bhojan</name>
+            <uri>https://www.linkedin.com/in/harshad-bhojan</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="Mhacks" term="Mhacks"/>
+        <category label="Hackethon" term="Hackethon"/>
+        <category label="Student Project" term="Student Project"/>
+    </entry>
+</feed>
