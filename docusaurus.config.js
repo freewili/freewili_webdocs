@@ -114,6 +114,13 @@ const config = {
               className: 'nav-link',
           },
           {
+            href: 'https://docs.freewili.com/blog/',
+            label: 'Blog',
+            position: 'left',
+            className: 'nav-link',
+            target: '_self',
+          },
+          {
             href: 'https://whaletail.freewili.com/',
             label: 'Whale-Tail Badge Documentation',
             position: 'left',
