@@ -2,7 +2,7 @@
 slug: wiLi-party
 title: WiLi-Party LED Minigames
 authors: [Andi Shaska, Harshad Bhojan]
-tags: [FREE-WILi, mhacks, hackethon, student project]
+tags: [FREE-WILi, mhacks, hackathon, student project]
 ---
 
 import YouTubeEmbed from '@site/src/components/YouTubeEmbed';

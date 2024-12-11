@@ -6,10 +6,10 @@ mhacks:
   label: Mhacks
   permalink: /mhacks
   description: mhacks
-hackethon:
-  label: Hackethon
-  permalink: /hackethon
-  description: hackethon
+hackathon:
+  label: Hackathon
+  permalink: /hackathon
+  description: hackathon
 student project:
   label: Student Project
   permalink: /studentproject
