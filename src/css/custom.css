@@ -189,3 +189,7 @@ font-style: italic;
 .footerLogoLink_BH7S{
   opacity: 1 !important;
 }
+
+.github-img img {
+  vertical-align: middle;
+}
