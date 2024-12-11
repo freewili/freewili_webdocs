@@ -13,7 +13,7 @@
             <link>https://docs.freewili.com/blog/wiLi-party/</link>
             <guid>https://docs.freewili.com/blog/wiLi-party/</guid>
             <pubDate>Tue, 10 Dec 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[<!-- Docusaurus blogging features are powered by the blog plugin.]]></description>
+            <description><![CDATA[Inspiration]]></description>
             <content:encoded><![CDATA[<iframe width="100%" height="515" src="https://www.youtube.com/embed/7VzAm0KVVoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="inspiration">Inspiration<a href="https://docs.freewili.com/blog/wiLi-party/#inspiration" class="hash-link" aria-label="Direct link to Inspiration" title="Direct link to Inspiration">​</a></h2>
@@ -38,7 +38,68 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next-for-wili-party">What's next for Wili-Party<a href="https://docs.freewili.com/blog/wiLi-party/#whats-next-for-wili-party" class="hash-link" aria-label="Direct link to What's next for Wili-Party" title="Direct link to What's next for Wili-Party">​</a></h2>
 <p>Ideally, we would love to make the controller input work without running it through a computer for processing. We want the games to be able to be fully run on the free wili itself, with just two controllers as support. We would also like to make the communication wireless, so we are not cluttered with USB-C cables while playing.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="built-with">Built With<a href="https://docs.freewili.com/blog/wiLi-party/#built-with" class="hash-link" aria-label="Direct link to Built With" title="Direct link to Built With">​</a></h3>
-<p><code>c++</code> <code>freewili</code> <code>pygame</code> <code>python</code> <code>time</code></p>]]></content:encoded>
+<p><code>c++</code> <code>freewili</code> <code>pygame</code> <code>python</code> <code>time</code></p>
+<p><em>Source</em> - <a href="https://devpost.com/software/wili-party" target="_blank" rel="noopener noreferrer">https://devpost.com/software/wili-party</a></p>]]></content:encoded>
+            <category>FREE-WILi</category>
+            <category>Mhacks</category>
+            <category>Hackethon</category>
+            <category>Student Project</category>
+        </item>
+        <item>
+            <title><![CDATA[WiLi Watch – Voice-Activated Wearable for Smart Home Control]]></title>
+            <link>https://docs.freewili.com/blog/wiLi-watch/</link>
+            <guid>https://docs.freewili.com/blog/wiLi-watch/</guid>
+            <pubDate>Tue, 10 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Inspiration]]></description>
+            <content:encoded><![CDATA[<iframe width="100%" height="515" src="https://www.youtube.com/embed/UYSAEgx3lSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="inspiration">Inspiration<a href="https://docs.freewili.com/blog/wiLi-watch/#inspiration" class="hash-link" aria-label="Direct link to Inspiration" title="Direct link to Inspiration">​</a></h2>
+<p>In a world increasingly reliant on technology, the ability to interact with our surroundings effortlessly is essential, especially for individuals with mobility challenges. Enter the WiLi Watch, a wearable wristband powered by Free WiLi and Groq aimed to empower users with independence.</p>
+<p>The journey began with a vision: to create a device that could simplify and enhance daily living for individuals with movement impairments. Our team recognized the need for an intuitive interface that would allow users to control their smart home environment without the barriers typically posed by traditional devices. By harnessing the capabilities of the watch's built-in infrared (IR) transmitters, we sought to bridge the gap between technology and accessibility.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-it-does">What it does<a href="https://docs.freewili.com/blog/wiLi-watch/#what-it-does" class="hash-link" aria-label="Direct link to What it does" title="Direct link to What it does">​</a></h2>
+<p>The user wears an embedded wristband device that can be used to control and interact with their environment. Here is the specific tasks that can be performed wirelessly from your wrist:</p>
+<ul>
+<li>Turn on and off lights</li>
+<li>Lock and unlock your door</li>
+<li>Display live steamed camera footage of your doorstep</li>
+<li>Bring up your GCal or the weather to be displayed These tasks can either be initiated through buttons on the wristband, or from asking out loud for certain actions to be done. We use AI to predict your needs as well based on what you say. For example, if you mention "Oh did I forget to lock the door?" the door will lock automatically, and saying "will I need an umbrella later?" will cause the weather report to go on display. Additionally, a speaker announces to you every action that is done for peace of mind. Finally, one can inquire about who is at their door and the hub will describe to you your visitor.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-we-built-it">How we built it<a href="https://docs.freewili.com/blog/wiLi-watch/#how-we-built-it" class="hash-link" aria-label="Direct link to How we built it" title="Direct link to How we built it">​</a></h2>
+<p>This project relies on the wireless IR communication between a Free WiLi device and a smart home "hub" consisting of an Orange Pi 5 and Arduino Nano that control other peripherals such as a camera, door "locking" system, IR receiver module, speaker, microphone, and external monitor. The frameworks we used for development are Groq for easy LLM use (Whisper for speech to text and Llama for natural language reasoning) and Cartesia for speech-text interfacing, all developed on a python virtual environment. The project is also modular to be used with Intel's IDC if private LLM generation is desired (we setup a flask server serving llama.cpp inferencing on a compute instance but ran out of credits)</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="challenges-we-ran-into">Challenges we ran into<a href="https://docs.freewili.com/blog/wiLi-watch/#challenges-we-ran-into" class="hash-link" aria-label="Direct link to Challenges we ran into" title="Direct link to Challenges we ran into">​</a></h2>
+<ul>
+<li>Using GPIO on the Orange Pi; we had to pivot after hours to integrate another microcontroller with a functional GPIO interface for motor control and IF receiving</li>
+<li>Networking compatibility; we found out later than we'd like that the Free WiLi device which we centered our project around does not have capabilities to connect to the internet / Bluetooth so we switched to IF communication</li>
+<li>Python development on Linux; Python virtual environments are not for the weak of heart</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="accomplishments-that-were-proud-of">Accomplishments that we're proud of<a href="https://docs.freewili.com/blog/wiLi-watch/#accomplishments-that-were-proud-of" class="hash-link" aria-label="Direct link to Accomplishments that we're proud of" title="Direct link to Accomplishments that we're proud of">​</a></h2>
+<ul>
+<li>Fully functional prototype built from the ground up in 24 hours!!</li>
+<li>Door locking system on a physical prototype + doorstep camera</li>
+<li>Overcoming Free WiLi debugging hurdles in the middle of the night</li>
+<li>Kept persistence even through sleep deprivation</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-we-learned">What we learned<a href="https://docs.freewili.com/blog/wiLi-watch/#what-we-learned" class="hash-link" aria-label="Direct link to What we learned" title="Direct link to What we learned">​</a></h2>
+<ul>
+<li>Hardware hacking is challenging, but super fun!</li>
+<li>Cable management can and will stress you out</li>
+<li>Implementing APIs in a larger program</li>
+<li>Wireless communication (IR and RF)</li>
+<li>Ideation is so important</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next-for-the-wili-watch">What's next for The WiLi Watch<a href="https://docs.freewili.com/blog/wiLi-watch/#whats-next-for-the-wili-watch" class="hash-link" aria-label="Direct link to What's next for The WiLi Watch" title="Direct link to What's next for The WiLi Watch">​</a></h2>
+<p>Increase in functionalities available on the watch as well as real world implementation (metal instead of cardboard). A few functionalities that we came up with that could be expanded on in further development are as follows:</p>
+<ul>
+<li>Autonomous robotic car assistant that can retrieve items</li>
+<li>Interact with kitchen appliances (turn on/off stove)</li>
+<li>Emergency response / alarm system</li>
+<li>Temperature control</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="built-with">Built With<a href="https://docs.freewili.com/blog/wiLi-watch/#built-with" class="hash-link" aria-label="Direct link to Built With" title="Direct link to Built With">​</a></h2>
+<p><code>arduino-nano</code> <code>cartesia</code> <code>freewili</code> <code>groq</code> <code>llama</code> <code>orange-pi</code> <code>python</code> <code>whisper</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/wiLi-watch/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out">​</a></h3>
+<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/ethanmckean/The-WiLi-Watch-mhacks24" target="_blank"><span>GitHub Repo</span></a></p></div>
+<p><em>Source</em> - <a href="https://devpost.com/software/wili-watch" target="_blank" rel="noopener noreferrer">https://devpost.com/software/wili-watch</a></p>]]></content:encoded>
             <category>FREE-WILi</category>
             <category>Mhacks</category>
             <category>Hackethon</category>

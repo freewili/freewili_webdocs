@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfreewili_docs=self.webpackChunkfreewili_docs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"WiLi-Party LED Minigames","permalink":"/blog/wiLi-party","unlisted":false,"date":"2024-12-10T00:00:00.000Z"}]}')}}]);
