@@ -51,14 +51,14 @@ const config = {
           editUrl:
                'https://github.com/freewili/FreeWili_WebDocs/blob/main/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/freewili/freewili_webdocs/blob/main/',
+        },
+        // blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
