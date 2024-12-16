@@ -55,8 +55,8 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/freewili/freewili_webdocs/blob/main/',
+          // editUrl:
+          //   'https://github.com/freewili/freewili_webdocs/blob/main/',
         },
         // blog: false,
         theme: {
