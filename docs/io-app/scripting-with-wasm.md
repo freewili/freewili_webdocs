@@ -31,11 +31,13 @@ Users can compile programs, store them in the **FREE-WILi** file system, and exe
 
 ## APIs and Implementation
 
-The **FREE-WILi** IO app implements APIs to control FREE-WILi and provides them to the runtime. These APIs are defined in a header file called `fwwasm.h`.
+The **FREE-WILi** IO app implements APIs to control FREE-WILi and provides them to the runtime. These APIs are defined in a header file called [fwwasm.h](https://github.com/freewili/fwwasm/blob/master/include/fwwasm.h).
 
 ## Recommended Toolset
 
-The recommended toolset to compile for **FREE-WILi** WASM is the [WASI SDK](https://github.com/WebAssembly/wasi-sdk). For a development IDE, we recommend using Visual Studio Code or CLion.
+The recommended toolset to compile for **FREE-WILi** WASM is the [WASI SDK](https://github.com/WebAssembly/wasi-sdk). 
+
+For a development IDE, we recommend using [Visual Studio Code](https://code.visualstudio.com/) or [CLion](https://www.jetbrains.com/clion/).
 
 ## Execution
 
@@ -47,7 +49,9 @@ After your script is uploaded to the FREE-WILi, you can have it run on startup. 
 
 # Getting Started
 
-There are a lot of different WebAssembly compilers; you can write your code in Rust, Python, C/C++, and several others.  The following example will use the wasi-sdk, which comes with a clang-based C/C++ compiler.
+There are a lot of different WebAssembly compilers; you can write your code in Rust, Python, C/C++, and several others.  
+
+The following example will use the wasi-sdk, which comes with a clang-based C/C++ compiler.
 
 ## Installing the SDK
 
@@ -60,15 +64,20 @@ In Ubuntu Linux, the quickest way to get up and running is to download the `.deb
 
 ### Windows 
 
-TODO
+* Run the following command in Windows Command Prompt `winget install CMake Ninja-build.Ninja Git.Git`
+* Download the WASI SDK version 24 release for windows [here](https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-24)
+    * Create a folder in your C: drive called `WASI_SDK`
+    * Unzip the contents of your WASI SDK to `C:\WASI_SDK`
+    * Set `WASI_SDK_PATH` environment variable with the path `C:\WASI_SDK`    
+
 
 ## Writing a Script
 
 Use VS Code or a text editor, and write your script.  For this example we will use C++ and write a simple script to turn each of 
 the board LEDs a different color.
 
-* Make sure you have the `fwwasm.h` header file
-* Copy and paste this example script into your text editor, and save it as `leds.cpp`
+* Make sure you have the [fwwasm.h](https://github.com/freewili/fwwasm/blob/master/include/fwwasm.h) header file
+* Copy and paste this example script below into your text editor, and save it as `leds.cpp`
 
 ```cpp
 #include "fwwasm.h"
@@ -129,15 +138,17 @@ int main()
 
 ## Compiling the Script
 
-At the commandline, in Linux:
+At the command line, run the following base on the OS you are using.
+
+### Ubuntu Linux Terminal
 
 * `/opt/wasi-sdk/bin/wasm32-wasi-clang++ -O3 -s leds.cpp -o leds.wasm`
 
+### Windows Command Prompt
+
+* `C:/WASI_SDK/bin/wasm32-wasi-clang++ -O3 -s leds.cpp -o leds.wasm`
+
 Note the `-s` argument is **critical** to force the linker to strip debugging symbols from the output binary.
-
-At the commandline, in Windows:
-
-* TODO
 
 ## Uploading the Script
 
@@ -150,12 +161,12 @@ At the commandline, in Windows:
 Once the script is on the FREE-WILi filesystem, there are multiple ways it can be executed:
 
 * From the FREE-WILi interface, you can select "Scripts" then select your script to execute it.
-* From the commandline, you use the `freewili` Python library to execute the script: `fwi-serial -w leds.wasm`
+* From the commandline, you use the [freewili](https://pypi.org/project/freewili/) Python library to execute the script: `fwi-serial -w leds.wasm`
 * From the serial terminal interface, you can select `w` to run a script, then type `leds.wasm` and hit enter
 
 ## Common Issues Targeting FREE-WILi (Troubleshooting)
 
-Many tools compile binaries that use too  many memory pages. FREE-WILi only supports 2 (128Kb). Ensure that the stack size of your binary is limited in this way. Please see the github examples for the necessary command line switches need to do this.
+Many tools compile binaries that use too  many memory pages. FREE-WILi only supports 2 (128Kb). Ensure that the stack size of your binary is limited in this way. Please see the [FREE-WILi Wasm Examples](https://github.com/freewili/wasm-examples/tree/main) for the necessary command line switches need to do this.
 
 A good tool for troubleshooting WASM files is the WebAssembly Explorer.
 
@@ -170,11 +181,9 @@ A good tool for troubleshooting WASM files is the WebAssembly Explorer.
 
 # Visual Studio Code Configuration
 
-## Ubuntu Linux
-
 Assuming you installed the sdk as described above, you can get Visual Studio code to recognize your wasi-sdk as follows:
 
-* Install the CMake extension for VS Code, as well as the CMake Tools extension
+* Install the CMake extension for VS Code, as well as the CMake Tools extension[here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 * Create a file called CMakeLists.txt and place it in the root of your project
 * Copy and paste the following into the CMakeLists.txt
   
@@ -189,6 +198,7 @@ add_executable(leds.wasm "leds.cpp")
 * Create a file called CMakePresets.json and place it in the root of your project
 * Copy and paste the following into the CMakePresets.json
 
+## Ubuntu Linux
 ```json
 {
     "version": 3,
@@ -216,5 +226,53 @@ add_executable(leds.wasm "leds.cpp")
 }
 ```
 
+##  Windows
+```json
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 16,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja"
+        },
+        {
+            "name": "wasi",
+            "description": "Configure for WASI using wasi-sdk",
+            "inherits": "default",
+            "toolchainFile": "C:/WASI_SDK/share/cmake/wasi-sdk.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ]
+}
+```
+
 * Use `CTRL-SHIFT-P` in Visual Studio code and select "CMake: Select Configure Preset".  Select 'wasi` from the dropdown that appears.  (Note: You may need to reload VS Code for this option to appear.)
 * You can now use the 'build' button in Visual Studio Code to build your wasm project with one click.
+
+Alternativly, you can run the following CMake commands in Visual Studio Code
+
+* Inside the [VSCode command Palette](https://code.visualstudio.com/api/ux-guidelines/command-palette) run the      following commands:
+    - `>CMake: Select Variant` and select `MinSizeRel`
+    - `>CMake: Configure`
+    - `>CMake: Build Target`
+    - `>CMake: Select A Kit`
+        - Make sure the kit is unspecified.
+
+# Building an FREE-WILi WASM script in a different language
+
+There are several WASM examples written in different languages in the [FREE-WILi WASM Example repo](https://github.com/freewili/wasm-examples/tree/main)
+
+
+Examples for a specfic lanauge can be found below
+ * [CXX](https://github.com/freewili/wasm-examples/tree/main/cxx)
+ * [Rust](https://github.com/freewili/wasm-examples/tree/main/rust)
+ * [Go](https://github.com/freewili/wasm-examples/tree/main/go)
+ * [Zig](https://github.com/freewili/wasm-examples/tree/main/zig)
