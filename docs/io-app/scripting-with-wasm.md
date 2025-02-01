@@ -57,26 +57,26 @@ The following example will use the wasi-sdk, which comes with a clang-based C/C+
 
 ### Windows 10 and Windows 11
 
-There are issues with using the WASI-SDK windows binaries in Windows 11. Therefore we recommend installing and using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) provided by Microsoft.
+There are issues with using the WASI-SDK Windows binaries in Windows 11. Therefore, we recommend installing and using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) provided by Microsoft.
 
 * Install WSL with the following command in Command Prompt or PowerShell
     ```bash
     wsl --install
     ```
-* After installation, open the WSL app and follow the installation prompt. (You can search for WSL in Window's search bar or you can select it in the [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/))
-* Once WSL Follow the `Ubuntu Linux` setup and build instructions
+* After installation, open the WSL app and follow the installation prompt. (You can search for WSL in Window's search bar, or you can select it in the [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/))
+* Once WSL has successfully installed, follow the `Ubuntu Linux` setup and build instructions
 
 ### Ubuntu Linux
 
 In Ubuntu Linux, the quickest way to get up and running is to download the `.deb` prebuilt package from Github under [Releases](https://github.com/WebAssembly/wasi-sdk/releases).  For Ubuntu Linux on an x86-based machine, grab the Debian package (.deb) file for x86.  In this example, the file is [wasi-sdk-24.0-x86_64-linux.deb](https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-24/wasi-sdk-24.0-x86_64-linux.deb).
 
-* Downlooed the package with:
+* Download the package with:
     ```bash
-    $ sudo wget https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-24/wasi-sdk-24.0-x86_64-linux.deb
+    sudo wget https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-24/wasi-sdk-24.0-x86_64-linux.deb
     ```
 * Then, install the package with:
     ```bash
-    $ sudo dpkg --install wasi-sdk-24.0-x86_64-linux.deb
+    sudo dpkg --install wasi-sdk-24.0-x86_64-linux.deb
     ```
 * After installation, the compiler will be located here: `/opt/wasi-sdk/bin/wasm32-wasi-clang++`
     * If you want, you could set an alias to the wasm clang compiler with the following command:
@@ -86,7 +86,7 @@ In Ubuntu Linux, the quickest way to get up and running is to download the `.deb
 
 ## Writing a Script
 
-Use VS Code or a text editor, and write your script.  For this example we will use C++ and write a simple script to turn each of 
+Use VS Code or a text editor, and write your script.  For this example, we will use C++ and write a simple script to turn each of 
 the board LEDs a different color.
 
 * Make sure you have the [fwwasm.h](https://github.com/freewili/fwwasm/blob/master/include/fwwasm.h) header file
@@ -156,20 +156,20 @@ At the command line, run the following:
 ### Ubuntu Linux Terminal
 
 ``` bash
-$ /opt/wasi-sdk/bin/wasm32-wasi-clang++ -O3 -s leds.cpp -o leds.wasm
+/opt/wasi-sdk/bin/wasm32-wasi-clang++ -O3 -s leds.cpp -o leds.wasm
 ```
 
 Note the `-s` argument is **critical** to force the linker to strip debugging symbols from the output binary.
 
-After a sucessful compilation, the compiler should output a binary called `leds.wasm`. This is your WASM script and will need to upload this binary to the FREE-WILi.
+After a successful compilation, the compiler should output a binary called `leds.wasm`. This is your FREE-WILi WASM script, and you will need to upload this binary to the FREE-WILi.
 
 ## Uploading the Script
 
-* Note: If you are using WSL in Windows, you may need to copy over the `leds.wasm` from your Linux's file system to Window's file system inorder to upload the script.
+* Note: If you are using WSL in Windows, you may need to copy over the `LEDs.wasm` from your Linux file system to Windows file system to upload the script.
 
 * Install the `freewili` Python library with:
     ```bash
-    pip install freewili`
+    pip install freewili
     ```
 * Note: the `freewili` library requires Python 3.11 or newer.
 * Upload your script with:
@@ -181,14 +181,17 @@ After a sucessful compilation, the compiler should output a binary called `leds.
 
 Once the script is on the FREE-WILi's file system, there are multiple ways it can be executed:
 
-* From the FREE-WILi interface, you can select "Scripts" then select your script to execute it.
-* From the commandline, you use the [FREE-WILi Python Library](https://pypi.org/project/freewili/) to execute the script: `fwi-serial -w leds.wasm`
+* From the FREE-WILi interface, you can select "Scripts" and select your script to execute it.
+* From the command line, you use the [FREE-WILi Python Library](https://pypi.org/project/freewili/) with the command below to execute the script:
+  ```bash
+  fwi-serial -w leds.wasm
+  ```
 * From the serial terminal interface, you can select `w` to run a script, then type `leds.wasm` and hit enter
 
 
 ## Common Issues Targeting FREE-WILi (Troubleshooting)
 
-Many tools compile binaries that use too  many memory pages. FREE-WILi only supports 2 (128Kb). Ensure that the stack size of your binary is limited in this way. Please see the [FREE-WILi Wasm Examples](https://github.com/freewili/wasm-examples/tree/main) for the necessary command line switches need to do this.
+Many tools compile binaries that use too  many memory pages. FREE-WILi only supports 2 (128Kb). Ensure that the stack size of your binary is limited in this way. Please see the [FREE-WILi Wasm Examples](https://github.com/freewili/wasm-examples/tree/main) for the necessary command line switches.
 
 A good tool for troubleshooting WASM files is the WebAssembly Explorer.
 
@@ -203,7 +206,7 @@ A good tool for troubleshooting WASM files is the WebAssembly Explorer.
 
 # Visual Studio Code Configuration
 
-Assuming you installed the sdk as described above, you can get Visual Studio code to recognize your wasi-sdk as follows:
+Assuming you installed the SDK as described above, you can get Visual Studio code to recognize your WASI-SDK as follows:
 
 * Install the CMake extension for VS Code, as well as the CMake Tools extension[here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 * Create a file called CMakeLists.txt and place it in the root of your project
@@ -249,9 +252,9 @@ add_executable(leds.wasm "leds.cpp")
 ```
 
 * Use `CTRL-SHIFT-P` in Visual Studio code and select "CMake: Select Configure Preset".  Select 'wasi` from the dropdown that appears.  (Note: You may need to reload VS Code for this option to appear.)
-* You can now use the `build` button in Visual Studio Code to build your wasm project with one click.
+* You can now use the `build` button in Visual Studio Code to build your WASM project with one click.
 
-Alternativly, you can run the following CMake commands in Visual Studio Code
+Alternatively, you can run the following CMake commands in Visual Studio Code
 
 * Inside the [VSCode command Palette](https://code.visualstudio.com/api/ux-guidelines/command-palette) run the      following commands:
     - `>CMake: Select Variant` and select `MinSizeRel`
@@ -262,11 +265,11 @@ Alternativly, you can run the following CMake commands in Visual Studio Code
 
 # Next Steps
 
-Take a look at our [FWWasm Submodule](https://github.com/freewili/fwwasm.git) for supported FREE-WILi WASM APIs. You can use this moudle in your projects.
+Look at our [FWWasm Submodule](https://github.com/freewili/fwwasm.git) for supported FREE-WILi WASM APIs. You can use this module in your projects.
 
 There are several WASM examples written in different languages in the [FREE-WILi WASM Example repo](https://github.com/freewili/wasm-examples/tree/main)
 
-Examples for a specfic lanauge can be found below
+Examples of programming languages that FREE-WILi WASM supports can be found below:
  * [CXX](https://github.com/freewili/wasm-examples/tree/main/cxx)
  * [Rust](https://github.com/freewili/wasm-examples/tree/main/rust)
  * [Go](https://github.com/freewili/wasm-examples/tree/main/go)
