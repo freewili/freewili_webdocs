@@ -193,3 +193,26 @@ font-style: italic;
 .github-img img {
   vertical-align: middle;
 }
+
+/* ----------------------------------------------- */
+
+.carousel-container {
+  max-width: 800px; /* Adjust width as needed */
+  margin: auto;
+}
+
+.custom-carousel {
+  height: 650px; /* Set the height of the entire carousel */
+}
+
+.carousel-slide {
+  height: 650px; /* Ensure each slide is 500px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  max-height: 100%;
+  object-fit: cover; /* Ensures images fit properly */
+}
