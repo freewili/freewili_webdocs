@@ -9,7 +9,20 @@ The Wearable Theremin! thereMINI is a wearable theremin using FREE-WILi to turn 
 
 import MyCarousel from '@site/src/components/Carousel';
 
-<MyCarousel />
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'video', src: 'W0wFaAqFdok' }, // YouTube video
+  { type: 'image', src: '/img/blog/logo.jpg', alt: 'logo', caption: 'Our Logo and Mascot, T-Mini! (cr. minipete)' },
+  { type: 'image', src: '/img/blog/gallery.jpg', alt: 'gallery', caption: "How it all works (its magic, I really don't know how we got it to work)" },
+  { type: 'image', src: '/img/blog/gallery-freewili.jpg', alt: 'Gallery-FREE-WILi', caption: 'the child witnessing its birth' },
+  { type: 'image', src: '/img/blog/gallery-1.png', alt: 'Gallery-FREE-WILi-1', caption: 'my wrist'},
+  { type: 'image', src: '/img/blog/gui.png', alt: 'gui', caption: 'gui' },
+  { type: 'image', src: '/img/blog/code.png', alt: 'code', caption: 'painful amounts of painful code'},
+  
+];
+
+<MyCarousel slides={slides} />
 
 <!-- truncate -->
 
