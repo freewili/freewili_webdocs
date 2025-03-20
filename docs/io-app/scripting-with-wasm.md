@@ -16,10 +16,17 @@ Example wasm projects are available from the FREE-WILi Github:
 
 import Card from '@site/src/components/Card'; 
 
-<Card 
+<!-- <Card 
   title="GitHub - freewili/freewili-python: Python applications for FREE-WiLi"
   description="GitHub"
   link="https://github.com/freewili/freewili-python" 
+  imageUrl="/img/github.png"
+/> -->
+
+<Card 
+  title="GitHub - Example WASM project for FreeWili"
+  description="GitHub"
+  link="https://github.com/freewili/wasm-examples" 
   imageUrl="/img/github.png"
 />
 
