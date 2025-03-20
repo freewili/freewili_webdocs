@@ -24,7 +24,7 @@ import Card from '@site/src/components/Card';
 /> -->
 
 <Card 
-  title="GitHub - Example WASM project for FreeWili"
+  title="GitHub - Example WASM project for FREE-WILi"
   description="GitHub"
   link="https://github.com/freewili/wasm-examples" 
   imageUrl="/img/github.png"
