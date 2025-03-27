@@ -55,14 +55,14 @@ import Card from '@site/src/components/Card';
 
 <br/>
 
-<Card 
+<!-- <Card 
   title="Buy Now From Amazon (US)"
   description=""
   link="https://a.co/d/3bpvUjM" 
   imageUrl="/img/az-logo.png"
 />
 
-<br/>
+<br/> -->
 
 <Card 
   title="Buy Now From Jameco"
