@@ -1,0 +1,16 @@
+# Normalize text files to use LF in the repo and convert to CRLF on Windows checkouts
+* text=auto
+
+# Force shell scripts and config files to use LF only
+*.sh text eol=lf
+*.bash text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Avoid CRLF issues in Node-related files
+*.js text eol=lf
+*.ts text eol=lf
+*.jsx text eol=lf
+*.tsx text eol=lf
