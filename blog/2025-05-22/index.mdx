@@ -1,0 +1,73 @@
+---
+slug: wili-pass
+title: "Wili pass"
+authors: [Joey Volcic, chomayouni Homayouni]
+tags: [FREE-WILi, GrizzHacks 7, student project, hackathon]
+---
+
+> _Nintendo DS Street Pass, where passing strangers unlocked virtual connections. We're bringing that experience into the hacker community with Wili Pass. Share your hacking profile with passing hackers._
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'video', src: 'CteTgYjheqw' }, // YouTube video
+  { type: 'image', src: '/img/blog/grizzhacks7-gallery.jpg', alt: 'grizzhacks7', caption: "Connor's Hacking Passport" },
+  { type: 'image', src: '/img/blog/grizzhacks7-gallery2.jpg', alt: 'grizzhacks7_project', caption: "Joey's Hacking Passport" },
+  
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+<br/>
+
+## 🌟 Inspiration
+We were inspired by the nostalgic charm of Nintendo DS StreetPass, where chance encounters led to exciting virtual interactions. We wanted to bring that sense of discovery and connection to the hacker community, fostering real-world interactions in a digital age.
+
+<hr/>
+
+## 🎵 What it does
+Wili-Pass allows hackers to exchange digital 'passports' when their FREE-WILi devices come within range. These passports contain user-defined profiles, including stats, personalized images, and audio messages. It's a way to instantly learn about and connect with fellow hackers at events and gatherings.
+
+<hr/> 
+
+## 🛠️ How we built it
+We used the FREE-WILi dev board's antenna capabilities to detect near by hackers. Once detected, the unique hacker signature is used to query their profile. The passing hacker profile is then displayed for each hacker to view and connect with one another.
+
+<hr/>
+
+## 🚧 Challenges we ran into
+Communicating with the FREE-WILi over antenna proved to be very challenging. Getting the environment and tool chain setup, was also harder than expected.
+
+<hr/>
+
+## 🏆 Accomplishments that we're proud of
+Communicating between boards.
+
+<hr/>
+
+## 📚 What we learned
+Planning and re-evaluating feasibility of ideas.
+
+<hr/>
+
+## 🚀 What's next for Wili pass
+Wide spread hackathon use!
+
+<hr/>
+
+### Built With
+
+```c++``` ```freewili```
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://github.com/Joeyvolcic/G-RIZZ-HACK](https://github.com/Joeyvolcic/G-RIZZ-HACK)
