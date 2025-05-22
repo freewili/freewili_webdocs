@@ -14,3 +14,4 @@
 *.ts text eol=lf
 *.jsx text eol=lf
 *.tsx text eol=lf
+*.txt text eol=lf
