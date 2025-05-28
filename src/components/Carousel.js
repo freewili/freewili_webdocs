@@ -63,7 +63,7 @@ import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
 const MyCarousel = ({ slides }) => {
   return (
     <div className="carousel-container">
-      <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} className="custom-carousel">
+      <Carousel autoPlay={false} infiniteLoop showThumbs={false} showStatus={false} className="custom-carousel">
         {slides.map((slide, index) => (
           <div key={index} className="carousel-slide">
             {slide.type === 'video' ? (
