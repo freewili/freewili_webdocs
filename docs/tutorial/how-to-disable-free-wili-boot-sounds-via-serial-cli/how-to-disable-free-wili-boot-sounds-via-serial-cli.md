@@ -4,6 +4,7 @@ description: Learn how to disable FREE-WILi display boot sounds using a serial C
 keywords: [FREE-WILi boot sound, disable startup sound, CLI sound settings, PuTTY serial connection, FREE-WILi terminal settings, turn off display sound, sound configuration FREE-WILi, mute boot audio FREE-WILi]
 sidebar_position: 1
 sidebar_label: How to Disable FREE-WILi Boot Sounds via Serial CLI
+image: /img/custom-social.png
 ---
 
 # How to Disable FREE-WILi Boot Sounds via Serial CLI
