@@ -2,7 +2,7 @@
 title: Extending with Orcas - Custom and Off-the-Shelf Modules
 description: Explore Orca modules for FREE-WILi to add functionality. Includes off-the-shelf options like Maestro and Jambu, plus guides for custom modules.
 keywords: [FREE-WILi, Orca modules, Maestro, Jambu, extension connector, custom modules, serial LED control, debugger board]
-sidebar_position: 6
+sidebar_position: 7
 sidebar_label: Extending with Orcas
 ---
 

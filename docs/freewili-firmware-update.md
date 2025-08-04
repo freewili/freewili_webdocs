@@ -2,7 +2,7 @@
 title: FREE-WILi Firmware Update - How to Update FREE-WILi Firmware, Main and Display Processors
 description: Learn how to update the firmware on both RP2040 processors of FREE-WILi. Follow detailed steps to update the MAIN and DISPLAY processors using UF2 files. Ensure each processor receives the correct firmware for proper operation.
 keywords: [FREE-WILi Firmware Update, RP2040 Processor Update, MAIN Processor Firmware, DISPLAY Processor Firmware, UF2 File Update, FREE-WILi USB Bootloader, Firmware Installation Guide]
-sidebar_position: 10
+sidebar_position: 11
 sidebar_label: FREE-WILi Firmware Update
 ---
 
