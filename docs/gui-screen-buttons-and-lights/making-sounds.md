@@ -20,6 +20,20 @@ Sounds can be launched from the serial API or host RP2040 API. Also the sound bo
 
 There is an API call (playSoundFromNumber) that can read numbers out loud via a 1980s text-to-speech technique. This is playing sequences of wav files to say a number.
 
+### Converting Audio to Compatible WAV Files
+
+To make your own sounds for FREE-WILi, the files must be in 8000 Hz, 16-bit PCM WAV format.
+
+You can convert your audio using either method:
+
+**1. Use the Web-Based Audio to WAV Converter** <br/>
+  ‐ Easily convert your audio files into FREE-WILi compatible `.wav` files here:<br/>
+ 👉 [https://freewili.com/audio-to-wav-converter/](https://freewili.com/audio-to-wav-converter/)
+
+**2. Use Desktop Software like Audacity®** <br/>
+  ‐ Audacity can export audio as 8000 Hz, 16-bit PCM WAV files.
+
+
 ## App
 
 The Sound board app allows you to play select ROM sounds and sounds from the file system.

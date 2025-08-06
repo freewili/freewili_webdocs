@@ -2,7 +2,7 @@
 title: DEFCON32 Badge Edition – FREE-WILi Code Support for DEFCON Badge | I2C, IR, and GPIO Control
 description: Unlock the full potential of your DEFCON32 badge with FREE-WILi code support. Enable I2C, GPIO, IR, LEDs, and more. Learn how to load the FREE-WILi uf2 file and use the SAO connector for IR receive and expansion.
 keywords: [FREE-WILi DEFCON32 badge,DEFCON32 badge, FREE-WILi, I2C control, IR transmission, IR reception, GPIO, SAO connector, FREE-WILi firmware, WASM scripting, LED control, badge development, USB serial terminal, RP2350 bootloader, TSOP38238]
-sidebar_position: 10
+sidebar_position: 11
 sidebar_label: DEFCON32 Badge Edition
 ---
 

@@ -12,9 +12,24 @@ FREE-WILi allows you to display images on the screen. FREE-WILi has some built i
 
 Custom images can be loaded into the FREE-WILi display processor file system. Then, using the API they can be displayed on command. The images should be stored in the "images" directory.
 
-Custom images first must be converted to the FREE-WILi Image format. This is basically a bitmap that is compatible with the 565 color display used. The direct compatibility allows fast display of images without any runtime conversion.
+<!-- Custom images first must be converted to the FREE-WILi Image format. This is basically a bitmap that is compatible with the 565 color display used. The direct compatibility allows fast display of images without any runtime conversion. -->
 
-A python script is written called `fw_image.py` that can convert a jpg or png to a FWI file. A FWI file is the image file you will download to FREE-WILi. This is available from the FREE-WILi github [https://github.com/freewili](https://github.com/freewili)
+### Converting Images to FWI Format
+
+Custom images must be converted to the FREE-WILi Image `(FWI)` format, which is a bitmap compatible with the 565 color display used. This direct compatibility allows fast display of images without runtime conversion.
+
+There are two ways to convert your images:
+
+  **1. Use the Web-Based PNG to FWI Converter**
+ 
+  Easily convert your `.png` files using our online tool: <br/>
+  👉 [https://freewili.com/png-to-fwi-converter/](https://freewili.com/png-to-fwi-converter/)
+
+  **2. Use the Python Script `(fw_image.py)`**
+  
+  A Python script named `fw_image.py` is available on the [FREE-WILi GitHub](https://github.com/freewili). It allows you to convert `.jpg` or `.png` images into `.fwi` files.
+
+<!-- A python script is written called `fw_image.py` that can convert a jpg or png to a FWI file. A FWI file is the image file you will download to FREE-WILi. This is available from the FREE-WILi github [https://github.com/freewili](https://github.com/freewili) -->
 
 ***Syntax of fw_image.py:***
 

@@ -20,8 +20,12 @@ const sidebars = {
       // label: 'Buy Now', // The text that will be displayed in the sidebar
       // href: '#',
       // className: 'nav-link', // The URL you want to link to
+      
+      // type: 'link',
+      // label: 'FREE-WILi Python API',
+      // href: 'https://freewili.github.io/freewili-python/index.html', // replace with your URL
+    
     },
-
   ],
 
   // But you can create a sidebar manually
