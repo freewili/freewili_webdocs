@@ -4,6 +4,7 @@ description: Explore the ICS Village Badge for DEFCON 33 — an AI-powered hardw
 keywords: [ICS Village Badge, DEFCON 33 badge, AI gas sensor, ESP32-C6 WiFi, RP2350 microcontroller, WASM scripting, ICS security hardware, FREE-WILi, Zig, Rust, CircuitPython, MicroPython, I2C SAO expansion, real-time clock, GUI badge interface]
 sidebar_position: 11
 sidebar_label: ICS Village Badge DEFCON33
+image: /img/ics-defcon-badge.png
 ---
 
 import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
