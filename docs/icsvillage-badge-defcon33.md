@@ -83,7 +83,7 @@ The hardware is housed in a stunning, full-color PCB designed by Detroit artist 
 * File formats compatible with existing market devices  
 * Standard [USB boot-loader](../freewili-firmware-update/) for firmware updates  
 * Raspberry Pi Pico (RP2350) Open Micro Platform for specific applications or custom code with C/C++, Micro-python or Circuit Python  
-* Open source [github](https://github.com/freewili/) software for updates
+<!-- * Open source [github](https://github.com/freewili/) software for updates -->
 
 :::info[]
 <h4>🚀 We have released a new firmware updates for both the main and display components, <br class="br-mobile" /> <a target="_blank" rel="noopener noreferrer" href="https://github.com/freewili/freewili-firmware" class="highlight">Check it out on GitHub</a> and get the latest version now.</h4>

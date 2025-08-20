@@ -107,7 +107,7 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
 - File formats compatible with existing market devices
 - Standard [USB boot-loader](/freewili-firmware-update/) for firmware updates
 - Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code with C/C++, Micro-python or Circuit Python
-- Open source [github](https://github.com/freewili/) software for updates
+<!-- - Open source [github](https://github.com/freewili/) software for updates -->
 
 ## Hardware Features
 
