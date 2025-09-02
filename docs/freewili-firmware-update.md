@@ -9,7 +9,7 @@ sidebar_label: FREE-WILi Firmware Update
 # FREE-WILi Firmware Update
 
 :::info[]
-<h4>🚀 We have released a new firmware updates for the badge, <br class="br-mobile" /> <a target="_blank" rel="noopener noreferrer" href="https://github.com/freewili/freewili-firmware" class="highlight">Check it out on GitHub</a> and get the latest version now.</h4>
+<h4>🚀 We have released a new firmware updates for the badge, <a target="_blank" rel="noopener noreferrer" href="https://github.com/freewili/freewili-firmware" class="highlight">Check it out on GitHub</a> and get the latest version now.</h4>
 <h4>📱 You can determine what firmware you have from the <a target="_self" rel="noopener noreferrer" href="/gui-screen-buttons-and-lights/about-app/" class="highlight-app">About app</a>. </h4>
 :::
 
