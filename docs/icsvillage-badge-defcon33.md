@@ -86,13 +86,13 @@ The hardware is housed in a stunning, full-color PCB designed by Detroit artist 
 <!-- * Open source [github](https://github.com/freewili/) software for updates -->
 
 :::info[]
-<h4>🚀 We have released a new firmware updates for both the main and display components, <br class="br-mobile" /> <a target="_blank" rel="noopener noreferrer" href="https://github.com/freewili/freewili-firmware" class="highlight">Check it out on GitHub</a> and get the latest version now.</h4>
+<h4>🚀 We have released a new firmware updates for the badge, <br class="br-mobile" /> <a target="_blank" rel="noopener noreferrer" href="https://github.com/freewili/freewili-firmware" class="highlight">Check it out on GitHub</a> and get the latest version now.</h4>
 <h4>📱 You can determine what firmware you have from the <a target="_self" rel="noopener noreferrer" href="../gui-screen-buttons-and-lights/about-app/" class="highlight-app">About app</a>. </h4>
 :::
 
 <br/>
 
-ICS village Badge has two RP2350 processors. Please follow the instructions in the **[FREE-WILi firmware](../freewili-firmware-update/)** update to update the badge manually. 
+ICS village Badge has one RP2350 processors. Please follow the instructions in the **[FREE-WILi firmware](../freewili-firmware-update/)** update to update the badge manually. 
 
 ## 🎥 ⇨ Sensor View on the ICS Village DEFCON33 Badge: A Step-by-Step Guide
 
