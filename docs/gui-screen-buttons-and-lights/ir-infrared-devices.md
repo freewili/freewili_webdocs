@@ -37,7 +37,7 @@ After selecting a remote, you can add new codes. Simple point the remote at the 
 
 <figure>
 
-![You can create a custom remote for IR devices.](../assets/custom-IR.jpg "You can create a custom remote for IR devices.")
+![You can create a custom remote for IR devices.](../assets/custom-IR.webp "You can create a custom remote for IR devices.")
 <figcaption>You can create a custom remote for IR devices.</figcaption>
 </figure>
 </div>

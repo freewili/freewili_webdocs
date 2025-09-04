@@ -20,7 +20,7 @@ The about app will display the current RTC. The current time is shown as well as
 
 <figure>
 
-![about-app](../assets/about-app.jpg "about-app")
+![about-app](../assets/about-app.webp "about-app")
 <figcaption>About App Screen</figcaption>
 </figure>
 </div>

@@ -42,7 +42,7 @@ The Sound board app allows you to play select ROM sounds and sounds from the fil
 
 <figure>
 
-![The sound board app lets you test sounds.](../assets/sound-app.jpg "The sound board app lets you test sounds.")
+![The sound board app lets you test sounds.](../assets/sound-app.webp "The sound board app lets you test sounds.")
 <figcaption>The sound board app lets you test sounds.</figcaption>
 </figure>
 </div>

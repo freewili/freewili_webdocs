@@ -16,7 +16,7 @@ The about app also include screens for [RTC](/io-app/settings-menu/rtc-settings/
 
 <figure>
 
-![The about screen includes version information, loop times and documentation links.](../assets/about-screen.jpg "The about screen includes version information, loop times and documentation links.")
+![The about screen includes version information, loop times and documentation links.](../assets/about-screen.webp "The about screen includes version information, loop times and documentation links.")
 <figcaption>The about screen includes version information, loop times and documentation links.</figcaption>
 </figure>
 </div>

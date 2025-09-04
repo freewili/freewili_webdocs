@@ -27,7 +27,7 @@ The sensors app Accel and Temperature will display accelerometer in a graphical 
 
 <figure>
 
-![sensors-app](../assets/sensors-app.jpg "sensors-app")
+![sensors-app](../assets/sensors-app.webp "sensors-app")
 <figcaption></figcaption>
 </figure>
 </div>

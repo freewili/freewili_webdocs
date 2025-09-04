@@ -14,7 +14,7 @@ FREE-WILi has 7 full color LEDs. These LEDs can display a pattern or be manually
 
 <figure>
 
-![The FREE-WILi Light Show App controls the 7 LEDs.](../assets/led-light-show.jpg "The FREE-WILi Light Show App controls the 7 LEDs.")
+![The FREE-WILi Light Show App controls the 7 LEDs.](../assets/led-light-show.webp "The FREE-WILi Light Show App controls the 7 LEDs.")
 <figcaption>The FREE-WILi Light Show App controls the 7 LEDs.</figcaption>
 </figure>
 </div>

@@ -33,7 +33,7 @@ FREE-WILi includes a terminal app that allows you do everything from the USB ser
 
 <figure>
 
-![The Terminal app allows you to use the serial terminal on the device](../assets/terminal-app.jpg "The Terminal app allows you to use the serial terminal on the device.")
+![The Terminal app allows you to use the serial terminal on the device](../assets/terminal-app.webp "The Terminal app allows you to use the serial terminal on the device.")
 <figcaption>The Terminal app allows you to use the serial terminal on the device.</figcaption>
 </figure>
 </div>
