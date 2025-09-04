@@ -88,8 +88,8 @@ const config = {
         logo: {
           alt: 'FREE-WILi_Logo',
           // src: 'img/logo.svg',
-          src: '/img/logo.svg',
-          srcDark: '/img/logo-dark.svg', 
+          src: '/img/logo-new.svg',
+          srcDark: '/img/logo-dark-new.svg', 
           // href: '#',
           target: '_self',
           // style: {border: 'solid red'},

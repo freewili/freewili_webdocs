@@ -44,8 +44,8 @@ import ThemedImage from '@theme/ThemedImage';
   <ThemedImage
     alt="FREE-WILi Overview"
     sources={{
-      light: useBaseUrl('./img/freewili-overview-light.jpg'),
-      dark: useBaseUrl('./img/freewili-overview.jpg'),
+      light: useBaseUrl('./img/freewili-overview-light.webp'),
+      dark: useBaseUrl('./img/freewili-overview.webp'),
     }}
   />
   <figcaption>Make Embedded Systems Fun Again.</figcaption>
@@ -58,7 +58,7 @@ import ThemedImage from '@theme/ThemedImage';
 
 <figure>
 
-![FREE-WILi model overview](./assets/Free_WiLi_Overview.png "FREE-WILi Product Overview")
+![FREE-WILi model overview](./assets/Free_WiLi_Overview.webp "FREE-WILi Product Overview")
 <figcaption>FREE-WILi Overview</figcaption>
 </figure>
 </div>
@@ -134,7 +134,7 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
 
 <figure>
 
-![Radio Versions](./assets/radio-versions.png "Radio Versions")
+![Radio Versions](./assets/radio-versions.webp "Radio Versions")
 <figcaption>FREE-WILi contains two radios.</figcaption>
 </figure>
 </div>

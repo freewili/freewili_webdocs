@@ -42,7 +42,7 @@ The hardware is housed in a stunning, full-color PCB designed by Detroit artist 
 
 <figure>
 
-![Back Side](./assets/back-side.jpg "Back Side")
+![Back Side](./assets/back-side.webp "Back Side")
 <figcaption>Back Side View of the Badge.</figcaption>
 </figure>
 </div>

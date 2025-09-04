@@ -19,8 +19,8 @@ import ThemedImage from '@theme/ThemedImage';
   <ThemedImage
     alt="FREE-WILi Overview"
     sources={{
-      light: useBaseUrl('./img/freewili-overview-light.jpg'),
-      dark: useBaseUrl('./img/freewili-overview.jpg'),
+      light: useBaseUrl('./img/freewili-overview-light.webp'),
+      dark: useBaseUrl('./img/freewili-overview.webp'),
     }}
   />
   <figcaption></figcaption>
