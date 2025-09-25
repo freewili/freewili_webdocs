@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -23,9 +23,12 @@ const config = {
   organizationName: 'freewili', // Usually your GitHub org/user name.
   projectName: 'FreeWili_WebDocs', // Usually your repo name.
 
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -49,7 +52,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           routeBasePath: '/',
           editUrl:
-               'https://github.com/freewili/FreeWili_WebDocs/blob/main/',
+            'https://github.com/freewili/FreeWili_WebDocs/blob/main/',
         },
         blog: {
           showReadingTime: true,
@@ -69,7 +72,7 @@ const config = {
           ignorePatterns: ['/test/**', '/markdown-page/**'],
           filename: 'sitemap.xml',
           createSitemapItems: async (params) => {
-            const {defaultCreateSitemapItems, ...rest} = params;
+            const { defaultCreateSitemapItems, ...rest } = params;
             const items = await defaultCreateSitemapItems(rest);
             return items.filter((item) => !item.url.includes('/page/'));
           },
@@ -89,7 +92,7 @@ const config = {
           alt: 'FREE-WILi_Logo',
           // src: 'img/logo.svg',
           src: '/img/logo-new.svg',
-          srcDark: '/img/logo-dark-new.svg', 
+          srcDark: '/img/logo-dark-new.svg',
           // href: '#',
           target: '_self',
           // style: {border: 'solid red'},
@@ -108,10 +111,10 @@ const config = {
           //   position: 'right',
           // },    
           {
-              href: 'https://freewili.com/',
-              label: 'Website',
-              position: 'left',
-              className: 'nav-link',
+            href: 'https://freewili.com/',
+            label: 'Website',
+            position: 'left',
+            className: 'nav-link',
           },
           {
             href: 'https://docs.freewili.com/blog/',
@@ -162,10 +165,10 @@ const config = {
           //   position: 'right',
           // },
 
-            // {
-            //   type: 'search',
-            //   position: 'right',
-            // },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -180,7 +183,7 @@ const config = {
           //     },
           //   ],
           // },
-           {
+          {
             title: 'Follow Us',
             items: [
               {
@@ -203,7 +206,7 @@ const config = {
               //       <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer"><img src="/img/x-twitter.svg" alt="Twitter Icon" class="x-twitter"></a> <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer">Twitter</a>
               //   `,
               // },
-              {                
+              {
                 html: `<a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a> <a href="https://x.com/FREE_WiLi_" target="_blank" rel="noopener noreferrer">Twitter</a>`,
               },
               {
@@ -373,177 +376,177 @@ const config = {
       // ==================================above=one=is=old====================================================================
 
       // ==================================below=one=is=new=but=commented==================================================================
-      
-    //   metadata: [
-    //     { name: 'description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.' },
-    //     { name: 'keywords', content: 'freewili, FREE-WiLi, GPIO, GUI, Orcas, UART' },
-    //     { property: 'og:title', content: 'FREE-WiLi Documentation' },
-    //     { property: 'og:description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.' },
-    //     { property: 'og:image', content: 'https://docs.freewili.com/img/freewili-social-card.jpg' },
-    //     { property: 'og:url', content: 'https://docs.freewili.com/' },
-    //     { property: 'og:type', content: 'website' },
-    //   ],
-    // }),
-    // headTags: [
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       name: 'description',
-    //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       property: 'og:title',
-    //       content: 'FREE-WiLi Documentation',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       property: 'og:description',
-    //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       property: 'og:image',
-    //       content: 'https://docs.freewili.com/img/freewili-social-card.jpg',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       property: 'og:url',
-    //       content: 'https://docs.freewili.com/',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       property: 'og:type',
-    //       content: 'website',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       name: 'twitter:card',
-    //       content: 'summary_large_image',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       name: 'twitter:title',
-    //       content: 'FREE-WiLi Documentation',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       name: 'twitter:description',
-    //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       name: 'twitter:image',
-    //       content: 'https://docs.freewili.com/img/freewili-social-card.jpg',
-    //     },
-    //   },
-    //   {
-    //     tagName: 'meta',
-    //     attributes: {
-    //       name: 'twitter:site',
-    //       content: '@FREEWiL_i',
-    //     },
-    //   },
-    // ],
-    
-    // metadata: [
-    //     {name: 'description', content: 'FREE-WILi is an embedded development tool for helping test, debug, and develop electronic systems.'},
-    //     {name: 'keywords', content: 'freewili, freewili documentation, FREE-WILi, GPIO, GUI, Orcas, UART, documentation'},
-    // ]
-  }),
-    
-    plugins: [
-      [
-        require.resolve('docusaurus-lunr-search'),
-        {
-          // languages: ['en'], // Specify the languages, e.g., ['en', 'de']
-          indexBaseUrl: true, // Whether to index base URLs
-          // excludeRoutes: ['!docs/my-excluded-doc'], // Routes to exclude from indexing
-        },
-      ],
-    ],
-    scripts: [
-      {
-        src: '/js/zoom.js',
-        async: true,
-      },
-    ],
 
-    headTags: [
+      //   metadata: [
+      //     { name: 'description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.' },
+      //     { name: 'keywords', content: 'freewili, FREE-WiLi, GPIO, GUI, Orcas, UART' },
+      //     { property: 'og:title', content: 'FREE-WiLi Documentation' },
+      //     { property: 'og:description', content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.' },
+      //     { property: 'og:image', content: 'https://docs.freewili.com/img/freewili-social-card.jpg' },
+      //     { property: 'og:url', content: 'https://docs.freewili.com/' },
+      //     { property: 'og:type', content: 'website' },
+      //   ],
+      // }),
+      // headTags: [
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       name: 'description',
+      //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       property: 'og:title',
+      //       content: 'FREE-WiLi Documentation',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       property: 'og:description',
+      //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       property: 'og:image',
+      //       content: 'https://docs.freewili.com/img/freewili-social-card.jpg',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       property: 'og:url',
+      //       content: 'https://docs.freewili.com/',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       property: 'og:type',
+      //       content: 'website',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       name: 'twitter:card',
+      //       content: 'summary_large_image',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       name: 'twitter:title',
+      //       content: 'FREE-WiLi Documentation',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       name: 'twitter:description',
+      //       content: 'FREE-WiLi is an embedded development tool for helping test, debug, and develop electronic systems.',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       name: 'twitter:image',
+      //       content: 'https://docs.freewili.com/img/freewili-social-card.jpg',
+      //     },
+      //   },
+      //   {
+      //     tagName: 'meta',
+      //     attributes: {
+      //       name: 'twitter:site',
+      //       content: '@FREEWiL_i',
+      //     },
+      //   },
+      // ],
+
+      // metadata: [
+      //     {name: 'description', content: 'FREE-WILi is an embedded development tool for helping test, debug, and develop electronic systems.'},
+      //     {name: 'keywords', content: 'freewili, freewili documentation, FREE-WILi, GPIO, GUI, Orcas, UART, documentation'},
+      // ]
+    }),
+
+  plugins: [
+    [
+      require.resolve('docusaurus-lunr-search'),
       {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/favicon-16x16.png',
-          sizes: '16x16',
-        },
-      },
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/favicon-32x32.png',
-          sizes: '32x32',
-        },
-      },
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/favicon-180x180.png',
-          sizes: '180x180',
-        },
-      },
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/favicon-192x192.png',
-          sizes: '192x192',
-        },
-      },
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/favicon-512x512.png',
-          sizes: '512x512',
-        },
-      },
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'apple-touch-icon',
-          href: '/img/apple-touch-icon.png',
-        },
-      },
-      {
-        tagName: 'meta',
-        attributes: {
-          property: 'og:type',
-          content: 'website',
-          'data-rh': 'true',
-        },
+        // languages: ['en'], // Specify the languages, e.g., ['en', 'de']
+        indexBaseUrl: true, // Whether to index base URLs
+        // excludeRoutes: ['!docs/my-excluded-doc'], // Routes to exclude from indexing
       },
     ],
-  };
+  ],
+  scripts: [
+    {
+      src: '/js/zoom.js',
+      async: true,
+    },
+  ],
+
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon-16x16.png',
+        sizes: '16x16',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon-32x32.png',
+        sizes: '32x32',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon-180x180.png',
+        sizes: '180x180',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon-192x192.png',
+        sizes: '192x192',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon-512x512.png',
+        sizes: '512x512',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        href: '/img/apple-touch-icon.png',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:type',
+        content: 'website',
+        'data-rh': 'true',
+      },
+    },
+  ],
+};
 
 export default config;
