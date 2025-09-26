@@ -10,8 +10,8 @@ sidebar_label: Extending with Orcas
 
 Orca modules are modules that plug into the extension connector that provide additional functionality. These can be off-the-shelf or you can make your own.  There are a number of off-the-shelf modules available listed below.
 
-| **Orca** | **Description** | **Notes** |
-| :------: | :-------------: ||:------------:	|
+| **Orca** 	                                                  |      **Description**     	    | **Notes** 	|
+|:-----------------------------------------------------------:|:----------------------------:	|:------------:	|
 |  [Maestro](/extending-with-orcas/maestro-debug-orca/)       |    Debugger Orca board   	    |           	|
 |  [Jambu](/extending-with-orcas/jambu-orca/)  	              |    Serial LED Control board 	|           	|
 |  [Bootlenose](/extending-with-orcas/bottlenose-wifi-orca/)  |    Wifi ESP32 Orca              |               |
