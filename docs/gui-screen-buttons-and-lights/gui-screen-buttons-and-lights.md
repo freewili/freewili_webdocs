@@ -2,7 +2,7 @@
 title: FREE-WILi GUI - Screen, Buttons, Lights/LEDs, and More
 description: Explore the FREE-WILi user interface with a 320x240 color display, multi-color buttons, LEDs, speaker, microphone, and more. Details on each component included.
 keywords: [FREE-WILi, user interface, color display, multi-color buttons, LEDs, speaker, microphone, IR receiver, IR transmitter, real-time clock, lithium-ion battery manager, accelerometer]
-sidebar_position: 6
+sidebar_position: 5
 sidebar_label: "GUI : Screen, Buttons, and Lights"
 ---
 

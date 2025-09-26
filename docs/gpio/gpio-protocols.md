@@ -15,6 +15,7 @@ FREE-WILi's GPIO header supports multiple digital communication protocols. Each 
 ## SPI Configuration
 
 ### Pin Assignment
+
 - **Pin 1**: Chip Select (CS) - Output
 - **Pin 12**: RX (MISO) - Input  
 - **Pin 13**: TX (MOSI) - Output
@@ -23,28 +24,33 @@ FREE-WILi's GPIO header supports multiple digital communication protocols. Each 
 ### SPI Parameters
 
 **Frequency Configuration:**
+
 - **Range**: Up to 70 MHz
 - **Default**: 5 MHz
 - **Configuration**: Via settings menu
 
 **Clock Polarity and Phase:**
+
 - **CPOL**: Programmable clock polarity
 - **CPHA**: Programmable clock phase
 
 ## I2C Configuration
 
 ### Pin Assignment
+
 - **Pin 8**: SCL (Clock) - Bidirectional
 - **Pin 10**: SDA (Data) - Bidirectional
 
 ### I2C Parameters
 
 **Frequency Configuration:**
+
 - **Range**: Up to 1 MHz  
 - **Default**: 100 kHz (Standard mode)
 - **Supported**: Standard (100 kHz), Fast (400 kHz), Fast+ (1 MHz)
 
 **Pull-up Resistors:**
+
 - **Built-in**: Software-controlled 10kΩ pull-ups on PCA9517 buffer
 - **Control**: Enable/disable via settings menu
 - **Voltage**: Matches V PINS IN level
@@ -52,6 +58,7 @@ FREE-WILi's GPIO header supports multiple digital communication protocols. Each 
 ## UART Configuration  
 
 ### Pin Assignment
+
 - **Pin 5**: RX (Receive) - Input
 - **Pin 7**: CTS (Clear To Send) - Input
 - **Pin 9**: TX (Transmit) - Output  
@@ -60,11 +67,13 @@ FREE-WILi's GPIO header supports multiple digital communication protocols. Each 
 ### UART Parameters
 
 **Baud Rate:**
+
 - **Range**: Up to 8,000,000 bps
 - **Default**: 115,200 bps
 - **Configuration**: Programmable via settings menu
 
 **Data Format:**
+
 - **Data Bits**: 4-16 bits (default: 8)
 - **Parity**: None, Even, Odd (default: None)
 - **Stop Bits**: 1-2 (default: 1)
@@ -77,17 +86,20 @@ FREE-WILi's GPIO header supports multiple digital communication protocols. Each 
 ### Concurrent Protocol Operation
 
 **Supported Combinations:**
+
 - All three protocols (SPI, I2C, UART) can operate simultaneously  
 - No hardware conflicts between protocols
 - Independent configuration and operation
 
 **Shared Resources:**
+
 - All protocols share the same V PINS IN voltage level
 - [Logic analyzer](/io-app/logic-analyzer/) can monitor all protocols
 
 ## Configuration Examples
 
 ### High-Speed SPI Setup
+
 ```
 Settings Menu > SPI Configuration:
 - Frequency: 20 MHz
@@ -95,7 +107,8 @@ Settings Menu > SPI Configuration:
 - CPHA: 0 (Sample on rising edge)
 ```
 
-### Fast I2C Configuration  
+### Fast I2C Configuration
+
 ```
 Settings Menu > I2C Configuration:
 - Frequency: 400 kHz (Fast mode)

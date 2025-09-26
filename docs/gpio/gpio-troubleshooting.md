@@ -15,6 +15,7 @@ sidebar_label: Troubleshooting
 **Root Cause**: Pin 4 (V PINS IN) does not have voltage applied.
 
 **Solution**: 
+
 **Verify Jumper Connection**:
    - For 5V: Jumper between pins 2 and 4
    - For 3.3V: Jumper between pins 4 and 6

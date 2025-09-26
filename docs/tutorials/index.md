@@ -2,7 +2,7 @@
 title: Tutorials
 description: Discover official FREE-WILi tutorials designed to help you configure, customize, and optimize your system. New step-by-step guides are added regularly—stay tuned!
 keywords: [FREE-WILi Tutorial, configure FREE-WILi, FREE-WILi support, embedded system tutorials, FREE-WILi how-to, FREE-WILi resources]
-sidebar_position: 3
+sidebar_position: 2
 sidebar_label: Tutorials
 ---
 

@@ -2,7 +2,7 @@
 title: "FREE-WILi GPIO Overview: Digital Protocols and Pin Header Interface"
 description: Complete guide to FREE-WILi's GPIO pin header for SPI, I2C, UART, and digital I/O operations. Features flexible voltage levels, FPGA integration, and real-time protocol capabilities.
 keywords: [FREE-WILi GPIO, pin header, SPI, I2C, UART, digital protocols, FPGA, voltage levels, embedded development, protocol interface]
-sidebar_position: 4
+sidebar_position: 3
 sidebar_label: GPIO
 ---
 
@@ -45,9 +45,9 @@ The GPIO pins are routed through level-shifting buffers and an [iCE40UP5K FPGA](
 
 ## GPIO Documentation Sections
 
-- [**Pinout & Electrical Specifications**](./gpio-pinout) - Pin descriptions, voltage levels, and electrical characteristics
-- [**Protocol Configuration**](./gpio-protocols.md) - SPI, I2C, and UART setup and specifications
-- [**Common Issues & Troubleshooting**](./gpio-troubleshooting.md) - Solutions to frequent problems
+- [Pinout & Electrical Specifications](./gpio-pinout) - Pin descriptions, voltage levels, and electrical characteristics
+- [Protocol Configuration](./gpio-protocols.md) - SPI, I2C, and UART setup and specifications
+- [Common Issues & Troubleshooting](./gpio-troubleshooting.md) - Solutions to frequent problems
 
 ## Related Documentation
 
