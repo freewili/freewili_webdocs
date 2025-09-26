@@ -2,7 +2,7 @@
 title: "FREE-WILi GPIO Overview: Digital Protocols and Pin Header Interface"
 description: Complete guide to FREE-WILi's GPIO pin header for SPI, I2C, UART, and digital I/O operations. Features flexible voltage levels, FPGA integration, and real-time protocol capabilities.
 keywords: [FREE-WILi GPIO, pin header, SPI, I2C, UART, digital protocols, FPGA, voltage levels, embedded development, protocol interface]
-sidebar_position: 3
+sidebar_position: 2
 sidebar_label: GPIO
 ---
 
@@ -34,13 +34,13 @@ FREE-WILi includes a GPIO pin header for interacting with digital protocols. Thi
 
 ## GPIO System Architecture
 
-The GPIO pins are routed through level-shifting buffers and an [iCE40UP5K FPGA](./../hardware-low-level-details/ice40-fpga/) before connecting to the RP2040 main processor. This architecture enables real-time operations such as the [logic analyzer](./../io-app/logic-analyzer/) functionality while maintaining protocol compatibility.
+The GPIO pins are routed through level-shifting buffers and an [iCE40UP5K FPGA](./../hardware-low-level-details/ice40-fpga/) before connecting to the RP2040 main processor. This architecture enables real-time operations such as the [logic analyzer](../../scripting/io-app/logic-analyzer/) functionality while maintaining protocol compatibility.
 
 ## Quick Start
 
 1. **Set I/O Voltage Level**: Connect a jumper between pins 2-4 (5V) or 4-6 (3.3V)
     - Pin 4 **MUST** have voltage for GPIO to function
-2. **Configure Pin Directions**: Use the GPIO panel in the GUI or [settings menu](./../io-app/settings-menu/) via serial console
+2. **Configure Pin Directions**: Use the GPIO panel in the GUI or [settings menu](./../scripting/io-app/settings-menu/) via serial console
 3. **Select Protocol**: Access SPI, I2C, or UART functionality through the main console application
 
 ## GPIO Documentation Sections
@@ -51,7 +51,7 @@ The GPIO pins are routed through level-shifting buffers and an [iCE40UP5K FPGA](
 
 ## Related Documentation
 
-- [Logic Analyzer](./../io-app/logic-analyzer/) - Real-time GPIO monitoring and analysis
-- [WASM Scripting](./../io-app/scripting-with-wasm/) - Advanced GPIO control through WebAssembly
-- [ZoomIO Scripting](./../io-app/scripting-with-zoomio/) - Nanosecond-precision GPIO timing
-- [Settings Menu](./../io-app/settings-menu/) - GPIO direction and protocol configuration
+- [Logic Analyzer](./../scripting/io-app/logic-analyzer/) - Real-time GPIO monitoring and analysis
+- [WASM Scripting](./../scripting/io-app/scripting-with-wasm/) - Advanced GPIO control through WebAssembly
+- [ZoomIO Scripting](./../scripting/io-app/scripting-with-zoomio/) - Nanosecond-precision GPIO timing
+- [Settings Menu](./../scripting/io-app/settings-menu/) - GPIO direction and protocol configuration

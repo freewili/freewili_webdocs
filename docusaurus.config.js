@@ -123,13 +123,13 @@ const config = {
             className: 'nav-link',
             target: '_self',
           },
-          {
-            href: 'https://whaletail.freewili.com/',
-            label: 'Whale-Tail Badge Documentation',
-            position: 'left',
-            className: 'nav-link',
-            target: '_self',
-          },
+          // {
+          //   href: 'https://whaletail.freewili.com/',
+          //   label: 'Whale-Tail Badge Documentation',
+          //   position: 'left',
+          //   className: 'nav-link',
+          //   target: '_self',
+          // },
           {
             type: 'dropdown',
             label: 'Products',

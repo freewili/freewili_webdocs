@@ -10,7 +10,7 @@ sidebar_label: Protocol Configuration
 
 ## Overview
 
-FREE-WILi's GPIO header supports multiple digital communication protocols. Each protocol can be configured through the [settings menu](/io-app/settings-menu/) and operates independently on dedicated pin sets.
+FREE-WILi's GPIO header supports multiple digital communication protocols. Each protocol can be configured through the [Settings Menu](../../scripting/io-app/settings-menu/) and operates independently on dedicated pin sets.
 
 ## SPI Configuration
 
@@ -94,7 +94,7 @@ FREE-WILi's GPIO header supports multiple digital communication protocols. Each 
 **Shared Resources:**
 
 - All protocols share the same V PINS IN voltage level
-- [Logic analyzer](/io-app/logic-analyzer/) can monitor all protocols
+- [Logic analyzer](../../scripting/io-app/logic-analyzer/) can monitor all protocols
 
 ## Configuration Examples
 
@@ -127,5 +127,5 @@ Settings Menu > UART Configuration:
 ```
 
 Related documentation:
-- [Settings Menu Documentation](/io-app/settings-menu/)
-- [WASM Scripting](/io-app/scripting-with-wasm/) for automated protocol control
+- [Settings Menu Documentation](../../scripting/io-app/settings-menu/)
+- [WASM Scripting](../../scripting/io-app/scripting-with-wasm/) for automated protocol control

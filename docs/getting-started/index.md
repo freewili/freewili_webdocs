@@ -49,7 +49,7 @@ Learn how to integrate FREE-WILi into your projects with step-by-step guides, ex
 
 <div class="cards-grid">
    <div class="card-first">
-      <a href="https://freewili.github.io/fwwasm/" target="_blank" class="card horizontal">
+      <a href="https://github.com/freewili/wasm-examples" target="_blank" class="card horizontal">
          <div class="icon">
             <!-- Video Camera Icon -->
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="15" height="10" rx="2" ry="2"></rect><polygon points="17,11 22,8 22,16 17,13"></polygon></svg> -->
@@ -75,7 +75,7 @@ Learn how to integrate FREE-WILi into your projects with step-by-step guides, ex
       </a>
    </div>
    <div class="card-third">
-      <a href="https://github.com/freewili/freewili-updater" target="_blank" class="card horizontal">
+      <a href="https://github.com/freewili/freewili-firmware" target="_blank" class="card horizontal">
          <div class="icon">
             <!-- Microphone Icon -->
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg> -->
@@ -179,6 +179,19 @@ Learn how to integrate FREE-WILi into your projects with step-by-step guides, ex
          <div class="card-body">
             <h3>WhaleTail Badge Orca </h3>
             <p>Compact badge module with CAN FD and 10BASE-T1L, built for industrial protocol learning.</p>
+         </div>
+      </a>
+    </div>
+    <div class="card-fifth">
+      <a href="../extending-with-orcas/wileye-camera-orca/" target="_self" class="card horizontal">
+         <div class="icon">
+            <!-- Video Camera Icon -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="15" height="10" rx="2" ry="2"></rect><polygon points="17,11 22,8 22,16 17,13"></polygon></svg> -->
+            ![wileye-camera](../assets/wileye-camera-orca.svg)
+         </div>
+         <div class="card-body">
+            <h3>WILEYE Camera Orca</h3>
+            <p>The Vision Accessory for FREE-WILi Orca Modules</p>
          </div>
       </a>
     </div>

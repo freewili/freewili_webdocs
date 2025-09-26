@@ -94,18 +94,18 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
 ## Software Features
 
 - USB Serial console API to control from host PC without installing any software
-- [WASM (webassembly) scripting](/io-app/scripting-with-wasm/) engine with examples for C/C++, Rust, Zig and Tiny Go
+- [WASM (webassembly) scripting](../../scripting/io-app/scripting-with-wasm/) engine with examples for C/C++, Rust, Zig and Tiny Go
 - [Host API Python](https://github.com/freewili/freewili-python/) software
 - FAT File system 
-- Sigrok Pulse view [Logic Analyzer](/io-app/logic-analyzer/) support
+- Sigrok Pulse view [Logic Analyzer](../../scripting/io-app/logic-analyzer/) support
 - host binary API for Graphical User Interface
 - WASM API to control all device features
-- [ZoomIO scripting engine](/io-app/scripting-with-zoomio/) controls IO pins with nanosecond precision
-- [GUI Software](/gui-screen-buttons-and-lights/) with custom panels and graphical controls
-- Integrated [sounds](/gui-screen-buttons-and-lights/making-sounds/) and [images](/gui-screen-buttons-and-lights/displaying-images/) in ROM for enhancing user apps
-- [Numbers To Speech](/gui-screen-buttons-and-lights/making-sounds/) feature to speak numbers
+- [ZoomIO scripting engine](../../scripting/io-app/scripting-with-zoomio/) controls IO pins with nanosecond precision
+- [GUI Software](../../scripting/gui-screen-buttons-and-lights/) with custom panels and graphical controls
+- Integrated [sounds](../../scripting/gui-screen-buttons-and-lights/making-sounds/) and [images](../../scripting/gui-screen-buttons-and-lights/displaying-images/) in ROM for enhancing user apps
+- [Numbers To Speech](../../scripting/gui-screen-buttons-and-lights/making-sounds/) feature to speak numbers
 - File formats compatible with existing market devices
-- Standard [USB boot-loader](/freewili-firmware-update/) for firmware updates
+- Standard [USB boot-loader](/getting-started/freewili-firmware-update/) for firmware updates
 - Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code with C/C++, Micro-python or Circuit Python
 <!-- - Open source [github](https://github.com/freewili/) software for updates -->
 
@@ -118,15 +118,15 @@ FREE-WILi is a embedded development tool for helping test, debug, and develop el
 - GPIO front end includes ICE40UP5k [FPGA](/hardware-low-level-details/ice40-fpga/) with 8MByte SRAM and High Speed USB (FT232H)
 - Two SMA connectors for antenna for longer range
 - 320 x 240 Color Display
-- 5 [User configurable buttons](/gui-screen-buttons-and-lights/buttons/)
-- 7 [Full color LEDs](/gui-screen-buttons-and-lights/led-light-show/)
-- IR [transmitter and receiver](/gui-screen-buttons-and-lights/ir-infrared-devices/)
-- Digital [Speaker](/gui-screen-buttons-and-lights/making-sounds/) and [Microphone](/gui-screen-buttons-and-lights/capturing-audio-from-microphone/) <!-- - Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code -->
+- 5 [User configurable buttons](../../scripting/gui-screen-buttons-and-lights/buttons/)
+- 7 [Full color LEDs](../../scripting/gui-screen-buttons-and-lights/led-light-show/)
+- IR [transmitter and receiver](../../scripting/gui-screen-buttons-and-lights/ir-infrared-devices/)
+- Digital [Speaker](../../scripting/gui-screen-buttons-and-lights/making-sounds/) and [Microphone](../../scripting/gui-screen-buttons-and-lights/capturing-audio-from-microphone/) <!-- - Raspberry Pi Pico (RP2040) Open Micro Platform for specific applications or custom code -->
 - [Orca](/extending-with-orcas/) modules plug into GPIO header allows expansion for specific use cases <!-- - [IO App](/io-app/) firmware allows exercising all IO, USB Host API and Standalone scripting  --> <!-- - GUI App firmware with Graphical panel and user controls -->
 - 16 Mbyte x 2 on board storage (22 MByte usable)
 - 1000 ma Lithium ION battery with integrated charger
 - Real Time Clock (RTC)
-- [Accelerometer](/gui-screen-buttons-and-lights/accelerometer/)
+- [Accelerometer](../../scripting/gui-screen-buttons-and-lights/accelerometer/)
 
 ## Radio Versions
 

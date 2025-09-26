@@ -14,8 +14,8 @@ You can turn FREE-WILi on by pressing the gray button or by connecting it to USB
 
 ## Using the USB interfaces
 
-When you plug FREE-WILi into a host, it will present 3 USB serial ports. One port connects to the FREE-WILi FPGA, One port connects to the [IO App](/io-app/), and the last port connects to the [GUI App](/gui-screen-buttons-and-lights/) processor.
+When you plug FREE-WILi into a host, it will present 3 USB serial ports. One port connects to the FREE-WILi FPGA, One port connects to the [IO App](../../scripting/io-app/), and the last port connects to the [GUI App](../../scripting/gui-screen-buttons-and-lights/) processor.
 
 ## Updating Firmware
 
-The FREE-WILi has an integrated USB boot loader to update firmware. Please see this [topic](/freewili-firmware-update/).
+The FREE-WILi has an integrated USB boot loader to update firmware. Please see this [topic](/getting-started/freewili-firmware-update/).

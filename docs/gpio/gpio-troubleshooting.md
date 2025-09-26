@@ -110,7 +110,7 @@ sidebar_label: Troubleshooting
 - Timing-sensitive issues
 
 **Diagnosis Tools**:
-- Use [Logic Analyzer](/io-app/logic-analyzer/) to examine signals
+- Use [Logic Analyzer](../../scripting/io-app/logic-analyzer/) to examine signals
 - Check for proper rise/fall times
 - Verify clock stability and timing
 
@@ -137,8 +137,8 @@ sidebar_label: Troubleshooting
 
 - [Protocol Configuration](./gpio-protocols.md) - Detailed protocol setup  
 - [Pinout Specifications](./gpio-pinout.md) - Electrical characteristics
-- [Logic Analyzer](./../io-app/logic-analyzer.md) - Signal analysis tools
-- [Settings Menu](./../io-app/settings-menu/settings-menu.md) - Configuration interface
+- [Logic Analyzer](./../scripting//io-app/logic-analyzer.md) - Signal analysis tools
+- [Settings Menu](./../scripting//io-app/settings-menu/settings-menu.md) - Configuration interface
 
 ### Self-Help Debugging
 

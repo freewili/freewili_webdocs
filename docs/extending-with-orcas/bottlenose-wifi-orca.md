@@ -2,7 +2,7 @@
 title: Bottlenose WiFi Orca – ESP32-C6 IoT Dev Board with USB-C & Qwiic
 description: "The Bottlenose WiFi Orca is a compact ESP32-C6 development board with dual-mode Wi-Fi, Bluetooth, USB-C, Qwiic connector, and ultra-low power consumption—ideal for advanced IoT prototyping."
 keywords: [Bottlenose WiFi Orca, ESP32-C6 development board, IoT dev board, WiFi Bluetooth board, ESP32 USB-C, Qwiic connector, FreeRTOS, low power IoT board, ESP32 prototyping, embedded systems]
-sidebar_position: 3
+sidebar_position: 4
 sidebar_label: Bottlenose WiFi Orca
 ---
 
