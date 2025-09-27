@@ -13,7 +13,7 @@ sidebar_label: WILEYE Camera Orca
 
 <figure>
 
-![WILEYE-camera-orca](../assets/WILEYE-camera.webp "WILEYE-camera-orca")
+![WILEYE-camera-orca](../../assets/WILEYE-camera.webp "WILEYE-camera-orca")
 <figcaption>WILEYE Camera Orca Module</figcaption>
 </figure>
 </div>
