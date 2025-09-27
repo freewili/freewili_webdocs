@@ -14,7 +14,7 @@ The Bottlenose WiFi Orca is a compact ESP32-C6 development board featuring dual-
 
 <figure>
 
-![BOTTLENOSE](../assets/BOTTLENOSE.webp "BOTTLENOSE")
+![BOTTLENOSE](../../assets/BOTTLENOSE.webp "BOTTLENOSE")
 <figcaption>Bottlenose WiFi Orca Module</figcaption>
 </figure>
 </div>

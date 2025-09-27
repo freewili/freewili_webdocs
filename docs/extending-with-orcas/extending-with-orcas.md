@@ -14,7 +14,7 @@ Orca modules are modules that plug into the extension connector that provide add
 |:----------------------------------------------------------------------------:|:----------------------------:	|:------------:	|
 |  [Maestro](/extending-with-orcas/maestro-debug-orca/)                        |    Debugger Orca board   	    |           	|
 |  [Jambu](/extending-with-orcas/jambu-orca/)  	                               |    Serial LED Control board 	|           	|
-|  [Bootlenose](/extending-with-orcas/bottlenose-wifi-orca/)                   |    Wifi ESP32 Orca             |               |
+|  [Bottlenose](/extending-with-orcas/bottlenose-wifi-orca/)                   |    WiFi ESP32 Orca             |               |
 |  [WILEYE Camera Orca](/extending-with-orcas/wileye-camera-orca/)             |    Camera Orca                 |               |
 
 ## Custom Orca Modules
