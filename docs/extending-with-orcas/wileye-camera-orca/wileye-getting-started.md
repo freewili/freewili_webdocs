@@ -2,7 +2,7 @@
 title: WILEYE Camera Orca - Getting Started Guide
 description: "Quick start guide for WILEYE Camera Orca with FREE-WILi. Learn to enable communication, configure UART, and interface with the camera through command line, UI, and WebAssembly API."
 keywords: [WILEYE getting started, FREE-WILi integration, camera setup, UART configuration, command line interface, FREE-WILi UI, WebAssembly API]
-sidebar_position: 8
+sidebar_position: 1
 sidebar_label: WILEYE Getting Started
 ---
 
@@ -22,7 +22,7 @@ By the end of this guide, you'll have:
 ## Prerequisites
 
 Before starting, make sure you have:
-- WILEYE Camera Orca properly connected to FREE-WILi (see [Hardware Hookup](wileye-hardware-hookup))
+- WILEYE Camera Orca properly connected to FREE-WILi (see [Hardware Hookup](/extending-with-orcas/wileye-camera-orca/wileye-hardware-hookup/))
 - USB-C cable for programming and power
 - Computer with Python installed
 - **Latest WILEYE firmware files downloaded** from the official repository: **https://github.com/freewili/WILEye-Firmware**
@@ -410,8 +410,8 @@ Now that your WILEYE Camera Orca is set up and working:
 4. **Multi-camera Setup**: Coordinate multiple WILEYE modules
 
 ### Learning Resources
-- [WILEYE Hardware Hookup](wileye-hardware-hookup) - Physical setup and connections
-- [Main WILEYE Documentation](wileye-camera-orca) - Complete feature overview
+- [WILEYE Hardware Hookup](/extending-with-orcas/wileye-camera-orca/wileye-hardware-hookup/) - Physical setup and connections
+- [Main WILEYE Documentation](/extending-with-orcas/wileye-camera-orca/) - Complete feature overview
 - [ESP32-P4-EYE Official Documentation](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32p4/esp32-p4-eye/index.html) - Hardware platform details
 - [ESP32-P4-EYE GitHub Repository](https://github.com/espressif/esp-dev-kits/tree/master/esp32-p4-eye) - Hardware files and examples
 - [Espressif ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32p4/index.html) - Advanced ESP32-P4 programming

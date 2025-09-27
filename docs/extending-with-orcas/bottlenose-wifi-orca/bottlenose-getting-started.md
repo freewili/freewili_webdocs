@@ -2,7 +2,7 @@
 title: Bottlenose WiFi Orca - Getting Started Guide
 description: "Quick start guide for Bottlenose WiFi Orca. Learn to set up your first WiFi project, connect to networks, and communicate with FREE-WILi in under 30 minutes."
 keywords: [Bottlenose getting started, ESP32-C6 tutorial, WiFi quick start, first project, Bt tutorial, network setup]
-sidebar_position: 12
+sidebar_position: 1
 sidebar_label: Bottlenose Getting Started
 ---
 
@@ -21,7 +21,7 @@ By the end of this guide, you'll have a working WiFi system that:
 ## Prerequisites
 
 Before starting, make sure you have:
-- Bottlenose WiFi Orca properly connected to FREE-WILi (see [Hardware Hookup](bottlenose-hardware-hookup))
+- Bottlenose WiFi Orca properly connected to FREE-WILi (see [Hardware Hookup](/extending-with-orcas/bottlenose-wifi-orca/bottlenose-hardware-hookup/))
 - FREE-WILi device with latest firmware installed
 - Computer connected to FREE-WILi (via USB or network)
 - **UART Orca Communication enabled** for Bottlenose (see Step 1 below)

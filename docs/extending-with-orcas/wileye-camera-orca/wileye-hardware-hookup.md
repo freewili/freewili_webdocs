@@ -2,7 +2,7 @@
 title: WILEYE Camera Orca - Hardware Hookup Guide
 description: "Complete hardware hookup guide for WILEYE Camera Orca. Learn how to connect power, mount the camera, insert SD cards, and interface with FREE-WILi modules."
 keywords: [WILEYE hardware hookup, ESP32-P4 connections, camera mounting, MicroSD setup, USB JTAG, FREE-WILi Orca connection, hardware setup guide]
-sidebar_position: 6
+sidebar_position: 2
 sidebar_label: WILEYE Hardware Hookup
 ---
 
@@ -108,8 +108,8 @@ For detailed pin assignments and GPIO capabilities, refer to the ESP32-P4-EYE of
 ## Next Steps
 
 Once your hardware is connected:
-1. Try the [WILEYE Getting Started](wileye-getting-started) tutorial
-2. Explore advanced features in the main [WILEYE Camera Orca](wileye-camera-orca) documentation
+1. Try the [WILEYE Getting Started](/extending-with-orcas/wileye-camera-orca/wileye-getting-started/) tutorial
+2. Explore advanced features in the main [WILEYE Camera Orca](/extending-with-orcas/wileye-camera-orca/) documentation
 
 ## Additional Resources
 
