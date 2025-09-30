@@ -255,8 +255,8 @@ font-style: italic;
 .icon {
   font-size: 2rem;
   margin-right: 1rem;
-  /* display: flex;
-  justify-content: center;
+  display: flex;
+  /* justify-content: center;
   align-items: center; */
 }
 
