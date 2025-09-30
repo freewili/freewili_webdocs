@@ -39,7 +39,7 @@ Learn how to integrate FREE-WILi into your projects with step-by-step guides, ex
         </div>
         <div class="card-body">
             <h3>FREE-WILi Updater</h3>
-            <p>One-click tool to flash or update UF2 firmware. </p>
+            <p>One-click tool to flash or update UF2 <br/> firmware. </p>
         </div>
         </a>
     </div>

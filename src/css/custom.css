@@ -255,9 +255,9 @@ font-style: italic;
 .icon {
   font-size: 2rem;
   margin-right: 1rem;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .icon p {
