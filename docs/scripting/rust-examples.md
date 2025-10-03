@@ -10,6 +10,11 @@ sidebar_label: Rust Examples
 
 Rust is a modern, safe, and high-performance systems programming language. With FREE-WILi’s Rust examples, you can quickly integrate device functionality into your Rust applications.  
 
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+
+<YouTubeEmbed videoId="EjQovcqEimI" />
+
+
 ## Repository
 
 You can find the official Rust examples and source code here:  👉 [freewili-finder-rs on GitHub](https://github.com/freewili/freewili-finder-rs)
