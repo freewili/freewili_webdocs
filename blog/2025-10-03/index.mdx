@@ -1,0 +1,81 @@
+---
+slug: visioncane
+title: "VisionCane - Empowering independence through intelligent navigation"
+authors: [Shreyansh Sahu]
+tags: [FREE-WILi, mhacks, student project, hackathon]
+---
+
+> ✨ VisionCane is a step towards empowering visually impaired individuals with affordable, intelligent assistive technology.
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'image', src: '/img/blog/visioncane.jpg', alt: 'visioncane', caption: "visioncane" },
+  { type: 'image', src: '/img/blog/stick.jpg', alt: 'stick', caption: "" },
+  { type: 'image', src: '/img/blog/stick-freewili.jpg', alt: 'stick-freewili', caption: "" },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+<br/>
+
+## 🌟 Inspiration
+
+I was inspired by the daily challenges faced by visually impaired individuals in navigating unfamiliar environments and wanted to create an affordable, accessible solution that could enhance their independence and safety using modern technology.
+
+---
+
+## 👀 What it does
+
+VisionCane uses YOLO object detection to identify obstacles and landmarks, HC-SR04 ultrasonic sensors for precise distance measurement, and FREE-WILi's LIS3DH accelerometer to detect cane movement and orientation. The integrated speaker provides real-time audio feedback with spatial cues to help users navigate safely through their surroundings.
+
+---
+
+## 🛠️ How I built it
+
+I'm building a modular architecture with separate components: `CameraModule.py` for camera initialization, `objectDetection.py` for YOLO-based obstacle detection, `ultraSonic.py` for distance sensing, `stateMachine.py` for decision logic, and `main.py` as the central controller. The system integrates with FREE-WILi's API to access the LIS3DH accelerometer for motion detection and the digital speaker for audio feedback, processing real-time sensor fusion to generate intelligent navigation assistance. 
+
+---
+
+## ⚔️ Challenges I ran into
+
+Integrating real-time computer vision processing with ultrasonic sensor data and FREE-WILi accelerometer readings while maintaining low latency, ensuring reliable object detection across different lighting conditions, synchronizing multiple sensor inputs through the FREE-WILi API, and creating an intuitive audio feedback system that provides useful spatial information without overwhelming users.
+
+---
+
+## 🏆 Accomplishments I’m proud of
+
+Successfully setting up the modular architecture with separate components for camera handling, object detection, ultrasonic sensing, and state management. Implementing integration with FREE-WILi's LIS3DH accelerometer for motion detection and speaker for audio feedback, creating a clean separation of concerns that allows for easy testing and debugging of individual components.
+
+---
+
+## 📚 What I learned
+
+The importance of modular design in complex sensor fusion projects, how to integrate FREE-WILi's API for accelerometer data streaming and speaker control, structuring a state machine for real-time decision making with multiple sensor inputs, the challenges of synchronizing computer vision, ultrasonic, and accelerometer data, and the critical need for user-centered design when creating assistive technology that must be reliable and intuitive.
+
+---
+
+## 🚀 What’s next for VisionCane  
+
+Completing the implementation of each module, integrating the YOLOv8 model for object detection, implementing FREE-WILi accelerometer event handling for motion-based state changes, adding spatial audio feedback generation through the FREE-WILi speaker, implementing the state machine logic for navigation decisions, and testing the complete system with real-world scenarios to refine the user experience and optimize sensor fusion algorithms.
+
+---
+
+## 🧩 Built With  
+
+```embedded``` ```freewili``` ```python``` ```raspberry-pi```
+
+---
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/Nailfighter/VisionCane" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://devpost.com/software/visioncane/](https://devpost.com/software/visioncane/)
