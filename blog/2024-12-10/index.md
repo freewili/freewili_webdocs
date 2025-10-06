@@ -2,6 +2,7 @@
 slug: wiLi-party
 title: WiLi-Party LED Minigames
 authors: [Andi Shaska, Harshad Bhojan]
+date: 2024-12-10
 tags: [FREE-WILi, mhacks, hackathon, student project]
 ---
 

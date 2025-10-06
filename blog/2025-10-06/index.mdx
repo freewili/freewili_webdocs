@@ -1,0 +1,85 @@
+---
+slug: wattson
+title: "Wattson - Nurture a pet by being sustainable"
+authors: [Ashton Ma, reedmanning, jvmueller Mueller, Yongha Cho]
+date: 2025-10-06
+tags: [FREE-WILi, mhacks, student project, hackathon]
+---
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'video', src: 'GzLRBSqCBSw' }, // YouTube video
+  { type: 'image', src: '/img/blog/wattson-img1.jpg', alt: 'wattson-img1', caption: "" },
+  { type: 'image', src: '/img/blog/wattson-img2.jpg', alt: 'wattson-img2', caption: "" },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+<br/>
+
+## 🌱 Inspiration
+
+In our pursuit of a more sustainable society, we looked back on our average life when we were wastefully using electricity by leaving the lights on while outside. Beyond the obvious cost of an electricity bill, leaving the lights on costs around contributes to a larger, collective carbon footprint. To inspire a shift from unconscious waste to conscious conservation, we designed Wattson that tackles this challenge and empowers individuals to minimize society’s carbon footprint.
+
+---
+
+## 💡 What it does
+
+Wattson is aimed to reduce your electricity waste by encouraging users to minimize the time their light is on through gamified experiences. Wattson is a cute, virtual pet that you aim to keep alive and nurture. If you leave the lights on for too long, you risk losing your beloved Wattson. On the other hand, be eco-friendly and Wattson regains health and gives you points. Points are used in the shop to buy Wattson his favorite cosmetics, animations, and sounds. It all comes down to one simple mission: be eco-friendly and keep Wattson alive.
+
+---
+
+## 🧠 How we built it
+
+We developed the program through Python. The project is divided into three parts, the OpenCV model, backend environment and the user interface on the FREE-WILi.
+
+We used a proprietary graphics innovation, built to scale from the ground up. Because of the lack of GUI for the python api of freeWili, and us only being able to push images to the screen, we utilized the pillow library to dynamically stitch images together to create a game ready gui, capable of running at just seconds per frame. With this robust solution, we can scale easy as the first ai powered lightbulb assistant.
+
+The OpenCV model stores two image files (old_photo and new_photo). Every 15 seconds, old_photo is discarded, new_photo becomes old_photo, and a new photo is taken. The computer vision model calculates the difference in brightness between the old_photo and new_photo to detect if lights were switched on/off.
+
+The backend environment mainly exists within the Pet class, where variables such as health, points, the amount of time the lights were on, etc. are tracked. Additionally, functions that control the conditions for losses and gains of a pet's health depending on the usage of lights are implemented. These functions and variables are utilized to connect with the user interface of the FREE-WILi device.
+
+--- 
+
+## 🧩 Challenges we ran into
+
+The biggest challenge we encountered was with the FREE-WILi firmware. There was a huge learning curve with learning implementation with the Python API. <!-- and there were functionalities that didn’t work every time we wanted them to. -->
+
+---
+
+## 🏆 Accomplishments that we're proud of
+
+We are proud to say that we developed our own, custom graphics interface on FREE-WILi and a program that detects if the lights are switched on or off to interact with the self-designed pet. We believe this program will be a foundation for developing a greater program that tackles higher-stake environmental issues.
+
+---
+
+## 🎓 What we learned
+
+We learned about how difficult it is to develop a program that interacts with an embedded developmental tool. Developing a program solely on a computer and a program that interacts with multiple devices was another challenge. Sometimes, some problems are impossible to solve and we just need to find a work-around.
+
+---
+
+## 🚀 What's next for Wattson
+
+Our next steps would be to broaden our usage in generative AI to effectively detect further scenarios where energy is being wasted. The generative AI will be used to add a personality on the pets to improve the interaction with the user by adding talking or sending texts to the user for reducing waste or turning off lights properly. Though we were not able to fully implement a system that tracks when the person leaves the room, we will further improve on the CV model to include such situations as well. Beside light, the project will expand to the detection for better sustainability, such as water, trash, food waste, and heat. Additionally, we will improve the user experience through adding interactions with other people by including leaderboards, clans, and battling (such as in pokemon).
+
+---
+
+## 🧩 Built With  
+
+```freewili``` ```opencv``` ```python```
+
+
+<!-- ### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/Nailfighter/VisionCane" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+ *Source* - [https://devpost.com/software/visioncane/](https://devpost.com/software/visioncane/) -->

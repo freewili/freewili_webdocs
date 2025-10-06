@@ -2,6 +2,7 @@
 slug: wiLi-watch
 title:  WiLi Watch – Voice-Activated Wearable for Smart Home Control
 authors: [Ethan McKean, Anshul Mohanty, Alexandra Enders, Austyn Nguyen]
+date: 2024-12-10
 tags: [FREE-WILi, mhacks, hackathon, student project]
 ---
 
