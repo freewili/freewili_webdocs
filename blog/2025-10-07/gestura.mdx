@@ -1,0 +1,142 @@
+---
+slug: gestura
+title: "👋 Gestura: Gesture-Based Mouse & Voice Control"
+authors: [Chirag Bhat, Zayn Baig]
+date: 2025-10-07
+tags: [FREE-WILi, mhacks, student project, hackathon]
+---
+
+> Gesture-based mouse built using FREE-WILi and Vosk text-to-speech used to increase accessibility in using the web for disabled people, such as amputees and people with lost-mobility in their hands.
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'video', src: '7x3D7nPJlRc' }, // YouTube video
+  { type: 'image', src: '/img/blog/gestura.jpg', alt: 'gestura', caption: "Gestura: Gesture-Based Mouse & Voice Control" },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+<br/>
+
+## 💡 Inspiration
+
+At the **FREE-WILi workshop** held during **MHacks** this year, our team was inspired by a demo of a **Theremin-like device**. It used hand gestures—detected via the FREE-WILi’s accelerometer—to control pitch and volume. This sparked an idea: what if we could harness similar gestures for **accessibility**?
+
+One of our teammates has a family member who suffers from **severe Rheumatoid Arthritis**, which makes traditional mouse and keyboard usage extremely difficult. We envisioned a system that would allow users to control a computer using **just hand gestures and voice commands**—no physical touch required.
+
+Moreover, Gestura, which can be attached to the wrist or ankle, has a broader use for **amputees** and other disabilities to allow people to regain the **joy of digital interaction once again**.
+
+---------------
+
+## 🧠 What It Does
+
+**Gestura** enables users to **control their mouse using hand gestures** and perform mouse actions via **voice commands**.
+
+*   **Hand gestures** detected by the FREE-WILi move the mouse across the screen.
+*   **Voice commands** like:
+    *   “left click” 
+    *   “right click”
+    *   “double click”
+    *   “scroll up”
+    *   “scroll down”
+    *   “hold”
+    *   “release”
+    *   “pause input”
+    *   “resume input”
+        
+
+This provides a **touch-free**, accessible experience for users with limited mobility.
+
+-------------------
+
+## 🛠️ How We Built It
+
+We used **Python** and developed collaboratively with **Git** and **GitHub**.
+
+### 📦 Libraries & Tools Used
+
+*   [`FREE-WILi`](https://pypi.org/project/freewili/): Interface with the FREE-WILi accelerometer.   
+*   `pynput`: Control the mouse (movement and clicks).
+*   `sounddevice`: Capture audio input via microphone.
+*   `vosk`: Offline voice recognition using vosk-model-small.
+    
+### 🎮 Mouse Movement via Accelerometer
+
+*   Captured **X** and **Y** acceleration using the FREE-WILi Python library. 
+*   Applied **double integration** to convert acceleration to **position**.
+*   Used pynput.mouse.Controller.position to update the mouse location.
+
+### 🎙 Voice Control
+
+*   Captured real-time audio using the **computer’s microphone**.    
+*   Processed input through **Vosk** for speech recognition.
+*   Mapped voice inputs to actions like:
+    *   click
+    *   right click
+    *   scroll up/down
+    *   pause/resume input, etc.
+        
+-------------------
+
+## 🚧 Challenges We Ran Into
+
+*   **Sensor Drift & Offset**: The raw accelerometer data wasn’t zero at rest, causing significant drift after integration.
+    -  **Fix**: Introduced a **deadband** (e.g., ) to treat near-zero acceleration as zero.
+      
+*   **Erratic Movements**: Large spikes in acceleration led to uncontrollable motion.
+    -   **Fix**: Added **min/max bounds** for both velocity and acceleration to stabilize gestures.
+        
+*   **Screen Bounds**: The mouse pointer would sometimes go off-screen.
+    -   **Fix**: Implemented **position clamping** to ensure the mouse stays within the screen (1920x1080).
+        
+-------------------
+
+## 🏆 Accomplishments We're Proud Of
+
+*   **Natural-feeling gesture control** after some practice.
+*   **User feedback**: A friend testing it smiled when the device worked exactly as intended.
+*   Implemented a **broad command set**, from clicking to scrolling and pausing/resuming gesture input.
+    
+-------------------
+
+## 📚 What We Learned
+
+*   The **FREE-WILi** device is powerful and versatile for prototyping assistive tech.
+*   Sensor data in the real world can be noisy—handling that is both science and art.
+*   Combining **gesture + voice** control can dramatically improve accessibility.
+    
+--------------------------
+
+## 🚀 What’s Next for Gestura
+
+*   🛠️ Build a **gesture calibration tool** to personalize the experience.
+*   🧠 Add **machine learning** to adapt gesture detection to each user over time.
+*   🌐 Integrate with web browsers for scroll, tab switch, and navigation.
+*   🎤 Use the **FREE-WILi’s microphone** for full-device integration (once streaming support is added).
+
+--------------------------
+
+## 🧩 Built With  
+
+```freewili```
+```git```
+```github```
+```pynput```
+```python```
+```sounddevice```
+```vosx```
+
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/imzaynb/MHacks2025" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+ *Source* - [https://devpost.com/software/gestura-9oaugq/](https://devpost.com/software/gestura-9oaugq/)
