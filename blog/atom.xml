@@ -2,11 +2,216 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.freewili.com/blog/</id>
     <title>FREE-WILi Blog</title>
-    <updated>2025-10-06T00:00:00.000Z</updated>
+    <updated>2025-10-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.freewili.com/blog/"/>
     <subtitle>FREE-WILi Blog</subtitle>
     <icon>https://docs.freewili.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[👋 Gestura: Gesture-Based Mouse & Voice Control]]></title>
+        <id>https://docs.freewili.com/blog/gestura/</id>
+        <link href="https://docs.freewili.com/blog/gestura/"/>
+        <updated>2025-10-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Gesture-based mouse built using FREE-WILi and Vosk text-to-speech used to increase accessibility in using the web for disabled people, such as amputees and people with lost-mobility in their hands.]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>Gesture-based mouse built using FREE-WILi and Vosk text-to-speech used to increase accessibility in using the web for disabled people, such as amputees and people with lost-mobility in their hands.</p>
+</blockquote>
+<!-- -->
+<!-- -->
+<!-- -->
+<div class="carousel-container"><div class="carousel-root custom-carousel"><div class="carousel carousel-slider" style="width:100%"><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li></ul><button type="button" aria-label="previous slide / item" class="control-arrow control-prev"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/gestura.jpg" alt="gestura"><p class="legend"><i>Gestura: Gesture-Based Mouse &amp; Voice Control</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/7x3D7nPJlRc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/gestura.jpg" alt="gestura"><p class="legend"><i>Gestura: Gesture-Based Mouse &amp; Voice Control</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/7x3D7nPJlRc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button></div></div></div>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-inspiration">💡 Inspiration<a href="https://docs.freewili.com/blog/gestura/#-inspiration" class="hash-link" aria-label="Direct link to 💡 Inspiration" title="Direct link to 💡 Inspiration" translate="no">​</a></h2>
+<p>At the&nbsp;<strong>FREE-WILi workshop</strong>&nbsp;held during&nbsp;<strong>MHacks</strong>&nbsp;this year, our team was inspired by a demo of a&nbsp;<strong>Theremin-like device</strong>. It used hand gestures—detected via the FREE-WILi’s accelerometer—to control pitch and volume. This sparked an idea: what if we could harness similar gestures for&nbsp;<strong>accessibility</strong>?</p>
+<p>One of our teammates has a family member who suffers from&nbsp;<strong>severe Rheumatoid Arthritis</strong>, which makes traditional mouse and keyboard usage extremely difficult. We envisioned a system that would allow users to control a computer using&nbsp;<strong>just hand gestures and voice commands</strong>—no physical touch required.</p>
+<p>Moreover, Gestura, which can be attached to the wrist or ankle, has a broader use for&nbsp;<strong>amputees</strong>&nbsp;and other disabilities to allow people to regain the&nbsp;<strong>joy of digital interaction once again</strong>.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-it-does">🧠 What It Does<a href="https://docs.freewili.com/blog/gestura/#-what-it-does" class="hash-link" aria-label="Direct link to 🧠 What It Does" title="Direct link to 🧠 What It Does" translate="no">​</a></h2>
+<p><strong>Gestura</strong>&nbsp;enables users to&nbsp;<strong>control their mouse using hand gestures</strong>&nbsp;and perform mouse actions via&nbsp;<strong>voice commands</strong>.</p>
+<ul>
+<li><strong>Hand gestures</strong>&nbsp;detected by the FREE-WILi move the mouse across the screen.</li>
+<li><strong>Voice commands</strong>&nbsp;like:<!-- -->
+<ul>
+<li>“left click”</li>
+<li>“right click”</li>
+<li>“double click”</li>
+<li>“scroll up”</li>
+<li>“scroll down”</li>
+<li>“hold”</li>
+<li>“release”</li>
+<li>“pause input”</li>
+<li>“resume input”</li>
+</ul>
+</li>
+</ul>
+<p>This provides a&nbsp;<strong>touch-free</strong>, accessible experience for users with limited mobility.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-how-we-built-it">🛠️ How We Built It<a href="https://docs.freewili.com/blog/gestura/#%EF%B8%8F-how-we-built-it" class="hash-link" aria-label="Direct link to 🛠️ How We Built It" title="Direct link to 🛠️ How We Built It" translate="no">​</a></h2>
+<p>We used&nbsp;<strong>Python</strong>&nbsp;and developed collaboratively with&nbsp;<strong>Git</strong>&nbsp;and&nbsp;<strong>GitHub</strong>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-libraries--tools-used">📦 Libraries &amp; Tools Used<a href="https://docs.freewili.com/blog/gestura/#-libraries--tools-used" class="hash-link" aria-label="Direct link to 📦 Libraries &amp; Tools Used" title="Direct link to 📦 Libraries &amp; Tools Used" translate="no">​</a></h3>
+<ul>
+<li><a href="https://pypi.org/project/freewili/" target="_blank" rel="noopener noreferrer"><code>FREE-WILi</code></a>: Interface with the FREE-WILi accelerometer.</li>
+<li><code>pynput</code>: Control the mouse (movement and clicks).</li>
+<li><code>sounddevice</code>: Capture audio input via microphone.</li>
+<li><code>vosk</code>: Offline voice recognition using&nbsp;vosk-model-small.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-mouse-movement-via-accelerometer">🎮 Mouse Movement via Accelerometer<a href="https://docs.freewili.com/blog/gestura/#-mouse-movement-via-accelerometer" class="hash-link" aria-label="Direct link to 🎮 Mouse Movement via Accelerometer" title="Direct link to 🎮 Mouse Movement via Accelerometer" translate="no">​</a></h3>
+<ul>
+<li>Captured&nbsp;<strong>X</strong>&nbsp;and&nbsp;<strong>Y</strong>&nbsp;acceleration using the&nbsp;FREE-WILi&nbsp;Python library.</li>
+<li>Applied&nbsp;<strong>double integration</strong>&nbsp;to convert acceleration to&nbsp;<strong>position</strong>.</li>
+<li>Used&nbsp;pynput.mouse.Controller.position&nbsp;to update the mouse location.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-voice-control">🎙 Voice Control<a href="https://docs.freewili.com/blog/gestura/#-voice-control" class="hash-link" aria-label="Direct link to 🎙 Voice Control" title="Direct link to 🎙 Voice Control" translate="no">​</a></h3>
+<ul>
+<li>Captured real-time audio using the&nbsp;<strong>computer’s microphone</strong>.</li>
+<li>Processed input through&nbsp;<strong>Vosk</strong>&nbsp;for speech recognition.</li>
+<li>Mapped voice inputs to actions like:<!-- -->
+<ul>
+<li>click</li>
+<li>right click</li>
+<li>scroll up/down</li>
+<li>pause/resume input, etc.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-challenges-we-ran-into">🚧 Challenges We Ran Into<a href="https://docs.freewili.com/blog/gestura/#-challenges-we-ran-into" class="hash-link" aria-label="Direct link to 🚧 Challenges We Ran Into" title="Direct link to 🚧 Challenges We Ran Into" translate="no">​</a></h2>
+<ul>
+<li>
+<p><strong>Sensor Drift &amp; Offset</strong>: The raw accelerometer data wasn’t zero at rest, causing significant drift after integration.</p>
+<ul>
+<li><strong>Fix</strong>: Introduced a&nbsp;<strong>deadband</strong>&nbsp;(e.g.,&nbsp;) to treat near-zero acceleration as zero.</li>
+</ul>
+</li>
+<li>
+<p><strong>Erratic Movements</strong>: Large spikes in acceleration led to uncontrollable motion.</p>
+<ul>
+<li><strong>Fix</strong>: Added&nbsp;<strong>min/max bounds</strong>&nbsp;for both velocity and acceleration to stabilize gestures.</li>
+</ul>
+</li>
+<li>
+<p><strong>Screen Bounds</strong>: The mouse pointer would sometimes go off-screen.</p>
+<ul>
+<li><strong>Fix</strong>: Implemented&nbsp;<strong>position clamping</strong>&nbsp;to ensure the mouse stays within the screen (1920x1080).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-accomplishments-were-proud-of">🏆 Accomplishments We're Proud Of<a href="https://docs.freewili.com/blog/gestura/#-accomplishments-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments We're Proud Of" title="Direct link to 🏆 Accomplishments We're Proud Of" translate="no">​</a></h2>
+<ul>
+<li><strong>Natural-feeling gesture control</strong>&nbsp;after some practice.</li>
+<li><strong>User feedback</strong>: A friend testing it smiled when the device worked exactly as intended.</li>
+<li>Implemented a&nbsp;<strong>broad command set</strong>, from clicking to scrolling and pausing/resuming gesture input.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-we-learned">📚 What We Learned<a href="https://docs.freewili.com/blog/gestura/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What We Learned" title="Direct link to 📚 What We Learned" translate="no">​</a></h2>
+<ul>
+<li>The&nbsp;<strong>FREE-WILi</strong>&nbsp;device is powerful and versatile for prototyping assistive tech.</li>
+<li>Sensor data in the real world can be noisy—handling that is both science and art.</li>
+<li>Combining&nbsp;<strong>gesture + voice</strong>&nbsp;control can dramatically improve accessibility.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-next-for-gestura">🚀 What’s Next for Gestura<a href="https://docs.freewili.com/blog/gestura/#-whats-next-for-gestura" class="hash-link" aria-label="Direct link to 🚀 What’s Next for Gestura" title="Direct link to 🚀 What’s Next for Gestura" translate="no">​</a></h2>
+<ul>
+<li>🛠️ Build a&nbsp;<strong>gesture calibration tool</strong>&nbsp;to personalize the experience.</li>
+<li>🧠 Add&nbsp;<strong>machine learning</strong>&nbsp;to adapt gesture detection to each user over time.</li>
+<li>🌐 Integrate with web browsers for scroll, tab switch, and navigation.</li>
+<li>🎤 Use the&nbsp;<strong>FREE-WILi’s microphone</strong>&nbsp;for full-device integration (once streaming support is added).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-built-with">🧩 Built With<a href="https://docs.freewili.com/blog/gestura/#-built-with" class="hash-link" aria-label="Direct link to 🧩 Built With" title="Direct link to 🧩 Built With" translate="no">​</a></h2>
+<p><code>freewili</code>
+<code>git</code>
+<code>github</code>
+<code>pynput</code>
+<code>python</code>
+<code>sounddevice</code>
+<code>vosx</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/gestura/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
+<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/imzaynb/MHacks2025" target="_blank"><span>GitHub Repo</span></a></p></div>
+<p><em>Source</em> - <a href="https://devpost.com/software/gestura-9oaugq/" target="_blank" rel="noopener noreferrer">https://devpost.com/software/gestura-9oaugq/</a></p>]]></content>
+        <author>
+            <name>Chirag Bhat</name>
+            <uri>https://devpost.com/cbhat</uri>
+        </author>
+        <author>
+            <name>Zayn Baig</name>
+            <uri>https://devpost.com/zayn464</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="Mhacks" term="Mhacks"/>
+        <category label="Student Project" term="Student Project"/>
+        <category label="Hackathon" term="Hackathon"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[celestaisle]]></title>
+        <id>https://docs.freewili.com/blog/celestaisle/</id>
+        <link href="https://docs.freewili.com/blog/celestaisle/"/>
+        <updated>2025-10-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Optimize your shopping experience with celestaisle, an app linked to in-store pagers. Copy and paste your grocery list, select a supermarket, and pick up a compass to guide you through the store.]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>Optimize your shopping experience with celestaisle, an app linked to in-store pagers. Copy and paste your grocery list, select a supermarket, and pick up a compass to guide you through the store.</p>
+</blockquote>
+<!-- -->
+<!-- -->
+<!-- -->
+<div class="carousel-container"><div class="carousel-root custom-carousel"><div class="carousel carousel-slider" style="width:100%"><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li><li class="dot" value="2" role="button" tabindex="0" aria-label="slide item 3"></li><li class="dot" value="3" role="button" tabindex="0" aria-label="slide item 4"></li><li class="dot" value="4" role="button" tabindex="0" aria-label="slide item 5"></li></ul><button type="button" aria-label="previous slide / item" class="control-arrow control-prev"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-4.jpg" alt="celestaisle-4"><p class="legend"><i>FREE-WILi to FREE-WILi communication through IR</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/mCyS_bO6Rtw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-1.jpg" alt="celestaisle-1"><p class="legend"><i>Grocery items marked as nodes</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-2.jpg" alt="celestaisle-2"><p class="legend"><i>Live pathway</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-3.jpg" alt="celestaisle-3"><p class="legend"><i>Finished pathway</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-4.jpg" alt="celestaisle-4"><p class="legend"><i>FREE-WILi to FREE-WILi communication through IR</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/mCyS_bO6Rtw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button></div></div></div>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-inspiration">✨ Inspiration<a href="https://docs.freewili.com/blog/celestaisle/#-inspiration" class="hash-link" aria-label="Direct link to ✨ Inspiration" title="Direct link to ✨ Inspiration" translate="no">​</a></h2>
+<p>We were inspired by another project in the same realm of grocery store experience improvement. Our name was inspired by the historical use of stars for navigation. Our goal is to benefit both the customer and employee, by allowing the customer to be more thoughtful about their choices and speeding up their grocery trip while streamlining customer service on the employee side.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-it-does">🛒 What it does<a href="https://docs.freewili.com/blog/celestaisle/#-what-it-does" class="hash-link" aria-label="Direct link to 🛒 What it does" title="Direct link to 🛒 What it does" translate="no">​</a></h2>
+<p>Celestaisle is a smart shopping tool that streamlines shopping experiences from planning beforehand to in-store navigation. The app allows users to enter their zip code, provide a budget, and input their shopping list, which could include separate ingredients or potential recipes. The app looks for nearby stores and pulls item lists from each. Behind the scenes, AI is used to optimize and improve the shopping list, suggesting additional items the user may want and allowing misspellings. Options from different price ranges are given so that the user can choose between the generic brand, name brand, and organic options. Then, mapping information for a path through the store is sent to the FREE-WILi Compasses. Customers' pagers (attached to their shopping carts) display the map to navigate through the stores and buttons can be pressed to indicate an item has been found. In addition, customer pagers can emit an IR signal to request help from an employee, turning on the LEDs. Each customer pager has its own color ID associated. When employee pagers receive that IR request, the customer is added to the help queue and the LEDs on the FREE-WILi pager display the queue by color ID. Once a customer is helped, employees can mark the customer as "helped", which removes their color ID from the LED queue, and the customer LED lights turn off through a received IR signal.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-how-we-built-it">🛠 How we built it<a href="https://docs.freewili.com/blog/celestaisle/#-how-we-built-it" class="hash-link" aria-label="Direct link to 🛠 How we built it" title="Direct link to 🛠 How we built it" translate="no">​</a></h2>
+<p><strong>App &amp; Backend</strong><br>
+<!-- -->We used React Native and Expo for the app, with a python backend. The backend utilizes Flask and the Google Gemini API.</p>
+<p><strong>FREE-WILi Compasses</strong><br>
+<!-- -->We programmed the FREE-WILi Compasses in Python using the provided interface documentation. We made use of the IR signals to communicate between FREE-WILi modules. We wirelessly uploaded custom images onto the screens and used the button and LED interface to allow customers to check off their path and page for help.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-challenges-we-ran-into">⚠️ Challenges we ran into<a href="https://docs.freewili.com/blog/celestaisle/#%EF%B8%8F-challenges-we-ran-into" class="hash-link" aria-label="Direct link to ⚠️ Challenges we ran into" title="Direct link to ⚠️ Challenges we ran into" translate="no">​</a></h2>
+<p>We ran into big challenges with the FREE-WILi modules. We couldn't get CMake working at all, even with the help of the folks at FREE-WILi, so we ended up having to use the Python interface, which brought up some roadblocks with our initial implementation ideas, but we still managed to get the compasses working how we wanted. We were hoping to use RF to communicate long distance between the FREE-WILis, however, there ended up actually being an issue with the FREE-WILi API, so we were unable to use that feature.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-accomplishments-that-were-proud-of">🏆 Accomplishments that we're proud of<a href="https://docs.freewili.com/blog/celestaisle/#-accomplishments-that-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments that we're proud of" title="Direct link to 🏆 Accomplishments that we're proud of" translate="no">​</a></h2>
+<p>We are proud that we were able to get over the initial roadblock we faced with the CMake issues, and to have used an AI API in a project for the first time.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-we-learned">📚 What we learned<a href="https://docs.freewili.com/blog/celestaisle/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What we learned" title="Direct link to 📚 What we learned" translate="no">​</a></h2>
+<p>We learned how using an AI API works, and how to take advantage of the FREE-WILi Device. Some members worked with frontend backend integration for the first time.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-next-for-celestaisle">🔮 What's next for Celestaisle<a href="https://docs.freewili.com/blog/celestaisle/#-whats-next-for-celestaisle" class="hash-link" aria-label="Direct link to 🔮 What's next for Celestaisle" title="Direct link to 🔮 What's next for Celestaisle" translate="no">​</a></h2>
+<p>We would seek to use the FREE-WILi as a standalone device by uploading wasm files to the device.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-built-with">🧩 Built With<a href="https://docs.freewili.com/blog/celestaisle/#-built-with" class="hash-link" aria-label="Direct link to 🧩 Built With" title="Direct link to 🧩 Built With" translate="no">​</a></h2>
+<p><code>expo.io</code>
+<code>gemini</code>
+<code>python</code>
+<code>reactnative</code>
+<code>sql</code>
+<code>typescript</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/celestaisle/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
+<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/n0vendy/celestaisle" target="_blank"><span>GitHub Repo</span></a></p></div>
+<p><em>Source</em> - <a href="https://devpost.com/software/celestaisle/" target="_blank" rel="noopener noreferrer">https://devpost.com/software/celestaisle/</a></p>]]></content>
+        <author>
+            <name>Natalie Do</name>
+            <uri>https://devpost.com/donatali</uri>
+        </author>
+        <author>
+            <name>Abraham Vega</name>
+            <uri>https://devpost.com/abevega</uri>
+        </author>
+        <author>
+            <name>Ava Chang</name>
+            <uri>https://devpost.com/avachang</uri>
+        </author>
+        <author>
+            <name>samira shalal</name>
+            <uri>https://devpost.com/n0vendy</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="Mhacks" term="Mhacks"/>
+        <category label="Student Project" term="Student Project"/>
+        <category label="Hackathon" term="Hackathon"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Wattson - Nurture a pet by being sustainable]]></title>
         <id>https://docs.freewili.com/blog/wattson/</id>
@@ -126,69 +331,6 @@
         <author>
             <name>Nia Marzouca</name>
             <uri>https://devpost.com/niaz666</uri>
-        </author>
-        <category label="FREE-WILi" term="FREE-WILi"/>
-        <category label="Mhacks" term="Mhacks"/>
-        <category label="Student Project" term="Student Project"/>
-        <category label="Hackathon" term="Hackathon"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[celestaisle]]></title>
-        <id>https://docs.freewili.com/blog/celestaisle/</id>
-        <link href="https://docs.freewili.com/blog/celestaisle/"/>
-        <updated>2025-10-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Optimize your shopping experience with celestaisle, an app linked to in-store pagers. Copy and paste your grocery list, select a supermarket, and pick up a compass to guide you through the store.]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>Optimize your shopping experience with celestaisle, an app linked to in-store pagers. Copy and paste your grocery list, select a supermarket, and pick up a compass to guide you through the store.</p>
-</blockquote>
-<!-- -->
-<!-- -->
-<!-- -->
-<div class="carousel-container"><div class="carousel-root custom-carousel"><div class="carousel carousel-slider" style="width:100%"><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li><li class="dot" value="2" role="button" tabindex="0" aria-label="slide item 3"></li><li class="dot" value="3" role="button" tabindex="0" aria-label="slide item 4"></li><li class="dot" value="4" role="button" tabindex="0" aria-label="slide item 5"></li></ul><button type="button" aria-label="previous slide / item" class="control-arrow control-prev"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-4.jpg" alt="celestaisle-4"><p class="legend"><i>FREE-WILi to FREE-WILi communication through IR</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/mCyS_bO6Rtw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-1.jpg" alt="celestaisle-1"><p class="legend"><i>Grocery items marked as nodes</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-2.jpg" alt="celestaisle-2"><p class="legend"><i>Live pathway</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-3.jpg" alt="celestaisle-3"><p class="legend"><i>Finished pathway</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/celestaisle-4.jpg" alt="celestaisle-4"><p class="legend"><i>FREE-WILi to FREE-WILi communication through IR</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/mCyS_bO6Rtw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button></div></div></div>
-<br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-inspiration">✨ Inspiration<a href="https://docs.freewili.com/blog/celestaisle/#-inspiration" class="hash-link" aria-label="Direct link to ✨ Inspiration" title="Direct link to ✨ Inspiration" translate="no">​</a></h2>
-<p>We were inspired by another project in the same realm of grocery store experience improvement. Our name was inspired by the historical use of stars for navigation. Our goal is to benefit both the customer and employee, by allowing the customer to be more thoughtful about their choices and speeding up their grocery trip while streamlining customer service on the employee side.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-it-does">🛒 What it does<a href="https://docs.freewili.com/blog/celestaisle/#-what-it-does" class="hash-link" aria-label="Direct link to 🛒 What it does" title="Direct link to 🛒 What it does" translate="no">​</a></h2>
-<p>Celestaisle is a smart shopping tool that streamlines shopping experiences from planning beforehand to in-store navigation. The app allows users to enter their zip code, provide a budget, and input their shopping list, which could include separate ingredients or potential recipes. The app looks for nearby stores and pulls item lists from each. Behind the scenes, AI is used to optimize and improve the shopping list, suggesting additional items the user may want and allowing misspellings. Options from different price ranges are given so that the user can choose between the generic brand, name brand, and organic options. Then, mapping information for a path through the store is sent to the FREE-WILi Compasses. Customers' pagers (attached to their shopping carts) display the map to navigate through the stores and buttons can be pressed to indicate an item has been found. In addition, customer pagers can emit an IR signal to request help from an employee, turning on the LEDs. Each customer pager has its own color ID associated. When employee pagers receive that IR request, the customer is added to the help queue and the LEDs on the FREE-WILi pager display the queue by color ID. Once a customer is helped, employees can mark the customer as "helped", which removes their color ID from the LED queue, and the customer LED lights turn off through a received IR signal.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-how-we-built-it">🛠 How we built it<a href="https://docs.freewili.com/blog/celestaisle/#-how-we-built-it" class="hash-link" aria-label="Direct link to 🛠 How we built it" title="Direct link to 🛠 How we built it" translate="no">​</a></h2>
-<p><strong>App &amp; Backend</strong><br>
-<!-- -->We used React Native and Expo for the app, with a python backend. The backend utilizes Flask and the Google Gemini API.</p>
-<p><strong>FREE-WILi Compasses</strong><br>
-<!-- -->We programmed the FREE-WILi Compasses in Python using the provided interface documentation. We made use of the IR signals to communicate between FREE-WILi modules. We wirelessly uploaded custom images onto the screens and used the button and LED interface to allow customers to check off their path and page for help.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-challenges-we-ran-into">⚠️ Challenges we ran into<a href="https://docs.freewili.com/blog/celestaisle/#%EF%B8%8F-challenges-we-ran-into" class="hash-link" aria-label="Direct link to ⚠️ Challenges we ran into" title="Direct link to ⚠️ Challenges we ran into" translate="no">​</a></h2>
-<p>We ran into big challenges with the FREE-WILi modules. We couldn't get CMake working at all, even with the help of the folks at FREE-WILi, so we ended up having to use the Python interface, which brought up some roadblocks with our initial implementation ideas, but we still managed to get the compasses working how we wanted. We were hoping to use RF to communicate long distance between the FREE-WILis, however, there ended up actually being an issue with the FREE-WILi API, so we were unable to use that feature.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-accomplishments-that-were-proud-of">🏆 Accomplishments that we're proud of<a href="https://docs.freewili.com/blog/celestaisle/#-accomplishments-that-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments that we're proud of" title="Direct link to 🏆 Accomplishments that we're proud of" translate="no">​</a></h2>
-<p>We are proud that we were able to get over the initial roadblock we faced with the CMake issues, and to have used an AI API in a project for the first time.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-we-learned">📚 What we learned<a href="https://docs.freewili.com/blog/celestaisle/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What we learned" title="Direct link to 📚 What we learned" translate="no">​</a></h2>
-<p>We learned how using an AI API works, and how to take advantage of the FREE-WILi Device. Some members worked with frontend backend integration for the first time.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-next-for-celestaisle">🔮 What's next for Celestaisle<a href="https://docs.freewili.com/blog/celestaisle/#-whats-next-for-celestaisle" class="hash-link" aria-label="Direct link to 🔮 What's next for Celestaisle" title="Direct link to 🔮 What's next for Celestaisle" translate="no">​</a></h2>
-<p>We would seek to use the FREE-WILi as a standalone device by uploading wasm files to the device.</p>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-built-with">🧩 Built With<a href="https://docs.freewili.com/blog/celestaisle/#-built-with" class="hash-link" aria-label="Direct link to 🧩 Built With" title="Direct link to 🧩 Built With" translate="no">​</a></h2>
-<p><code>expo.io</code>
-<code>gemini</code>
-<code>python</code>
-<code>reactnative</code>
-<code>sql</code>
-<code>typescript</code></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/celestaisle/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
-<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/n0vendy/celestaisle" target="_blank"><span>GitHub Repo</span></a></p></div>
-<p><em>Source</em> - <a href="https://devpost.com/software/celestaisle/" target="_blank" rel="noopener noreferrer">https://devpost.com/software/celestaisle/</a></p>]]></content>
-        <author>
-            <name>Natalie Do</name>
-            <uri>https://devpost.com/donatali</uri>
-        </author>
-        <author>
-            <name>Abraham Vega</name>
-            <uri>https://devpost.com/abevega</uri>
-        </author>
-        <author>
-            <name>Ava Chang</name>
-            <uri>https://devpost.com/avachang</uri>
-        </author>
-        <author>
-            <name>samira shalal</name>
-            <uri>https://devpost.com/n0vendy</uri>
         </author>
         <category label="FREE-WILi" term="FREE-WILi"/>
         <category label="Mhacks" term="Mhacks"/>
