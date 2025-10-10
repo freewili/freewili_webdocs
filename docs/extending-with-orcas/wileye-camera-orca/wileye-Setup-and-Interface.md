@@ -92,24 +92,23 @@ For advanced users who want to modify or build custom firmware, refer to the ESP
 
 ### Flash the Firmware
 
-Navigate to your firmware folder in the command prompt/terminal and run the flashing command:
+Open up a command prompt/termina and navigate to the folder where the WILEye firmware binary exists on your computer.  
+
+Run the flashing command based on platform/setup:
 
 #### Windows Example:
 ```bash
-cd C:\path\to\wileye-firmware
 esptool.exe -p COM12 -b 460800 --before default_reset --after hard_reset --chip esp32p4 write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader.bin 0x10000 wileye_app_demo.bin 0x8000 partition-table.bin
 ```
 
 #### Mac/Linux Example:
 ```bash
-cd /path/to/wileye-firmware
-esptool -p /dev/ttyUSB0 -b 460800 --before default_reset --after hard_reset --chip esp32p4 write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader.bin 0x10000 factory_demo.bin 0x8000 partition-table.bin
+esptool -p /dev/ttyUSB0 -b 460800 --before default_reset --after hard_reset --chip esp32p4 write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader.bin 0x10000 wileye_app_demo.bin 0x8000 partition-table.bin
 ```
 
 #### ESPTool Python Example:
 ```bash
-cd /path/to/wileye-firmware
-python esptool.py -p /dev/ttyUSB0 -b 460800 --before default_reset --after hard_reset --chip esp32p4 write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader.bin 0x10000 factory_demo.bin 0x8000 partition-table.bin
+python -m esptool -p COM38 -b 460800 --before default_reset --after hard_reset --chip esp32p4 write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader.bin 0x10000 wileye_app_demo.bin 0x8000 partition-table.bin
 ```
 
 
