@@ -2,21 +2,13 @@
 title: Bottlenose WiFi Orca - Getting Started Guide
 description: "Quick start guide for Bottlenose WiFi Orca. Learn to set up your first WiFi project, connect to networks, and communicate with FREE-WILi in under 30 minutes."
 keywords: [Bottlenose getting started, ESP32-C6 tutorial, WiFi quick start, first project, Bt tutorial, network setup]
-sidebar_position: 1
+sidebar_position: 2
 sidebar_label: Bottlenose Getting Started
 ---
 
 # Bottlenose Getting Started Guide
 
-Get up and running with your Bottlenose WiFi Orca in under 30 minutes! This guide will walk you through your first project: connecting to WiFi, sending data, and communicating with FREE-WILi.
-
-## What You'll Build
-
-By the end of this guide, you'll have a working WiFi system that:
-- Connects to your WiFi network automatically
-- Sends periodic status updates over WiFi
-- Communicates with FREE-WILi via UART
-- Displays connection status via LEDs
+This guide will walk you through your first project: connecting to WiFi, sending data, and communicating with FREE-WILi.
 
 ## Prerequisites
 
@@ -36,88 +28,103 @@ Before starting, make sure you have:
 
 Before flashing firmware or using Bottlenose, you must first enable UART Orca Communication in FREE-WILi settings.
 
-### Accessing Orca Setup Settings
-
-1. **Connect to FREE-WILi** via USB console or web interface
-2. **Navigate to Settings** menu from main console
-3. **Find Orca Setup** section in settings
-4. **Access Configure Orca Communication** option
-
-### Configure UART Communication
-
-In the Orca Setup menu, you'll see:
-
-```
-========  Configure Orca Communication ========
-
-u) Orca Communication over UART [WILEye]
-
-
-Enter Letter: (q to exit)
-```
-
-1. **Press 'u'** to configure UART communication
-2. **Select Bottlenose option** from the menu:
-
-```
-========  Configure Orca Communication ========
-
-0) Off
-1) BottleNose
-2) WhaleTail
-3) WILEye
-
-Orca Communication over UART Enter Number [3]
-```
-
-3. **Enter '1'** to select BottleNose
-4. **Save settings** and exit configuration menu
-
-### Verify Configuration
-
-After setting UART communication to BottleNose:
-
-```
-========  Configure Orca Communication ========
-
-u) Orca Communication over UART [BottleNose] ✅
-```
-
-The setting should now show **[BottleNose]** instead of the default **[WILEye]**.
-
-:::tip Why This Setting Matters
-The UART Orca Communication setting tells FREE-WILi which type of Orca module is connected and how to communicate with it. Each Orca module (BottleNose, WhaleTail, WILEye) has different communication protocols and capabilities.
-
-**Bottlenose UART Parameters:**
-- **Baud Rate**: 3 Mbps - Optimized for WiFi/Bt command and data transfer
+:::tip UART Parameters Auto-Configuration
+When you enable Bottlenose Communication in Orca Setup, FREE-WILi automatically configures the required UART parameters:
+- **Baud Rate**: 3 Mbps
 - **Flow Control**: CTS and RTS enabled (Hardware flow control)
 - **Data Bits**: 8
 - **Stop Bits**: 1
 - **Parity**: None
 
-Hardware flow control ensures reliable communication for network data, terminal bridging, and configuration commands between FREE-WILi and Bottlenose.
+Hardware flow control ensures reliable high-speed data transmission between FREE-WILi and WILEYE, preventing data loss during image transfers.
 :::
 
-### Restart FREE-WILi
+You can enable FREE-WILEye Uart Comms either through FREE-WILi Main's USB console or through the FREE-WILi's UI panel. We will be covering both methods below.
 
-After changing the UART communication setting:
-1. **Power cycle FREE-WILi** to apply the new configuration
-2. **Wait for full boot** before proceeding with firmware flashing
-3. **Verify Orca detection** in FREE-WILi status messages
 
----
+### Enabling Bottlenose Orca comm via USB Console
+
+1. **Open up the COM port** related to FREE-WILi's Main cpu either by Putty, your favtior serial port monitor, or through FREE-WILi GUI.
+
+2. **Naviagate** to the Orca Setup Settings in Settings: (z\o)
+
+```
+Settings
+h) SPI
+l) I2C
+g) UART
+f) FPGA
+r) Radio 1
+m) Radio 2
+y) Radio Frequency Analyzer
+d) GPIO Directions
+a) NeoPixel Light Show
+t) RTC
+w) Wifi
+c) BT
+j) Websocket Server
+o) Orca Setup
+k) Default Script []
+i) Default FPGA []
+s) Save Settings as Startup
+n) Software Reset
+b) Software Reset To Bootloader
+z) Set settings to default
+Enter Letter: (q to exit) 
+o
+
+ ========  Configure Orca Communication ========
+u) Orca Com over UART [WILEye]
+Enter Letter: (q to exit) 
+```
+
+3. **Press 'u'** to configure UART communication
+
+```
+u
+ ========  Configure Orca Communication ========
+0) Off
+1) BottleNose
+2) WhaleTail
+3) WILEye
+Orca Com over UART Enter Number [1]
+```
+
+4. **Select Bottlenose option** from the menu (option 1)
+
+:::tip Automatic Configuration
+When you enable Bottlenose Communication, FREE-WILi automatically sets the correct UART parameters, so you don't need to configure them manually!
+:::
+
+5. **Verify** that the Orca Communication over Uart is set to [Bottlenose] ✅
+
+:::tip Saving Orca Selection on startup via Console
+   To ensure the WILEye Orca setting is presistant the next time FREE-WIli is powerd up, make sure you save the settings. You can do this by naviagating to the main settings menu in Main (z) follow by running the command `Save Settings as Startup`
+:::
+
+### Enabling WILEye Orca Communication via FREE-WILi's UI
+
+1. **Go to** the Main Menu page on FREE-WILi and then navigate to System -> Orca Setup. Then press the green button to enter.
+
+
+2. **Scroll down** untill you reach the Bottlenose option, then press the Green button to enable.
+
+
+3. **Go back to the Main Menu** by pressing the RED button.
+
+:::tip Saving Orca Selection on startup via UI
+   If you want your Orca selection to be presistant, click the blue button to save.
+:::
+
+:::tip Flash Bottlense Orca Prompt
+   You have the option to flash the default firmware for BottleNose right through this dialog.! If you click yet to this popup, the Bottlenose flasher menu will be displayed. Follow the steps to start flashing the default firmware. We also have the steps listed right down below.
+:::
 
 ## Step 2: Flash Bottlenose Firmware
 
 Before you can use Bottlenose with FREE-WILi, you need to flash the proper firmware to the ESP32-C6. The Bottlenose firmware is built into the FREE-WILi firmware and can be flashed directly from FREE-WILi.
 
-### Hardware Preparation
-
-1. **Connect Bottlenose to FREE-WILi**:
-   - Ensure Bottlenose is properly connected via the Orca connector
-   - Power on your FREE-WILi device
-
-2. **Locate Control Buttons**:
+1. **Locate Control Buttons**:
    On the Bottlenose PCB, you'll find two buttons:
    - **"BOOT" button** - Used to enter bootloader mode
    - **"RESET" button** - Used to reset the ESP32-C6
@@ -126,7 +133,17 @@ Before you can use Bottlenose with FREE-WILi, you need to flash the proper firmw
 The BOOT and RESET buttons are typically located near the ESP32-C6 chip on the Bottlenose PCB. Look for small tactile buttons labeled "BOOT" and "RST" or "RESET".
 :::
 
-3. **Enter Bootloader Mode**:
+:::tip Use Small Tools for Button Pressing
+The BOOT and RESET buttons are very small and can be difficult to press accurately with fingers. For easier and more precise button pressing, use:
+- **Tweezers** (plastic or metal)
+- **Small screwdriver** (non-conductive preferred)
+- **Pen tip** or **pencil eraser**
+- **Toothpick** or similar small pointed tool
+
+This ensures you press the correct button without accidentally pressing adjacent components.
+:::
+
+2. **Enter Bootloader Mode**:
    The ESP32-C6 must be in bootloader mode to receive firmware from FREE-WILi:
    
    **Step-by-step process:**
@@ -179,20 +196,14 @@ Selection: n
 [FLASHER] Resetting ESP32-C6...
 ```
 
-### Method B: Flash via FREE-WILi UI
+### Method B: Flash via FREE-WILi UI Orca Setup Dialog
 
-1. **Open FREE-WILi Web Interface**:
-   - Connect to FREE-WILi via network or USB
-   - Open the FREE-WILi web interface in your browser
+1. **Select Bottlenose in the Orca Setup Panel**:
 
-2. **Navigate to Wireless Menu**:
-   - Click on the **"Wireless"** menu in the main navigation
-   - This will open the wireless configuration pages
+2. **Click Yes to `Flash Bottlenose Orca`**:
+  
 
-3. **Find ESP32 Flasher Page**:
-   - **Cycle through the pages** in the wireless menu (use Next/Previous buttons)
-   - Look for the page titled **"ESP32 Default App Flasher"**
-   - This page contains the firmware flashing controls
+3. **Follow the prompts to setup Bottlenose into Bootloader mode if you haven't already done so**:
 
 4. **Flash Firmware**:
    - On the ESP32 Default App Flasher page, you'll see options for different modules
@@ -202,23 +213,9 @@ Selection: n
 5. **Monitor Progress**:
    - The interface will show a progress bar during flashing
    - Wait for the "Flashing Complete" confirmation message
-   - The ESP32-C6 will automatically reset after successful flashing
 
-### Verify Successful Flashing
+5. **Click the `RESET` button on Bottlenose to lauch default application**:
 
-After flashing completes:
-
-1. **Check Status Indicators**:
-   - Look for LED indicators on Bottlenose (if present)
-   - Status LEDs should show normal operation patterns
-
-2. **Verify Communication**:
-   - The FREE-WILi interface should detect the Bottlenose module
-   - Check the Orcas menu for Bottlenose options
-
-3. **Test Basic Functionality**:
-   - Try connecting to WiFi through Bottlenose
-   - Verify Bt functionality if needed
 
 ### Troubleshooting Firmware Flashing
 
@@ -234,19 +231,12 @@ After flashing completes:
   1. Reset both FREE-WILi and Bottlenose
   2. Retry entering bootloader mode
   3. Attempt flashing again
-- **Check**: USB connection is stable (for console method)
-
-**Problem**: "No firmware available" message
-- **Solution**: Ensure FREE-WILi firmware is up to date
-- **Check**: FREE-WILi firmware includes latest Bottlenose firmware
-- **Action**: Update FREE-WILi firmware if necessary
 
 **Problem**: Flashing appears successful but module doesn't work
 - **Solution**: 
   1. Perform a hard reset: hold RESET button for 5 seconds
   2. Check hardware connections
   3. Try flashing again
-- **Check**: Power supply is stable during operation
 
 :::note Firmware Updates
 The Bottlenose firmware embedded in FREE-WILi may be updated with new FREE-WILi firmware releases. Check for FREE-WILi updates periodically to get the latest Bottlenose features and improvements.
@@ -263,14 +253,13 @@ The default Bottlenose app is designed to extend FREE-WILi's connectivity option
 - **📱 Bt Terminal Bridge** - Provides terminal access via Bt Low Energy
 - **📡 WiFi Network Scanner** - Scans for available WiFi access points
 - **🔍 Bt Device Scanner** - Discovers nearby Bt devices
-- **💻 HTTP Web Browser Interface** - Hosts a web server for browser-based terminal access
+- **💻 HTTP Web Browser Interface** - Hosts a web server for browser-based terminal access. Accessable at port 8080
 
 #### Default App Benefits
 - **Remote Access**: Control FREE-WILi wirelessly through WiFi or Bt
 - **Web Integration**: Access FREE-WILi terminal from any web browser
 - **Network Discovery**: Find and connect to available networks
 - **Cross-Platform**: Works with phones, tablets, laptops, and other devices
-- **No Additional Software**: Built-in web server requires no special apps
 
 #### Typical Usage Scenarios
 - **Wireless Debugging**: Access FREE-WILi terminal without USB cable
@@ -409,63 +398,13 @@ u) Authentication Username [admin]
 d) Authentication Password [secure123]
 ```
 
-### Configuration Workflow
-
-#### Basic Setup (WiFi + Web Access):
-1. **Configure WiFi Station Mode**:
-   - Enable WiFi Station Mode
-   - Set your network SSID and password
-   - Save settings
-
-2. **Enable WebSocket Server**:
-   - Start WebSocket Server
-   - Use default port 8765 or customize
-   - Configure authentication if needed
-
-3. **Test Connection**:
-   - Restart Bottlenose to apply settings
-   - Connect to your WiFi network
-   - Access web interface via browser
-
-#### Advanced Setup (Full Functionality):
-1. **Configure All Services**:
-   - Set up WiFi (Station and/or AP mode)
-   - Enable Bt with custom device name
-   - Configure WebSocket server with authentication
-
-2. **Security Considerations**:
-   - Use strong passwords for AP mode
-   - Enable WebSocket authentication for public networks
-   - Choose unique Bt advertising names
-
-3. **Test All Interfaces**:
-   - Verify WiFi connection and web access
-   - Test Bt terminal connectivity
-   - Confirm WebSocket server accessibility
-
-### Applying Configuration Changes
-
-After configuring settings:
-
-1. **Save Configuration**:
-   - Exit settings menus to save changes
-   - Configuration is stored in FREE-WILi's non-volatile memory
-
-2. **Restart Services**:
-   - Restart FREE-WILi or power cycle to apply all settings
-   - Bottlenose will automatically start with new configuration
-
-3. **Verify Operation**:
-   - Check WiFi connection status
-   - Test Bt discoverability
-   - Confirm web server accessibility
-
 #### Access Your Configured Bottlenose:
 
 **Via Web Browser:**
 - Connect to same WiFi network as Bottlenose
 - Navigate to: `http://<bottlenose-ip>:8765`
 - Use authentication credentials if configured
+- Navigate to: `http://<bottlenose-ip>:8080` to access HTTP Websocket terminal 
 
 **Via Bt:**
 - Scan for Bt devices
@@ -479,7 +418,35 @@ After configuring settings:
 
 ---
 
-## Step 4: Set Up Your Project
+## Step 4: Create Your Own Custom Firmware for Bottlenose
+
+You can create your own firmware for Bottlenose to do custom tasks using Espressif's ESP-IDF development framework. This allows you to build specialized applications that leverage the ESP32-C6's WiFi and processing capabilities while communicating with FREE-WILi through custom protocols.
+
+### Development Framework Options
+
+**ESP-IDF (Recommended)**: Espressif's official development framework provides full access to ESP32-C6 hardware features and advanced networking capabilities.
+
+**Arduino IDE**: Easier entry point for beginners, but with some limitations on advanced features.
+
+**Custom Protocol Communication**: You can create your own UART communication protocol between Bottlenose and FREE-WILi, giving you complete control over data exchange.
+
+:::warning Disable Orca Communication for Custom Protocols
+**IMPORTANT**: If you plan to send your own UART packets between Bottlenose and FREE-WILi, you **MUST** disable Orca Communication in FREE-WILi settings first. The default Bottlenose protocol and your custom protocol cannot run simultaneously on the same UART channel.
+
+To disable: Go to FREE-WILi Settings → Orca Setup → Set "Orca Com over UART" to "Off"
+:::
+
+### Custom Firmware Use Cases
+
+- **IoT Sensor Networks**: Create specialized sensor data collection and transmission
+- **Custom Web Services**: Build tailored web servers and APIs for your specific needs  
+- **Protocol Bridges**: Interface FREE-WILi with other systems using custom communication protocols
+- **Real-time Data Processing**: Implement time-sensitive applications with direct hardware control
+- **Wireless Debugging Tools**: Create custom debugging and diagnostic interfaces
+
+### Getting Started with Custom Development
+
+The following sections will guide you through creating a basic custom firmware project that demonstrates WiFi connectivity and UART communication with FREE-WILi. 
 
 ### Create New Project
 
@@ -798,13 +765,7 @@ void send_http_request(void) {
 
 **Problem**: Device resets randomly
 - **Solution**: Check power supply stability
-- **Check**: USB cable quality and connection
-
-### Programming Issues
-
-**Problem**: Flash/upload failures
-- **Solution**: Try different baud rates or ports
-- **Check**: USB drivers installation
+- **Check**: FREE-WILi's Battery
 
 ## Next Steps
 
