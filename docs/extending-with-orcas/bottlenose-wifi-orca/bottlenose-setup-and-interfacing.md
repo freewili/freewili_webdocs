@@ -200,22 +200,25 @@ Selection: n
 
 1. **Select Bottlenose in the Orca Setup Panel**:
 
+![bottlenose-select-bottlenose-orca](../../assets/bottlenose-select-bottlenose-orca.png "bottlenose-select-bottlenose-orca")
+
 2. **Click Yes to `Flash Bottlenose Orca`**:
-  
+
+![bottlenose-option-flash-orca-in-ui](../../assets/bottlenose-option-flash-orca-in-ui.png "bottlenose-option-flash-orca-in-ui")
 
 3. **Follow the prompts to setup Bottlenose into Bootloader mode if you haven't already done so**:
 
+![bottlenose-flash-ui-setupprompt](../../assets/bottlenose-flash-ui-setupprompt.png "bottlenose-flash-ui-setupprompt")
+
 4. **Flash Firmware**:
-   - On the ESP32 Default App Flasher page, you'll see options for different modules
-   - Find the **"Bottlenose WiFi Orca"** section
-   - Click the **green "Flash Firmware"** button to initiate flashing
 
 5. **Monitor Progress**:
    - The interface will show a progress bar during flashing
    - Wait for the "Flashing Complete" confirmation message
 
-5. **Click the `RESET` button on Bottlenose to lauch default application**:
+![bottlenose-ui-flashing-running](../../assets/bottlenose-ui-flashing-running.png "bottlenose-ui-flashing-running")
 
+5. **Click the `RESET` button on Bottlenose to lauch default application**:
 
 ### Troubleshooting Firmware Flashing
 
@@ -308,7 +311,7 @@ x) Password for Access Point []
 - `a)` **Enable Access Point Mode** - Create WiFi hotspot using Bottlenose
 - `u)` **Access Point Authentication** - Security type (open/WPA2/WPA3)
 - `h)` **Access Point Hide SSID** - Make hotspot visible or hidden
-- `g)` **SSID for Access Point** - Hotspot name (e.g., "Bottlenose_AP")
+- `g)` **SSID for Access Point** - Hotspot name (e.g., "My_AP")
 - `x)` **Password for Access Point** - Hotspot password (8+ characters for secured networks)
 
 #### WiFi Configuration Example:
@@ -418,6 +421,27 @@ d) Authentication Password [secure123]
 
 ---
 
+### Access Bottlenose Features through FREE-WILi's UI
+
+#### Wireless Wifi Menu
+
+##### Station Menu
+
+You can set SSID, password, and enable/disable Bottlenose's station mode.
+
+The IP, Mask, and Gateway of Bottlenose values are reported here along with the MAC address for Bottlenose.
+
+![bottlenose-station-panel](../../assets/bottlenose-station-panel.png "bottlenose-station-panel")
+
+##### Acess Point Menu
+
+You can set SSID, password, and enable/disable Bottlenose's access point mode.
+
+The IP, Mask, and Gateway value for Bottlenoe's AP are reported here along with the MAC address for Bottlenose.
+
+![bottlenose-ap-panel](../../assets/bottlenose-ap-panel.png "bottlenose-ap-panel")
+
+
 ## Step 4: Create Your Own Custom Firmware for Bottlenose
 
 You can create your own firmware for Bottlenose to do custom tasks using Espressif's ESP-IDF development framework. This allows you to build specialized applications that leverage the ESP32-C6's WiFi and processing capabilities while communicating with FREE-WILi through custom protocols.
@@ -444,687 +468,59 @@ To disable: Go to FREE-WILi Settings → Orca Setup → Set "Orca Com over UART"
 - **Real-time Data Processing**: Implement time-sensitive applications with direct hardware control
 - **Wireless Debugging Tools**: Create custom debugging and diagnostic interfaces
 
-### Getting Started with Custom Development
+### Going Further with Custom Bottlenose Apps
 
-The following sections will guide you through creating a basic custom firmware project that demonstrates WiFi connectivity and UART communication with FREE-WILi. 
+For advanced users who want to develop custom applications beyond the default firmware, you can program the Bottlenose ESP32-C6 directly using standard ESP32 development tools and frameworks.
 
-### Create New Project
+#### Development Environment Setup
 
-```bash
-# Clone the ESP-IDF example template
-git clone https://github.com/espressif/esp-idf.git
-cd esp-idf/examples/get-started/hello_world
-cp -r hello_world ../../../bottlenose_first_project
-cd ../../../bottlenose_first_project
-```
+Choose your preferred development environment and follow the official setup guides:
 
-### Project Configuration
+**Arduino IDE (Easier for Beginners):**
+- **Arduino ESP32 Getting Started**: [https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
+- **ESP32-C6 Arduino Support**: [https://docs.espressif.com/projects/arduino-esp32/en/latest/](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+- Board package URL: `https://espressif.github.io/arduino-esp32/package_esp32_index.json`
+- Select **"ESP32C6 Dev Module"** as target board
 
-```bash
-# Configure for ESP32-C6
-idf.py set-target esp32c6
+**ESP-IDF (Recommended for Advanced Features):**
+- **Official ESP-IDF Getting Started Guide**: [https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/get-started/](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/get-started/)
+- **ESP32-C6 Specific Documentation**: [https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/)
+- Provides full access to ESP32-C6 hardware features and advanced networking capabilities
 
-# Open menuconfig for additional settings
-idf.py menuconfig
-```
+**PlatformIO (Professional IDE):**
+- **PlatformIO ESP32 Platform**: [https://docs.platformio.org/en/latest/platforms/espressif32.html](https://docs.platformio.org/en/latest/platforms/espressif32.html)
+- **ESP32-C6 Board Configuration**: Use board ID `esp32-c6-devkitc-1`
 
-In menuconfig:
-1. Navigate to `Example Connection Configuration`
-2. Set your WiFi SSID and password
-3. Navigate to `Component config` → `ESP32C6-Specific`
-4. Configure power management settings
+#### Programming and Debugging via USB-C
 
-## Step 5: Basic WiFi Code
+The Bottlenose includes a USB-C connector that provides direct access to the ESP32-C6 for programming and debugging:
 
-Replace the contents of `main/hello_world_main.c`:
+**Power Requirements:**
+- **Bottlenose must be connected to FREE-WILi** for power during programming
+- **USB-C port is data-only** - does not provide power to the ESP32-C6
+- Keep FREE-WILi powered on during all programming operations
 
-```c
-#include <stdio.h>
-#include <string.h>
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "freertos/event_groups.h"
-#include "esp_system.h"
-#include "esp_wifi.h"
-#include "esp_event.h"
-#include "esp_log.h"
-#include "nvs_flash.h"
-#include "driver/gpio.h"
+**Programming Workflow:**
+1. Connect Bottlenose to FREE-WILi via Orca connector (for power)
+2. Connect USB-C cable from computer to Bottlenose
+3. Use standard ESP32 development tools (ESP-IDF, Arduino IDE, PlatformIO)
+4. Flash and debug your custom firmware directly
 
-// WiFi credentials
-#define WIFI_SSID "YourWiFiNetwork"
-#define WIFI_PASS "YourPassword"
+#### Custom Protocol Development
 
-// GPIO pins
-#define LED_WIFI_PIN    2
-#define LED_STATUS_PIN  8
+When developing custom firmware, you have full control over the UART communication between Bottlenose and FREE-WILi.
 
-static const char *TAG = "BottlenoseDemo";
-static EventGroupHandle_t s_wifi_event_group;
-static const int WIFI_CONNECTED_BIT = BIT0;
-
-static void wifi_event_handler(void* arg, esp_event_base_t event_base,
-                               int32_t event_id, void* event_data) {
-    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
-        esp_wifi_connect();
-    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
-        esp_wifi_connect();
-        ESP_LOGI(TAG, "Retrying WiFi connection...");
-        gpio_set_level(LED_WIFI_PIN, 0); // Turn off WiFi LED
-    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
-        ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
-        ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
-        xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
-        gpio_set_level(LED_WIFI_PIN, 1); // Turn on WiFi LED
-    }
-}
-
-void wifi_init_sta(void) {
-    s_wifi_event_group = xEventGroupCreate();
-
-    ESP_ERROR_CHECK(esp_netif_init());
-    ESP_ERROR_CHECK(esp_event_loop_create_default());
-    esp_netif_create_default_wifi_sta();
-
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
-
-    esp_event_handler_instance_t instance_any_id;
-    esp_event_handler_instance_t instance_got_ip;
-    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
-                                                        ESP_EVENT_ANY_ID,
-                                                        &wifi_event_handler,
-                                                        NULL,
-                                                        &instance_any_id));
-    ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
-                                                        IP_EVENT_STA_GOT_IP,
-                                                        &wifi_event_handler,
-                                                        NULL,
-                                                        &instance_got_ip));
-
-    wifi_config_t wifi_config = {
-        .sta = {
-            .ssid = WIFI_SSID,
-            .password = WIFI_PASS,
-        },
-    };
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
-    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
-    ESP_ERROR_CHECK(esp_wifi_start() );
-
-    ESP_LOGI(TAG, "WiFi initialization finished.");
-}
-
-void init_gpio(void) {
-    gpio_config_t io_conf = {
-        .pin_bit_mask = (1ULL << LED_WIFI_PIN) | (1ULL << LED_STATUS_PIN),
-        .mode = GPIO_MODE_OUTPUT,
-        .pull_up_en = GPIO_PULLUP_DISABLE,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
-        .intr_type = GPIO_INTR_DISABLE
-    };
-    gpio_config(&io_conf);
-}
-
-void status_task(void *pvParameters) {
-    int counter = 0;
-    
-    while (1) {
-        // Blink status LED
-        gpio_set_level(LED_STATUS_PIN, counter % 2);
-        
-        // Print status every 10 seconds
-        if (counter % 10 == 0) {
-            ESP_LOGI(TAG, "System running for %d seconds", counter);
-            ESP_LOGI(TAG, "Free heap: %d bytes", esp_get_free_heap_size());
-            
-            // Check WiFi status
-            wifi_ap_record_t ap_info;
-            if (esp_wifi_sta_get_ap_info(&ap_info) == ESP_OK) {
-                ESP_LOGI(TAG, "Connected to: %s, RSSI: %d", ap_info.ssid, ap_info.rssi);
-            }
-        }
-        
-        counter++;
-        vTaskDelay(pdMS_TO_TICKS(1000));
-    }
-}
-
-void app_main(void) {
-    ESP_LOGI(TAG, "Bottlenose WiFi Orca - Getting Started Example");
-    ESP_LOGI(TAG, "===============================================");
-
-    // Initialize NVS
-    esp_err_t ret = nvs_flash_init();
-    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
-        ESP_ERROR_CHECK(nvs_flash_erase());
-        ret = nvs_flash_init();
-    }
-    ESP_ERROR_CHECK(ret);
-
-    // Initialize GPIO
-    init_gpio();
-
-    // Initialize WiFi
-    ESP_LOGI(TAG, "Initializing WiFi...");
-    wifi_init_sta();
-
-    // Wait for connection
-    EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
-                                           WIFI_CONNECTED_BIT,
-                                           pdFALSE,
-                                           pdFALSE,
-                                           portMAX_DELAY);
-
-    if (bits & WIFI_CONNECTED_BIT) {
-        ESP_LOGI(TAG, "Connected to WiFi successfully!");
-    } else {
-        ESP_LOGE(TAG, "Failed to connect to WiFi");
-        return;
-    }
-
-    // Start status task
-    xTaskCreate(status_task, "status_task", 4096, NULL, 5, NULL);
-
-    ESP_LOGI(TAG, "System initialized. Check the LEDs and monitor output!");
-}
-```
-
-## Step 6: Update CMakeLists.txt
-
-Update `main/CMakeLists.txt` to include required components:
-
-```cmake
-idf_component_register(SRCS "hello_world_main.c"
-                       INCLUDE_DIRS "."
-                       REQUIRES wifi nvs_flash)
-```
-
-## Step 7: Configure WiFi Credentials
-
-Edit the WiFi credentials in the code:
-```c
-#define WIFI_SSID "YourWiFiNetwork"    // Replace with your network name
-#define WIFI_PASS "YourPassword"       // Replace with your password
-```
-
-## Step 8: Build and Flash
-
-### Build the project
-
-```bash
-idf.py build
-```
-
-### Flash to Bottlenose
-
-```bash
-idf.py -p COM3 flash  # Replace COM3 with your port
-```
-
-### Monitor output
-
-```bash
-idf.py -p COM3 monitor
-```
-
-You should see output like:
-```
-I (324) BottlenoseDemo: Bottlenose WiFi Orca - Getting Started Example
-I (324) BottlenoseDemo: ===============================================
-I (334) BottlenoseDemo: Initializing WiFi...
-I (344) BottlenoseDemo: WiFi initialization finished.
-I (2344) BottlenoseDemo: Connected to WiFi successfully!
-I (3344) BottlenoseDemo: System running for 0 seconds
-I (3344) BottlenoseDemo: Free heap: 290876 bytes
-I (3344) BottlenoseDemo: Connected to: YourWiFiNetwork, RSSI: -45
-```
-
-## Step 9: Add HTTP Client (Optional)
-
-To make your Bottlenose send data over WiFi, add this HTTP client code:
-
-```c
-#include "esp_http_client.h"
-
-esp_err_t http_event_handler(esp_http_client_event_t *evt) {
-    switch(evt->event_id) {
-        case HTTP_EVENT_ERROR:
-            ESP_LOGD(TAG, "HTTP_EVENT_ERROR");
-            break;
-        case HTTP_EVENT_ON_CONNECTED:
-            ESP_LOGD(TAG, "HTTP_EVENT_ON_CONNECTED");
-            break;
-        case HTTP_EVENT_HEADERS_SENT:
-            ESP_LOGD(TAG, "HTTP_EVENT_HEADERS_SENT");
-            break;
-        case HTTP_EVENT_ON_FINISH:
-            ESP_LOGD(TAG, "HTTP_EVENT_ON_FINISH");
-            break;
-        default:
-            break;
-    }
-    return ESP_OK;
-}
-
-void send_http_request(void) {
-    esp_http_client_config_t config = {
-        .url = "http://httpbin.org/post",
-        .event_handler = http_event_handler,
-    };
-    
-    esp_http_client_handle_t client = esp_http_client_init(&config);
-    
-    // Set POST data
-    const char *post_data = "{\"device\":\"Bottlenose\",\"status\":\"online\"}";
-    esp_http_client_set_method(client, HTTP_METHOD_POST);
-    esp_http_client_set_header(client, "Content-Type", "application/json");
-    esp_http_client_set_post_field(client, post_data, strlen(post_data));
-    
-    // Perform request
-    esp_err_t err = esp_http_client_perform(client);
-    if (err == ESP_OK) {
-        ESP_LOGI(TAG, "HTTP POST Status = %d", esp_http_client_get_status_code(client));
-    } else {
-        ESP_LOGE(TAG, "HTTP POST request failed: %s", esp_err_to_name(err));
-    }
-    
-    esp_http_client_cleanup(client);
-}
-```
-
-## Step 10: Test Your Setup
-
-### Expected Results
-
-1. **Serial Monitor**: Continuous status updates and WiFi connection info
-2. **LEDs**: 
-   - Status LED should blink every second
-   - WiFi LED should be solid when connected
-3. **Network**: Device should appear in your router's connected devices list
-
-### Verify Connection
-
-1. Check your router's admin page for the connected device
-2. Try pinging the IP address shown in the monitor
-3. Monitor signal strength (RSSI) values
-
-## Troubleshooting
-
-### WiFi Issues
-
-**Problem**: "Failed to connect to WiFi"
-- **Solution**: Double-check SSID and password
-- **Check**: Verify 2.4GHz network (ESP32-C6 doesn't support 5GHz)
-
-**Problem**: Frequent disconnections
-- **Solution**: Move closer to router or check signal strength
-- **Check**: Router compatibility with ESP32 devices
-
-### Power Issues
-
-**Problem**: Device resets randomly
-- **Solution**: Check power supply stability
-- **Check**: FREE-WILi's Battery
-
-## Next Steps
-
-Congratulations! You now have a working Bottlenose WiFi system. Here are some ideas for expanding your project:
-
-### Immediate Improvements
-1. **Add web server** to control the device remotely
-2. **Implement MQTT client** for IoT communication
-3. **Add sensor reading** and data transmission
-4. **Create mobile app interface**
-
-### Advanced Features
-1. **OTA updates** for wireless firmware updates
-2. **WiFi mesh networking** with multiple devices
-3. **Bt configuration** for easy setup
-4. **Integration with FREE-WILi commands**
-
-### Learning Resources
-- [Bottlenose Interfacing Guide](bottlenose-interfacing) - Deep dive into programming
-- [Hardware Hookup Guide](bottlenose-hardware-hookup) - Physical connections
-- [Bottlenose Troubleshooting](bottlenose-troubleshooting) - Common problems and solutions
-- [Main Bottlenose Documentation](bottlenose-wifi-orca) - Complete feature overview
-
-## Code Repository
-
-The complete example code is available at:
-```
-https://github.com/freewili/bottlenose-examples/getting-started
-```
-
-## Community and Support
-
-- **Forum**: Join the FREE-WILi community forum for questions and project sharing
-- **GitHub**: Submit issues and feature requests
-- **Documentation**: Check the main documentation for advanced topics
-
-Happy networking with your Bottlenose WiFi Orca!
-
----
-
-## Going Further: Custom ESP32-C6 Programming
-
-For advanced users who want to develop custom applications on the ESP32-C6, you can program the Bottlenose directly using standard ESP32 development tools.
-
-### Development Setup Requirements
-
-Before you begin custom programming, you'll need:
-- **ESP-IDF or Arduino IDE** installed on your computer
-- **USB-C cable** for JTAG debugging and programming
-- **Bottlenose connected to FREE-WILi** for power (USB port is data-only!)
-- **ESPTool** for firmware flashing
-
-:::warning Power Requirements
-⚠️ **CRITICAL**: The USB-C port on Bottlenose is **DATA ONLY** - it does NOT provide power to the ESP32-C6. You **MUST** connect Bottlenose to FREE-WILi via the Orca connector to power the device, even when programming via USB.
+:::tip Development Resources
+- **ESP32-C6 Hardware Reference**: [https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
+- **ESP-IDF Programming Guide**: [https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/)
+- **Arduino ESP32 Examples**: [https://github.com/espressif/arduino-esp32/tree/master/libraries](https://github.com/espressif/arduino-esp32/tree/master/libraries)
+- **Community Forums**: [https://www.esp32.com/](https://www.esp32.com/) for community support and examples
 :::
 
-### Step 1: Install Development Environment
-
-Choose your preferred development environment:
-
-#### Option A: ESP-IDF (Recommended for Advanced Features)
-```bash
-# Install ESP-IDF
-git clone -b release/v5.1 --recursive https://github.com/espressif/esp-idf.git
-cd esp-idf
-./install.sh esp32c6
-
-# Set up environment
-. ./export.sh
-```
-
-#### Option B: Arduino IDE (Easier for Beginners)
-1. Install Arduino IDE
-2. Add ESP32 board package: `https://espressif.github.io/arduino-esp32/package_esp32_index.json`
-3. Select **"ESP32C6 Dev Module"** as target board
-
-#### Option C: PlatformIO (Professional IDE)
-```bash
-# Install PlatformIO extension in VS Code
-# Create new project with board: esp32-c6-devkitc-1
-```
-
-### Step 2: Hardware Connection for Programming
-
-1. **Power Setup**:
-   - Connect Bottlenose to FREE-WILi via Orca connector (for power)
-   - Keep FREE-WILi powered on during programming
-
-2. **Programming Connection**:
-   - Connect USB-C cable from computer to Bottlenose USB port
-   - This provides JTAG debugging and programming interface
-
-3. **Verify Connection**:
-   ```bash
-   # Check if ESP32-C6 is detected
-   esptool.py --list-ports
-   # Should show your COM port
-   ```
-
-### Step 3: Basic Custom Application
-
-Here's a simple example to get you started with custom Bottlenose programming:
-
-#### ESP-IDF Example - WiFi Status LED
-```c
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "esp_wifi.h"
-#include "esp_event.h"
-#include "nvs_flash.h"
-#include "driver/gpio.h"
-#include "esp_log.h"
-
-#define WIFI_SSID "YourNetwork"
-#define WIFI_PASS "YourPassword"
-#define LED_PIN GPIO_NUM_2
-
-static const char *TAG = "BottlenoseCustom";
-
-static void wifi_event_handler(void* arg, esp_event_base_t event_base,
-                               int32_t event_id, void* event_data) {
-    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
-        esp_wifi_connect();
-    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
-        gpio_set_level(LED_PIN, 0); // Turn off LED
-        esp_wifi_connect();
-        ESP_LOGI(TAG, "Retrying WiFi connection...");
-    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
-        gpio_set_level(LED_PIN, 1); // Turn on LED
-        ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
-        ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
-    }
-}
-
-void app_main(void) {
-    ESP_LOGI(TAG, "Starting Bottlenose Custom Application");
-    
-    // Initialize LED
-    gpio_config_t led_config = {
-        .pin_bit_mask = (1ULL << LED_PIN),
-        .mode = GPIO_MODE_OUTPUT,
-        .pull_up_en = GPIO_PULLUP_DISABLE,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
-        .intr_type = GPIO_INTR_DISABLE
-    };
-    gpio_config(&led_config);
-    
-    // Initialize NVS
-    esp_err_t ret = nvs_flash_init();
-    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
-        ESP_ERROR_CHECK(nvs_flash_erase());
-        ret = nvs_flash_init();
-    }
-    ESP_ERROR_CHECK(ret);
-    
-    // Initialize WiFi
-    ESP_ERROR_CHECK(esp_netif_init());
-    ESP_ERROR_CHECK(esp_event_loop_create_default());
-    esp_netif_create_default_wifi_sta();
-    
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
-    
-    esp_event_handler_instance_register(WIFI_EVENT, ESP_EVENT_ANY_ID, 
-                                       &wifi_event_handler, NULL, NULL);
-    esp_event_handler_instance_register(IP_EVENT, IP_EVENT_STA_GOT_IP, 
-                                       &wifi_event_handler, NULL, NULL);
-    
-    wifi_config_t wifi_config = {
-        .sta = {
-            .ssid = WIFI_SSID,
-            .password = WIFI_PASS,
-        },
-    };
-    
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
-    ESP_ERROR_CHECK(esp_wifi_start());
-    
-    // Main application loop
-    while (1) {
-        ESP_LOGI(TAG, "Custom application running...");
-        vTaskDelay(pdMS_TO_TICKS(10000));
-    }
-}
-```
-
-#### Arduino Example - Bt Beacon
-```cpp
-#include "WiFi.h"
-#include "BtSerial.h"
-
-BtSerial SerialBT;
-const int ledPin = 2;
-
-void setup() {
-    Serial.begin(115200);
-    pinMode(ledPin, OUTPUT);
-    
-    // Initialize Bt
-    SerialBT.begin("Bottlenose-Custom"); 
-    Serial.println("Bottlenose custom firmware started!");
-    Serial.println("Bt discoverable as: Bottlenose-Custom");
-    
-    // Startup LED sequence
-    for(int i = 0; i < 5; i++) {
-        digitalWrite(ledPin, HIGH);
-        delay(200);
-        digitalWrite(ledPin, LOW);
-        delay(200);
-    }
-}
-
-void loop() {
-    // Handle Bt communication
-    if (SerialBT.available()) {
-        String command = SerialBT.readString();
-        command.trim();
-        
-        if (command == "LED_ON") {
-            digitalWrite(ledPin, HIGH);
-            SerialBT.println("LED turned ON");
-        } else if (command == "LED_OFF") {
-            digitalWrite(ledPin, LOW);
-            SerialBT.println("LED turned OFF");
-        } else if (command == "STATUS") {
-            SerialBT.printf("Free heap: %d bytes\n", ESP.getFreeHeap());
-            SerialBT.printf("WiFi MAC: %s\n", WiFi.macAddress().c_str());
-        }
-    }
-    
-    // Periodic status blink
-    digitalWrite(ledPin, HIGH);
-    delay(100);
-    digitalWrite(ledPin, LOW);
-    delay(2900);
-}
-```
-
-### Step 4: Build and Flash Custom Firmware
-
-#### ESP-IDF Method:
-```bash
-# Create project directory
-mkdir bottlenose-custom && cd bottlenose-custom
-idf.py create-project bottlenose-app
-
-# Set target to ESP32-C6
-idf.py set-target esp32c6
-
-# Build the project
-idf.py build
-
-# Flash to Bottlenose (make sure it's powered via FREE-WILi!)
-idf.py -p COM12 flash
-
-# Monitor serial output
-idf.py -p COM12 monitor
-```
-
-#### Arduino Method:
-1. **Select Board**: Tools → Board → ESP32 Arduino → ESP32C6 Dev Module
-2. **Select Port**: Tools → Port → (your COM port)
-3. **Configure Settings**:
-   - Flash Mode: QIO
-   - Flash Size: 4MB
-   - Flash Frequency: 80MHz
-4. **Upload**: Click Upload button
-
-### Step 5: Advanced Features
-
-#### Communicate with FREE-WILi
-```c
-// UART communication with FREE-WILi
-#include "driver/uart.h"
-
-#define UART_FREEWILI UART_NUM_1
-#define BUF_SIZE 1024
-
-void init_freewili_uart(void) {
-    uart_config_t uart_config = {
-        .baud_rate = 115200,
-        .data_bits = UART_DATA_8_BITS,
-        .parity = UART_PARITY_DISABLE,
-        .stop_bits = UART_STOP_BITS_1,
-        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
-    };
-    
-    uart_param_config(UART_FREEWILI, &uart_config);
-    uart_set_pin(UART_FREEWILI, 4, 5, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
-    uart_driver_install(UART_FREEWILI, BUF_SIZE * 2, 0, 0, NULL, 0);
-}
-
-void send_to_freewili(const char* data) {
-    uart_write_bytes(UART_FREEWILI, data, strlen(data));
-}
-```
-
-### Programming Tips and Best Practices
-
-#### Power Management
-```c
-// Configure power saving for battery applications
-#include "esp_pm.h"
-
-esp_pm_config_esp32c6_t pm_config = {
-    .max_freq_mhz = 160,
-    .min_freq_mhz = 10,
-    .light_sleep_enable = true
-};
-esp_pm_configure(&pm_config);
-```
-
-#### Memory Optimization
-```c
-// Monitor memory usage
-void check_memory(void) {
-    printf("Free heap: %d bytes\n", esp_get_free_heap_size());
-    printf("Minimum free heap: %d bytes\n", esp_get_minimum_free_heap_size());
-}
-```
-
-#### Debugging with JTAG
-```bash
-# Use OpenOCD for debugging
-openocd -f board/esp32c6-builtin.cfg
-
-# In another terminal, connect GDB
-xtensa-esp32c6-elf-gdb build/your-app.elf
-(gdb) target remote :3333
-(gdb) monitor reset halt
-(gdb) continue
-```
-
-### Troubleshooting Custom Programming
-
-#### Common Issues:
-
-**Problem**: "Device not found" during flashing
-- **Solution**: Ensure Bottlenose is powered via FREE-WILi
-- **Check**: USB cable is data-capable (not just charging cable)
-
-**Problem**: "Boot mode not detected"
-- **Solution**: Hold BOOT button on ESP32-C6 while connecting USB
-- **Alternative**: Use `esptool.py --before default_reset` option
-
-**Problem**: High power consumption
-- **Solution**: Enable power management and use sleep modes
-- **Check**: Disable unused peripherals in your code
-
-**Problem**: Communication with FREE-WILi fails
-- **Solution**: Verify UART pin configuration matches hardware
-- **Check**: Baud rate and protocol settings
+---
 
 ### Development Resources
 
 - **ESP32-C6 Documentation**: [Espressif ESP32-C6 Docs](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/)
-- **Arduino ESP32**: [Arduino ESP32 Reference](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
-- **PlatformIO**: [PlatformIO ESP32 Platform](https://docs.platformio.org/en/latest/platforms/espressif32.html)
-- **Example Code**: Check the FREE-WILi GitHub repository for advanced examples
 
-**Happy coding!** Your Bottlenose WiFi Orca is now ready for custom development while maintaining integration with the FREE-WILi ecosystem! 🚀
+**Happy coding!** Your Bottlenose WiFi Orca is now ready to use!

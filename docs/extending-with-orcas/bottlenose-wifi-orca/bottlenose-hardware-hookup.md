@@ -21,6 +21,8 @@ This guide covers the physical setup and connections for the Bottlenose WiFi Orc
 
 Connecting the Bottlenose Orca to FREE-WILi is as simple as connecting the two 20-pin connectors together.
 
+![bottlenose-hardware-connection](../../assets/bottlenose-hardware-connection.png "bottlenose-hardware-connection")
+
 :::warning USB Does Not Power the Bottlenose
 
 The Bottlenose Orca can only be powered through the 20-pin connector, meaning that FREE-WILi powers it via its 3.3V power rail.
