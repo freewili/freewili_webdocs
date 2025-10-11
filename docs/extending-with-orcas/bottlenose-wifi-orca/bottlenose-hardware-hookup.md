@@ -2,7 +2,7 @@
 title: Bottlenose WiFi Orca - Hardware Hookup Guide
 description: "Complete hardware hookup guide for Bottlenose WiFi Orca. Learn how to connect power, configure WiFi, and interface with FREE-WILi modules."
 keywords: [Bottlenose hardware hookup, ESP32-C6 connections, WiFi setup, USB-C, FREE-WILi Orca connection, hardware setup guide]
-sidebar_position: 2
+sidebar_position: 1
 sidebar_label: Bottlenose Hardware Hookup
 ---
 
@@ -12,41 +12,23 @@ This guide covers the physical setup and connections for the Bottlenose WiFi Orc
 
 ## Required Components
 
-- 1 x Bottlenose WiFi Orca (ESP32-C6 board)
-- 1 x USB-C cable for programming/power
-- 1 x FREE-WILi device with Orca connector
+- 1 x Bottlenose WiFi Orca (ESP32-C6)
+- 1 x FREE-WILi
 
 ## Physical Connections
 
 ### Connecting to FREE-WILi
 
-This guide covers the physical setup and connections for the Bottlenose WiFi Orca module.
+Connecting the Bottlenose Orca to FREE-WILi is as simple as connecting the two 20-pin connectors together.
 
-1. **Power down** your FREE-WILi device before making connections
-2. **Align the Orca connector** on the Bottlenose module with the Orca port on your FREE-WILi device
-3. **Gently press** the modules together until the connectors are fully seated
-4. **Verify alignment** by checking that the boards are parallel and the connector is fully engaged
+![bottlenose-hardware-connection](../../assets/bottlenose-hardware-connection.png "bottlenose-hardware-connection")
 
-:::warning 
-Connection Precautions- 1 x Bottlenose WiFi Orca (ESP32-C6 board)- 1 x Bottlenose WiFi Orca (ESP32-C6 board)
-Always power down both devices before connecting or disconnecting Orca modules to prevent damage to the electronics.
+:::warning USB Does Not Power the Bottlenose
+
+The Bottlenose Orca can only be powered through the 20-pin connector, meaning that FREE-WILi powers it via its 3.3V power rail.
+
+The USB-C connector is only designed to access the ESP32's USB debug port for flashing custom user code and logging.
 :::
-
-### Power Supply Options
-
-The Bottlenose WiFi Orca can be powered in two ways:
-
-#### Option 1: Power via FREE-WILi (Recommended)
-- Power is supplied through the Orca connector
-- No additional power connections required
-- Most convenient for portable applications
-
-#### Option 2: USB-C Power + Programming
-
-- Connect USB-C cable to Bottlenose's USB port
-- Provides power and enables programming/debugging
-- Required for firmware development and debugging.
-- Can be used simultaneously with Orca connector power
 
 ### Communication between ESP32-C6 and FREE-WILi
 
@@ -67,202 +49,68 @@ Both device's UART is configured with the following parameters:
 
 - **3 Mbps Baudrate** - Optimized for WiFi command and data transfer
 - **CTS and RTS Controls Enabled** - Hardware flow control for reliable transmission
-- **8 Data Bits** - Standard data frame sizeThe Bottlenose WiFi Orca can be powered by the 20-pin orca connector, the USB C connector does not supply power to the board.
+- **8 Data Bits** - Standard data frame size
 - **1 Stop Bit** - Standard frame termination
 - **No Parity** - Error detection handled at higher protocol levels
 
-## GPIO and Expansion## MicroSD Card Installation
+## GPIO and Expansion
 
-:::tip Hardware Flow Control Benefits
-CTS (Clear to Send) and RTS (Request to Send) hardware flow control ensures reliable communication for network data, terminal bridging, and configuration commands between FREE-WILi and Bottlenose.
+FREE-WILi still has several I/O pins available since Bottlenose only uses UART data pins with hardware flow control. These pins are exposed on the female 20-pin port on the Bottlenose PCB labeled as `CN2`. The pinout for this connector is the same as FREE-WILi's except for the UART TX and RX pins.
+
+:::info Voltage Level Configuration
+Bottlenose automatically sets the V PINS IN (Pin 4) to 3.3V, meaning all GPIO logic levels will operate at 3.3V. No manual voltage configuration is required.
 :::
 
-### Communication between ESP32-P4-EYE and FREE-WILi
+### CN2 Connector Pinout
 
-:::tip UART parameters on FREE-WILi
+The connector is arranged as a 2x10 header with the following pin assignments:
 
-### Qwiic Connector The FREE-WIL-EYE Orca module Adapter routes UART data and hardware handshake lines between ESP32-P4-EYE and FREE-WILi.
+| Pin | Signal Name         | Notes                           |
+|-----|---------------------|---------------------------------|
+| 1   | SPI1-CS_OUT | Available for expansion         |
+| 2   | 5V OUT              | From FREE-WILi                 |
+| 3   | GPIO27_OUT          | Available for expansion         |
+| 4   | V PINS IN           | **Auto-set to 3.3V by Bottlenose** |
+| 5   | UART1_Rx_IN         | **Used by Bottlenose**          |
+| 6   | 3.3V Out            | From FREE-WILi                 |
+| 7   | UART1_CTS_IN        | **Used by Bottlenose**          |
+| 8   | I2C 0 SCL            | Available for expansion         |
+| 9   | UART1_TX_OUT        | **Used by Bottlenose**          |
+| 10  | I2C 0 SDA            | Available for expansion         |
+| 11  | UART1 RTS OUT       | **Used by Bottlenose**          |
+| 12  | SPI1_RX_IN          | Available for expansion         |
+| 13  | SPI1_TX_OUT         | Available for expansion         |
+| 14  | GPIO26_IN          | Available for expansion         |
+| 15  | SPI1_SCLK_OUT       | Available for expansion         |
+| 16  | SWCLK IN            | Available for expansion         |
+| 17  | GPIO25_OUT          | Available for expansion         |
+| 18  | SWDIO               | Available for expansion         |
+| 19  | GND                 | Common ground                   |
+| 20  | GND                 | Common ground                   |
 
-FREE-WILi will automatically set the required UART parameters if you enable Bottlenose Communication in the Orca Setup Setting. We will be going over that later.
+### Signal Descriptions
 
+**Power Pins:**
+- **Pin 2**: 5V power output from FREE-WILi
+- **Pin 4**: V PINS IN - **Automatically set to 3.3V by Bottlenose**
+- **Pin 6**: 3.3V power output from FREE-WILi  
+- **Pins 19-20**: Ground reference
+
+**UART Pins (Used by Bottlenose):**
+- **Pin 5**: UART1 Rx IN - Receives data from FREE-WILi
+- **Pin 7**: UART1 CTS IN - Hardware flow control
+- **Pin 9**: UART1 TX OUT - Transmits data to FREE-WILi  
+- **Pin 11**: UART1 RTS OUT - Hardware flow control
+
+**Available Expansion Pins:**
+- **Pins 8, 10**: I2C SCL/SDA
+- **Pins 1, 12, 13, 15**: SPI Chip Select, SPI MISO, MOSI, SCLK
+- **Pins 3, 14, 16, 17, 18**: GPIO27, GPIO26, SWCLK, GPIO25, SWDIO
+
+### Qwiic Connector
+
+The Bottlenose includes a Qwiic connector for easy plug-and-play connection to I2C sensors and modules from SparkFun's ecosystem. This connector provides access to the I2C0 bus (pins 8 and 10) with standard Qwiic pinout and 3.3V power supply.
+
+:::tip Qwiic Ecosystem Compatibility
+The Qwiic connector allows you to easily chain multiple I2C devices without breadboarding or soldering, using SparkFun's extensive library of Qwiic-compatible sensors and breakout boards.
 :::
-The Bottlenose includes a Qwiic connector for easy I2C device connections:
-:::
-
-<!-- 
-#### Pin Configuration- 
-
-**SDA**: I2C Data line#### UART Pinout
-
-The ESP32-C6 provides the following interfaces:
-
-- UART communication- **SCL**: I2C Clock line
-- I2C interface
-- SPI interface- **3.3V**: Power supply| ESP32-P4-EYE Pin | FREE-WILi Pin     | Function                               |
-- Digital I/O pins
-- Power rails (3.3V, 5V, GND)- **GND**: Ground reference|------------------|-------------------|----------------------------------------|
-
-
-
-### Qwiic Connector| ESP_5V           | 5V OUT           | Power Supply (5V)                      |
-
-The Bottlenose includes a Qwiic connector for easy I2C device connections:
-
-- **SDA**: I2C Data line## WiFi and Bluetooth Setup| GPIO37           | UART1_TX_Out     | Transmit Data (FREE-WILi → ESP32 )      |
-
-- **SCL**: I2C Clock line
-
-- **3.3V**: Power supply| GPIO38           | UART1_RX_IN      | Receive Data (ESP32 → FREE-WILi)       |
-
-- **GND**: Ground reference
-
-### WiFi Configuration| GPIO34           | UART1_CTS_IN     | Clear to Send (Hardware Flow Control)  |
-
-## WiFi Setup
-
-The ESP32-C6 supports:| GPIO51           | UART1_RTS_OUT    | Request to Send (Hardware Flow Control)|
-
-### WiFi Configuration
-
-The ESP32-C6 supports:- 802.11 b/g/n WiFi (2.4 GHz)| GND              | GND              | Ground Reference                       |
-
-- 802.11 b/g/n WiFi (2.4 GHz)
-
-- Station mode (connect to existing networks)- Station mode (connect to existing networks)
-
-- Access Point mode (create hotspot)
-
-- WiFi Direct- Access Point mode (create hotspot)Both device's UART is configured with the following parameters:
-
-- Multiple concurrent connections
-
-- WiFi Direct- 3 Mbps Baudrate
-
-### Network Capabilities
-
-- **Station Mode**: Connect to existing WiFi networks- CTS and RTS Controls Enabled
-
-- **Access Point Mode**: Create wireless hotspot for other devices
-
-- **Bridge Mode**: Route traffic between FREE-WILi and WiFi networks### Bluetooth Configuration- 8 Data Bits
-
-- **Terminal Access**: Remote console access via WiFi
-
-- **Web Server**: HTTP interface for configuration and controlBluetooth Low Energy (BLE) capabilities:- 1 Stop Bit
-
-
-
-## LED Indicators- Bluetooth 5.0 LE- No Parity
-
-
-
-The Bottlenose module includes status indicators:- Mesh networking support
-
-
-
-| LED | Color | Status | Meaning |- Low power consumption modes:::tip UART parameters on FREE-WILi
-
-|-----|-------|--------|---------|
-
-| Power | Green | Solid | Module powered and operating |FREE-WILi will automatically set the required UART parameters if you enable WILEye Communicaiotn in the Orac Setup Setting. We will be going over that later.
-
-| WiFi | Blue | Blinking | WiFi connecting/activity |
-
-| WiFi | Blue | Solid | WiFi connected |## LED Indicators:::
-
-| Status | Red | Various | System status/errors |
-
-
-
-## Troubleshooting Hardware Issues
-
-The Bottlenose module includes status indicators:
-
-### Power Problems
-
-- **No power LED**: Check USB-C connection or FREE-WILi power### Additional Exposed Pins
-
-- **Intermittent power**: Verify Orca connector is fully seated
-
-| LED | Color | Status | Meaning |
-
-### WiFi Issues
-
-- **Cannot connect to WiFi**: Check credentials and signal strength|-----|-------|--------|---------|The FREE-WIL-EYE Orca adapter also exposes additional FREE-WILi's IO to allow interfacing with additional interfaces:
-
-- **Weak signal**: Ensure antenna is properly connected
-
-- **Connection drops**: Check power supply stability| Power | Green | Solid | Module powered and operating |- I2C communication (SDA/SCL) over the QWIIC connector
-
-
-
-### Connection Issues| WiFi | Blue | Blinking | WiFi connecting/activity |- SPI interface
-
-- **Loose connection**: Ensure Orca connector is properly aligned
-
-- **Communication failures**: Verify UART configuration| Status | Red | Various | System status/errors |- Digital I/O pins
-
-- **Terminal not accessible**: Check WiFi connection and web server settings
-
-- Power rails (3.3V, 5V, GND)
-
-## Next Steps
-
-## Troubleshooting Hardware Issues
-
-Once your hardware is connected:
-
-1. Try the [Bottlenose Getting Started](bottlenose-getting-started) tutorial
-
-2. Explore advanced features in the main [Bottlenose WiFi Orca](bottlenose-wifi-orca) documentation
-
-### Power Problems
-
-## Safety Considerations
-
-- **No power LED**: Check USB-C connection or FREE-WILi power### Pin Configuration
-
-- **ESD Protection**: Use anti-static precautions when handling modules
-
-- **Temperature**: Operating temperature range is -40°C to 85°C- **Intermittent power**: Verify Orca connector is fully seatedRefer to the ESP32-P4 pinout documentation for detailed pin assignments and capabilities.
-
-- **RF Exposure**: Follow local regulations for WiFi operation
-
-- **Power**: Do not exceed 5V on power inputs
-
-- **Connection**: Always power down before connecting/disconnecting modules
-### WiFi Issues## Troubleshooting Hardware Issues
-
-- **Cannot connect to WiFi**: Check credentials and signal strength
-
-- **Weak signal**: Ensure antenna is properly connected### Camera Problems
-
-- **Connection drops**: Check power supply stability- **No image**: Check camera cable connection and lens cap
-
-- **Blurry images**: Adjust manual focus ring
-
-### Connection Issues- **Poor image quality**: Clean lens surface and check lighting conditions
-
-- **Loose connection**: Ensure Orca connector is properly aligned
-
-- **Communication failures**: Verify I2C/UART configuration## Next Steps
-
-
-
-## Next StepsOnce your hardware is connected:
-
-1. Follow the [Interfacing with WILEYE](wileye-interfacing) guide for software setup
-
-Once your hardware is connected:2. Try the [WILEYE Getting Started](wileye-getting-started) tutorial
-
-1. Follow the [Interfacing with Bottlenose](bottlenose-interfacing) guide for software setup3. Explore advanced features in the main [WILEYE Camera Orca](wileye-camera-orca) documentation
-
-2. Try the [Bottlenose Getting Started](bottlenose-getting-started) tutorial
-3. Explore advanced features in the main [Bottlenose WiFi Orca](bottlenose-wifi-orca) documentation
-
-## Safety Considerations
-
-- **ESD Protection**: Use anti-static precautions when handling modules
-- **Temperature**: Operating temperature range is -40°C to 85°C
-- **RF Exposure**: Follow local regulations for WiFi/Bluetooth operation
-- **Power**: Do not exceed 5V on power inputs -->
