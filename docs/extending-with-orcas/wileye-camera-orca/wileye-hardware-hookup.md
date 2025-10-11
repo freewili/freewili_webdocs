@@ -2,7 +2,7 @@
 title: WILEYE Camera Orca - Hardware Hookup Guide
 description: "Complete hardware hookup guide for WILEYE Camera Orca. Learn how to connect power, mount the camera, insert SD cards, and interface with FREE-WILi modules."
 keywords: [WILEYE hardware hookup, ESP32-P4 connections, camera mounting, MicroSD setup, USB JTAG, FREE-WILi Orca connection, hardware setup guide]
-sidebar_position: 2
+sidebar_position: 1
 sidebar_label: WILEYE Hardware Hookup
 ---
 
@@ -10,9 +10,9 @@ sidebar_label: WILEYE Hardware Hookup
 
 This guide covers the physical setup and connections for the WILEYE Camera Orca module.
 
-## About the ESP32-P4-EYE Platform
+## About the WILEye Platform
 
-The WILEYE Camera Orca is built around the ESP32-P4-EYE development board from Espressif. For comprehensive technical documentation about the hardware platform, refer to:
+The WILEYE Camera Orca uses the ESP32-P4-EYE evaluation board from Espressif with custom firmware and an a Adapter that connects the ESP32-P4-EYE to the FREE-WILi. For comprehensive technical documentation about the ESP32-P4-EYE platform, refer to Espressif's documentation:
 
 📖 **ESP32-P4-EYE Official Documentation**: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32p4/esp32-p4-eye/index.html
 
@@ -30,25 +30,38 @@ For advanced users working directly with the ESP32-P4-EYE, the official Espressi
 ## Required Components
 - 1 x ESP32-P4-EYE
 - 1 x FREE-WIL-EYE Orca module Adapter
-- 1 x USB-C cable for programming/power (optional, for interfacing with FREE-WILi or getting images from ESP32 P4 EYE)
-- 1 x MicroSD card (optional, for data logging)
+- 1 x USB-C cable for programming/power (For flashing the ESP32-P4-EYE with WILEye Orca Firmware)
+- 1 x MicroSD card
 
 ## Physical Connections
 
 ### Connecting to FREE-WILi
 
-1. **Power down** your FREE-WILi device before making connections
-2. **Align the Orca connector** on the WILEYE module with the Orca port on your FREE-WILi device
-3. **Gently press** the modules together until the connectors are fully seated
-4. **Verify alignment** by checking that the boards are parallel and the connector is fully engaged
+1. Power down the FREE-WILi by holding down the RED button for three seconds
+
+2. Connect the FREE-WIL-EYE Orca module Adapter to the ESP32-P4-EYE. The lens should be facing towards you like the image below
+
+![wileye-connection-alignment](../../assets/wileye-connection-alignment.png "wileye-connection-alignment")
 
 :::warning Proper Orientation Required!
 **CRITICAL:** The camera lens must be visible on the same side as the FREE-WILi logo on the adapter board. Before connecting the FREE-WIL-EYE Orca adapter to FREE-WILi, verify this alignment to prevent damage. Incorrect orientation may cause a short circuit that could damage both your FREE-WILi and the ESP32-P4-EYE!
 :::
 
+
+3. Connect the FREE-WIL-EYE Orca module Adapter to the FREE-WILi
+
+4. Power up the FREE-WILi by holding down the GREY button for three seconds
+
+5. On the ESP32-P4-EYE, flip over to the side of the device that has the screen and find the power switch on the button right hand corner. Move the switch from the "0" state to the "I" state.
+
+6. The screen on the ESP32-P4-EYE should now be powered up and running the default firmware. 
+
+
 ## MicroSD Card Installation
 
 An MicroSD card can be connected to the ESP-P4-EYE to save videos and pictures. 
+
+![wileye-sd-card-slot](../../assets/wileye-sd-card-slot.png "wileye-sd-card-slot")
 
 :::tip SD Card Recommendations
 - Use Class 10 or higher MicroSD cards for optimal performance
@@ -59,7 +72,7 @@ An MicroSD card can be connected to the ESP-P4-EYE to save videos and pictures.
 ## GPIO and Expansion
 
 ### Communication between ESP32-P4-EYE and FREE-WILi
-The FREE-WIL-EYE Orca module Adapter routes UART data and hardware handshake lines between ESP32-P4-EYE and FREE-WILi.
+The FREE-WIL-EYE Orca module Adapter routes UART with hardware handshake lines between ESP32-P4-EYE and FREE-WILi.
 
 #### UART Pinout
 
@@ -91,24 +104,19 @@ The FREE-WIL-EYE Orca adapter also exposes additional FREE-WILi's IO to allow in
 - I2C communication (SDA/SCL) over the QWIIC connector
 - SPI interface
 - Digital I/O pins
-- Power rails (3.3V, 5V, GND)
+- Power (3.3V, 5V, GND)
 
-
-
-### Pin Configuration
-For detailed pin assignments and GPIO capabilities, refer to the ESP32-P4-EYE official documentation: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32p4/esp32-p4-eye/index.html
+![wileye-orca-adapter](../../assets/wileye-FREE-WILEye-orca-adapter.png "wileye-orca-adapter")
 
 ## Troubleshooting Hardware Issues
 
-### Camera Problems
-- **No image**: Check camera cable connection and lens cap
-- **Blurry images**: Adjust manual focus ring
-- **Poor image quality**: Clean lens surface and check lighting conditions
+### Camera Issues
+- **Not Powering up**: Double check orientation of the WILEye Camera to the FREE-WIL-EYE Orca adapter. 
 
 ## Next Steps
 
 Once your hardware is connected:
-1. Try the [WILEYE Getting Started](/extending-with-orcas/wileye-camera-orca/wileye-getting-started/) tutorial
+1. Try the [Setup and Interface with the WILEye](/extending-with-orcas/wileye-camera-orca/wileye-Setup-and-Interface)
 2. Explore advanced features in the main [WILEYE Camera Orca](/extending-with-orcas/wileye-camera-orca/) documentation
 
 ## Additional Resources
