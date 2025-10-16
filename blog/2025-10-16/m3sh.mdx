@@ -1,0 +1,97 @@
+---
+slug: m3sh
+title: "M3SH"
+authors: [Forest Qin, Anish Nandamuri]
+date: 2025-10-16
+tags: [FREE-WILi, Hack Dearborn, student project, hackathon]
+---
+
+> M3SH is secure, real-time radio triangulation that saves lives.
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'video', src: 'BklTSwI_pO4' },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+<br/>
+
+## Inspiration
+
+When communication lines fail, lives are put at risk. Natural disasters, battlefield chaos, and wilderness rescues all share one critical challenge: connectivity failure. **M3SH** was born from the need for resilient communication when the internet, satellites, and cell towers go dark. Inspired by tactical radio systems and swarm intelligence, we set out to build a **self-healing mesh network** that keeps people connected anywhere.
+
+## What it does
+
+**M3SH** creates an autonomous, offline communication network using embedded radio nodes.
+
+- Each node acts as both a **transmitter** and **receiver**
+- Nodes relay messages through nearby nodes to form a **self-healing mesh**
+- Works **without the Internet**, **Wi-Fi**, **or** **satellites**
+- Ideal for **military operations, disaster relief, and search-and-rescue missions**
+- Displays real-time **signal strength (RSSI)** and **relay paths** for situational awareness
+- M3SH transforms isolation into connection, enabling secure coordination when everything else fails.
+
+## How we built it
+
+- **Hardware**: Free-WiLi modules (ESP32-based) for node-to-node radio communication
+- **Firmware**: FREE-WILi Python environment for signal broadcast, relay, and triangulation logic
+- **Frontend**: React + Next.js + TypeScript dashboard to visualize live nodes, packet flow, and signal maps
+- **Backend**: Node.js server to log node telemetry and packet routes
+- **Agents**: Lightweight AI processes simulate network optimization and adaptive rerouting
+
+## Challenges we ran into
+
+- **FREE-WILi**: a major challenge we ran into was the lack of macOS support for FREE-WILi development. Since all of our team used Macs, we struggled to install the necessary drivers and toolchains to flash and configure the devices. So we brought in Windows machines, which had built-in support.
+- **Bottlenose modul**: we ran into several issues with the Bottlenose module while initializing the Display and Main CPUs. After testing, we found newer firmware versions were incompatible with our setup. Rolling both back finally let us load the Bottlenose drivers and restore stable Wi-Fi and Bluetooth access.
+- **Signal calibration**: translating RSSI values into accurate distance metrics for triangulation using the standard log-distance path loss model.
+- **Network synchronization**: ensuring nodes forward packets without infinite loops or message loss
+- **Visualization**: rendering live mesh changes in real time without lag
+- **Hardware constraints**: limited memory and CPU on FREE-WILi boards restricted AI features
+
+## Accomplishments that we're proud of
+
+- Built a functioning **offline mesh network** using inexpensive FREE-WILi hardware
+- Achieved **real-time multi-hop packet routing** with visual relay tracing
+- Designed a **signal-to-distance mapping system** for node triangulation and localization
+- Created a working **command-and-control dashboard** for monitoring and testing the network
+
+## What we learned
+
+- How to translate **radio frequency (RF)** principles into practical mesh communication
+- The balance between **range, packet loss, and power efficiency** in embedded systems
+- How to use **RSSI, TTL, and latency** data to optimize routing paths
+- Agents like Fetch.ai are powerful tools for **futuristic** automation.
+
+## What's next for our Team
+
+- **Drone integration**: airborne relays to expand mesh range over disaster zones
+- **Encryption**: secure message transmission for military-grade safety
+- **Offline AI agents**: local models that adjust node power, frequency, and routing autonomously
+- **Multi-device compatibility**: smartphone or wearable access to the mesh via BLE bridges
+- **Global scalability**: adapting M3SH for international disaster response and field deployments
+
+## Built With
+
+`agentverse`
+`cloudflare`
+`fetch.ai`
+`free-wili`
+`next.js`
+`node.js`
+`python`
+`react`
+`rest-api`
+`shadcn/ui`
+`tailwindcss`
+`typescript`
+`uagent`
+`vercel`
+`vite`
+
+*Source* - [https://devpost.com/software/m3sh-vhqy3j](https://devpost.com/software/m3sh-vhqy3j)

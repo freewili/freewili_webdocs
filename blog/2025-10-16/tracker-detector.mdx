@@ -1,0 +1,18 @@
+---
+slug: tracker-detector
+title: "Tracker Detector"
+authors: [Ahmad Hashem, Mohamad Syaj, Jad Jonaidi, Haitham Hayajneh]
+date: 2025-10-16
+tags: [FREE-WILi, Hack Dearborn, student project, hackathon]
+---
+
+> Your personal radar for AirTags, Tiles, and everything sneaky.
+
+Inspiration We kept hearing about hidden tags in backpacks, cars, and dorms. We wanted a simple, student-friendly way to see what’s around you with just a Raspberry Pi. <!-- truncate --> What it does Scans BLE beacons and flags tracker-like signals (AirTag/Find My, Tile, SmartTag, Pebblebee). Uses RSSI smoothing, dwell time, and Apple-specific payload checks to cut false alarms. Optional Enroll mode fingerprints your demo tag. How we built it Python + Bleak on a Pi. Async scanning loop, moving-average RSSI, per-device timers/cooldowns, iBeacon exclusion, tight Find-My heuristics, LED blink on alert. Challenges we ran into Apple’s 0x004C is everywhere, MACs rotate, and hackathon halls are noisy. We fixed it with stricter payload checks, persistence windows, and rate limiting. Accomplishments we’re proud of It actually works in a crowded room, the Enroll mode makes demos clean, and everything runs locally—no cloud, no accounts. What we learned BLE ads > MACs, signal smoothing matters, and small UX touches (LED blink, clear logs) build trust.
+
+## Built With
+
+`python`
+`raspberry-pi`
+
+*Source* - [https://devpost.com/software/tracker-detector](https://devpost.com/software/tracker-detector)
