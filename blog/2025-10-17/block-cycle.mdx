@@ -1,0 +1,66 @@
+---
+slug: block-cycle
+title: "Block Cycle"
+authors: [Natalie K, Ty Senopole, Nimbus72727, Suho-Park1 Park]
+date: 2025-10-17
+tags: [FREE-WILi, Hack Dearborn, student project, hackathon]
+---
+
+> Have you ever wondered if your product is recyclable? Look no further; our program analyzes if a product is recyclable or not using our camera technology and provides steps on how to recycle it.
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'video', src: '5N4ZulY_rLs' },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+## Inspiration
+
+The original inspiration was to scan a product barcode and receive recycling information. After being introduced to the Free-Wili, a microcontroller with a built-in screen, we switched gears to gamifying recycling with a virtual pet, as well as using image detection.
+
+## What it does
+
+Using the Free-Wili, we use the camera module to capture a photo of a product that the user is ready to dispose. From there, a Python program sends the photo to the Gemini API. It identifies what is found in the image, if it is recyclable, and provides steps on how to prep the item for recycling. Then, a Pygame program reads the output from the Gemini API and outputs an image of our virtual pet in either a happy state or a sad state, depending on whether the product is recyclable or not. Additionally, there is a health system where the pet receives or loses ten points depending on what product is scanned.
+
+## How we built it
+
+We used the Free-Wili and the WILLEYE Camera Orca attachment to take a picture. We also used Python and Gemini for image processing. Pygame was used to handle the visual elements for the virtual pet.
+
+## Challenges we ran into
+
+Learning how to use the Free-Wili from scratch because it not only new hardware but also new software for everyone in the team. We ran into issues with image detection while setting up Gemini. Unfortunately, some ideas had to be scrapped. We wanted to program a button on the Free-Wili so that it takes and saves the picture on the computer. We also wanted the virtual pet to be displayed on the Free-Wili device; however, we were unable to transfer the images from the computer to the display.
+
+## Accomplishments that we're proud of
+
+We were able to get the WILLEYE camera to capture images. The image processing and prompt engineering gave a consistent and viable response. We were able to find ways around our ideas with the limited knowledge we had of the hardware within 24 hours.
+
+## What we learned
+
+We learned how to use the Free-Wili and what it is capable of. We learned how to implement an API for image processing. We learned how to use GitHub to better collaborate on a larger-scale project.
+
+## What's next for Block Cycle
+
+If we had more time, we would figure out how to display the virtual pet on the screen on the Free-Wili. We would also make the specific analysis of the images be played through text-to-speech to the user. We would also provide where the items could be recycled in the response.
+
+## Built With
+
+`free-wili`
+`gemini`
+`genai`
+`python`
+`wileye-camera-orca`
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/Ty-Cheng5/HackDearborn4" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://devpost.com/software/beatbox-jrpklt](https://devpost.com/software/beatbox-jrpklt)

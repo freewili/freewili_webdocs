@@ -1,0 +1,101 @@
+---
+slug: 4khd_accessibility
+title: "4kHD_Accessibility"
+authors: [Fazal Rahaman Pasha Mohammed, Derek Servin, Heisenberg217, Jaivanth Melanaturu]
+date: 2025-10-17
+tags: [FREE-WILi, Hack Dearborn, student project, hackathon]
+---
+
+> Motion & voice control for computers. We map wrist movements to keystrokes and use voice for web scrolling, giving users hands-free input control.
+
+## 4kHD_Accessibility: Alternative Input Control System
+
+## 💡 Inspiration
+
+The primary goal of **4kHD_Accessibility** is to address the significant barrier that traditional keyboards and mice present to individuals with various disabilities, particularly those with limited upper body mobility or dexterity. We were inspired to create an **intuitive and feature-rich** alternative input method that offers comprehensive control over computing interfaces using accessible physical movements and voice commands.
+
+<!-- truncate -->
+
+## 💻 What it does
+
+Our project provides a versatile alternative input control system based on physical motion and voice commands.
+
+**1. Motion-to-Keystroke Mapping (Wrist Control):**
+
+- Utilizes motion-tracking to capture simple, distinct wrist movements.
+- Maps these movements directly to standard keyboard **keystrokes** (e.g., WASD, arrow keys, Space).
+- This allows for functional control over games and applications, as demonstrated in our included demos.
+
+**2. Voice-Activated Web Navigation:**
+
+- Enables hands-free web interaction.
+- Users can issue voice commands to **scroll up and scroll down** on any web page.
+
+🛠️ How we built it
+
+We built **4kHD_Accessibility** by combining specialized hardware integration with robust software models.
+
+- **Motion Control (Wrist):**
+  - We utilized the **FREE-WILi's** platform to capture motion data.
+  - We developed custom Python scripts ( see `scripts/one_wili_wasd.py`, `combo_wili.py` ) to process the sensor data and translate distinct wrist movements into clean keystroke outputs.
+
+- **Voice Integration:**
+  - We incorporated **Google's Speech-to-Text model** via the **Python SpeechRecognition library**.
+  - This converts spoken commands into text, which our scripts ( e.g., `scripts/aud.py` , `scripts/aud_with_search.py` ) then map to web scroll actions.
+
+- **Demonstrations:**
+  - The project includes several demo games (**Demo/**) to immediately showcase the real-world usability of the motion control input.
+
+## 📁 Repository Structure
+
+The project is organized into two main folders:
+
+| Folder   | Contents                                                                                                                                            | Description                                                                                                                         |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Demo/    | `Chess.html`, `chess.py`, `connect4.html`, `connect4.py`, `tron.py`                                                                                 | Contains files for simple web-based and application-based games to demonstrate motion-to-keystroke control in a real-world setting. |
+| scripts/ | `aud.py`, `aud_with_search.py`, `audiocapture.py`, `both_wili.py`, `combo_wili.py`, `combo_with_audio.py`, `live_cam.py`, `one_wili_wasd.py`        | The core Python scripts that handle motion data capture, voice recognition, keystroke mapping, and camera/system interaction.       |
+
+## 🛑 Challenges we ran into
+
+- **Defining Actionable Control**: Creating the different motions for actionable control was challenging. We had to find a balance between motions that are simple enough for users to perform consistently, yet distinct enough to be reliably recognized by the system without false positives.
+- **FreeWilis Limitations**: The **FreeWilis Camera doesn't have native live feed support**. This required us to develop technical workarounds to process the motion data effectively in near real-time, which was critical for maintaining responsiveness.
+
+## 🏆 Accomplishments that we're proud of
+
+Despite the challenges, we successfully delivered a robust proof-of-concept:
+
+- **Functional Motion Controller**: We successfully built a controller that can identify different motions and map those motions to keystrokes for **real-world examples**, as demonstrated by the working games in the `Demo/` folder.
+- **Focused Voice Control**: We were able to implement precise voice control to handle **page scrolling**, which is a key interaction for hands-free web browsing.
+
+## 🧠 What we learned
+
+This project provided deep insights into accessibility development:
+
+- We gained a thorough understanding of the **FreeWili** platform and its technical documentation.
+- We learned how to integrate and optimize **Google's Speech-to-Text model** for application control.
+- We mastered the essentials of developing robust algorithms for accessible **motion control**.
+
+## ⏭️ What's next for 4kHD_Accessibility
+
+This is just the beginning. Our vision for the project's future includes:
+
+- **Real-World Deployment**: Potential for better implementation for **real-world deployment**. This includes creating a stable, installable application and conducting extensive user testing with the target community.
+- **Expanded Voice Commands**: Expanding the voice command set beyond scrolling to allow interaction with links, buttons, and form inputs.
+- **Advanced Gesture Library**: Developing a wider range of recognized motion and gesture commands for more complex, fine-grained control.
+
+#### Developed at HackDearborn 4 by Jaivanth, Paul, Fazal, Derek.
+
+## Built With
+
+`chatgpt`
+`gemini`
+`python`
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/Derek-Servin/4kHD_30fps" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://devpost.com/software/4khd_accessibility](https://devpost.com/software/4khd_accessibility)

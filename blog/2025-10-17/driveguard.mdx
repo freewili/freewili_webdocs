@@ -1,0 +1,69 @@
+---
+slug: driveguard
+title: "DriveGuard"
+authors: [Ameer Kayed]
+date: 2025-10-17
+tags: [FREE-WILi, Hack Dearborn, student project, hackathon]
+---
+
+> DriveGuard, powered by FREE-WILi, spots distracted drivers in real time and lights up to keep you focused on the road.
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'video', src: 'rlxwuNzEJOg' },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+## Inspiration
+
+Distracted driving causes so many preventable accidents every year. I wanted to create something that reacts in real time to help drivers stay focused. That idea became **DriveGuard**, powered by FREE-WILi, a system that monitors where the driver is looking and uses LED feedback to keep them alert.
+
+## What it does
+
+- **DriveGuard** uses computer vision to track the driver’s eyes and head position.
+- If the driver is distracted, the **FREE-WILi LEDs turn red** to warn them.
+- If the driver is focused, the LEDs stay **green**.
+- Everything happens live, giving the driver constant awareness of their focus on the road.
+
+## How we built it
+
+The system was built using **Python**, **OpenCV**, and **MediaPipe** for tracking, along with **FREE-WILi scripts** to control the LED indicators. A simulated driving video runs beside the webcam feed to mimic a real driving environment and test the system’s accuracy.
+
+## Challenges we ran into
+
+It was challenging to work with a system I had no prior experience in. The **FREE-WILi scripts** were difficult to find and understand at first, so I had to do a lot of research and testing to get everything working properly. Integrating new hardware with computer vision took time and patience.
+
+## Accomplishments that we're proud of
+
+- Fully functional system
+- Successful integration with **FREE-WILi**
+- LED light feedback that clearly shows driver status
+- Real-time system that runs smoothly
+
+## What we learned
+
+I learned how hard it can be to bring multiple systems together, but also how rewarding it feels when it works. I also discovered how powerful **computer vision** is — especially **MediaPipe**. It was amazing to see it detect distraction even when my head was straight but my eyes were wandering.
+
+## What's next for DriveGuard
+Next, I want to integrate the **FREE-WILi bracelets** for more feedback and possibly add a **beep sound** when distraction is detected. I also plan to **optimize the system** to reduce delay and make it react even faster.
+
+## Built With
+
+`mediapipe`
+`opencv`
+`python`
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/ameerk34/DriveGuard" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://devpost.com/software/driveguard](https://devpost.com/software/driveguard)
