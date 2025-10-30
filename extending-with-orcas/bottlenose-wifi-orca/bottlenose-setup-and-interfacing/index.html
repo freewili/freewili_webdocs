@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Bottlenose WiFi Orca - Getting Started Guide | FREE-WILi</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.freewili.com/img/freewili-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.freewili.com/img/freewili-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.freewili.com/extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Bottlenose WiFi Orca - Getting Started Guide | FREE-WILi"><meta data-rh="true" name="description" content="Quick start guide for Bottlenose WiFi Orca. Learn to set up your first WiFi project, connect to networks, and communicate with FREE-WILi in under 30 minutes."><meta data-rh="true" property="og:description" content="Quick start guide for Bottlenose WiFi Orca. Learn to set up your first WiFi project, connect to networks, and communicate with FREE-WILi in under 30 minutes."><meta data-rh="true" name="keywords" content="Bottlenose getting started,ESP32-C6 tutorial,WiFi quick start,first project,Bt tutorial,network setup"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.freewili.com/extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing/"><link data-rh="true" rel="alternate" href="https://docs.freewili.com/extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing/" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.freewili.com/extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Extending with Orcas","item":"https://docs.freewili.com/extending-with-orcas/"},{"@type":"ListItem","position":2,"name":"Bottlenose WiFi Orca","item":"https://docs.freewili.com/extending-with-orcas/bottlenose-wifi-orca/"},{"@type":"ListItem","position":3,"name":"Bottlenose Getting Started","item":"https://docs.freewili.com/extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="FREE-WILi RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="FREE-WILi Atom Feed">
 
@@ -17,9 +17,9 @@
 <link rel="icon" href="/img/favicon-512x512.png" sizes="512x512">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta property="og:type" content="website" data-rh="true">
-<script src="/js/zoom.js" async></script><link rel="stylesheet" href="/assets/css/styles.064b7b75.css">
-<script src="/assets/js/runtime~main.445f800d.js" defer="defer"></script>
-<script src="/assets/js/main.94353a49.js" defer="defer"></script>
+<script src="/js/zoom.js" async></script><link rel="stylesheet" href="/assets/css/styles.fcf2b91a.css">
+<script src="/assets/js/runtime~main.67aaeca5.js" defer="defer"></script>
+<script src="/assets/js/main.e5b96f98.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -27,363 +27,363 @@
 </defs></svg>
 <script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo-new.svg"><link rel="preload" as="image" href="/img/logo-dark-new.svg"><link rel="preload" as="image" href="/img/FREE-WILi_trans_logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="theme-announcement-bar announcementBar_mb4j" style="background-color:#B11111;color:#fff" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY"><img width="13.60px" height="13.60px" src="https://img.icons8.com/ios-filled/50/FFFFFF/rocket.png" alt="rocket"> We have released a new firmware update!  <a target="_blank" rel="noopener noreferrer" href="https://github.com/freewili/freewili-firmware">Check it out on GitHub</a> and get the latest version now.</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" target="_self" href="/"><div class="navbar__logo"><img src="/img/logo-new.svg" alt="FREE-WILi_Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo-dark-new.svg" alt="FREE-WILi_Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a href="https://freewili.com/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link nav-link">Website<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://docs.freewili.com/blog/" target="_self" rel="noopener noreferrer" class="navbar__item navbar__link nav-link">Blog<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Products</a><ul class="dropdown__menu"><li><a href="https://freewili.com/products/freewili/" target="_blank" rel="noopener noreferrer" class="dropdown__link">FREE-WILi<svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li><a href="https://freewili.com/products/orca-modules/" target="_blank" rel="noopener noreferrer" class="dropdown__link">Orca Modules<svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li><a href="https://freewili.com/products/whale-tail/" target="_blank" rel="noopener noreferrer" class="dropdown__link">Whale Tail<svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/freewili/FreeWili_WebDocs/tree/main" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG menuWithAnnouncementBar_GW3s"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/"><span title="Getting Started" class="categoryLinkLabel_W154">Getting Started</span></a><button aria-label="Expand sidebar category &#x27;Getting Started&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/gpio/"><span title="GPIO" class="categoryLinkLabel_W154">GPIO</span></a><button aria-label="Expand sidebar category &#x27;GPIO&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/scripting/"><span title="Scripting" class="categoryLinkLabel_W154">Scripting</span></a><button aria-label="Expand sidebar category &#x27;Scripting&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/tutorials/"><span title="Tutorials" class="categoryLinkLabel_W154">Tutorials</span></a><button aria-label="Expand sidebar category &#x27;Tutorials&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/extending-with-orcas/"><span title="Extending with Orcas" class="categoryLinkLabel_W154">Extending with Orcas</span></a><button aria-label="Collapse sidebar category &#x27;Extending with Orcas&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/extending-with-orcas/maestro-debug-orca/"><span title="Maestro Debug Orca" class="linkLabel_WmDU">Maestro Debug Orca</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/extending-with-orcas/jambu-orca/"><span title="Jambu Serial LED Control Orca" class="linkLabel_WmDU">Jambu Serial LED Control Orca</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/extending-with-orcas/whaletail-orca/"><span title="WhaleTail Orca" class="linkLabel_WmDU">WhaleTail Orca</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/extending-with-orcas/bottlenose-wifi-orca/"><span title="Bottlenose WiFi Orca" class="categoryLinkLabel_W154">Bottlenose WiFi Orca</span></a><button aria-label="Collapse sidebar category &#x27;Bottlenose WiFi Orca&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/extending-with-orcas/bottlenose-wifi-orca/bottlenose-hardware-hookup/"><span title="Bottlenose Hardware Hookup" class="linkLabel_WmDU">Bottlenose Hardware Hookup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing/"><span title="Bottlenose Getting Started" class="linkLabel_WmDU">Bottlenose Getting Started</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/extending-with-orcas/wileye-camera-orca/"><span title="WILEYE Camera Orca" class="categoryLinkLabel_W154">WILEYE Camera Orca</span></a><button aria-label="Expand sidebar category &#x27;WILEYE Camera Orca&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/extending-with-orcas/custom-orca/"><span title="Custom Orca" class="linkLabel_WmDU">Custom Orca</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/hardware-low-level-details/"><span title="Hardware Low Level Details" class="categoryLinkLabel_W154">Hardware Low Level Details</span></a><button aria-label="Expand sidebar category &#x27;Hardware Low Level Details&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/defcon-badges/"><span title="DEFCON Badges" class="categoryLinkLabel_W154">DEFCON Badges</span></a><button aria-label="Expand sidebar category &#x27;DEFCON Badges&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/helpful-links/"><span title="Helpful Links" class="categoryLinkLabel_W154">Helpful Links</span></a><button aria-label="Expand sidebar category &#x27;Helpful Links&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/buy-now/"><span title="Buy Now From Our Distributor Network" class="linkLabel_WmDU">Buy Now From Our Distributor Network</span></a></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/extending-with-orcas/"><span>Extending with Orcas</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/extending-with-orcas/bottlenose-wifi-orca/"><span>Bottlenose WiFi Orca</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Bottlenose Getting Started</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Bottlenose Getting Started Guide</h1></header>
 <p>This guide will walk you through your first project: connecting to WiFi, sending data, and communicating with FREE-WILi.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h2>
 <p>Before starting, make sure you have:</p>
 <ul>
-<li>Bottlenose WiFi Orca properly connected to FREE-WILi (see <a href="/extending-with-orcas/bottlenose-wifi-orca/bottlenose-hardware-hookup/">Hardware Hookup</a>)</li>
-<li>FREE-WILi device with latest firmware installed</li>
-<li>Computer connected to FREE-WILi (via USB or network)</li>
-<li><strong>UART Orca Communication enabled</strong> for Bottlenose (see Step 1 below)</li>
+<li class="">Bottlenose WiFi Orca properly connected to FREE-WILi (see <a class="" href="/extending-with-orcas/bottlenose-wifi-orca/bottlenose-hardware-hookup/">Hardware Hookup</a>)</li>
+<li class="">FREE-WILi device with latest firmware installed</li>
+<li class="">Computer connected to FREE-WILi (via USB or network)</li>
+<li class=""><strong>UART Orca Communication enabled</strong> for Bottlenose (see Step 1 below)</li>
 </ul>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>UART Communication Required</div><div class="admonitionContent_BuS1"><p><strong>CRITICAL</strong>: You must enable UART Orca Communication for Bottlenose in FREE-WILi settings before the module will function. Bottlenose will not work without this setting enabled.</p></div></div>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-enable-uart-orca-communication">Step 1: Enable UART Orca Communication<a href="#step-1-enable-uart-orca-communication" class="hash-link" aria-label="Direct link to Step 1: Enable UART Orca Communication" title="Direct link to Step 1: Enable UART Orca Communication" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-enable-uart-orca-communication">Step 1: Enable UART Orca Communication<a href="#step-1-enable-uart-orca-communication" class="hash-link" aria-label="Direct link to Step 1: Enable UART Orca Communication" title="Direct link to Step 1: Enable UART Orca Communication" translate="no">​</a></h2>
 <p>Before flashing firmware or using Bottlenose, you must first enable UART Orca Communication in FREE-WILi settings.</p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>UART Parameters Auto-Configuration</div><div class="admonitionContent_BuS1"><p>When you enable Bottlenose Communication in Orca Setup, FREE-WILi automatically configures the required UART parameters:</p><ul>
-<li><strong>Baud Rate</strong>: 3 Mbps</li>
-<li><strong>Flow Control</strong>: CTS and RTS enabled (Hardware flow control)</li>
-<li><strong>Data Bits</strong>: 8</li>
-<li><strong>Stop Bits</strong>: 1</li>
-<li><strong>Parity</strong>: None</li>
+<li class=""><strong>Baud Rate</strong>: 3 Mbps</li>
+<li class=""><strong>Flow Control</strong>: CTS and RTS enabled (Hardware flow control)</li>
+<li class=""><strong>Data Bits</strong>: 8</li>
+<li class=""><strong>Stop Bits</strong>: 1</li>
+<li class=""><strong>Parity</strong>: None</li>
 </ul><p>Hardware flow control ensures reliable high-speed data transmission between FREE-WILi and WILEYE, preventing data loss during image transfers.</p></div></div>
 <p>You can enable FREE-WILEye Uart Comms either through FREE-WILi Main&#x27;s USB console or through the FREE-WILi&#x27;s UI panel. We will be covering both methods below.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enabling-bottlenose-orca-comm-via-usb-console">Enabling Bottlenose Orca comm via USB Console<a href="#enabling-bottlenose-orca-comm-via-usb-console" class="hash-link" aria-label="Direct link to Enabling Bottlenose Orca comm via USB Console" title="Direct link to Enabling Bottlenose Orca comm via USB Console" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="enabling-bottlenose-orca-comm-via-usb-console">Enabling Bottlenose Orca comm via USB Console<a href="#enabling-bottlenose-orca-comm-via-usb-console" class="hash-link" aria-label="Direct link to Enabling Bottlenose Orca comm via USB Console" title="Direct link to Enabling Bottlenose Orca comm via USB Console" translate="no">​</a></h3>
 <ol>
-<li>
+<li class="">
 <p><strong>Open up the COM port</strong> related to FREE-WILi&#x27;s Main cpu either by Putty, your favtior serial port monitor, or through FREE-WILi GUI.</p>
 </li>
-<li>
+<li class="">
 <p><strong>Naviagate</strong> to the Orca Setup Settings in Settings: (z\o)</p>
 </li>
 </ol>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Settings</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">h) SPI</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">l) I2C</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">g) UART</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">f) FPGA</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">r) Radio 1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">m) Radio 2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">y) Radio Frequency Analyzer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">d) GPIO Directions</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">a) NeoPixel Light Show</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">t) RTC</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">w) Wifi</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">c) BT</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">j) Websocket Server</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">o) Orca Setup</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">k) Default Script []</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">i) Default FPGA []</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">s) Save Settings as Startup</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">n) Software Reset</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">b) Software Reset To Bootloader</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">z) Set settings to default</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Enter Letter: (q to exit) </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">o</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> ========  Configure Orca Communication ========</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">u) Orca Com over UART [WILEye]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Enter Letter: (q to exit) </span><br></span></code></pre></div></div>
 <ol start="3">
-<li><strong>Press &#x27;u&#x27;</strong> to configure UART communication</li>
+<li class=""><strong>Press &#x27;u&#x27;</strong> to configure UART communication</li>
 </ol>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">u</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> ========  Configure Orca Communication ========</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">0) Off</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">1) BottleNose</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2) WhaleTail</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3) WILEye</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Orca Com over UART Enter Number [1]</span><br></span></code></pre></div></div>
 <ol start="4">
-<li><strong>Select Bottlenose option</strong> from the menu (option 1)</li>
+<li class=""><strong>Select Bottlenose option</strong> from the menu (option 1)</li>
 </ol>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Automatic Configuration</div><div class="admonitionContent_BuS1"><p>When you enable Bottlenose Communication, FREE-WILi automatically sets the correct UART parameters, so you don&#x27;t need to configure them manually!</p></div></div>
 <ol start="5">
-<li><strong>Verify</strong> that the Orca Communication over Uart is set to [Bottlenose] ✅</li>
+<li class=""><strong>Verify</strong> that the Orca Communication over Uart is set to [Bottlenose] ✅</li>
 </ol>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Saving Orca Selection on startup via Console</div><div class="admonitionContent_BuS1"><p>To ensure the WILEye Orca setting is presistant the next time FREE-WIli is powerd up, make sure you save the settings. You can do this by naviagating to the main settings menu in Main (z) follow by running the command <code>Save Settings as Startup</code></p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enabling-wileye-orca-communication-via-free-wilis-ui">Enabling WILEye Orca Communication via FREE-WILi&#x27;s UI<a href="#enabling-wileye-orca-communication-via-free-wilis-ui" class="hash-link" aria-label="Direct link to Enabling WILEye Orca Communication via FREE-WILi&#x27;s UI" title="Direct link to Enabling WILEye Orca Communication via FREE-WILi&#x27;s UI" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="enabling-wileye-orca-communication-via-free-wilis-ui">Enabling WILEye Orca Communication via FREE-WILi&#x27;s UI<a href="#enabling-wileye-orca-communication-via-free-wilis-ui" class="hash-link" aria-label="Direct link to Enabling WILEye Orca Communication via FREE-WILi&#x27;s UI" title="Direct link to Enabling WILEye Orca Communication via FREE-WILi&#x27;s UI" translate="no">​</a></h3>
 <ol>
-<li>
+<li class="">
 <p><strong>Go to</strong> the Main Menu page on FREE-WILi and then navigate to System -&gt; Orca Setup. Then press the green button to enter.</p>
 </li>
-<li>
+<li class="">
 <p><strong>Scroll down</strong> untill you reach the Bottlenose option, then press the Green button to enable.</p>
 </li>
-<li>
+<li class="">
 <p><strong>Go back to the Main Menu</strong> by pressing the RED button.</p>
 </li>
 </ol>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Saving Orca Selection on startup via UI</div><div class="admonitionContent_BuS1"><p>If you want your Orca selection to be presistant, click the blue button to save.</p></div></div>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Flash Bottlense Orca Prompt</div><div class="admonitionContent_BuS1"><p>You have the option to flash the default firmware for BottleNose right through this dialog.! If you click yet to this popup, the Bottlenose flasher menu will be displayed. Follow the steps to start flashing the default firmware. We also have the steps listed right down below.</p></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-flash-bottlenose-firmware">Step 2: Flash Bottlenose Firmware<a href="#step-2-flash-bottlenose-firmware" class="hash-link" aria-label="Direct link to Step 2: Flash Bottlenose Firmware" title="Direct link to Step 2: Flash Bottlenose Firmware" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-flash-bottlenose-firmware">Step 2: Flash Bottlenose Firmware<a href="#step-2-flash-bottlenose-firmware" class="hash-link" aria-label="Direct link to Step 2: Flash Bottlenose Firmware" title="Direct link to Step 2: Flash Bottlenose Firmware" translate="no">​</a></h2>
 <p>Before you can use Bottlenose with FREE-WILi, you need to flash the proper firmware to the ESP32-C6. The Bottlenose firmware is built into the FREE-WILi firmware and can be flashed directly from FREE-WILi.</p>
 <ol>
-<li><strong>Locate Control Buttons</strong>:
+<li class=""><strong>Locate Control Buttons</strong>:
 On the Bottlenose PCB, you&#x27;ll find two buttons:<!-- -->
 <ul>
-<li><strong>&quot;BOOT&quot; button</strong> - Used to enter bootloader mode</li>
-<li><strong>&quot;RESET&quot; button</strong> - Used to reset the ESP32-C6</li>
+<li class=""><strong>&quot;BOOT&quot; button</strong> - Used to enter bootloader mode</li>
+<li class=""><strong>&quot;RESET&quot; button</strong> - Used to reset the ESP32-C6</li>
 </ul>
 </li>
 </ol>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Button Location</div><div class="admonitionContent_BuS1"><p>The BOOT and RESET buttons are typically located near the ESP32-C6 chip on the Bottlenose PCB. Look for small tactile buttons labeled &quot;BOOT&quot; and &quot;RST&quot; or &quot;RESET&quot;.</p></div></div>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Use Small Tools for Button Pressing</div><div class="admonitionContent_BuS1"><p>The BOOT and RESET buttons are very small and can be difficult to press accurately with fingers. For easier and more precise button pressing, use:</p><ul>
-<li><strong>Tweezers</strong> (plastic or metal)</li>
-<li><strong>Small screwdriver</strong> (non-conductive preferred)</li>
-<li><strong>Pen tip</strong> or <strong>pencil eraser</strong></li>
-<li><strong>Toothpick</strong> or similar small pointed tool</li>
+<li class=""><strong>Tweezers</strong> (plastic or metal)</li>
+<li class=""><strong>Small screwdriver</strong> (non-conductive preferred)</li>
+<li class=""><strong>Pen tip</strong> or <strong>pencil eraser</strong></li>
+<li class=""><strong>Toothpick</strong> or similar small pointed tool</li>
 </ul><p>This ensures you press the correct button without accidentally pressing adjacent components.</p></div></div>
 <ol start="2">
-<li>
+<li class="">
 <p><strong>Enter Bootloader Mode</strong>:
 The ESP32-C6 must be in bootloader mode to receive firmware from FREE-WILi:</p>
 <p><strong>Step-by-step process:</strong></p>
 <ol>
-<li><strong>Hold down</strong> the <strong>&quot;BOOT&quot;</strong> button and keep it pressed</li>
-<li>While holding BOOT, <strong>press and release</strong> the <strong>&quot;RESET&quot;</strong> button (quick tap)</li>
-<li><strong>Release</strong> the <strong>&quot;BOOT&quot;</strong> button</li>
+<li class=""><strong>Hold down</strong> the <strong>&quot;BOOT&quot;</strong> button and keep it pressed</li>
+<li class="">While holding BOOT, <strong>press and release</strong> the <strong>&quot;RESET&quot;</strong> button (quick tap)</li>
+<li class=""><strong>Release</strong> the <strong>&quot;BOOT&quot;</strong> button</li>
 </ol>
 <p>✅ The ESP32-C6 is now in bootloader mode and ready to receive firmware</p>
 </li>
 </ol>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Important Timing</div><div class="admonitionContent_BuS1"><p>Make sure to hold the BOOT button BEFORE pressing RESET, and only release BOOT after you&#x27;ve released RESET. This timing is critical for entering bootloader mode correctly.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="method-a-flash-via-usb-console-app">Method A: Flash via USB Console App<a href="#method-a-flash-via-usb-console-app" class="hash-link" aria-label="Direct link to Method A: Flash via USB Console App" title="Direct link to Method A: Flash via USB Console App" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="method-a-flash-via-usb-console-app">Method A: Flash via USB Console App<a href="#method-a-flash-via-usb-console-app" class="hash-link" aria-label="Direct link to Method A: Flash via USB Console App" title="Direct link to Method A: Flash via USB Console App" translate="no">​</a></h3>
 <ol>
-<li>
+<li class="">
 <p><strong>Connect to FREE-WILi via USB</strong> and open your serial terminal application</p>
 </li>
-<li>
+<li class="">
 <p><strong>Navigate to ESP32 Flasher Menu</strong>:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Main Menu → Extended Menus (e) → Extended Menus (e)</span><br></span></code></pre></div></div>
 <ul>
-<li>Press <code>e</code> to enter Extended Menus</li>
-<li>Press <code>e</code> again to access the ESP32 Flasher menu</li>
+<li class="">Press <code>e</code> to enter Extended Menus</li>
+<li class="">Press <code>e</code> again to access the ESP32 Flasher menu</li>
 </ul>
 </li>
-<li>
+<li class="">
 <p><strong>Select Bottlenose Firmware</strong>:</p>
 <ul>
-<li>In the ESP32 Flasher menu, press <code>n</code> to select the option for flashing Bottlenose firmware</li>
-<li>You should see: &quot;Flash Bottlenose WiFi Orca Firmware&quot;</li>
+<li class="">In the ESP32 Flasher menu, press <code>n</code> to select the option for flashing Bottlenose firmware</li>
+<li class="">You should see: &quot;Flash Bottlenose WiFi Orca Firmware&quot;</li>
 </ul>
 </li>
-<li>
+<li class="">
 <p><strong>Initiate Flashing</strong>:</p>
 <ul>
-<li>Follow the on-screen prompts</li>
-<li>The console will show flashing progress</li>
-<li>Wait for &quot;Flashing Complete&quot; message</li>
+<li class="">Follow the on-screen prompts</li>
+<li class="">The console will show flashing progress</li>
+<li class="">Wait for &quot;Flashing Complete&quot; message</li>
 </ul>
 </li>
 </ol>
 <p><strong>Expected Console Output:</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ESP32 Flasher Menu</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">==================</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">n) Flash Bottlenose WiFi Orca Firmware</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">x) Return to Main Menu</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Selection: n</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[FLASHER] Detecting ESP32-C6 in bootloader mode...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[FLASHER] ESP32-C6 detected successfully</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[FLASHER] Starting firmware flash...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[FLASHER] Writing bootloader... [████████████████] 100%</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[FLASHER] Writing application... [████████████████] 100%</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[FLASHER] Writing partitions... [████████████████] 100%</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[FLASHER] Flashing completed successfully!</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[FLASHER] Resetting ESP32-C6...</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="method-b-flash-via-free-wili-ui-orca-setup-dialog">Method B: Flash via FREE-WILi UI Orca Setup Dialog<a href="#method-b-flash-via-free-wili-ui-orca-setup-dialog" class="hash-link" aria-label="Direct link to Method B: Flash via FREE-WILi UI Orca Setup Dialog" title="Direct link to Method B: Flash via FREE-WILi UI Orca Setup Dialog" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="method-b-flash-via-free-wili-ui-orca-setup-dialog">Method B: Flash via FREE-WILi UI Orca Setup Dialog<a href="#method-b-flash-via-free-wili-ui-orca-setup-dialog" class="hash-link" aria-label="Direct link to Method B: Flash via FREE-WILi UI Orca Setup Dialog" title="Direct link to Method B: Flash via FREE-WILi UI Orca Setup Dialog" translate="no">​</a></h3>
 <ol>
-<li><strong>Select Bottlenose in the Orca Setup Panel</strong>:</li>
+<li class=""><strong>Select Bottlenose in the Orca Setup Panel</strong>:</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="bottlenose-select-bottlenose-orca" src="/assets/images/bottlenose-select-bottlenose-orca-916701dfa8c1d66c6a05f3a107ef2614.png" title="bottlenose-select-bottlenose-orca" width="586" height="409" class="img_ev3q"></p>
 <ol start="2">
-<li><strong>Click Yes to <code>Flash Bottlenose Orca</code></strong>:</li>
+<li class=""><strong>Click Yes to <code>Flash Bottlenose Orca</code></strong>:</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="bottlenose-option-flash-orca-in-ui" src="/assets/images/bottlenose-option-flash-orca-in-ui-25662627257002143534628486b3ae5c.png" title="bottlenose-option-flash-orca-in-ui" width="624" height="441" class="img_ev3q"></p>
 <ol start="3">
-<li><strong>Follow the prompts to setup Bottlenose into Bootloader mode if you haven&#x27;t already done so</strong>:</li>
+<li class=""><strong>Follow the prompts to setup Bottlenose into Bootloader mode if you haven&#x27;t already done so</strong>:</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="bottlenose-flash-ui-setupprompt" src="/assets/images/bottlenose-flash-ui-setupprompt-f3d9140c3dbc1df7e9b13c70138efd8f.png" title="bottlenose-flash-ui-setupprompt" width="619" height="405" class="img_ev3q"></p>
 <ol start="4">
-<li>
+<li class="">
 <p><strong>Flash Firmware</strong>:</p>
 </li>
-<li>
+<li class="">
 <p><strong>Monitor Progress</strong>:</p>
 <ul>
-<li>The interface will show a progress bar during flashing</li>
-<li>Wait for the &quot;Flashing Complete&quot; confirmation message</li>
+<li class="">The interface will show a progress bar during flashing</li>
+<li class="">Wait for the &quot;Flashing Complete&quot; confirmation message</li>
 </ul>
 </li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="bottlenose-ui-flashing-running" src="/assets/images/bottlenose-ui-flashing-running-ac24aa49ad1a89fb400c141c82316a42.png" title="bottlenose-ui-flashing-running" width="516" height="397" class="img_ev3q"></p>
 <ol start="5">
-<li><strong>Click the <code>RESET</code> button on Bottlenose to lauch default application</strong>:</li>
+<li class=""><strong>Click the <code>RESET</code> button on Bottlenose to lauch default application</strong>:</li>
 </ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting-firmware-flashing">Troubleshooting Firmware Flashing<a href="#troubleshooting-firmware-flashing" class="hash-link" aria-label="Direct link to Troubleshooting Firmware Flashing" title="Direct link to Troubleshooting Firmware Flashing" translate="no">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="common-issues">Common Issues:<a href="#common-issues" class="hash-link" aria-label="Direct link to Common Issues:" title="Direct link to Common Issues:" translate="no">​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting-firmware-flashing">Troubleshooting Firmware Flashing<a href="#troubleshooting-firmware-flashing" class="hash-link" aria-label="Direct link to Troubleshooting Firmware Flashing" title="Direct link to Troubleshooting Firmware Flashing" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-issues">Common Issues:<a href="#common-issues" class="hash-link" aria-label="Direct link to Common Issues:" title="Direct link to Common Issues:" translate="no">​</a></h4>
 <p><strong>Problem</strong>: &quot;ESP32-C6 not detected in bootloader mode&quot;</p>
 <ul>
-<li><strong>Solution</strong>: Repeat the bootloader entry process</li>
-<li><strong>Check</strong>: Ensure BOOT button timing is correct (hold BOOT, tap RESET, release BOOT)</li>
-<li><strong>Verify</strong>: Bottlenose is properly connected to FREE-WILi with power</li>
+<li class=""><strong>Solution</strong>: Repeat the bootloader entry process</li>
+<li class=""><strong>Check</strong>: Ensure BOOT button timing is correct (hold BOOT, tap RESET, release BOOT)</li>
+<li class=""><strong>Verify</strong>: Bottlenose is properly connected to FREE-WILi with power</li>
 </ul>
 <p><strong>Problem</strong>: &quot;Flashing failed&quot; or &quot;Connection timeout&quot;</p>
 <ul>
-<li><strong>Solution</strong>:<!-- -->
+<li class=""><strong>Solution</strong>:<!-- -->
 <ol>
-<li>Reset both FREE-WILi and Bottlenose</li>
-<li>Retry entering bootloader mode</li>
-<li>Attempt flashing again</li>
+<li class="">Reset both FREE-WILi and Bottlenose</li>
+<li class="">Retry entering bootloader mode</li>
+<li class="">Attempt flashing again</li>
 </ol>
 </li>
 </ul>
 <p><strong>Problem</strong>: Flashing appears successful but module doesn&#x27;t work</p>
 <ul>
-<li><strong>Solution</strong>:<!-- -->
+<li class=""><strong>Solution</strong>:<!-- -->
 <ol>
-<li>Perform a hard reset: hold RESET button for 5 seconds</li>
-<li>Check hardware connections</li>
-<li>Try flashing again</li>
+<li class="">Perform a hard reset: hold RESET button for 5 seconds</li>
+<li class="">Check hardware connections</li>
+<li class="">Try flashing again</li>
 </ol>
 </li>
 </ul>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Firmware Updates</div><div class="admonitionContent_BuS1"><p>The Bottlenose firmware embedded in FREE-WILi may be updated with new FREE-WILi firmware releases. Check for FREE-WILi updates periodically to get the latest Bottlenose features and improvements.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-the-default-bottlenose-application">Understanding the Default Bottlenose Application<a href="#understanding-the-default-bottlenose-application" class="hash-link" aria-label="Direct link to Understanding the Default Bottlenose Application" title="Direct link to Understanding the Default Bottlenose Application" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-the-default-bottlenose-application">Understanding the Default Bottlenose Application<a href="#understanding-the-default-bottlenose-application" class="hash-link" aria-label="Direct link to Understanding the Default Bottlenose Application" title="Direct link to Understanding the Default Bottlenose Application" translate="no">​</a></h3>
 <p>Once firmware is flashed successfully, Bottlenose runs a default application that provides several key networking and communication features:</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="core-functionality">Core Functionality<a href="#core-functionality" class="hash-link" aria-label="Direct link to Core Functionality" title="Direct link to Core Functionality" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-functionality">Core Functionality<a href="#core-functionality" class="hash-link" aria-label="Direct link to Core Functionality" title="Direct link to Core Functionality" translate="no">​</a></h4>
 <p>The default Bottlenose app is designed to extend FREE-WILi&#x27;s connectivity options:</p>
 <ul>
-<li><strong>🌐 WebSocket Terminal Bridge</strong> - Bridges FREE-WILi&#x27;s main terminal over WebSocket connections</li>
-<li><strong>📱 Bt Terminal Bridge</strong> - Provides terminal access via Bt Low Energy</li>
-<li><strong>📡 WiFi Network Scanner</strong> - Scans for available WiFi access points</li>
-<li><strong>🔍 Bt Device Scanner</strong> - Discovers nearby Bt devices</li>
-<li><strong>💻 HTTP Web Browser Interface</strong> - Hosts a web server for browser-based terminal access. Accessable at port 8080</li>
+<li class=""><strong>🌐 WebSocket Terminal Bridge</strong> - Bridges FREE-WILi&#x27;s main terminal over WebSocket connections</li>
+<li class=""><strong>📱 Bt Terminal Bridge</strong> - Provides terminal access via Bt Low Energy</li>
+<li class=""><strong>📡 WiFi Network Scanner</strong> - Scans for available WiFi access points</li>
+<li class=""><strong>🔍 Bt Device Scanner</strong> - Discovers nearby Bt devices</li>
+<li class=""><strong>💻 HTTP Web Browser Interface</strong> - Hosts a web server for browser-based terminal access. Accessable at port 8080</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="default-app-benefits">Default App Benefits<a href="#default-app-benefits" class="hash-link" aria-label="Direct link to Default App Benefits" title="Direct link to Default App Benefits" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="default-app-benefits">Default App Benefits<a href="#default-app-benefits" class="hash-link" aria-label="Direct link to Default App Benefits" title="Direct link to Default App Benefits" translate="no">​</a></h4>
 <ul>
-<li><strong>Remote Access</strong>: Control FREE-WILi wirelessly through WiFi or Bt</li>
-<li><strong>Web Integration</strong>: Access FREE-WILi terminal from any web browser</li>
-<li><strong>Network Discovery</strong>: Find and connect to available networks</li>
-<li><strong>Cross-Platform</strong>: Works with phones, tablets, laptops, and other devices</li>
+<li class=""><strong>Remote Access</strong>: Control FREE-WILi wirelessly through WiFi or Bt</li>
+<li class=""><strong>Web Integration</strong>: Access FREE-WILi terminal from any web browser</li>
+<li class=""><strong>Network Discovery</strong>: Find and connect to available networks</li>
+<li class=""><strong>Cross-Platform</strong>: Works with phones, tablets, laptops, and other devices</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="typical-usage-scenarios">Typical Usage Scenarios<a href="#typical-usage-scenarios" class="hash-link" aria-label="Direct link to Typical Usage Scenarios" title="Direct link to Typical Usage Scenarios" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="typical-usage-scenarios">Typical Usage Scenarios<a href="#typical-usage-scenarios" class="hash-link" aria-label="Direct link to Typical Usage Scenarios" title="Direct link to Typical Usage Scenarios" translate="no">​</a></h4>
 <ul>
-<li><strong>Wireless Debugging</strong>: Access FREE-WILi terminal without USB cable</li>
-<li><strong>Remote Configuration</strong>: Configure settings from across the room</li>
-<li><strong>Multiple Users</strong>: Share access through web interface</li>
-<li><strong>Mobile Integration</strong>: Control FREE-WILi from smartphone or tablet</li>
-<li><strong>Network Troubleshooting</strong>: Scan and analyze WiFi/Bt environments</li>
+<li class=""><strong>Wireless Debugging</strong>: Access FREE-WILi terminal without USB cable</li>
+<li class=""><strong>Remote Configuration</strong>: Configure settings from across the room</li>
+<li class=""><strong>Multiple Users</strong>: Share access through web interface</li>
+<li class=""><strong>Mobile Integration</strong>: Control FREE-WILi from smartphone or tablet</li>
+<li class=""><strong>Network Troubleshooting</strong>: Scan and analyze WiFi/Bt environments</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-configure-bottlenose-settings">Step 3: Configure Bottlenose Settings<a href="#step-3-configure-bottlenose-settings" class="hash-link" aria-label="Direct link to Step 3: Configure Bottlenose Settings" title="Direct link to Step 3: Configure Bottlenose Settings" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-configure-bottlenose-settings">Step 3: Configure Bottlenose Settings<a href="#step-3-configure-bottlenose-settings" class="hash-link" aria-label="Direct link to Step 3: Configure Bottlenose Settings" title="Direct link to Step 3: Configure Bottlenose Settings" translate="no">​</a></h2>
 <p>Before using Bottlenose functionality, you need to configure the networking and communication settings through FREE-WILi&#x27;s configuration system.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="accessing-configuration-settings">Accessing Configuration Settings<a href="#accessing-configuration-settings" class="hash-link" aria-label="Direct link to Accessing Configuration Settings" title="Direct link to Accessing Configuration Settings" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="accessing-configuration-settings">Accessing Configuration Settings<a href="#accessing-configuration-settings" class="hash-link" aria-label="Direct link to Accessing Configuration Settings" title="Direct link to Accessing Configuration Settings" translate="no">​</a></h3>
 <ol>
-<li><strong>Connect to FREE-WILi</strong> via USB console or web interface</li>
-<li><strong>Navigate to Settings</strong> menu</li>
-<li><strong>Find Bottlenose configuration sections</strong>: WiFi, Bt, and WebSocket Server</li>
+<li class=""><strong>Connect to FREE-WILi</strong> via USB console or web interface</li>
+<li class=""><strong>Navigate to Settings</strong> menu</li>
+<li class=""><strong>Find Bottlenose configuration sections</strong>: WiFi, Bt, and WebSocket Server</li>
 </ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wifi-configuration">WiFi Configuration<a href="#wifi-configuration" class="hash-link" aria-label="Direct link to WiFi Configuration" title="Direct link to WiFi Configuration" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wifi-configuration">WiFi Configuration<a href="#wifi-configuration" class="hash-link" aria-label="Direct link to WiFi Configuration" title="Direct link to WiFi Configuration" translate="no">​</a></h3>
 <p>Configure Bottlenose WiFi functionality through the WiFi settings menu:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">========  Configure Wifi  ========</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">s) Enable Wifi Station Mode [off]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">d) SSID for Wifi Station Mode []</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">p) Password for Wifi Station Mode []</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">a) Enable Access Point Mode [off]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">u) Access Point Authentication [open]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">h) Access Point hide SSID [visible]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">g) SSID for Access Point []</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">x) Password for Access Point []</span><br></span></code></pre></div></div>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="wifi-settings-explained">WiFi Settings Explained:<a href="#wifi-settings-explained" class="hash-link" aria-label="Direct link to WiFi Settings Explained:" title="Direct link to WiFi Settings Explained:" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="wifi-settings-explained">WiFi Settings Explained:<a href="#wifi-settings-explained" class="hash-link" aria-label="Direct link to WiFi Settings Explained:" title="Direct link to WiFi Settings Explained:" translate="no">​</a></h4>
 <p><strong>Station Mode Settings:</strong></p>
 <ul>
-<li><code>s)</code> <strong>Enable Wifi Station Mode</strong> - Connect Bottlenose to existing WiFi network</li>
-<li><code>d)</code> <strong>SSID for Station Mode</strong> - Network name to connect to</li>
-<li><code>p)</code> <strong>Password for Station Mode</strong> - Network password (leave blank for open networks)</li>
+<li class=""><code>s)</code> <strong>Enable Wifi Station Mode</strong> - Connect Bottlenose to existing WiFi network</li>
+<li class=""><code>d)</code> <strong>SSID for Station Mode</strong> - Network name to connect to</li>
+<li class=""><code>p)</code> <strong>Password for Station Mode</strong> - Network password (leave blank for open networks)</li>
 </ul>
 <p><strong>Access Point Mode Settings:</strong></p>
 <ul>
-<li><code>a)</code> <strong>Enable Access Point Mode</strong> - Create WiFi hotspot using Bottlenose</li>
-<li><code>u)</code> <strong>Access Point Authentication</strong> - Security type (open/WPA2/WPA3)</li>
-<li><code>h)</code> <strong>Access Point Hide SSID</strong> - Make hotspot visible or hidden</li>
-<li><code>g)</code> <strong>SSID for Access Point</strong> - Hotspot name (e.g., &quot;My_AP&quot;)</li>
-<li><code>x)</code> <strong>Password for Access Point</strong> - Hotspot password (8+ characters for secured networks)</li>
+<li class=""><code>a)</code> <strong>Enable Access Point Mode</strong> - Create WiFi hotspot using Bottlenose</li>
+<li class=""><code>u)</code> <strong>Access Point Authentication</strong> - Security type (open/WPA2/WPA3)</li>
+<li class=""><code>h)</code> <strong>Access Point Hide SSID</strong> - Make hotspot visible or hidden</li>
+<li class=""><code>g)</code> <strong>SSID for Access Point</strong> - Hotspot name (e.g., &quot;My_AP&quot;)</li>
+<li class=""><code>x)</code> <strong>Password for Access Point</strong> - Hotspot password (8+ characters for secured networks)</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="wifi-configuration-example">WiFi Configuration Example:<a href="#wifi-configuration-example" class="hash-link" aria-label="Direct link to WiFi Configuration Example:" title="Direct link to WiFi Configuration Example:" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="wifi-configuration-example">WiFi Configuration Example:<a href="#wifi-configuration-example" class="hash-link" aria-label="Direct link to WiFi Configuration Example:" title="Direct link to WiFi Configuration Example:" translate="no">​</a></h4>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Configure WiFi for home network connection:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">s) Enable Wifi Station Mode [on]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">d) SSID for Wifi Station Mode [MyHomeWiFi]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">p) Password for Wifi Station Mode [mypassword123]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">a) Enable Access Point Mode [off]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Or configure as mobile hotspot:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">s) Enable Wifi Station Mode [off]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">a) Enable Access Point Mode [on]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">u) Access Point Authentication [WPA2]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">h) Access Point hide SSID [visible]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">g) SSID for Access Point [Bottlenose_Mobile]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">x) Password for Access Point [mobile123secure]</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bt-configuration">Bt Configuration<a href="#bt-configuration" class="hash-link" aria-label="Direct link to Bt Configuration" title="Direct link to Bt Configuration" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bt-configuration">Bt Configuration<a href="#bt-configuration" class="hash-link" aria-label="Direct link to Bt Configuration" title="Direct link to Bt Configuration" translate="no">​</a></h3>
 <p>Configure Bottlenose Bt functionality:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">========  Configure BT  ========</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">s) Enable BT [off]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">t) BT Terminal Bridge [off]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">a) BT Advertising Name []</span><br></span></code></pre></div></div>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="bt-settings-explained">Bt Settings Explained:<a href="#bt-settings-explained" class="hash-link" aria-label="Direct link to Bt Settings Explained:" title="Direct link to Bt Settings Explained:" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="bt-settings-explained">Bt Settings Explained:<a href="#bt-settings-explained" class="hash-link" aria-label="Direct link to Bt Settings Explained:" title="Direct link to Bt Settings Explained:" translate="no">​</a></h4>
 <ul>
-<li><code>s)</code> <strong>Enable BT</strong> - Turn on Bt Low Energy functionality</li>
-<li><code>t)</code> <strong>BT Terminal Bridge</strong> - Enable terminal access via Bt connections</li>
-<li><code>a)</code> <strong>BT Advertising Name</strong> - Device name visible to other Bt devices</li>
+<li class=""><code>s)</code> <strong>Enable BT</strong> - Turn on Bt Low Energy functionality</li>
+<li class=""><code>t)</code> <strong>BT Terminal Bridge</strong> - Enable terminal access via Bt connections</li>
+<li class=""><code>a)</code> <strong>BT Advertising Name</strong> - Device name visible to other Bt devices</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="bt-configuration-example">Bt Configuration Example:<a href="#bt-configuration-example" class="hash-link" aria-label="Direct link to Bt Configuration Example:" title="Direct link to Bt Configuration Example:" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="bt-configuration-example">Bt Configuration Example:<a href="#bt-configuration-example" class="hash-link" aria-label="Direct link to Bt Configuration Example:" title="Direct link to Bt Configuration Example:" translate="no">​</a></h4>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Enable Bt with terminal access:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">s) Enable BT [on]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">t) BT Terminal Bridge [on]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">a) BT Advertising Name [Bottlenose_Terminal_01]</span><br></span></code></pre></div></div>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Bt Device Names</div><div class="admonitionContent_BuS1"><p>Choose descriptive names for easy identification when multiple Bottlenose devices are nearby. Include location or purpose in the name (e.g., &quot;Lab_Bottlenose&quot;, &quot;Mobile_Unit_A&quot;).</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="websocket-server-configuration">WebSocket Server Configuration<a href="#websocket-server-configuration" class="hash-link" aria-label="Direct link to WebSocket Server Configuration" title="Direct link to WebSocket Server Configuration" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="websocket-server-configuration">WebSocket Server Configuration<a href="#websocket-server-configuration" class="hash-link" aria-label="Direct link to WebSocket Server Configuration" title="Direct link to WebSocket Server Configuration" translate="no">​</a></h3>
 <p>Configure the web-based terminal access:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">========  Websocket Server Configuration ========</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">r) Start Websocket Server [on]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">p) Websocket Server Port [8765]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">m) Authentication Mode [open]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">u) Authentication Username []</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">d) Authentication Password []</span><br></span></code></pre></div></div>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="websocket-settings-explained">WebSocket Settings Explained:<a href="#websocket-settings-explained" class="hash-link" aria-label="Direct link to WebSocket Settings Explained:" title="Direct link to WebSocket Settings Explained:" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="websocket-settings-explained">WebSocket Settings Explained:<a href="#websocket-settings-explained" class="hash-link" aria-label="Direct link to WebSocket Settings Explained:" title="Direct link to WebSocket Settings Explained:" translate="no">​</a></h4>
 <ul>
-<li><code>r)</code> <strong>Start Websocket Server</strong> - Enable web-based terminal access</li>
-<li><code>p)</code> <strong>Websocket Server Port</strong> - TCP port for web connections (default: 8765)</li>
-<li><code>m)</code> <strong>Authentication Mode</strong> - Security level (open/password-protected)</li>
-<li><code>u)</code> <strong>Authentication Username</strong> - Login username (if authentication enabled)</li>
-<li><code>d)</code> <strong>Authentication Password</strong> - Login password (if authentication enabled)</li>
+<li class=""><code>r)</code> <strong>Start Websocket Server</strong> - Enable web-based terminal access</li>
+<li class=""><code>p)</code> <strong>Websocket Server Port</strong> - TCP port for web connections (default: 8765)</li>
+<li class=""><code>m)</code> <strong>Authentication Mode</strong> - Security level (open/password-protected)</li>
+<li class=""><code>u)</code> <strong>Authentication Username</strong> - Login username (if authentication enabled)</li>
+<li class=""><code>d)</code> <strong>Authentication Password</strong> - Login password (if authentication enabled)</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="websocket-configuration-examples">WebSocket Configuration Examples:<a href="#websocket-configuration-examples" class="hash-link" aria-label="Direct link to WebSocket Configuration Examples:" title="Direct link to WebSocket Configuration Examples:" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="websocket-configuration-examples">WebSocket Configuration Examples:<a href="#websocket-configuration-examples" class="hash-link" aria-label="Direct link to WebSocket Configuration Examples:" title="Direct link to WebSocket Configuration Examples:" translate="no">​</a></h4>
 <p><strong>Open Access (No Authentication):</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">r) Start Websocket Server [on]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">p) Websocket Server Port [8765]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">m) Authentication Mode [open]</span><br></span></code></pre></div></div>
 <p><strong>Secure Access (Password Protected):</strong></p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">r) Start Websocket Server [on]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">p) Websocket Server Port [8765]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">m) Authentication Mode [password]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">u) Authentication Username [admin]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">d) Authentication Password [secure123]</span><br></span></code></pre></div></div>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="access-your-configured-bottlenose">Access Your Configured Bottlenose:<a href="#access-your-configured-bottlenose" class="hash-link" aria-label="Direct link to Access Your Configured Bottlenose:" title="Direct link to Access Your Configured Bottlenose:" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="access-your-configured-bottlenose">Access Your Configured Bottlenose:<a href="#access-your-configured-bottlenose" class="hash-link" aria-label="Direct link to Access Your Configured Bottlenose:" title="Direct link to Access Your Configured Bottlenose:" translate="no">​</a></h4>
 <p><strong>Via Web Browser:</strong></p>
 <ul>
-<li>Connect to same WiFi network as Bottlenose</li>
-<li>Navigate to: <code>http://&lt;bottlenose-ip&gt;:8765</code></li>
-<li>Use authentication credentials if configured</li>
-<li>Navigate to: <code>http://&lt;bottlenose-ip&gt;:8080</code> to access HTTP Websocket terminal</li>
+<li class="">Connect to same WiFi network as Bottlenose</li>
+<li class="">Navigate to: <code>http://&lt;bottlenose-ip&gt;:8765</code></li>
+<li class="">Use authentication credentials if configured</li>
+<li class="">Navigate to: <code>http://&lt;bottlenose-ip&gt;:8080</code> to access HTTP Websocket terminal</li>
 </ul>
 <p><strong>Via Bt:</strong></p>
 <ul>
-<li>Scan for Bt devices</li>
-<li>Connect to your configured device name</li>
-<li>Access terminal through BLE app</li>
+<li class="">Scan for Bt devices</li>
+<li class="">Connect to your configured device name</li>
+<li class="">Access terminal through BLE app</li>
 </ul>
 <p><strong>Via WiFi Hotspot:</strong></p>
 <ul>
-<li>Connect device to Bottlenose AP</li>
-<li>Navigate to: <code>http://192.168.4.1:8765</code></li>
-<li>Access terminal interface</li>
+<li class="">Connect device to Bottlenose AP</li>
+<li class="">Navigate to: <code>http://192.168.4.1:8765</code></li>
+<li class="">Access terminal interface</li>
 </ul>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="access-bottlenose-features-through-free-wilis-ui">Access Bottlenose Features through FREE-WILi&#x27;s UI<a href="#access-bottlenose-features-through-free-wilis-ui" class="hash-link" aria-label="Direct link to Access Bottlenose Features through FREE-WILi&#x27;s UI" title="Direct link to Access Bottlenose Features through FREE-WILi&#x27;s UI" translate="no">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="wireless-wifi-menu">Wireless Wifi Menu<a href="#wireless-wifi-menu" class="hash-link" aria-label="Direct link to Wireless Wifi Menu" title="Direct link to Wireless Wifi Menu" translate="no">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="station-menu">Station Menu<a href="#station-menu" class="hash-link" aria-label="Direct link to Station Menu" title="Direct link to Station Menu" translate="no">​</a></h5>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="access-bottlenose-features-through-free-wilis-ui">Access Bottlenose Features through FREE-WILi&#x27;s UI<a href="#access-bottlenose-features-through-free-wilis-ui" class="hash-link" aria-label="Direct link to Access Bottlenose Features through FREE-WILi&#x27;s UI" title="Direct link to Access Bottlenose Features through FREE-WILi&#x27;s UI" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="wireless-wifi-menu">Wireless Wifi Menu<a href="#wireless-wifi-menu" class="hash-link" aria-label="Direct link to Wireless Wifi Menu" title="Direct link to Wireless Wifi Menu" translate="no">​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="station-menu">Station Menu<a href="#station-menu" class="hash-link" aria-label="Direct link to Station Menu" title="Direct link to Station Menu" translate="no">​</a></h5>
 <p>You can set SSID, password, and enable/disable Bottlenose&#x27;s station mode.</p>
 <p>The IP, Mask, and Gateway of Bottlenose values are reported here along with the MAC address for Bottlenose.</p>
 <p><img decoding="async" loading="lazy" alt="bottlenose-station-panel" src="/assets/images/bottlenose-station-panel-2151b47b50b28b196d5e31b738cdbdd8.png" title="bottlenose-station-panel" width="621" height="405" class="img_ev3q"></p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="acess-point-menu">Acess Point Menu<a href="#acess-point-menu" class="hash-link" aria-label="Direct link to Acess Point Menu" title="Direct link to Acess Point Menu" translate="no">​</a></h5>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="acess-point-menu">Acess Point Menu<a href="#acess-point-menu" class="hash-link" aria-label="Direct link to Acess Point Menu" title="Direct link to Acess Point Menu" translate="no">​</a></h5>
 <p>You can set SSID, password, and enable/disable Bottlenose&#x27;s access point mode.</p>
 <p>The IP, Mask, and Gateway value for Bottlenoe&#x27;s AP are reported here along with the MAC address for Bottlenose.</p>
 <p><img decoding="async" loading="lazy" alt="bottlenose-ap-panel" src="/assets/images/bottlenose-ap-panel-9bce8ffa0a07e9c7e6c36d77b5ebdd5a.png" title="bottlenose-ap-panel" width="648" height="439" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-create-your-own-custom-firmware-for-bottlenose">Step 4: Create Your Own Custom Firmware for Bottlenose<a href="#step-4-create-your-own-custom-firmware-for-bottlenose" class="hash-link" aria-label="Direct link to Step 4: Create Your Own Custom Firmware for Bottlenose" title="Direct link to Step 4: Create Your Own Custom Firmware for Bottlenose" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-4-create-your-own-custom-firmware-for-bottlenose">Step 4: Create Your Own Custom Firmware for Bottlenose<a href="#step-4-create-your-own-custom-firmware-for-bottlenose" class="hash-link" aria-label="Direct link to Step 4: Create Your Own Custom Firmware for Bottlenose" title="Direct link to Step 4: Create Your Own Custom Firmware for Bottlenose" translate="no">​</a></h2>
 <p>You can create your own firmware for Bottlenose to do custom tasks using Espressif&#x27;s ESP-IDF development framework. This allows you to build specialized applications that leverage the ESP32-C6&#x27;s WiFi and processing capabilities while communicating with FREE-WILi through custom protocols.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-framework-options">Development Framework Options<a href="#development-framework-options" class="hash-link" aria-label="Direct link to Development Framework Options" title="Direct link to Development Framework Options" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="development-framework-options">Development Framework Options<a href="#development-framework-options" class="hash-link" aria-label="Direct link to Development Framework Options" title="Direct link to Development Framework Options" translate="no">​</a></h3>
 <p><strong>ESP-IDF (Recommended)</strong>: Espressif&#x27;s official development framework provides full access to ESP32-C6 hardware features and advanced networking capabilities.</p>
 <p><strong>Arduino IDE</strong>: Easier entry point for beginners, but with some limitations on advanced features.</p>
 <p><strong>Custom Protocol Communication</strong>: You can create your own UART communication protocol between Bottlenose and FREE-WILi, giving you complete control over data exchange.</p>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Disable Orca Communication for Custom Protocols</div><div class="admonitionContent_BuS1"><p><strong>IMPORTANT</strong>: If you plan to send your own UART packets between Bottlenose and FREE-WILi, you <strong>MUST</strong> disable Orca Communication in FREE-WILi settings first. The default Bottlenose protocol and your custom protocol cannot run simultaneously on the same UART channel.</p><p>To disable: Go to FREE-WILi Settings → Orca Setup → Set &quot;Orca Com over UART&quot; to &quot;Off&quot;</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="custom-firmware-use-cases">Custom Firmware Use Cases<a href="#custom-firmware-use-cases" class="hash-link" aria-label="Direct link to Custom Firmware Use Cases" title="Direct link to Custom Firmware Use Cases" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-firmware-use-cases">Custom Firmware Use Cases<a href="#custom-firmware-use-cases" class="hash-link" aria-label="Direct link to Custom Firmware Use Cases" title="Direct link to Custom Firmware Use Cases" translate="no">​</a></h3>
 <ul>
-<li><strong>IoT Sensor Networks</strong>: Create specialized sensor data collection and transmission</li>
-<li><strong>Custom Web Services</strong>: Build tailored web servers and APIs for your specific needs</li>
-<li><strong>Protocol Bridges</strong>: Interface FREE-WILi with other systems using custom communication protocols</li>
-<li><strong>Real-time Data Processing</strong>: Implement time-sensitive applications with direct hardware control</li>
-<li><strong>Wireless Debugging Tools</strong>: Create custom debugging and diagnostic interfaces</li>
+<li class=""><strong>IoT Sensor Networks</strong>: Create specialized sensor data collection and transmission</li>
+<li class=""><strong>Custom Web Services</strong>: Build tailored web servers and APIs for your specific needs</li>
+<li class=""><strong>Protocol Bridges</strong>: Interface FREE-WILi with other systems using custom communication protocols</li>
+<li class=""><strong>Real-time Data Processing</strong>: Implement time-sensitive applications with direct hardware control</li>
+<li class=""><strong>Wireless Debugging Tools</strong>: Create custom debugging and diagnostic interfaces</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="going-further-with-custom-bottlenose-apps">Going Further with Custom Bottlenose Apps<a href="#going-further-with-custom-bottlenose-apps" class="hash-link" aria-label="Direct link to Going Further with Custom Bottlenose Apps" title="Direct link to Going Further with Custom Bottlenose Apps" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="going-further-with-custom-bottlenose-apps">Going Further with Custom Bottlenose Apps<a href="#going-further-with-custom-bottlenose-apps" class="hash-link" aria-label="Direct link to Going Further with Custom Bottlenose Apps" title="Direct link to Going Further with Custom Bottlenose Apps" translate="no">​</a></h3>
 <p>For advanced users who want to develop custom applications beyond the default firmware, you can program the Bottlenose ESP32-C6 directly using standard ESP32 development tools and frameworks.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="development-environment-setup">Development Environment Setup<a href="#development-environment-setup" class="hash-link" aria-label="Direct link to Development Environment Setup" title="Direct link to Development Environment Setup" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="development-environment-setup">Development Environment Setup<a href="#development-environment-setup" class="hash-link" aria-label="Direct link to Development Environment Setup" title="Direct link to Development Environment Setup" translate="no">​</a></h4>
 <p>Choose your preferred development environment and follow the official setup guides:</p>
 <p><strong>Arduino IDE (Easier for Beginners):</strong></p>
 <ul>
-<li><strong>Arduino ESP32 Getting Started</strong>: <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html" target="_blank" rel="noopener noreferrer">https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html</a></li>
-<li><strong>ESP32-C6 Arduino Support</strong>: <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/" target="_blank" rel="noopener noreferrer">https://docs.espressif.com/projects/arduino-esp32/en/latest/</a></li>
-<li>Board package URL: <code>https://espressif.github.io/arduino-esp32/package_esp32_index.json</code></li>
-<li>Select <strong>&quot;ESP32C6 Dev Module&quot;</strong> as target board</li>
+<li class=""><strong>Arduino ESP32 Getting Started</strong>: <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html" target="_blank" rel="noopener noreferrer" class="">https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html</a></li>
+<li class=""><strong>ESP32-C6 Arduino Support</strong>: <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/" target="_blank" rel="noopener noreferrer" class="">https://docs.espressif.com/projects/arduino-esp32/en/latest/</a></li>
+<li class="">Board package URL: <code>https://espressif.github.io/arduino-esp32/package_esp32_index.json</code></li>
+<li class="">Select <strong>&quot;ESP32C6 Dev Module&quot;</strong> as target board</li>
 </ul>
 <p><strong>ESP-IDF (Recommended for Advanced Features):</strong></p>
 <ul>
-<li><strong>Official ESP-IDF Getting Started Guide</strong>: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/get-started/" target="_blank" rel="noopener noreferrer">https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/get-started/</a></li>
-<li><strong>ESP32-C6 Specific Documentation</strong>: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/" target="_blank" rel="noopener noreferrer">https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/</a></li>
-<li>Provides full access to ESP32-C6 hardware features and advanced networking capabilities</li>
+<li class=""><strong>Official ESP-IDF Getting Started Guide</strong>: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/get-started/" target="_blank" rel="noopener noreferrer" class="">https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/get-started/</a></li>
+<li class=""><strong>ESP32-C6 Specific Documentation</strong>: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/" target="_blank" rel="noopener noreferrer" class="">https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/</a></li>
+<li class="">Provides full access to ESP32-C6 hardware features and advanced networking capabilities</li>
 </ul>
 <p><strong>PlatformIO (Professional IDE):</strong></p>
 <ul>
-<li><strong>PlatformIO ESP32 Platform</strong>: <a href="https://docs.platformio.org/en/latest/platforms/espressif32.html" target="_blank" rel="noopener noreferrer">https://docs.platformio.org/en/latest/platforms/espressif32.html</a></li>
-<li><strong>ESP32-C6 Board Configuration</strong>: Use board ID <code>esp32-c6-devkitc-1</code></li>
+<li class=""><strong>PlatformIO ESP32 Platform</strong>: <a href="https://docs.platformio.org/en/latest/platforms/espressif32.html" target="_blank" rel="noopener noreferrer" class="">https://docs.platformio.org/en/latest/platforms/espressif32.html</a></li>
+<li class=""><strong>ESP32-C6 Board Configuration</strong>: Use board ID <code>esp32-c6-devkitc-1</code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="programming-and-debugging-via-usb-c">Programming and Debugging via USB-C<a href="#programming-and-debugging-via-usb-c" class="hash-link" aria-label="Direct link to Programming and Debugging via USB-C" title="Direct link to Programming and Debugging via USB-C" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="programming-and-debugging-via-usb-c">Programming and Debugging via USB-C<a href="#programming-and-debugging-via-usb-c" class="hash-link" aria-label="Direct link to Programming and Debugging via USB-C" title="Direct link to Programming and Debugging via USB-C" translate="no">​</a></h4>
 <p>The Bottlenose includes a USB-C connector that provides direct access to the ESP32-C6 for programming and debugging:</p>
 <p><strong>Power Requirements:</strong></p>
 <ul>
-<li><strong>Bottlenose must be connected to FREE-WILi</strong> for power during programming</li>
-<li><strong>USB-C port is data-only</strong> - does not provide power to the ESP32-C6</li>
-<li>Keep FREE-WILi powered on during all programming operations</li>
+<li class=""><strong>Bottlenose must be connected to FREE-WILi</strong> for power during programming</li>
+<li class=""><strong>USB-C port is data-only</strong> - does not provide power to the ESP32-C6</li>
+<li class="">Keep FREE-WILi powered on during all programming operations</li>
 </ul>
 <p><strong>Programming Workflow:</strong></p>
 <ol>
-<li>Connect Bottlenose to FREE-WILi via Orca connector (for power)</li>
-<li>Connect USB-C cable from computer to Bottlenose</li>
-<li>Use standard ESP32 development tools (ESP-IDF, Arduino IDE, PlatformIO)</li>
-<li>Flash and debug your custom firmware directly</li>
+<li class="">Connect Bottlenose to FREE-WILi via Orca connector (for power)</li>
+<li class="">Connect USB-C cable from computer to Bottlenose</li>
+<li class="">Use standard ESP32 development tools (ESP-IDF, Arduino IDE, PlatformIO)</li>
+<li class="">Flash and debug your custom firmware directly</li>
 </ol>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="custom-protocol-development">Custom Protocol Development<a href="#custom-protocol-development" class="hash-link" aria-label="Direct link to Custom Protocol Development" title="Direct link to Custom Protocol Development" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-protocol-development">Custom Protocol Development<a href="#custom-protocol-development" class="hash-link" aria-label="Direct link to Custom Protocol Development" title="Direct link to Custom Protocol Development" translate="no">​</a></h4>
 <p>When developing custom firmware, you have full control over the UART communication between Bottlenose and FREE-WILi.</p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Development Resources</div><div class="admonitionContent_BuS1"><ul>
-<li><strong>ESP32-C6 Hardware Reference</strong>: <a href="https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf" target="_blank" rel="noopener noreferrer">https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf</a></li>
-<li><strong>ESP-IDF Programming Guide</strong>: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/" target="_blank" rel="noopener noreferrer">https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/</a></li>
-<li><strong>Arduino ESP32 Examples</strong>: <a href="https://github.com/espressif/arduino-esp32/tree/master/libraries" target="_blank" rel="noopener noreferrer">https://github.com/espressif/arduino-esp32/tree/master/libraries</a></li>
-<li><strong>Community Forums</strong>: <a href="https://www.esp32.com/" target="_blank" rel="noopener noreferrer">https://www.esp32.com/</a> for community support and examples</li>
+<li class=""><strong>ESP32-C6 Hardware Reference</strong>: <a href="https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf" target="_blank" rel="noopener noreferrer" class="">https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf</a></li>
+<li class=""><strong>ESP-IDF Programming Guide</strong>: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/" target="_blank" rel="noopener noreferrer" class="">https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/</a></li>
+<li class=""><strong>Arduino ESP32 Examples</strong>: <a href="https://github.com/espressif/arduino-esp32/tree/master/libraries" target="_blank" rel="noopener noreferrer" class="">https://github.com/espressif/arduino-esp32/tree/master/libraries</a></li>
+<li class=""><strong>Community Forums</strong>: <a href="https://www.esp32.com/" target="_blank" rel="noopener noreferrer" class="">https://www.esp32.com/</a> for community support and examples</li>
 </ul></div></div>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="development-resources">Development Resources<a href="#development-resources" class="hash-link" aria-label="Direct link to Development Resources" title="Direct link to Development Resources" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="development-resources">Development Resources<a href="#development-resources" class="hash-link" aria-label="Direct link to Development Resources" title="Direct link to Development Resources" translate="no">​</a></h3>
 <ul>
-<li><strong>ESP32-C6 Documentation</strong>: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/" target="_blank" rel="noopener noreferrer">Espressif ESP32-C6 Docs</a></li>
+<li class=""><strong>ESP32-C6 Documentation</strong>: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/" target="_blank" rel="noopener noreferrer" class="">Espressif ESP32-C6 Docs</a></li>
 </ul>
-<p><strong>Happy coding!</strong> Your Bottlenose WiFi Orca is now ready to use!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2025-10-10T22:20:50.000Z" itemprop="dateModified">Oct 10, 2025</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/extending-with-orcas/bottlenose-wifi-orca/bottlenose-hardware-hookup/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Bottlenose Hardware Hookup</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/extending-with-orcas/wileye-camera-orca/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">WILEYE Camera Orca</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#step-1-enable-uart-orca-communication" class="table-of-contents__link toc-highlight">Step 1: Enable UART Orca Communication</a></li><li><a href="#step-2-flash-bottlenose-firmware" class="table-of-contents__link toc-highlight">Step 2: Flash Bottlenose Firmware</a></li><li><a href="#step-3-configure-bottlenose-settings" class="table-of-contents__link toc-highlight">Step 3: Configure Bottlenose Settings</a></li><li><a href="#step-4-create-your-own-custom-firmware-for-bottlenose" class="table-of-contents__link toc-highlight">Step 4: Create Your Own Custom Firmware for Bottlenose</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Follow Us</div><ul class="footer__items clean-list"><li class="footer__item">
+<p><strong>Happy coding!</strong> Your Bottlenose WiFi Orca is now ready to use!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/freewili/FreeWili_WebDocs/blob/main/docs/extending-with-orcas/bottlenose-wifi-orca/bottlenose-setup-and-interfacing.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2025-10-10T22:20:50.000Z" itemprop="dateModified">Oct 10, 2025</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/extending-with-orcas/bottlenose-wifi-orca/bottlenose-hardware-hookup/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Bottlenose Hardware Hookup</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/extending-with-orcas/wileye-camera-orca/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">WILEYE Camera Orca</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#step-1-enable-uart-orca-communication" class="table-of-contents__link toc-highlight">Step 1: Enable UART Orca Communication</a></li><li><a href="#step-2-flash-bottlenose-firmware" class="table-of-contents__link toc-highlight">Step 2: Flash Bottlenose Firmware</a></li><li><a href="#step-3-configure-bottlenose-settings" class="table-of-contents__link toc-highlight">Step 3: Configure Bottlenose Settings</a></li><li><a href="#step-4-create-your-own-custom-firmware-for-bottlenose" class="table-of-contents__link toc-highlight">Step 4: Create Your Own Custom Firmware for Bottlenose</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Follow Us</div><ul class="footer__items clean-list"><li class="footer__item">
                     <a href="https://www.facebook.com/ICSFREEWILI/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> <a href="https://www.facebook.com/ICSFREEWILI/" target="_blank" rel="noopener noreferrer">Facebook</a>
                 </li><li class="footer__item">
                     <a href="https://www.instagram.com/free_wili_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a> <a href="https://www.instagram.com/free_wili_/" target="_blank" rel="noopener noreferrer">Instagram</a>
