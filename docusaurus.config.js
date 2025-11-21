@@ -192,7 +192,7 @@ const config = {
             items: [
               {
                 html: `
-                    <a href="https://www.facebook.com/FREEWILIOrca/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> <a href="https://www.facebook.com/ICSFREEWILI/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.facebook.com/FREEWILIOrca/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a> <a href="https://www.facebook.com/FREEWILIOrca/" target="_blank" rel="noopener noreferrer">Facebook</a>
                 `,
               },
               {
