@@ -1,0 +1,67 @@
+---
+slug: potsticker
+title: "Potsticker"
+authors: [Hawon Cho, Talha Ahmed]
+tags: [FREE-WILi, SpartaHack 11, student project, hackathon]
+---
+
+> ✨ A self-evolving honeypot system for WiFi security monitoring and attack detection.
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'image', src: '/img/blog/poststicker.jpg', alt: 'poststicker', caption: "" },
+  { type: 'image', src: '/img/blog/poststicker-1.jpg', alt: 'poststicker-1', caption: "main page" },
+  { type: 'image', src: '/img/blog/poststicker-gallery.jpg', alt: 'poststicker-gallery', caption: "detections" },
+  { type: 'image', src: '/img/blog/poststicker-att-log.jpg', alt: 'poststicker-att-log', caption: "attack logs" },
+  { type: 'image', src: '/img/blog/poststicker-device.jpg', alt: 'poststicker-device', caption: "free wili as an access point" },
+  { type: 'image', src: '/img/blog/poststicker-web-logs.jpg', alt: 'poststicker-web-logs', caption: "web logs" },
+  { type: 'image', src: '/img/blog/poststicker-admin.jpg', alt: 'auto-generated honeypot targets', caption: "auto-generated honeypot targets" },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+<br/>
+
+## 🌟 Inspiration
+
+I'm a big fan of scambaiting, and especially Kitboga's YouTube channel. Recently, I've been really interested in the maze videos that use AI and automated systems to lead scammers to think they're getting closer and closer to scoring a big win, wasting as much of their time as possible. They think they can't give up now because a big payday seems so close by.
+
+Recently, due to the "React2Shell" vulnerability in React Apps, my personal portfolio website and the VPS I paid for got attacked and ran as a crypto mining operation for a few days before I was able to restore it. This brought me to think of ways to make their lives a bit harder, and gave me the idea to create networks and application honeypots that evolve according to the attacker's input. For any potential attackers, the access point hosted through the Orca module and the "vulnerable" web servers would make it easier for them to get "wins", making the whole system feel an arm's reach away, yet never reachable.
+
+---
+
+## 👀 Challenges
+
+I developed this program on an M1 Mac, which may have possibly been the worst choice possible. Any sort of serial connections or network programming just did not work with Apple's secure enclave, meaning we relied on my teammate's computer to act as an interface for the FreeWili device. Unfortunately, he owns a Windows 11 device, which is not much better in terms of network programming.
+
+Any sort of testing with tools used in cyberattacks was a no-go, since they were exclusive to Linux. (reaver, aircrack-ng, mdk5, airodump-ng). Specifically, our wifi adaptors did not support monitormode, which prevented us from sending actual well-formed packets, forcing us to write our own packet parsing system.
+
+---
+
+## 🥚 Easter Egg
+
+We wrote a WASM script that will create a show for the Basketball GOAT, LeBron James as a screensaver. Basic Rust code in the repository, it involves lights, sound, accelerometer, and a picture slowly appearing. We'll show it if we have a bit of time left during judging :)
+
+---
+
+## 🧩 Built With  
+
+```docker``` ```freewili``` ```gemini``` ```python``` ```scapy```
+
+---
+
+### Try it out
+
+#### Technical details, specifications, and all other documents are linked in the Github repository
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/hawonc/potsticker/tree/main" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://devpost.com/software/potsticker](https://devpost.com/software/potsticker)

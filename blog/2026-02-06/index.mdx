@@ -1,0 +1,84 @@
+---
+slug: wWolf-hunt
+title: "Wolf Hunt"
+authors: [Akram Djomehri]
+tags: [FREE-WILi, SpartaHack 11, student project, hackathon]
+---
+
+> ✨ Show the Wolverines who's boss and zap them with the Free Wileye!
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+  { type: 'video', src: 'CkFNJ6sWA7Q' }, // YouTube video
+  { type: 'image', src: '/img/blog/wolf-hunt-screen.jpg', alt: 'wolf-hunt-screen', caption: "Title Screen" },
+  { type: 'image', src: '/img/blog/wolf-hunt-game.jpg', alt: 'wolf-hunt-game', caption: "Using the camera to play the game" },
+  { type: 'image', src: '/img/blog/wolf-hunt-game-screen.jpg', alt: 'wolf-hunt-game', caption: "Gameplay Screenshot" },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+<br/>
+
+## 🌟 Show those Wolverines who's boss!
+
+Ever had fun playing Duck Hunt for the Nintendo Entertainment System? Now instead of ducks you can go and make Sparty happy by zapping Wolverines to show them who is really the best university in Michigan! Take your Free Wileye camera and aim at the target to get as many hits as you can before the timer runs out!
+
+---
+
+## 💻 Inspiration & How it works
+
+I've always wanted to create a hardware hack and a game that has a physical level of interactivity to it similar to Duck Hunt on the NES. After learning Free Wili just released a brand new camera module for their hardware I joined spartahack on a whim to make this project I had in my head for awhile.
+
+Using the Free Wili, you press the red button and aim your camera towards the wolf on the screen to attempt to zap them. When the zap is triggered, the screen turns black except for the wolf which turns white. The camera then takes a snapshot, and uses a python library to compute the ratio of white and black pixels to determine if it was a hit or a miss. You have 50 seconds to get more than 10 points (2 hits) otherwise you lose the game.
+
+---
+
+## 🧩 How I built it
+
+For it's frontend, the tech stack consists of **R3F**, a version of **React** with rendering abilities from **Three.js** which were used to draw the sprites on the screen. The backend is more complicated, using the **FreeWili API** for handing hardware exceptions and libraries such as **PIL, numpy** for image processing and **FastAPI** and **uvicorn** for creating a websockect between the frontend and backend.
+
+---
+
+## 🚧 Challenges we ran into
+
+Aside from troubleshooting the Free Wili, the biggest challenge I faced was accounting for the image processing speed. The hardware was more limited than I expected. I had to end up consulting the engineers at the Freewili team a lot through out the hackathon, but eventually I managed to make it playable. Using the lowest resolution helped speed up the processing just a little bit.
+
+---
+
+## 🏆 Accomplishments that we're proud of
+
+I feel like this is pretty ambitious for a beginner level project and I'm pretty proud of what I was able to accomplish under such a short amount of time.
+
+---
+
+## 📚 What we learned
+
+React Three Fiber, Freewili API, websockets
+
+---
+
+## 🚀 What's next for Wolf Hunt
+
+Well if they let me keep the Freewili hardware (fingers crossed) I will for sure make more projects with it in the future
+
+---
+
+## 🧩 Built With  
+
+```fastapi``` ```freewili``` ```python``` ```react``` ```reactthreefiber``` ```three.js```
+
+---
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/TrickWithATwist/Spartahack26" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://devpost.com/software/wolf-hunt](https://devpost.com/software/wolf-hunt)

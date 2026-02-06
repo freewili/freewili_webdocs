@@ -1,0 +1,106 @@
+---
+slug: reality-check
+title: "Reality Check"
+authors: [JP Arriola, fadakz zwen, Ofona Likaka, Summer Higgins]
+tags: [FREE-WILi, SpartaHack 11, student project, hackathon]
+---
+
+> ✨ Real time truth check for headlines, images, and claims for when AI and misinformation run rampant.
+
+import MyCarousel from '@site/src/components/Carousel';
+
+{/* <MyCarousel /> */}
+
+export const slides = [
+     
+     { type: 'image', src: '/img/blog/reality-check.jpg', alt: 'reality-check', caption: "Example of our reality check device." },
+];
+
+<MyCarousel slides={slides} />
+
+<!-- truncate -->
+
+<br/>
+
+## 🌟 Inspiration
+
+We were inspired by the growing concern around the authenticity of information online. As AI becomes more capable of generating realistic text, images, and videos, it’s getting increasingly difficult for everyday users to tell what’s real and what isn’t. We wanted to build a tool that empowers people to question, analyze, and verify information rather than passively accept it — especially in a digital landscape where misinformation can spread faster than ever. This motivated us to create Truth Capture as a way to bring more transparency and trust back into online information.
+
+---
+
+## 👀 What it does
+
+Truth Capture is a full-stack AI-powered platform that helps users verify facts in real time. It combines AI agents with a web interface and edge firmware to capture, analyze, and present truth assessments from text and media. Whether it’s verifying statements or extracting factual claims from inputs, Truth Capture streamlines evidence-based truth verification using intelligent models.
+
+---
+
+## 🧩 How we built it
+
+We built Truth Capture using a modular architecture:
+
+Backend: A Python/Flask server that handles API requests and orchestrates AI logic.
+
+AI Agents: Custom Python agents (in ai_agents.py) that leverage LLMs to process user input and generate truth evaluations.
+
+Frontend: A web UI served by the backend (HTML/CSS/JS in static and templates) to interact with the system.
+
+Firmware Module: A microcontroller firmware (truthcapture_p4eye) to allow edge data capture (e.g., from sensors or cameras) for live analysis.
+
+Testing: Automated tests for agent behavior (test_agents.py) ensured reliability. This combination allowed us to build a cohesive prototype within the hackathon timeframe.
+
+---
+
+## 🚧 Challenges we ran into
+
+Integrating AI responses with real-time UI updates — syncing backend predictions with the frontend required careful API design.
+
+Ensuring consistent and relevant outputs from language models — we experimented with prompt design to reduce hallucination and improve factual accuracy.
+
+Firmware integration with the main web app — had to bridge communication between microcontroller data and cloud APIs.
+
+---
+
+## 🏆 Accomplishments that we're proud of
+
+Built a full-stack AI fact-verification system from scratch in one weekend.
+
+Designed reusable AI agent modules that can be extended to new verification domains.
+
+Created automated tests that validate correctness of our core AI logic.
+
+---
+
+## 📚 What we learned
+
+Real-world truth assessment is as much about prompt engineering and context-handling as raw model inference.
+
+Reliability and robustness require testing at multiple layers: unit tests for logic, integration tests for end-to-end behavior.
+
+Building firmware and cloud services together teaches you how to design scalable, distributed systems.
+
+---
+
+## 🚀 What's next for Truth Capture
+
+Improve fact-checking accuracy with retrieval-augmented generation (RAG) and external knowledge bases.
+
+Add live audio/video capture and transcription to verify spoken claims in real time.
+
+Build a mobile interface for wider accessibility.
+
+Integrate more sophisticated model evaluation metrics and confidence scores.
+
+---
+
+### Built With
+
+```freewili``` ```github``` ```openrouter``` ```python``` ```serpapi``` ```vscode```
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/arriolajp/spartahack11" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://devpost.com/software/truth-capture](https://devpost.com/software/truth-capture)
