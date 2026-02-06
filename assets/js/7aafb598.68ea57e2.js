@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfreewili_docs=self.webpackChunkfreewili_docs||[]).push([[3382],{4614:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/blog/page/3","page":3,"postsPerPage":10,"totalPages":3,"totalCount":21,"previousPage":"/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

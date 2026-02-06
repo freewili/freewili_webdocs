@@ -2,11 +2,182 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.freewili.com/blog/</id>
     <title>FREE-WILi Blog</title>
-    <updated>2025-10-17T00:00:00.000Z</updated>
+    <updated>2026-02-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.freewili.com/blog/"/>
     <subtitle>FREE-WILi Blog</subtitle>
     <icon>https://docs.freewili.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Wolf Hunt]]></title>
+        <id>https://docs.freewili.com/blog/wWolf-hunt/</id>
+        <link href="https://docs.freewili.com/blog/wWolf-hunt/"/>
+        <updated>2026-02-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[✨ Show the Wolverines who's boss and zap them with the Free Wileye!]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>✨ Show the Wolverines who's boss and zap them with the Free Wileye!</p>
+</blockquote>
+<!-- -->
+<!-- -->
+<!-- -->
+<div class="carousel-container"><div class="carousel-root custom-carousel"><div class="carousel carousel-slider" style="width:100%"><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li><li class="dot" value="2" role="button" tabindex="0" aria-label="slide item 3"></li><li class="dot" value="3" role="button" tabindex="0" aria-label="slide item 4"></li></ul><button type="button" aria-label="previous slide / item" class="control-arrow control-prev"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/wolf-hunt-game-screen.jpg" alt="wolf-hunt-game"><p class="legend"><i>Gameplay Screenshot</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/CkFNJ6sWA7Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/wolf-hunt-screen.jpg" alt="wolf-hunt-screen"><p class="legend"><i>Title Screen</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/wolf-hunt-game.jpg" alt="wolf-hunt-game"><p class="legend"><i>Using the camera to play the game</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/wolf-hunt-game-screen.jpg" alt="wolf-hunt-game"><p class="legend"><i>Gameplay Screenshot</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/CkFNJ6sWA7Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button></div></div></div>
+<br>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-show-those-wolverines-whos-boss">🌟 Show those Wolverines who's boss!<a href="https://docs.freewili.com/blog/wWolf-hunt/#-show-those-wolverines-whos-boss" class="hash-link" aria-label="Direct link to 🌟 Show those Wolverines who's boss!" title="Direct link to 🌟 Show those Wolverines who's boss!" translate="no">​</a></h2>
+<p>Ever had fun playing Duck Hunt for the Nintendo Entertainment System? Now instead of ducks you can go and make Sparty happy by zapping Wolverines to show them who is really the best university in Michigan! Take your Free Wileye camera and aim at the target to get as many hits as you can before the timer runs out!</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-inspiration--how-it-works">💻 Inspiration &amp; How it works<a href="https://docs.freewili.com/blog/wWolf-hunt/#-inspiration--how-it-works" class="hash-link" aria-label="Direct link to 💻 Inspiration &amp; How it works" title="Direct link to 💻 Inspiration &amp; How it works" translate="no">​</a></h2>
+<p>I've always wanted to create a hardware hack and a game that has a physical level of interactivity to it similar to Duck Hunt on the NES. After learning Free Wili just released a brand new camera module for their hardware I joined spartahack on a whim to make this project I had in my head for awhile.</p>
+<p>Using the Free Wili, you press the red button and aim your camera towards the wolf on the screen to attempt to zap them. When the zap is triggered, the screen turns black except for the wolf which turns white. The camera then takes a snapshot, and uses a python library to compute the ratio of white and black pixels to determine if it was a hit or a miss. You have 50 seconds to get more than 10 points (2 hits) otherwise you lose the game.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-how-i-built-it">🧩 How I built it<a href="https://docs.freewili.com/blog/wWolf-hunt/#-how-i-built-it" class="hash-link" aria-label="Direct link to 🧩 How I built it" title="Direct link to 🧩 How I built it" translate="no">​</a></h2>
+<p>For it's frontend, the tech stack consists of <strong>R3F</strong>, a version of <strong>React</strong> with rendering abilities from <strong>Three.js</strong> which were used to draw the sprites on the screen. The backend is more complicated, using the <strong>FreeWili API</strong> for handing hardware exceptions and libraries such as <strong>PIL, numpy</strong> for image processing and <strong>FastAPI</strong> and <strong>uvicorn</strong> for creating a websockect between the frontend and backend.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-challenges-we-ran-into">🚧 Challenges we ran into<a href="https://docs.freewili.com/blog/wWolf-hunt/#-challenges-we-ran-into" class="hash-link" aria-label="Direct link to 🚧 Challenges we ran into" title="Direct link to 🚧 Challenges we ran into" translate="no">​</a></h2>
+<p>Aside from troubleshooting the Free Wili, the biggest challenge I faced was accounting for the image processing speed. The hardware was more limited than I expected. I had to end up consulting the engineers at the Freewili team a lot through out the hackathon, but eventually I managed to make it playable. Using the lowest resolution helped speed up the processing just a little bit.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-accomplishments-that-were-proud-of">🏆 Accomplishments that we're proud of<a href="https://docs.freewili.com/blog/wWolf-hunt/#-accomplishments-that-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments that we're proud of" title="Direct link to 🏆 Accomplishments that we're proud of" translate="no">​</a></h2>
+<p>I feel like this is pretty ambitious for a beginner level project and I'm pretty proud of what I was able to accomplish under such a short amount of time.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-we-learned">📚 What we learned<a href="https://docs.freewili.com/blog/wWolf-hunt/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What we learned" title="Direct link to 📚 What we learned" translate="no">​</a></h2>
+<p>React Three Fiber, Freewili API, websockets</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-whats-next-for-wolf-hunt">🚀 What's next for Wolf Hunt<a href="https://docs.freewili.com/blog/wWolf-hunt/#-whats-next-for-wolf-hunt" class="hash-link" aria-label="Direct link to 🚀 What's next for Wolf Hunt" title="Direct link to 🚀 What's next for Wolf Hunt" translate="no">​</a></h2>
+<p>Well if they let me keep the Freewili hardware (fingers crossed) I will for sure make more projects with it in the future</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-built-with">🧩 Built With<a href="https://docs.freewili.com/blog/wWolf-hunt/#-built-with" class="hash-link" aria-label="Direct link to 🧩 Built With" title="Direct link to 🧩 Built With" translate="no">​</a></h2>
+<p><code>fastapi</code> <code>freewili</code> <code>python</code> <code>react</code> <code>reactthreefiber</code> <code>three.js</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/wWolf-hunt/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
+<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/TrickWithATwist/Spartahack26" target="_blank"><span>GitHub Repo</span></a></p></div>
+<p><em>Source</em> - <a href="https://devpost.com/software/wolf-hunt" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/wolf-hunt</a></p>]]></content>
+        <author>
+            <name>Akram Djomehri</name>
+            <uri>https://devpost.com/TrickWithATwist</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="SpartaHack 11" term="SpartaHack 11"/>
+        <category label="Student Project" term="Student Project"/>
+        <category label="Hackathon" term="Hackathon"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Potsticker]]></title>
+        <id>https://docs.freewili.com/blog/potsticker/</id>
+        <link href="https://docs.freewili.com/blog/potsticker/"/>
+        <updated>2026-02-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[✨ A self-evolving honeypot system for WiFi security monitoring and attack detection.]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>✨ A self-evolving honeypot system for WiFi security monitoring and attack detection.</p>
+</blockquote>
+<!-- -->
+<!-- -->
+<!-- -->
+<div class="carousel-container"><div class="carousel-root custom-carousel"><div class="carousel carousel-slider" style="width:100%"><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li><li class="dot" value="2" role="button" tabindex="0" aria-label="slide item 3"></li><li class="dot" value="3" role="button" tabindex="0" aria-label="slide item 4"></li><li class="dot" value="4" role="button" tabindex="0" aria-label="slide item 5"></li><li class="dot" value="5" role="button" tabindex="0" aria-label="slide item 6"></li><li class="dot" value="6" role="button" tabindex="0" aria-label="slide item 7"></li></ul><button type="button" aria-label="previous slide / item" class="control-arrow control-prev"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker-admin.jpg" alt="auto-generated honeypot targets"><p class="legend"><i>auto-generated honeypot targets</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker.jpg" alt="poststicker"></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker-1.jpg" alt="poststicker-1"><p class="legend"><i>main page</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker-gallery.jpg" alt="poststicker-gallery"><p class="legend"><i>detections</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker-att-log.jpg" alt="poststicker-att-log"><p class="legend"><i>attack logs</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker-device.jpg" alt="poststicker-device"><p class="legend"><i>free wili as an access point</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker-web-logs.jpg" alt="poststicker-web-logs"><p class="legend"><i>web logs</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker-admin.jpg" alt="auto-generated honeypot targets"><p class="legend"><i>auto-generated honeypot targets</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/poststicker.jpg" alt="poststicker"></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button></div></div></div>
+<br>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-inspiration">🌟 Inspiration<a href="https://docs.freewili.com/blog/potsticker/#-inspiration" class="hash-link" aria-label="Direct link to 🌟 Inspiration" title="Direct link to 🌟 Inspiration" translate="no">​</a></h2>
+<p>I'm a big fan of scambaiting, and especially Kitboga's YouTube channel. Recently, I've been really interested in the maze videos that use AI and automated systems to lead scammers to think they're getting closer and closer to scoring a big win, wasting as much of their time as possible. They think they can't give up now because a big payday seems so close by.</p>
+<p>Recently, due to the "React2Shell" vulnerability in React Apps, my personal portfolio website and the VPS I paid for got attacked and ran as a crypto mining operation for a few days before I was able to restore it. This brought me to think of ways to make their lives a bit harder, and gave me the idea to create networks and application honeypots that evolve according to the attacker's input. For any potential attackers, the access point hosted through the Orca module and the "vulnerable" web servers would make it easier for them to get "wins", making the whole system feel an arm's reach away, yet never reachable.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-challenges">👀 Challenges<a href="https://docs.freewili.com/blog/potsticker/#-challenges" class="hash-link" aria-label="Direct link to 👀 Challenges" title="Direct link to 👀 Challenges" translate="no">​</a></h2>
+<p>I developed this program on an M1 Mac, which may have possibly been the worst choice possible. Any sort of serial connections or network programming just did not work with Apple's secure enclave, meaning we relied on my teammate's computer to act as an interface for the FreeWili device. Unfortunately, he owns a Windows 11 device, which is not much better in terms of network programming.</p>
+<p>Any sort of testing with tools used in cyberattacks was a no-go, since they were exclusive to Linux. (reaver, aircrack-ng, mdk5, airodump-ng). Specifically, our wifi adaptors did not support monitormode, which prevented us from sending actual well-formed packets, forcing us to write our own packet parsing system.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-easter-egg">🥚 Easter Egg<a href="https://docs.freewili.com/blog/potsticker/#-easter-egg" class="hash-link" aria-label="Direct link to 🥚 Easter Egg" title="Direct link to 🥚 Easter Egg" translate="no">​</a></h2>
+<p>We wrote a WASM script that will create a show for the Basketball GOAT, LeBron James as a screensaver. Basic Rust code in the repository, it involves lights, sound, accelerometer, and a picture slowly appearing. We'll show it if we have a bit of time left during judging :)</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-built-with">🧩 Built With<a href="https://docs.freewili.com/blog/potsticker/#-built-with" class="hash-link" aria-label="Direct link to 🧩 Built With" title="Direct link to 🧩 Built With" translate="no">​</a></h2>
+<p><code>docker</code> <code>freewili</code> <code>gemini</code> <code>python</code> <code>scapy</code></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/potsticker/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical-details-specifications-and-all-other-documents-are-linked-in-the-github-repository">Technical details, specifications, and all other documents are linked in the Github repository<a href="https://docs.freewili.com/blog/potsticker/#technical-details-specifications-and-all-other-documents-are-linked-in-the-github-repository" class="hash-link" aria-label="Direct link to Technical details, specifications, and all other documents are linked in the Github repository" title="Direct link to Technical details, specifications, and all other documents are linked in the Github repository" translate="no">​</a></h4>
+<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/hawonc/potsticker/tree/main" target="_blank"><span>GitHub Repo</span></a></p></div>
+<p><em>Source</em> - <a href="https://devpost.com/software/potsticker" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/potsticker</a></p>]]></content>
+        <author>
+            <name>Hawon Cho</name>
+            <uri>https://devpost.com/hawonc</uri>
+        </author>
+        <author>
+            <name>Talha Ahmed</name>
+            <uri>https://devpost.com/bigboii1900</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="SpartaHack 11" term="SpartaHack 11"/>
+        <category label="Student Project" term="Student Project"/>
+        <category label="Hackathon" term="Hackathon"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reality Check]]></title>
+        <id>https://docs.freewili.com/blog/reality-check/</id>
+        <link href="https://docs.freewili.com/blog/reality-check/"/>
+        <updated>2026-02-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[✨ Real time truth check for headlines, images, and claims for when AI and misinformation run rampant.]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>✨ Real time truth check for headlines, images, and claims for when AI and misinformation run rampant.</p>
+</blockquote>
+<!-- -->
+<!-- -->
+<!-- -->
+<div class="carousel-container"><div class="carousel-root custom-carousel"><div class="carousel carousel-slider" style="width:100%"><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li></ul><button type="button" aria-label="previous slide / item" class="control-arrow control-prev control-disabled"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide selected previous"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/reality-check.jpg" alt="reality-check"><p class="legend"><i>Example of our reality check device.</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/reality-check.jpg" alt="reality-check"><p class="legend"><i>Example of our reality check device.</i></p></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next control-disabled"></button></div></div></div>
+<br>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-inspiration">🌟 Inspiration<a href="https://docs.freewili.com/blog/reality-check/#-inspiration" class="hash-link" aria-label="Direct link to 🌟 Inspiration" title="Direct link to 🌟 Inspiration" translate="no">​</a></h2>
+<p>We were inspired by the growing concern around the authenticity of information online. As AI becomes more capable of generating realistic text, images, and videos, it’s getting increasingly difficult for everyday users to tell what’s real and what isn’t. We wanted to build a tool that empowers people to question, analyze, and verify information rather than passively accept it — especially in a digital landscape where misinformation can spread faster than ever. This motivated us to create Truth Capture as a way to bring more transparency and trust back into online information.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-it-does">👀 What it does<a href="https://docs.freewili.com/blog/reality-check/#-what-it-does" class="hash-link" aria-label="Direct link to 👀 What it does" title="Direct link to 👀 What it does" translate="no">​</a></h2>
+<p>Truth Capture is a full-stack AI-powered platform that helps users verify facts in real time. It combines AI agents with a web interface and edge firmware to capture, analyze, and present truth assessments from text and media. Whether it’s verifying statements or extracting factual claims from inputs, Truth Capture streamlines evidence-based truth verification using intelligent models.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-how-we-built-it">🧩 How we built it<a href="https://docs.freewili.com/blog/reality-check/#-how-we-built-it" class="hash-link" aria-label="Direct link to 🧩 How we built it" title="Direct link to 🧩 How we built it" translate="no">​</a></h2>
+<p>We built Truth Capture using a modular architecture:</p>
+<p>Backend: A Python/Flask server that handles API requests and orchestrates AI logic.</p>
+<p>AI Agents: Custom Python agents (in ai_agents.py) that leverage LLMs to process user input and generate truth evaluations.</p>
+<p>Frontend: A web UI served by the backend (HTML/CSS/JS in static and templates) to interact with the system.</p>
+<p>Firmware Module: A microcontroller firmware (truthcapture_p4eye) to allow edge data capture (e.g., from sensors or cameras) for live analysis.</p>
+<p>Testing: Automated tests for agent behavior (test_agents.py) ensured reliability. This combination allowed us to build a cohesive prototype within the hackathon timeframe.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-challenges-we-ran-into">🚧 Challenges we ran into<a href="https://docs.freewili.com/blog/reality-check/#-challenges-we-ran-into" class="hash-link" aria-label="Direct link to 🚧 Challenges we ran into" title="Direct link to 🚧 Challenges we ran into" translate="no">​</a></h2>
+<p>Integrating AI responses with real-time UI updates — syncing backend predictions with the frontend required careful API design.</p>
+<p>Ensuring consistent and relevant outputs from language models — we experimented with prompt design to reduce hallucination and improve factual accuracy.</p>
+<p>Firmware integration with the main web app — had to bridge communication between microcontroller data and cloud APIs.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-accomplishments-that-were-proud-of">🏆 Accomplishments that we're proud of<a href="https://docs.freewili.com/blog/reality-check/#-accomplishments-that-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments that we're proud of" title="Direct link to 🏆 Accomplishments that we're proud of" translate="no">​</a></h2>
+<p>Built a full-stack AI fact-verification system from scratch in one weekend.</p>
+<p>Designed reusable AI agent modules that can be extended to new verification domains.</p>
+<p>Created automated tests that validate correctness of our core AI logic.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-we-learned">📚 What we learned<a href="https://docs.freewili.com/blog/reality-check/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What we learned" title="Direct link to 📚 What we learned" translate="no">​</a></h2>
+<p>Real-world truth assessment is as much about prompt engineering and context-handling as raw model inference.</p>
+<p>Reliability and robustness require testing at multiple layers: unit tests for logic, integration tests for end-to-end behavior.</p>
+<p>Building firmware and cloud services together teaches you how to design scalable, distributed systems.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-whats-next-for-truth-capture">🚀 What's next for Truth Capture<a href="https://docs.freewili.com/blog/reality-check/#-whats-next-for-truth-capture" class="hash-link" aria-label="Direct link to 🚀 What's next for Truth Capture" title="Direct link to 🚀 What's next for Truth Capture" translate="no">​</a></h2>
+<p>Improve fact-checking accuracy with retrieval-augmented generation (RAG) and external knowledge bases.</p>
+<p>Add live audio/video capture and transcription to verify spoken claims in real time.</p>
+<p>Build a mobile interface for wider accessibility.</p>
+<p>Integrate more sophisticated model evaluation metrics and confidence scores.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="built-with">Built With<a href="https://docs.freewili.com/blog/reality-check/#built-with" class="hash-link" aria-label="Direct link to Built With" title="Direct link to Built With" translate="no">​</a></h3>
+<p><code>freewili</code> <code>github</code> <code>openrouter</code> <code>python</code> <code>serpapi</code> <code>vscode</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/reality-check/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
+<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/arriolajp/spartahack11" target="_blank"><span>GitHub Repo</span></a></p></div>
+<p><em>Source</em> - <a href="https://devpost.com/software/truth-capture" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/truth-capture</a></p>]]></content>
+        <author>
+            <name>JP Arriola</name>
+            <uri>https://devpost.com/arriolajp7</uri>
+        </author>
+        <author>
+            <name>fadakz zwen</name>
+            <uri>https://devpost.com/fadakz</uri>
+        </author>
+        <author>
+            <name>Ofona Likaka</name>
+            <uri>https://devpost.com/olikaka01</uri>
+        </author>
+        <author>
+            <name>Summer Higgins</name>
+            <uri>https://devpost.com/summer-higgins</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="SpartaHack 11" term="SpartaHack 11"/>
+        <category label="Student Project" term="Student Project"/>
+        <category label="Hackathon" term="Hackathon"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Block Cycle]]></title>
         <id>https://docs.freewili.com/blog/block-cycle/</id>
@@ -1469,81 +1640,6 @@
         <author>
             <name>Harshad Bhojan</name>
             <uri>https://www.linkedin.com/in/harshad-bhojan</uri>
-        </author>
-        <category label="FREE-WILi" term="FREE-WILi"/>
-        <category label="Mhacks" term="Mhacks"/>
-        <category label="Hackathon" term="Hackathon"/>
-        <category label="Student Project" term="Student Project"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WiLi Watch – Voice-Activated Wearable for Smart Home Control]]></title>
-        <id>https://docs.freewili.com/blog/wiLi-watch/</id>
-        <link href="https://docs.freewili.com/blog/wiLi-watch/"/>
-        <updated>2024-12-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Inspiration]]></summary>
-        <content type="html"><![CDATA[<iframe width="100%" height="515" src="https://www.youtube.com/embed/UYSAEgx3lSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-<br>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="inspiration">Inspiration<a href="https://docs.freewili.com/blog/wiLi-watch/#inspiration" class="hash-link" aria-label="Direct link to Inspiration" title="Direct link to Inspiration" translate="no">​</a></h2>
-<p>In a world increasingly reliant on technology, the ability to interact with our surroundings effortlessly is essential, especially for individuals with mobility challenges. Enter the WiLi Watch, a wearable wristband powered by FREE-WILi and Groq aimed to empower users with independence.</p>
-<p>The journey began with a vision: to create a device that could simplify and enhance daily living for individuals with movement impairments. Our team recognized the need for an intuitive interface that would allow users to control their smart home environment without the barriers typically posed by traditional devices. By harnessing the capabilities of the watch's built-in infrared (IR) transmitters, we sought to bridge the gap between technology and accessibility.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-it-does">What it does<a href="https://docs.freewili.com/blog/wiLi-watch/#what-it-does" class="hash-link" aria-label="Direct link to What it does" title="Direct link to What it does" translate="no">​</a></h2>
-<p>The user wears an embedded wristband device that can be used to control and interact with their environment. Here is the specific tasks that can be performed wirelessly from your wrist:</p>
-<ul>
-<li class="">Turn on and off lights</li>
-<li class="">Lock and unlock your door</li>
-<li class="">Display live steamed camera footage of your doorstep</li>
-<li class="">Bring up your GCal or the weather to be displayed These tasks can either be initiated through buttons on the wristband, or from asking out loud for certain actions to be done. We use AI to predict your needs as well based on what you say. For example, if you mention "Oh did I forget to lock the door?" the door will lock automatically, and saying "will I need an umbrella later?" will cause the weather report to go on display. Additionally, a speaker announces to you every action that is done for peace of mind. Finally, one can inquire about who is at their door and the hub will describe to you your visitor.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-we-built-it">How we built it<a href="https://docs.freewili.com/blog/wiLi-watch/#how-we-built-it" class="hash-link" aria-label="Direct link to How we built it" title="Direct link to How we built it" translate="no">​</a></h2>
-<p>This project relies on the wireless IR communication between a FREE-WILi device and a smart home "hub" consisting of an Orange Pi 5 and Arduino Nano that control other peripherals such as a camera, door "locking" system, IR receiver module, speaker, microphone, and external monitor. The frameworks we used for development are Groq for easy LLM use (Whisper for speech to text and Llama for natural language reasoning) and Cartesia for speech-text interfacing, all developed on a python virtual environment. The project is also modular to be used with Intel's IDC if private LLM generation is desired (we setup a flask server serving llama.cpp inferencing on a compute instance but ran out of credits)</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenges-we-ran-into">Challenges we ran into<a href="https://docs.freewili.com/blog/wiLi-watch/#challenges-we-ran-into" class="hash-link" aria-label="Direct link to Challenges we ran into" title="Direct link to Challenges we ran into" translate="no">​</a></h2>
-<ul>
-<li class="">Using GPIO on the Orange Pi; we had to pivot after hours to integrate another microcontroller with a functional GPIO interface for motor control and IF receiving</li>
-<li class="">Networking compatibility; we found out later than we'd like that the Free WiLi device which we centered our project around does not have capabilities to connect to the internet / Bluetooth so we switched to IF communication</li>
-<li class="">Python development on Linux; Python virtual environments are not for the weak of heart</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="accomplishments-that-were-proud-of">Accomplishments that we're proud of<a href="https://docs.freewili.com/blog/wiLi-watch/#accomplishments-that-were-proud-of" class="hash-link" aria-label="Direct link to Accomplishments that we're proud of" title="Direct link to Accomplishments that we're proud of" translate="no">​</a></h2>
-<ul>
-<li class="">Fully functional prototype built from the ground up in 24 hours!!</li>
-<li class="">Door locking system on a physical prototype + doorstep camera</li>
-<li class="">Overcoming Free WiLi debugging hurdles in the middle of the night</li>
-<li class="">Kept persistence even through sleep deprivation</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-we-learned">What we learned<a href="https://docs.freewili.com/blog/wiLi-watch/#what-we-learned" class="hash-link" aria-label="Direct link to What we learned" title="Direct link to What we learned" translate="no">​</a></h2>
-<ul>
-<li class="">Hardware hacking is challenging, but super fun!</li>
-<li class="">Cable management can and will stress you out</li>
-<li class="">Implementing APIs in a larger program</li>
-<li class="">Wireless communication (IR and RF)</li>
-<li class="">Ideation is so important</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next-for-the-wili-watch">What's next for The WiLi Watch<a href="https://docs.freewili.com/blog/wiLi-watch/#whats-next-for-the-wili-watch" class="hash-link" aria-label="Direct link to What's next for The WiLi Watch" title="Direct link to What's next for The WiLi Watch" translate="no">​</a></h2>
-<p>Increase in functionalities available on the watch as well as real world implementation (metal instead of cardboard). A few functionalities that we came up with that could be expanded on in further development are as follows:</p>
-<ul>
-<li class="">Autonomous robotic car assistant that can retrieve items</li>
-<li class="">Interact with kitchen appliances (turn on/off stove)</li>
-<li class="">Emergency response / alarm system</li>
-<li class="">Temperature control</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="built-with">Built With<a href="https://docs.freewili.com/blog/wiLi-watch/#built-with" class="hash-link" aria-label="Direct link to Built With" title="Direct link to Built With" translate="no">​</a></h2>
-<p><code>arduino-nano</code> <code>cartesia</code> <code>freewili</code> <code>groq</code> <code>llama</code> <code>orange-pi</code> <code>python</code> <code>whisper</code></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/wiLi-watch/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
-<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/ethanmckean/The-WiLi-Watch-mhacks24" target="_blank"><span>GitHub Repo</span></a></p></div>
-<p><em>Source</em> - <a href="https://devpost.com/software/wili-watch" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/wili-watch</a></p>]]></content>
-        <author>
-            <name>Ethan McKean</name>
-            <uri>https://github.com/ethanmckean</uri>
-        </author>
-        <author>
-            <name>Anshul Mohanty</name>
-        </author>
-        <author>
-            <name>Alexandra Enders</name>
-            <uri>https://www.linkedin.com/in/alexandra-enders-767bb21a5/</uri>
-        </author>
-        <author>
-            <name>Austyn Nguyen</name>
-            <uri>https://www.linkedin.com/in/austyn-an-nguyen</uri>
         </author>
         <category label="FREE-WILi" term="FREE-WILi"/>
         <category label="Mhacks" term="Mhacks"/>
