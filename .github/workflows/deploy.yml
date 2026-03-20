@@ -5,23 +5,29 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
-  pages: write # Grants the GITHUB_TOKEN write permission for Pages
-  id-token: write # Grants the GITHUB_TOKEN permission to create an OIDC token
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
+    # This is the "Magic" line that fixes the 403 error
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
+
       - name: Install dependencies
         run: npm install
+
       - name: Build website
         run: npm run build
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
