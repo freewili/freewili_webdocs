@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write # Grants the GITHUB_TOKEN write permission for Pages
+  id-token: write # Grants the GITHUB_TOKEN permission to create an OIDC token
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
