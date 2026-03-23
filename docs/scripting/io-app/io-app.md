@@ -10,7 +10,7 @@ sidebar_label: IO App
 
 FREE-WILi includes an IO app that allows you to read and write all the IO of FREE-WILi. This app has a Serial Command Line Interface, support for a host API,  on-board scripting, and a file system for stand-alone operations without a host.
 
-The serial command line interface provides a menu tree of commands to control FREE-WILi's IO interfaces. This is shown below:
+The serial command line interface provides a menu of commands to control FREE-WILi's IO interfaces. This is shown below:
 
 <div class="text--center">
 
