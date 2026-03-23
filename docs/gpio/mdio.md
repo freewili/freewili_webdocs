@@ -10,6 +10,13 @@ sidebar_label: MDIO
 
 ## Overview
 
+## ⇨ MDIO Tutorial: How to Read, Write & Poll PHY Registers with the FREE-WILi
+
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+
+<YouTubeEmbed videoId="Ah5A9nwn7tI" />
+
+<br/><br/>
 MDIO (Management Data Input/Output) is a two-wire serial interface defined by IEEE 802.3 for reading and writing registers inside Ethernet PHY chips. It consists of two signals:
 
 - **MDC** — the clock line, driven by FREE-WILi
