@@ -1,0 +1,62 @@
+---
+slug: assistive_communicator
+title: "OmniComm: Assistive_Communicator"
+authors: [Krunal Mehta, nehabhatt01 Bhatt]
+tags: [FREE-WILi, GrizzHacks 8, student project, hackathon]
+---
+
+> ✨ I see for you , I hear for you and I speak for you. I am all in one.
+
+<!-- truncate -->
+
+<br/>
+
+## 💡 Inspiration
+
+Communication is a universal human right, yet millions are isolated by devices that only solve one part of the puzzle. Current assistive technologies are heavily siloed—designed only for the blind, or only for the deaf. This makes buying multiple dedicated devices incredibly expensive. More importantly, it leaves a massive missing link: a blind person and a deaf person cannot easily communicate with each other. We were inspired to build a universal bridge that breaks down these silos and allows everyone to connect seamlessly.
+
+---
+
+## ⚙️ What It Does
+
+OmniComm is an all-in-one assistive device that translates the world into the exact medium the user needs: audio, text, or visual. By acting as a universal proxy, it enables cross-disability communication: For the Visually Impaired ("I see for you"): It uses voice commands and reads digital text or scene descriptions aloud via Text-to-Speech. For the Deaf/Hard of Hearing ("I hear for you"): It captures spoken words and transcribes them into real-time text on a screen via Speech-to-Text. For the Non-Verbal ("I speak for you"): It allows users to type messages through a visual interface, which the device instantly vocalizes to the room
+
+---
+
+## 🛠️ How We Built It
+
+We designed OmniComm's architecture to be incredibly fast and lightweight:
+
+The Brains: We developed a robust Python API backend to handle the complex logic of dynamically routing inputs (voice or text) to the correct outputs (screen or speaker) depending on who is conversing. The Speed: For the frontend, we utilized WASM (WebAssembly). This allowed us to build a highly responsive user interface that runs at near-native speeds, ensuring there is zero lag in real-time conversations. The Platform: We originally targeted deployment on Freewill hardware to act as a portable edge device.
+
+---
+
+## ⚠️ Challenges We Ran Into
+
+Our biggest challenge was the ultimate hackathon curse: the Demo Gods. About an hour before our presentation, our Freewill hardware board experienced a critical failure. Instead of giving up, we immediately pivoted. We migrated our entire architecture to run locally, allowing us to successfully demo our WASM frontend and Python API routing logic via our laptops. Architecturally, designing a single logical flow that can simultaneously handle inputs and outputs for entirely different sensory needs (e.g., routing text to a speaker while simultaneously routing voice to a screen) required a lot of careful algorithmic planning.
+
+---
+
+## 🏆 Accomplishments We're Proud Of
+
+We are incredibly proud of how our team handled the pressure of a last-minute hardware failure by successfully adapting our demo to showcase our software stack. Beyond the code, our greatest accomplishment is proving that a unified software logic can facilitate real-time, cross-disability communication—like allowing a blind person to speak directly to a deaf person's screen.
+
+---
+
+## 📚 What We Learned
+
+Technically, we learned a massive amount about the power of WebAssembly for optimizing UI performance, and the realities of working with experimental edge hardware. Conceptually, we learned that true accessibility isn't just about building a tool for one specific disability; it’s about inclusive design that considers how different individuals interact with each other. Technology shouldn't just be smart; it should be empathetic.
+
+---
+
+## 🚀 What's next for OmnicComm: Assistive_Communicator
+
+Hardware Restoration: Getting our software stack fully redeployed and stabilized on the Freewill edge hardware. Scalability: Deploying these systems in highly interactive environments like schools, hospitals, and modern workplaces. Camera Integration: Adding AI-driven sign language translation using optical sensors. Next-Gen Inputs: Exploring brain-computer interfaces (BCI) to give non-verbal or paralyzed users an even faster way to output text and speech.
+
+---
+
+## 🧩 Built With  
+
+```Python```
+
+*Source* - [https://devpost.com/software/assistive_communicator](https://devpost.com/software/assistive_communicator)
