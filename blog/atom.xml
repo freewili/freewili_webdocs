@@ -2,11 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.freewili.com/blog/</id>
     <title>FREE-WILi Blog</title>
-    <updated>2026-02-06T00:00:00.000Z</updated>
+    <updated>2026-04-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.freewili.com/blog/"/>
     <subtitle>FREE-WILi Blog</subtitle>
     <icon>https://docs.freewili.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[AI Social Intrigue Game on FREE-WILi]]></title>
+        <id>https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/</id>
+        <link href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/"/>
+        <updated>2026-04-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[✨ Using a laptop to manage requests to Gemini/ElevenLabs API, the FreeWili can be used to play "Mafia" with a mixture of AI agents and human participants. The FreeWili is used for vocal I/O & some ui.]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>✨ Using a laptop to manage requests to Gemini/ElevenLabs API, the FreeWili can be used to play "Mafia" with a mixture of AI agents and human participants. The FreeWili is used for vocal I/O &amp; some ui.</p>
+</blockquote>
+<br>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-inspiration">💡 Inspiration<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#-inspiration" class="hash-link" aria-label="Direct link to 💡 Inspiration" title="Direct link to 💡 Inspiration" translate="no">​</a></h2>
+<p>I wanted to make use of the Gemini and ElevenLabs API, and I thought what better use than to run a social intrigue game? I also wanted to incorporate the FreeWili hardware, as I find the form factor very convenient.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-what-it-does">⚙️ What It Does<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#%EF%B8%8F-what-it-does" class="hash-link" aria-label="Direct link to ⚙️ What It Does" title="Direct link to ⚙️ What It Does" translate="no">​</a></h2>
+<p>In its current state, the code runs largely on the laptop. It plays some pre-fected, some dynamically generated voicelines from the ElevenLabs api, which are sent on-the-fly through the usb to be played on the free wili's speakers. (The text of the voicelines are generated using the Gemini api, with fallbacks to switch the backend to help with free tier usage limits.)</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-how-we-built-it">🛠️ How We Built It<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#%EF%B8%8F-how-we-built-it" class="hash-link" aria-label="Direct link to 🛠️ How We Built It" title="Direct link to 🛠️ How We Built It" translate="no">​</a></h2>
+<p>The app was entirely vibe coded. I made use of Google AI Studio to find/generate a copy of the Mafia rules that were succinct (with some slight passing code back to it for some debugging attempts), then used Google Antigravity and Gemini CLI to create the application, as well as OpenAI's Codex CLI.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-challenges-we-ran-into">⚠️ Challenges We Ran Into<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#%EF%B8%8F-challenges-we-ran-into" class="hash-link" aria-label="Direct link to ⚠️ Challenges We Ran Into" title="Direct link to ⚠️ Challenges We Ran Into" translate="no">​</a></h2>
+<p>This overlaps with accomplishments we're proud of, but getting the voice from ElevenLabs to play properly was a bit of a challenge (it initially didn't work at all, then played at an incredibly slow pitch, then after some iterative refinement managed to play properly- it seemed to be an issue related to the quality of the audio vs what the usb connection could realistically handle.)</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-accomplishments-were-proud-of">🏆 Accomplishments We're Proud Of<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#-accomplishments-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments We're Proud Of" title="Direct link to 🏆 Accomplishments We're Proud Of" translate="no">​</a></h2>
+<p>See above.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-we-learned">📚 What We Learned<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What We Learned" title="Direct link to 📚 What We Learned" translate="no">​</a></h2>
+<p>The state of the AI scene is far more advanced than most might think. I was only semi-seriously considering participating in this hackathon, "vibe coding" this app actually worked for me to be able to do that. This also helped expose some of the vulnerability of relying on "vibe coding" - while it worked, I often ran into regressions that I had to instruct the ai to repair by comparing with older git commits.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-whats-for-ai-social-intrigue-game-on-free-wili">🚀 What's for AI Social Intrigue Game on FREE-WILi<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#-whats-for-ai-social-intrigue-game-on-free-wili" class="hash-link" aria-label="Direct link to 🚀 What's for AI Social Intrigue Game on FREE-WILi" title="Direct link to 🚀 What's for AI Social Intrigue Game on FREE-WILi" translate="no">​</a></h2>
+<p>If I have the time, or in the future, I'm hoping to make the flow of the game a little more robust and maybe have the free wili use the wifi chip to directly make the requests and stream the audio, as well as maybe throw in a few more fun things that aren't directly related to the social intrigue game to try and push the hardware a bit further. (For instance, the idea to use the camera attachment I grabbed as effectively an additional "ram stick" was suggested by the agent when I was trying to probe it for ideas on doing this. So stayed tuned if that works.) I'm currently just having a mode where one person can play as the mafia for my MVP shipping of this. I also want to make it a bit "prettier" overall, right now the game is using simple text display as the ui.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="video">Video<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#video" class="hash-link" aria-label="Direct link to Video" title="Direct link to Video" translate="no">​</a></h2>
+<iframe src="https://drive.google.com/file/d/1uETtGyL4rU0uLE_kP7Yl5ymWH_lPw9Aw/preview" width="100%" height="480" allow="autoplay" style="border:none;border-radius:12px"></iframe>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-built-with">🧩 Built With<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#-built-with" class="hash-link" aria-label="Direct link to 🧩 Built With" title="Direct link to 🧩 Built With" translate="no">​</a></h2>
+<p><code>claude</code> <code>elevenlabs-api</code> <code>freewili</code> <code>gemini</code> <code>gemini-api</code> <code>gemini-cli</code> <code>google-ai-studio</code> <code>google-antigravity</code> <code>openai-codex</code> <code>python</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
+<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAACn5JREFUeJzFWglQlFcSVpatNZha3XW3UmV2y3CI4gGCoqDiQUhFjQZcr3grnmgqMXHxSEQoNyJk1VJABEUjCVcERS7x5lCDiAoMDOc4wMAM1wzIAMOh0Nv9wswOzIXK4Kv6Svj/fv3669fdr98vQ4bobwzFYYD/MtAv9EyP6w3MOHr06Hvl5eUOLS0tnu3t7eGdnZ33Xr58mf3q1asCBBd/zuro6LjR1tZ2vqmp6WsOhzPexMTE4F3bzUZGRsbfpE1NO9C4uK6urkZ4vdGNZPkymSxEIpE4h4SE/GlQjT/m7T20jM8f09zc7IWGFHZ3d3chQA70NlRUCCAnJxdSUtPg5s1bcOvWbbj/4AFwCwpAJBKBTNYGynPQCe24W+mNjY2b8/LyRuidRPL16+/hYtuRQImyIWKxBOLiE+A/P3jDqtVrwW6mA0ycPEUFkyytYZ7jJ7Bl63Y47ecPD3/LAAzDXqRwd+/U1dZ+bGZmpp98Ki8rG4uLpMsXxJgHLrcADnl4gvXU6WoN7w8c5s6H4HPncaeqoburS75DnVKp1D8nO3tgd6dSIPjkZWdnNVsIUVNTA9/udYcpNrZvTKAv7GfNgaCgc9Amk4F8nfa2tt+QzIdvTSAsLMygWiRy7nr1qoMUYxxDQkIietFxwAj0xeo164HDyVOQwTXLSkpKzN6KiFAoXIohJMPyCZgX4Ol1BKysp+mNhBwzcXeuXIkFWpeAecQvLi42fSMSeCYsRBKdpIgqkSsmqL4J9C0MAYFnmQPJBsxPXlZW1gevRQLZW+CW1vV4Aza5bh1UEnLQ7p9BMvKdwQJwOS019f1+kUhKSnq/pbk5E5MbWltawH3/QbCYZPXOMAEJXbkaC2QPoru+ru5oT7ujefj6+hrU1dXt6ZkEv4SFwyQrGxXlq9dugNP+AfD1N3vBYd7HbLE3NZT0L1zsDB6HvZj356C+vjJU0XJzOcymjvZ2GY/Hm66VCJfLNW9tba2guCwuLoGp0+1VlE7E2I2OucJil8DjPYfjJ07CdPvZKrKWGBoz8Lmt3Sy1DlnsvBTCI6JALJEo9O0/8J1awmvWbQDs45gMHsrReDgbqSVB2yUWi09QicX2AyduVKvQDr3DyctnpVgZfH4Zq2oBZ87C/fsP2Fmj/J5yjWSSrieDt48v8z46TUXPxZ9CNe5eWHiEXFeXQCBwVkskLS1tDCouJ8GU1FQWLuMnWqpgLrYYgspKFQMGCldjr6ldl7Bg0RKoEgqZHO5KrKmp6R9UiKAH92P8deNpCl+sWadR2ew586GkpJRiVS+IiIzSuDYh5MJFJidrbW3EVJihElmNDQ3pRIK6Vm2KKNapoyVZfeCot4/W9ec6OrFqSrK1NTVHerE4Gxj4ATJspz7n1Gl/GDdhskaQouzsHNYT6QM//xIGk6dM1WrDgwcPmWyDRJIxRPnWWVxU9AW9eNHYCJu3bNOqhDpVfZEgNL1ogp27vtRqAxUUksXzrtnJyWm4gghuUSDuCJRgybWdMRPMLSapxWdLXEBYJaT41CvS0tLZya7Jjp1uu0HaJGWyWY8fOyryQ1Jff1OGcZeK1UrTZIL3MV8Wn/omgo6Ffy1fpdGOTxcuhipBJZDNFeXl7ozF6NGjDRslEk4rnh2RWDG0EYnBg5CIDAYOHPxeox100BbipY5srhYKAxkRHx8foxcNDXx6GIixN3bcRI24e+cumzwY8PX9r1ZbHj/KZHK11dVRjEjopUsjkIiAHp48eUrr5Du37wwaER+fH7Xako55RHJ1NTXXWOW6eOHCCAwtQYtUqpNILJ66JDcY+P7QYZ1ESA535HciHh4eRhKxmC/Fy1NgYJDWyWeDgoHk9A08nGHrth1abcnMzGSyIqEwihEZOXKkIfb4ufQwMupXMDOfoBF7sG2ns0bfRHilpawV0mSHlbUtYHvCZCsrKgLkXa8BskqWvngBqSmpWok4zHGEoqIiIFl9Iu5aPPO6JjuoecSyy2SLCwu/VRyI5Xy+fxN6uqigEA/EWWA61kIjgoPPA8nqC5ivsGPHLq02uLl9CQ1iCZO/mZw8V0Ek4+HDFRQyGGLgumW7ViW05TnYa5G8PhAa+jNYYHOozYYzeEyQrLiursnY2Pj/d/gVy5b9VVxf30pJRkLalBA+w6tpeVk5S8qBBIW25ZRpOtd/lPGIyQsqKlL73t+HCsrL79G25jzLZnFoYjZeK+gbLn2cRq+wcHgbCPGidv5cCPsEpGvdj50WYFiJaV43NrueKhergvz8vSjQTYo3bHTtNZkWuY1Gr1u/EczHT1I8p4RcsXINRF+OBsyz1zJeXFcP2U+fgZ+fP8yd76STgBwXL/7E5uNBKL6RnDxNhUhgQMA/sG/hEduUeylghkYa40SCo9OnuJ0Z8CTrCTtxx02wVLyTwwS3nArFMXxfX1vLvKYOJVj11qzdgFdpaxUdurAIQ7rsOZ/pKXv+/FdDQ0PVqy7FWlFBwbGG+nqoq66GjZu2wEem4xSwsrHF0zQNMpHQrt1f9XqnDGyrNZIgYKcNgWeDNM7XhojwCDZfXFvbiQVqkQoJ+Yi9etVMKBDwJBj3BflcsLG166Vo6bKV8OzJUyx5N2D5ytVg3Gchl6XL2UK6UFRY+NokKNzrsb0n20qLisI9sSPRSGSmvb3BsydPdmECd9OEyIgoGIs5IVdG4RMREclIRkfHwL59B9glh7457fnm35CYmMQW0gX0KEy2mtpvEjPsHZgDaS72VtKkhAQbjSTkw83Nbfjz0tJU8e+TwMPDs5fSz12W4WlaRMkGYWHhUMEvw2SPYcUg89EjVsX6AzKuPyQoV+Pj4tkczL2up1lZh3R+MpWPyPBwc1FlZRV5jrBj5y5WMeTK6YZ27+49wDAEuQxte61IpPhdF/pDhIpKyPkLijmF+fmh+/btG66bQc8gxrExMY41QqGMFIiqqmA3JbiJuQJ0MM2aPQ/WYgVydd0Gi/E+f/qUX7+J0LcBZX19QWdZSMgF5iCSL+Px8n44cuTv/SahPK4nJi6srqqSkjICld7xFpNhjPFYtfDyOgJyWV2YZmuvUQ99L06IT1DIVvD5BeeCgj56IxI0KPkT4+MXIJkWFjqYM0mY0PPxVFdnwOHDXv0mYjPNTq2OTZu3ssSWy/F5PO5bkVAel6Oi7FBhLhEh4GEEx4+fYJ5TNuIQ3urkMrpgbTO919wlny+FqMgo+pjA3teIRN35HE6kl6fn6/0vla5xLjjYGNuYJFygq2chyMUu2Nf3R/TuDGaMn19Av4nQmUNzFmDhuHQpFLBSKt5hTrbiwevt7u7+5wElIR8YasPSUlLW80pKsomIHFVYvSgcqPlTfq4NtKvUayk/w93oQmdduxYbO6vnD3L0N4yMjIb6+/l9iB5zRy8+Q+919td4TUBHSLE9Sk65e3fVdwcP6mcXNA0q0S4uLn/BHVrHyc2NQA9XkUf7azw6oAMbSE7206en4+PinEaNGjW4f1SjYQwdNmyY0WEPD0sk9lVuTk5QIZcbj4amYxhmlhYXZ+DdOoWblxeNLdDJ5KSkDS7Ozv9EX/zxXRuua7A/OkNQm22I/xr2/Ky3uP8fwMI/rotbvZoAAAAASUVORK5CYII=" width="50" height="50" class="img_ev3q"> <a href="https://github.com/ldameron1/freewili-hackathon-project" target="_blank"><span>GitHub Repo</span></a></p></div>
+<p><em>Source</em> - <a href="https://devpost.com/software/ai-social-intrigue-game-on-free-wili" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/ai-social-intrigue-game-on-free-wili</a></p>]]></content>
+        <author>
+            <name>Luke Dameron</name>
+            <uri>https://devpost.com/ldameron</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="GrizzHacks 8" term="GrizzHacks 8"/>
+        <category label="Student Project" term="Student Project"/>
+        <category label="Hackathon" term="Hackathon"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Wolf Hunt]]></title>
         <id>https://docs.freewili.com/blog/wWolf-hunt/</id>
@@ -1598,51 +1646,6 @@
         </author>
         <category label="FREE-WILi" term="FREE-WILi"/>
         <category label="SpartaHack X" term="SpartaHack X"/>
-        <category label="Hackathon" term="Hackathon"/>
-        <category label="Student Project" term="Student Project"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WiLi-Party LED Minigames]]></title>
-        <id>https://docs.freewili.com/blog/wiLi-party/</id>
-        <link href="https://docs.freewili.com/blog/wiLi-party/"/>
-        <updated>2024-12-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Inspiration]]></summary>
-        <content type="html"><![CDATA[<iframe width="100%" height="515" src="https://www.youtube.com/embed/7VzAm0KVVoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-<br>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="inspiration">Inspiration<a href="https://docs.freewili.com/blog/wiLi-party/#inspiration" class="hash-link" aria-label="Direct link to Inspiration" title="Direct link to Inspiration" translate="no">​</a></h2>
-<p>We love competitive games like Mario Party and the cuteness of small devices like Tamagotchi. We wanted a project that combines the two, which is why the free wili seemed like a great system to use.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-it-does">What it does<a href="https://docs.freewili.com/blog/wiLi-party/#what-it-does" class="hash-link" aria-label="Direct link to What it does" title="Direct link to What it does" translate="no">​</a></h2>
-<p>Gives users the ability to play four 1v1 games</p>
-<ol>
-<li class="">Mashing game - Who can rack up the highest number of button presses before time runs out?</li>
-<li class="">Memory game - A pattern sequence, up to 3 levels of increasing difficulty. Test your memory!</li>
-<li class="">Counting game - Keep track of your color light and how many times it flashes. Don't blink.</li>
-<li class="">Reaction game - Who can react faster? Click the color that shows up as quick as you can.</li>
-</ol>
-<p>The lights at the end of a game blink red if P1 has won and green if P2 (yellow if tie).</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-we-built-it">How we built it<a href="https://docs.freewili.com/blog/wiLi-party/#how-we-built-it" class="hash-link" aria-label="Direct link to How we built it" title="Direct link to How we built it" translate="no">​</a></h2>
-<p>We used two Python libraries. The FreeWheel API to communicate with the FREE-WILi and flash our code, and the pygame library to receive and read controller input. We also have a given header file for C++ definitions of useful functions that allow us to configure the FREE-WILi board, such as LED toggles and Display images.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenges-we-ran-into">Challenges we ran into<a href="https://docs.freewili.com/blog/wiLi-party/#challenges-we-ran-into" class="hash-link" aria-label="Direct link to Challenges we ran into" title="Direct link to Challenges we ran into" translate="no">​</a></h2>
-<p>The FREE-WILi had some hardware limitations that prevented us from fully fledging out our implementation as was planned. Primarily, its I/O capabilities are limited, and cannot read controller input through USB-C as a general purpose computer can, so we had to keep the system wired to the computer during play. We also ran into space issues in uploading images to the display, so the UI is not as in depth as we would have liked.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="accomplishments-that-were-proud-of">Accomplishments that we're proud of<a href="https://docs.freewili.com/blog/wiLi-party/#accomplishments-that-were-proud-of" class="hash-link" aria-label="Direct link to Accomplishments that we're proud of" title="Direct link to Accomplishments that we're proud of" translate="no">​</a></h2>
-<p>For having found out about this device only 24 hours before submission, we are very proud of the fact that we were able to flash the device with our software, turn on LEDs, upload images, and have it function properly with our controller input, despite the limitations we encountered.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-we-learned">What we learned<a href="https://docs.freewili.com/blog/wiLi-party/#what-we-learned" class="hash-link" aria-label="Direct link to What we learned" title="Direct link to What we learned" translate="no">​</a></h2>
-<p>We learned a lot about how FREE-WILi works, how to write to it, and its functionalities. We also learned how to use pygame to process user inputs from a controller, to parse and control them correctly, and also how to manage multiple controllers.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next-for-wili-party">What's next for Wili-Party<a href="https://docs.freewili.com/blog/wiLi-party/#whats-next-for-wili-party" class="hash-link" aria-label="Direct link to What's next for Wili-Party" title="Direct link to What's next for Wili-Party" translate="no">​</a></h2>
-<p>Ideally, we would love to make the controller input work without running it through a computer for processing. We want the games to be able to be fully run on the FREE-WILi itself, with just two controllers as support. We would also like to make the communication wireless, so we are not cluttered with USB-C cables while playing.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="built-with">Built With<a href="https://docs.freewili.com/blog/wiLi-party/#built-with" class="hash-link" aria-label="Direct link to Built With" title="Direct link to Built With" translate="no">​</a></h3>
-<p><code>c++</code> <code>freewili</code> <code>pygame</code> <code>python</code> <code>time</code></p>
-<p><em>Source</em> - <a href="https://devpost.com/software/wili-party" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/wili-party</a></p>]]></content>
-        <author>
-            <name>Andi Shaska</name>
-            <uri>https://www.linkedin.com/in/andi-shaska</uri>
-        </author>
-        <author>
-            <name>Harshad Bhojan</name>
-            <uri>https://www.linkedin.com/in/harshad-bhojan</uri>
-        </author>
-        <category label="FREE-WILi" term="FREE-WILi"/>
-        <category label="Mhacks" term="Mhacks"/>
         <category label="Hackathon" term="Hackathon"/>
         <category label="Student Project" term="Student Project"/>
     </entry>
