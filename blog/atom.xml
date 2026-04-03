@@ -2,11 +2,116 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.freewili.com/blog/</id>
     <title>FREE-WILi Blog</title>
-    <updated>2026-04-02T00:00:00.000Z</updated>
+    <updated>2026-04-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.freewili.com/blog/"/>
     <subtitle>FREE-WILi Blog</subtitle>
     <icon>https://docs.freewili.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[OmniComm: Assistive_Communicator]]></title>
+        <id>https://docs.freewili.com/blog/assistive_communicator/</id>
+        <link href="https://docs.freewili.com/blog/assistive_communicator/"/>
+        <updated>2026-04-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[✨ I see for you , I hear for you and I speak for you. I am all in one.]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>✨ I see for you , I hear for you and I speak for you. I am all in one.</p>
+</blockquote>
+<br>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-inspiration">💡 Inspiration<a href="https://docs.freewili.com/blog/assistive_communicator/#-inspiration" class="hash-link" aria-label="Direct link to 💡 Inspiration" title="Direct link to 💡 Inspiration" translate="no">​</a></h2>
+<p>Communication is a universal human right, yet millions are isolated by devices that only solve one part of the puzzle. Current assistive technologies are heavily siloed—designed only for the blind, or only for the deaf. This makes buying multiple dedicated devices incredibly expensive. More importantly, it leaves a massive missing link: a blind person and a deaf person cannot easily communicate with each other. We were inspired to build a universal bridge that breaks down these silos and allows everyone to connect seamlessly.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-what-it-does">⚙️ What It Does<a href="https://docs.freewili.com/blog/assistive_communicator/#%EF%B8%8F-what-it-does" class="hash-link" aria-label="Direct link to ⚙️ What It Does" title="Direct link to ⚙️ What It Does" translate="no">​</a></h2>
+<p>OmniComm is an all-in-one assistive device that translates the world into the exact medium the user needs: audio, text, or visual. By acting as a universal proxy, it enables cross-disability communication: For the Visually Impaired ("I see for you"): It uses voice commands and reads digital text or scene descriptions aloud via Text-to-Speech. For the Deaf/Hard of Hearing ("I hear for you"): It captures spoken words and transcribes them into real-time text on a screen via Speech-to-Text. For the Non-Verbal ("I speak for you"): It allows users to type messages through a visual interface, which the device instantly vocalizes to the room</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-how-we-built-it">🛠️ How We Built It<a href="https://docs.freewili.com/blog/assistive_communicator/#%EF%B8%8F-how-we-built-it" class="hash-link" aria-label="Direct link to 🛠️ How We Built It" title="Direct link to 🛠️ How We Built It" translate="no">​</a></h2>
+<p>We designed OmniComm's architecture to be incredibly fast and lightweight:</p>
+<p>The Brains: We developed a robust Python API backend to handle the complex logic of dynamically routing inputs (voice or text) to the correct outputs (screen or speaker) depending on who is conversing. The Speed: For the frontend, we utilized WASM (WebAssembly). This allowed us to build a highly responsive user interface that runs at near-native speeds, ensuring there is zero lag in real-time conversations. The Platform: We originally targeted deployment on Freewill hardware to act as a portable edge device.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-challenges-we-ran-into">⚠️ Challenges We Ran Into<a href="https://docs.freewili.com/blog/assistive_communicator/#%EF%B8%8F-challenges-we-ran-into" class="hash-link" aria-label="Direct link to ⚠️ Challenges We Ran Into" title="Direct link to ⚠️ Challenges We Ran Into" translate="no">​</a></h2>
+<p>Our biggest challenge was the ultimate hackathon curse: the Demo Gods. About an hour before our presentation, our Freewill hardware board experienced a critical failure. Instead of giving up, we immediately pivoted. We migrated our entire architecture to run locally, allowing us to successfully demo our WASM frontend and Python API routing logic via our laptops. Architecturally, designing a single logical flow that can simultaneously handle inputs and outputs for entirely different sensory needs (e.g., routing text to a speaker while simultaneously routing voice to a screen) required a lot of careful algorithmic planning.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-accomplishments-were-proud-of">🏆 Accomplishments We're Proud Of<a href="https://docs.freewili.com/blog/assistive_communicator/#-accomplishments-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments We're Proud Of" title="Direct link to 🏆 Accomplishments We're Proud Of" translate="no">​</a></h2>
+<p>We are incredibly proud of how our team handled the pressure of a last-minute hardware failure by successfully adapting our demo to showcase our software stack. Beyond the code, our greatest accomplishment is proving that a unified software logic can facilitate real-time, cross-disability communication—like allowing a blind person to speak directly to a deaf person's screen.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-we-learned">📚 What We Learned<a href="https://docs.freewili.com/blog/assistive_communicator/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What We Learned" title="Direct link to 📚 What We Learned" translate="no">​</a></h2>
+<p>Technically, we learned a massive amount about the power of WebAssembly for optimizing UI performance, and the realities of working with experimental edge hardware. Conceptually, we learned that true accessibility isn't just about building a tool for one specific disability; it’s about inclusive design that considers how different individuals interact with each other. Technology shouldn't just be smart; it should be empathetic.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-whats-next-for-omniccomm-assistive_communicator">🚀 What's next for OmnicComm: Assistive_Communicator<a href="https://docs.freewili.com/blog/assistive_communicator/#-whats-next-for-omniccomm-assistive_communicator" class="hash-link" aria-label="Direct link to 🚀 What's next for OmnicComm: Assistive_Communicator" title="Direct link to 🚀 What's next for OmnicComm: Assistive_Communicator" translate="no">​</a></h2>
+<p>Hardware Restoration: Getting our software stack fully redeployed and stabilized on the Freewill edge hardware. Scalability: Deploying these systems in highly interactive environments like schools, hospitals, and modern workplaces. Camera Integration: Adding AI-driven sign language translation using optical sensors. Next-Gen Inputs: Exploring brain-computer interfaces (BCI) to give non-verbal or paralyzed users an even faster way to output text and speech.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-built-with">🧩 Built With<a href="https://docs.freewili.com/blog/assistive_communicator/#-built-with" class="hash-link" aria-label="Direct link to 🧩 Built With" title="Direct link to 🧩 Built With" translate="no">​</a></h2>
+<p><code>Python</code></p>
+<p><em>Source</em> - <a href="https://devpost.com/software/assistive_communicator" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/assistive_communicator</a></p>]]></content>
+        <author>
+            <name>Krunal Mehta</name>
+            <uri>https://devpost.com/krunalmehta</uri>
+        </author>
+        <author>
+            <name>nehabhatt01 Bhatt</name>
+            <uri>https://devpost.com/nehabhatt01</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="GrizzHacks 8" term="GrizzHacks 8"/>
+        <category label="Student Project" term="Student Project"/>
+        <category label="Hackathon" term="Hackathon"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SeanTimothyCollins]]></title>
+        <id>https://docs.freewili.com/blog/seantimothycollinsapp/</id>
+        <link href="https://docs.freewili.com/blog/seantimothycollinsapp/"/>
+        <updated>2026-04-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[✨ Remote controlled robotics reimagined.]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>✨ Remote controlled robotics reimagined.</p>
+</blockquote>
+<br>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-inspiration">💡 Inspiration<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#-inspiration" class="hash-link" aria-label="Direct link to 💡 Inspiration" title="Direct link to 💡 Inspiration" translate="no">​</a></h2>
+<p>A more interactive way to control a robot.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-what-it-does">⚙️ What It Does<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#%EF%B8%8F-what-it-does" class="hash-link" aria-label="Direct link to ⚙️ What It Does" title="Direct link to ⚙️ What It Does" translate="no">​</a></h2>
+<p>Takes the X and Y position data of a FREE-WILi. Sends the data over rf, and then translates the changes into commands for the motor controllers to replace a traditional controller.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-how-we-built-it">🛠️ How We Built It<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#%EF%B8%8F-how-we-built-it" class="hash-link" aria-label="Direct link to 🛠️ How We Built It" title="Direct link to 🛠️ How We Built It" translate="no">​</a></h2>
+<p>FREE-WILi, C++ and WSL.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-challenges-we-ran-into">⚠️ Challenges We Ran Into<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#%EF%B8%8F-challenges-we-ran-into" class="hash-link" aria-label="Direct link to ⚠️ Challenges We Ran Into" title="Direct link to ⚠️ Challenges We Ran Into" translate="no">​</a></h2>
+<p>New technology and limited knowledge.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-accomplishments-were-proud-of">🏆 Accomplishments We're Proud Of<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#-accomplishments-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments We're Proud Of" title="Direct link to 🏆 Accomplishments We're Proud Of" translate="no">​</a></h2>
+<p>Gained exposure to new languages and embedded systems.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-we-learned">📚 What We Learned<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What We Learned" title="Direct link to 📚 What We Learned" translate="no">​</a></h2>
+<p>The basics of embedded systems and radio communication.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-whats-next-for-seantimothycollinsapp">🚀 What's next for SeanTimothyCollinsApp<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#-whats-next-for-seantimothycollinsapp" class="hash-link" aria-label="Direct link to 🚀 What's next for SeanTimothyCollinsApp" title="Direct link to 🚀 What's next for SeanTimothyCollinsApp" translate="no">​</a></h2>
+<p>Further work with cleaning radio messages and translating data points.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-built-with">🧩 Built With<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#-built-with" class="hash-link" aria-label="Direct link to 🧩 Built With" title="Direct link to 🧩 Built With" translate="no">​</a></h2>
+<p><code>c++</code> <code>free-wili</code> <code>wsl</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/seantimothycollinsapp/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
+<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/fischweinen/GrizzHacks8" target="_blank"><span>GitHub Repo</span></a></p></div>
+<p><em>Source</em> - <a href="https://devpost.com/software/seantimothycollinsapp" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/seantimothycollinsapp</a></p>]]></content>
+        <author>
+            <name>Axel D</name>
+            <uri>https://devpost.com/AxelD7</uri>
+        </author>
+        <author>
+            <name>Linda Tir</name>
+            <uri>https://devpost.com/fischweinen</uri>
+        </author>
+        <author>
+            <name>Zack Lain</name>
+            <uri>https://devpost.com/ZacharyLain</uri>
+        </author>
+        <author>
+            <name>Trent Hoeffel</name>
+            <uri>https://devpost.com/trenthoeffel</uri>
+        </author>
+        <category label="FREE-WILi" term="FREE-WILi"/>
+        <category label="GrizzHacks 8" term="GrizzHacks 8"/>
+        <category label="Student Project" term="Student Project"/>
+        <category label="Hackathon" term="Hackathon"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI Social Intrigue Game on FREE-WILi]]></title>
         <id>https://docs.freewili.com/blog/ai-social-intrigue-game-on-freewili/</id>
@@ -1552,101 +1657,5 @@
         <category label="GrizzHacks 7" term="GrizzHacks 7"/>
         <category label="Student Project" term="Student Project"/>
         <category label="Hackathon" term="Hackathon"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Project Story: Safe X Guardian]]></title>
-        <id>https://docs.freewili.com/blog/safe-x-guardian/</id>
-        <link href="https://docs.freewili.com/blog/safe-x-guardian/"/>
-        <updated>2025-02-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[];]]></summary>
-        <content type="html"><![CDATA[<div class="carousel-container"><div class="carousel-root custom-carousel"><div class="carousel carousel-slider" style="width:100%"><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li><li class="dot" value="2" role="button" tabindex="0" aria-label="slide item 3"></li></ul><button type="button" aria-label="previous slide / item" class="control-arrow control-prev"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/fw-wb.jpg" alt="fwwb"><p class="legend"><i>Free Willi Wristband that gets sent notifications of motion detection, camera detection, and much more.</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/raspb.png" alt="raspb"><p class="legend"><i>Raspberry Pi with camera connected</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/freewili-machine.png" alt="freewilimachine"><p class="legend"><i>Freewilli machine connected with 3 antennas for communication, tracking with microphone, motion sensor, etc</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/fw-wb.jpg" alt="fwwb"><p class="legend"><i>Free Willi Wristband that gets sent notifications of motion detection, camera detection, and much more.</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/raspb.png" alt="raspb"><p class="legend"><i>Raspberry Pi with camera connected</i></p></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button></div></div></div>
-<br>
-<p><strong>About the Project</strong> The inspiration for Safe X Guardian came from the need to enhance security around personal vehicles and property. In a world where thefts and break-ins are a constant concern, I wanted to create a system that could actively monitor and protect my home and vehicle from unauthorized access.  Starting with basic components like motion sensors and facial recognition, I gradually built upon this concept to integrate features such as voice recognition and night vision for 24/7 security.</p>
-<p><strong>What I Learned</strong> Throughout the process, I learned how to integrate AI-powered systems with hardware like PIR motion sensors, cameras, and microphones. I explored facial recognition and voice detection technologies, gaining experience with Raspberry Pi and other sensors to improve security features. This project expanded my knowledge of system integration, real-time monitoring, and how to handle different types of inputs to create a cohesive, functional security system.</p>
-<p><strong>Building the Project</strong> I began with the idea of a simple security system using motion detection and a basic camera for monitoring. As I progressed, I added PIR motion sensors to detect movement around the vehicle and property, along with facial recognition to identify individuals. The integration of voice recognition and night vision capabilities brought the system to a new level, enabling it to work effectively even in low-light environments.</p>
-<p><strong>Challenges Faced</strong> The main challenges included configuring the facial recognition software and ensuring it could detect faces accurately from various angles and distances. Integrating all the components, including PIR sensors, camera systems, and voice recognition, required troubleshooting and optimizing the connections for smooth real-time performance. Another challenge was calibrating the motion detection system to avoid false alerts, which took time to fine-tune.</p>
-<p><strong>From Start to Finish</strong> What I started with was a basic concept of monitoring using motion sensors, evolving it into a fully integrated vehicle and property monitoring system that can detect motion, identify individuals, and provide alerts in real-time. The final project, Safe X Guardian, is a smart, comprehensive security solution that actively monitors surroundings, providing enhanced protection for both vehicles and property.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="built-with">Built With<a href="https://docs.freewili.com/blog/safe-x-guardian/#built-with" class="hash-link" aria-label="Direct link to Built With" title="Direct link to Built With" translate="no">​</a></h3>
-<p><code>c</code> <code>freewili</code> <code>python</code> <code>raspberry-pi</code> <code>whadda</code></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/safe-x-guardian/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
-<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/Akshith-AI/Spartahack-X" target="_blank"><span>GitHub Repo</span></a></p></div>
-<p><em>Source</em> - <a href="https://devpost.com/software/safe-x-guardian" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/safe-x-guardian</a></p>]]></content>
-        <author>
-            <name>Suryaprakash Veeramani</name>
-            <uri>https://www.linkedin.com/in/suryaprakash-veeramani-87304b21b</uri>
-        </author>
-        <author>
-            <name>Saurav Wadhwa</name>
-            <uri>https://devpost.com/wadhwasa</uri>
-        </author>
-        <category label="FREE-WILi" term="FREE-WILi"/>
-        <category label="SpartaHack X" term="SpartaHack X"/>
-        <category label="Hackathon" term="Hackathon"/>
-        <category label="Student Project" term="Student Project"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[thereMINI: Creating Music with Hand Gestures Using FREE-WILi for a Touch-Free Sound Experience]]></title>
-        <id>https://docs.freewili.com/blog/theremini/</id>
-        <link href="https://docs.freewili.com/blog/theremini/"/>
-        <updated>2025-02-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Wearable Theremin! thereMINI is a wearable theremin using FREE-WILi to turn hand movements into music, translating motion into notes and volume for a touch-free, expressive sound experience.]]></summary>
-        <content type="html"><![CDATA[<p>The Wearable Theremin! thereMINI is a wearable theremin using FREE-WILi to turn hand movements into music, translating motion into notes and volume for a touch-free, expressive sound experience.</p>
-<!-- -->
-<!-- -->
-<!-- -->
-<div class="carousel-container"><div class="carousel-root custom-carousel"><div class="carousel carousel-slider" style="width:100%"><ul class="control-dots"><li class="dot selected" value="0" role="button" tabindex="0" aria-label="slide item 1"></li><li class="dot" value="1" role="button" tabindex="0" aria-label="slide item 2"></li><li class="dot" value="2" role="button" tabindex="0" aria-label="slide item 3"></li><li class="dot" value="3" role="button" tabindex="0" aria-label="slide item 4"></li><li class="dot" value="4" role="button" tabindex="0" aria-label="slide item 5"></li><li class="dot" value="5" role="button" tabindex="0" aria-label="slide item 6"></li><li class="dot" value="6" role="button" tabindex="0" aria-label="slide item 7"></li></ul><button type="button" aria-label="previous slide / item" class="control-arrow control-prev"></button><div class="slider-wrapper axis-horizontal"><ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms"><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/code.png" alt="code"><p class="legend"><i>painful amounts of painful code</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/W0wFaAqFdok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/logo.jpg" alt="logo"><p class="legend"><i>Our Logo and Mascot, T-Mini! (cr. minipete)</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/gallery.jpg" alt="gallery"><p class="legend"><i>How it all works (its magic, I really don't know how we got it to work)</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/gallery-freewili.jpg" alt="Gallery-FREE-WILi"><p class="legend"><i>the child witnessing its birth</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/gallery-1.png" alt="Gallery-FREE-WILi-1"><p class="legend"><i>my wrist</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/gui.png" alt="gui"><p class="legend"><i>gui</i></p></div></li><li class="slide"><div class="carousel-slide"><img src="https://docs.freewili.com/img/blog/code.png" alt="code"><p class="legend"><i>painful amounts of painful code</i></p></div></li><li class="slide selected previous"><div class="carousel-slide"><iframe width="100%" height="515" src="https://www.youtube.com/embed/W0wFaAqFdok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></li></ul></div><button type="button" aria-label="next slide / item" class="control-arrow control-next"></button></div></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-theremini-a-wearable-theremin-">🎶 thereMINI: A Wearable Theremin 🎶<a href="https://docs.freewili.com/blog/theremini/#-theremini-a-wearable-theremin-" class="hash-link" aria-label="Direct link to 🎶 thereMINI: A Wearable Theremin 🎶" title="Direct link to 🎶 thereMINI: A Wearable Theremin 🎶" translate="no">​</a></h2>
-<p><em>Turning motion into music with FREE-WILi</em></p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-inspiration">🌟 Inspiration<a href="https://docs.freewili.com/blog/theremini/#-inspiration" class="hash-link" aria-label="Direct link to 🌟 Inspiration" title="Direct link to 🌟 Inspiration" translate="no">​</a></h2>
-<p>We designed this as an accessibility device for one-handed music creation but soon saw its broader potential. Inspired by conducting, we mapped hand motion to notes and volume, making music creation more intuitive and inclusive. We continue to design this as a accessible device, but it is for everyone!</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-it-does">🎵 What It Does<a href="https://docs.freewili.com/blog/theremini/#-what-it-does" class="hash-link" aria-label="Direct link to 🎵 What It Does" title="Direct link to 🎵 What It Does" translate="no">​</a></h2>
-<p>Using the FREE-WILi we were able to extract the accelerometer data as serial data. Converting said data to MIDI data (a music data type) we were able to use music software, like Ableton to translate it into virtual instrument playing. Moving your hand down increases volume and putting it down increases it. Moving your hand left or right changes notes, specifically a scale of 8 notes. Combining all that we can emulate a full virtual keyboard with just the movement of your hand!</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-how-we-built-it">🛠️ How We Built It<a href="https://docs.freewili.com/blog/theremini/#%EF%B8%8F-how-we-built-it" class="hash-link" aria-label="Direct link to 🛠️ How We Built It" title="Direct link to 🛠️ How We Built It" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Hardware:</strong> FREE-WILi device is a wearable microprocessor, outfitted with many sensors and capabilities, the one we focused on is the accelerometer. We used this mainly to translate xyz coordinates into angles, and then MIDI values for the notes and volume. This data is sent through USB serial data to be read by the software.</li>
-<li class=""><strong>Software:</strong> We used C++, and C to embed functionality for the FREE-WILi and python to clean and extract the data from it. loopMIDI is a software that creates a virtual MIDI controller that reads from our script, and feeds it to DAWs.</li>
-<li class=""><strong>Implementation:</strong> The horizontal rotation is used for the notes on a rotation of -90 -&gt; 90 degrees, and the vertical rotation is used for lowering and increasing the pitch on -30 -&gt; 30 degrees.</li>
-</ul>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-challenges-we-ran-into">🚧 Challenges We Ran Into<a href="https://docs.freewili.com/blog/theremini/#-challenges-we-ran-into" class="hash-link" aria-label="Direct link to 🚧 Challenges We Ran Into" title="Direct link to 🚧 Challenges We Ran Into" translate="no">​</a></h2>
-<p>We addressed USB port access challenges between WSL and Windows, ensuring proper connectivity. Translating accelerometer data into MIDI required refining sensitivity and applying filtering to improve accuracy. By optimizing data formatting and transmission, we facilitated seamless MIDI transfer. Through continuous troubleshooting and iterative testing, we achieved smooth integration between hardware and software.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-accomplishments-were-proud-of">🏆 Accomplishments We're Proud Of<a href="https://docs.freewili.com/blog/theremini/#-accomplishments-were-proud-of" class="hash-link" aria-label="Direct link to 🏆 Accomplishments We're Proud Of" title="Direct link to 🏆 Accomplishments We're Proud Of" translate="no">​</a></h2>
-<p>Our project focused on turning complex tasks into key milestones. A major achievement was enabling MIDI data transfer from FREE-WILi to a computer, converting user movements into precise musical instructions like pitch and velocity. Our greatest achievement was the design of the notes and pitch to hand movements, and what was the most ergonomic and accessible way we would implement it.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-what-we-learned">📚 What We Learned<a href="https://docs.freewili.com/blog/theremini/#-what-we-learned" class="hash-link" aria-label="Direct link to 📚 What We Learned" title="Direct link to 📚 What We Learned" translate="no">​</a></h2>
-<p>We learned how to process real-time sensor data into MIDI signals, ensuring seamless hardware-software integration. Designing for accessibility taught us the importance of intuitive and ergonomic control. Optimizing MIDI implementation required refining pitch, velocity, and minimizing latency. Through iterative problem-solving, we debugged formatting errors and fine-tuned movement sensitivity.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-whats-next-for-theremini">🚀 What's Next for thereMINI<a href="https://docs.freewili.com/blog/theremini/#-whats-next-for-theremini" class="hash-link" aria-label="Direct link to 🚀 What's Next for thereMINI" title="Direct link to 🚀 What's Next for thereMINI" translate="no">​</a></h2>
-<p>We plan to enhance thereMINI with scale mode, chord mode, and octave control, mapped to buttons on the FREE-WILi for seamless switching. A GUI will provide visual feedback and customization options. Beyond development, thereMINI has potential as an accessible instrument, an innovative tool for musicians, and an educational device for learning music through motion.</p>
-<hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="built-with">Built With<a href="https://docs.freewili.com/blog/theremini/#built-with" class="hash-link" aria-label="Direct link to Built With" title="Direct link to Built With" translate="no">​</a></h3>
-<p><code>ableton</code> <code>accelerometer</code> <code>c</code> <code>c++</code> <code>freewili</code> <code>loopmidi</code> <code>pyserial</code> <code>python</code> <code>rtmidi</code></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-out">Try it out<a href="https://docs.freewili.com/blog/theremini/#try-it-out" class="hash-link" aria-label="Direct link to Try it out" title="Direct link to Try it out" translate="no">​</a></h3>
-<div class="github-img"><p><img decoding="async" loading="lazy" alt="GitHub" src="data:image/png;base64,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" width="50" height="50" class="img_ev3q"> <a href="https://github.com/fiorittoev/theremini" target="_blank"><span>GitHub Repo</span></a></p></div>
-<p><em>Source</em> - <a href="https://devpost.com/software/theremini" target="_blank" rel="noopener noreferrer" class="">https://devpost.com/software/theremini</a></p>]]></content>
-        <author>
-            <name>Evan Fioritto</name>
-            <uri>https://www.linkedin.com/in/evanfioritto/</uri>
-        </author>
-        <author>
-            <name>Richard Glosser</name>
-            <uri>https://www.linkedin.com/in/richard-glosser-76145426b</uri>
-        </author>
-        <author>
-            <name>Tess Gonda</name>
-            <uri>https://www.linkedin.com/in/tess-gonda-abb1b5309</uri>
-        </author>
-        <author>
-            <name>Ramya Ramkumar</name>
-            <uri>https://www.linkedin.com/in/ramyaramkumar</uri>
-        </author>
-        <category label="FREE-WILi" term="FREE-WILi"/>
-        <category label="SpartaHack X" term="SpartaHack X"/>
-        <category label="Hackathon" term="Hackathon"/>
-        <category label="Student Project" term="Student Project"/>
     </entry>
 </feed>
