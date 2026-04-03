@@ -1,0 +1,79 @@
+---
+slug: ai-social-intrigue-game-on-freewili
+title: "AI Social Intrigue Game on FREE-WILi"
+authors: [Luke Dameron]
+tags: [FREE-WILi, GrizzHacks 8, student project, hackathon]
+---
+
+> ✨ Using a laptop to manage requests to Gemini/ElevenLabs API, the FreeWili can be used to play "Mafia" with a mixture of AI agents and human participants. The FreeWili is used for vocal I/O & some ui.
+
+<!-- truncate -->
+
+<br/>
+
+## 💡 Inspiration
+
+I wanted to make use of the Gemini and ElevenLabs API, and I thought what better use than to run a social intrigue game? I also wanted to incorporate the FreeWili hardware, as I find the form factor very convenient.
+
+---
+
+## ⚙️ What It Does
+
+In its current state, the code runs largely on the laptop. It plays some pre-fected, some dynamically generated voicelines from the ElevenLabs api, which are sent on-the-fly through the usb to be played on the free wili's speakers. (The text of the voicelines are generated using the Gemini api, with fallbacks to switch the backend to help with free tier usage limits.)
+
+---
+
+## 🛠️ How We Built It
+
+The app was entirely vibe coded. I made use of Google AI Studio to find/generate a copy of the Mafia rules that were succinct (with some slight passing code back to it for some debugging attempts), then used Google Antigravity and Gemini CLI to create the application, as well as OpenAI's Codex CLI.
+
+---
+
+## ⚠️ Challenges We Ran Into
+
+This overlaps with accomplishments we're proud of, but getting the voice from ElevenLabs to play properly was a bit of a challenge (it initially didn't work at all, then played at an incredibly slow pitch, then after some iterative refinement managed to play properly- it seemed to be an issue related to the quality of the audio vs what the usb connection could realistically handle.)
+
+---
+
+## 🏆 Accomplishments We're Proud Of
+
+See above.
+
+---
+
+## 📚 What We Learned
+
+The state of the AI scene is far more advanced than most might think. I was only semi-seriously considering participating in this hackathon, "vibe coding" this app actually worked for me to be able to do that. This also helped expose some of the vulnerability of relying on "vibe coding" - while it worked, I often ran into regressions that I had to instruct the ai to repair by comparing with older git commits.
+
+---
+
+## 🚀 What's for AI Social Intrigue Game on FREE-WILi
+
+If I have the time, or in the future, I'm hoping to make the flow of the game a little more robust and maybe have the free wili use the wifi chip to directly make the requests and stream the audio, as well as maybe throw in a few more fun things that aren't directly related to the social intrigue game to try and push the hardware a bit further. (For instance, the idea to use the camera attachment I grabbed as effectively an additional "ram stick" was suggested by the agent when I was trying to probe it for ideas on doing this. So stayed tuned if that works.) I'm currently just having a mode where one person can play as the mafia for my MVP shipping of this. I also want to make it a bit "prettier" overall, right now the game is using simple text display as the ui.
+
+---
+
+## Video
+
+<iframe
+  src="https://drive.google.com/file/d/1uETtGyL4rU0uLE_kP7Yl5ymWH_lPw9Aw/preview"
+  width="100%"
+  height="480"
+  allow="autoplay"
+  style={{ border: "none", borderRadius: "12px" }}
+/>
+
+---
+
+## 🧩 Built With  
+
+```claude``` ```elevenlabs-api``` ```freewili``` ```gemini``` ```gemini-api``` ```gemini-cli``` ```google-ai-studio``` ```google-antigravity``` ```openai-codex``` ```python```
+
+### Try it out
+
+<div class="github-img">
+
+![GitHub](./github.png) <a href="https://github.com/ldameron1/freewili-hackathon-project" target="_blank"><span>GitHub Repo</span></a>
+</div>
+
+*Source* - [https://devpost.com/software/ai-social-intrigue-game-on-free-wili](https://devpost.com/software/ai-social-intrigue-game-on-free-wili)
